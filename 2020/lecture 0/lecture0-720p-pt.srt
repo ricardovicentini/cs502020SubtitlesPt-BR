@@ -4656,11 +4656,11 @@ Mas existe essa outra ideia na ciência da computação, essa noção de abstra�
 
 1163
 00: 54: 07,930 -> 00: 54: 10.570
-No momento, este é um programa que simplesmente acontece
+No momento, este é um programa que simplesmente existe
 
 1164
 00: 54: 10,570 -> 00: 54: 12.490
-para implementar a noção de tosse.
+para simular uma tosse.
 
 1165
 00: 54: 12,490 -> 00: 54: 16.660
@@ -4672,19 +4672,19 @@ e eu quero dar a mim mesmo uma peça de quebra-cabeça personalizada que não
 
 1167
 00: 54: 19,450 -> 00: 54: 22.150
-vem com o Scratch chamado tosse?
+vem com o Scratch chamada tosse?
 
 1168
 00: 54: 22,150 -> 00: 54: 25.870
-Bem, há um outro recurso aqui que posso usar como meus blocos,
+Bem, há um outro recurso aqui chamado de meus blocos,
 
 1169
 00: 54: 25,870 -> 00: 54: 27.130
-e eu posso fazer um bloqueio.
+e eu posso fazer uma peça.
 
 1170
 00: 54: 27,130 -> 00: 54: 29.080
-E vou prosseguir e chamar isso de tosse.
+E vou seguir e chamar isso de tosse.
 
 1171
 00: 54: 29,080 -> 00: 54: 34.300
@@ -4696,299 +4696,299 @@ aqui.
 
 1173
 00: 54: 35,050 -> 00: 54: 38.620
-Vou prosseguir agora, por exemplo, e mover tudo isso
+Vou prosseguir agora, por exemplo, e mover aqui para
 
 1174
 00:54:38,620 --> 00:54:40,570
-down to the custom puzzle piece.
+baixo para essa peça personalizada.
 
 1175
-00:54:40,570 --> 00:54:44,290
-And now notice because I've made a new block, I have this pink piece here.
+00: 54: 40,570 -> 00: 54: 44.290
+E agora observe, porque fiz um novo bloco, tenho esta peça rosa aqui.
 
 1176
-00:54:44,290 --> 00:54:46,150
-I can now move this over here.
+00: 54: 44,290 -> 00: 54: 46.150
+Agora posso mover isso para cá.
 
 1177
-00:54:46,150 --> 00:54:48,190
-And frankly, out of sight, out of mind.
+00: 54: 46,150 -> 00: 54: 48.190
+E, francamente, isso deixa de ser uma preocupação.
 
 1178
-00:54:48,190 --> 00:54:52,510
-I can literally ignore those puzzle pieces
+00: 54: 48,190 -> 00: 54: 52.510
+Eu posso literalmente ignorar essas peças do quebra-cabeça
 
 1179
-00:54:52,510 --> 00:54:55,660
-I created because now I have a new puzzle piece just
+00: 54: 52,510 -> 00: 54: 55.660
+que criei porque agora tenho uma nova peça do quebra-cabeça
 
 1180
-00:54:55,660 --> 00:54:57,280
-called cough that says what it does.
+00: 54: 55,660 -> 00: 54: 57.280
+chamada tosse que diz o que ela faz.
 
 1181
-00:54:57,280 --> 00:54:59,380
-This is an abstraction in the sense that I
+00: 54: 57,280 -> 00: 54: 59.380
+Esta é uma abstração no sentido de que eu
 
 1182
-00:54:59,380 --> 00:55:04,062
-don't care how you implement coughing, I just care that your program can cough.
+00: 54: 59,380 -> 00: 55: 04.062
+não me importo como você implementa a tosse, só me importo que seu programa possa tossir.
 
 1183
-00:55:04,062 --> 00:55:05,770
-And so we have this notion of reusability
+00: 55: 04,062 -> 00: 55: 05.770
+E então temos essa noção de reutilização
 
 1184
-00:55:05,770 --> 00:55:08,780
-that starts to make our code no less sophisticated, but much,
+00: 55: 05,770 -> 00: 55: 08.780
+que começa a tornar nosso código não menos sofisticado, mas muito,
 
 1185
-00:55:08,780 --> 00:55:12,358
-much smaller and much less prone, potentially, to mistakes.
+00: 55: 08,780 -> 00: 55: 12.358
+muito menor e muito menos sujeito, potencialmente, a erros.
 
 1186
-00:55:12,358 --> 00:55:13,900
-And I can take this one step further.
+00: 55: 12,358 -> 00: 55: 13.900
+E posso dar um passo adiante.
 
 1187
-00:55:13,900 --> 00:55:17,770
-Let me go ahead and open up a different variant of this one altogether,
+00: 55: 13,900 -> 00: 55: 17.770
+Deixe-me ir em frente e abrir uma variável totalmente diferente desta,
 
 1188
-00:55:17,770 --> 00:55:19,240
-this one in cough three.
+00: 55: 17,770 -> 00: 55: 19.240
+este aqui em "Cough3".
 
 1189
-00:55:19,240 --> 00:55:23,388
-You can have these custom puzzle pieces even take arguments.
+00: 55: 19,240 -> 00: 55: 23.388
+Você pode fazer com que essas peças de quebra-cabeça personalizadas até aceitem argumentos.
 
 1190
-00:55:23,388 --> 00:55:25,180
-You can have this puzzle piece called cough
+00: 55: 23,388 -> 00: 55: 25.180
+Você pode fazer com que esta peça do quebra-cabeça chamada "tosse"
 
 1191
-00:55:25,180 --> 00:55:28,660
-say, well, how many times do you want to cough, thereby taking an input.
+00: 55: 25,180 -> 00: 55: 28.660
+diga, bem, quantas vezes você quer tossir, recebendo assim uma entrada.
 
 1192
-00:55:28,660 --> 00:55:34,340
-Then you can repeat that number of times cough for a second and wait one second.
+00: 55: 28,660 -> 00: 55: 34.340
+Depois, você pode repetir esse número de vezes, tossir por um segundo e esperar um segundo.
 
 1193
-00:55:34,340 --> 00:55:37,310
-So if you want to now use this fancier puzzle piece up here,
+00: 55: 34,340 -> 00: 55: 37.310
+Então, se você quiser usar esta peça de quebra-cabeça mais sofisticada aqui,
 
 1194
-00:55:37,310 --> 00:55:40,060
-notice this now looks even simpler.
+00: 55: 37,310 -> 00: 55: 40.060
+observe que agora parece ainda mais simples.
 
 1195
-00:55:40,060 --> 00:55:42,130
-Go ahead and cough three times.
+00: 55: 40,060 -> 00: 55: 42.130
+Vá em frente e tussa três vezes.
 
 1196
-00:55:42,130 --> 00:55:44,530
-And everything has been abstracted away.
+00: 55: 42,130 -> 00: 55: 44.530
+E tudo foi abstraído.
 
 1197
-00:55:44,530 --> 00:55:46,810
-If I scroll up and out of the way, you don't even
+00: 55: 44,530 -> 00: 55: 46.810
+Se eu rolar para cima e tirar da frente, você nem mesmo
 
 1198
-00:55:46,810 --> 00:55:51,010
-know or have to care how or why cough was implemented.
+00: 55: 46,810 -> 00: 55: 51.010
+saberia ou teria que se preocupar como ou por que a tosse foi implementada.
 
 1199
-00:55:51,010 --> 00:55:52,990
-And so whereas we began this whole conversation
+00: 55: 51,010 -> 00: 55: 52.990
+E assim, quando começamos toda essa conversa
 
 1200
-00:55:52,990 --> 00:55:56,590
-just looking for Mike Smith and trying to find an answer to a problem
+00: 55: 52,990 -> 00: 55: 56.590
+apenas procurando por Mike Smith e tentando encontrar uma resposta para um problema
 
 1201
-00:55:56,590 --> 00:56:01,180
-correctly, we talked then about efficiency and finding that solution
+00: 55: 56,590 -> 00: 56: 01.180
+corretamente, falamos então sobre eficiência e como encontrar essa solução
 
 1202
-00:56:01,180 --> 00:56:03,610
-not only for sure, but also quicker.
+00: 56: 01,180 -> 00: 56: 03.610
+não só correta, mas também mais rápida.
 
 1203
-00:56:03,610 --> 00:56:06,100
-And now we've spoken a little bit to ideas
+00: 56: 03,610 -> 00: 56: 06.100
+E agora falamos um pouco sobre idéias
 
 1204
-00:56:06,100 --> 00:56:10,370
-that lie ahead when it comes to the design of the quality of your code.
+00: 56: 06,100 -> 00: 56: 10.370
+que se põe à frente quando se trata do design da qualidade do seu código.
 
 1205
-00:56:10,370 --> 00:56:12,050
-So where does that actually leave us?
+00: 56: 10,370 -> 00: 56: 12.050
+Então, onde isso realmente nos deixa?
 
 1206
-00:56:12,050 --> 00:56:14,680
-Well, let me go ahead and open up a couple of final examples
+00: 56: 12,050 -> 00: 56: 14.680
+Bem, deixe-me ir em frente e abrir alguns exemplos finais
 
 1207
-00:56:14,680 --> 00:56:18,670
-here, one of them that I actually made back in my day.
+00: 56: 14,680 -> 00: 56: 18.670
+aqui, um deles que eu realmente fiz na minha época.
 
 1208
-00:56:18,670 --> 00:56:23,500
-And so this, when I actually started using Scratch for the first time,
+00: 56: 18,670 -> 00: 56: 23.500
+Então, quando comecei a usar o Scratch pela primeira vez,
 
 1209
-00:56:23,500 --> 00:56:26,470
-it gave me this program here called Oscar Time.
+00: 56: 23,500 -> 00: 56: 26.470
+e me gerou um programa aqui chamado "Hora do Oscar".
 
 1210
-00:56:26,470 --> 00:56:30,820
-And Oscar Time, reminiscent of an old song from Oscar the Grouch singing,
+00: 56: 26,470 -> 00: 56: 30.820
+E a "Hora do Oscar", uma lembrança de uma velha canção do Oscar o Rabugento cantando,
 
 1211
-00:56:30,820 --> 00:56:31,420
-does this.
+00: 56: 30,820 -> 00: 56: 31.420
+faz isso.
 
 1212
-00:56:31,420 --> 00:56:31,920
-[SINGING]
+00: 56: 31,420 -> 00: 56: 31.920
+[CANTANDO]
 
 1213
-00:56:31,920 --> 00:56:33,070
-There's this stage.
+00: 56: 31,920 -> 00: 56: 33.070
+Existe este palco.
 
 1214
-00:56:33,070 --> 00:56:35,070
-Notice the lamp post here and the trashcan.
+00: 56: 33,070 -> 00: 56: 35.070
+Observe o poste da lâmpada aqui e a lata de lixo.
 
 1215
-00:56:35,070 --> 00:56:37,150
-And apparently, something falling from the sky
+00: 56: 35,070 -> 00: 56: 37.150
+E, aparentemente, algo caindo do céu
 
 1216
-00:56:37,150 --> 00:56:39,700
-that looks like a piece of trash, but it's just a sprite.
+00: 56: 37,150 -> 00: 56: 39.700
+que parece um pedaço de lixo, mas é apenas um sprite.
 
 1217
-00:56:39,700 --> 00:56:43,000
-It's what could have been a cat, but I changed the costume on the cat
+00: 56: 39,700 -> 00: 56: 43.000
+É o que poderia ter sido um gato, mas mudei a fantasia do gato
 
 1218
-00:56:43,000 --> 00:56:44,530
-to be a piece of trash.
+00: 56: 43.000 -> 00: 56: 44.530
+para ser um pedaço de lixo.
 
 1219
-00:56:44,530 --> 00:56:47,890
-But notice if I move my cursor and click and drag,
+00: 56: 44,530 -> 00: 56: 47.890
+Mas observe se eu mover meu cursor e clicar e arrastar,
 
 1220
-00:56:47,890 --> 00:56:52,360
-notice that this piece of trash follows the cursor just like Scratch followed
+00: 56: 47,890 -> 00: 56: 52.360
+observe que este pedaço de lixo segue o cursor assim como Scratch seguiu
 
 1221
-00:56:52,360 --> 00:56:54,430
-my cursor before on the screen.
+00: 56: 52,360 -> 00: 56: 54.430
+meu cursor antes na tela.
 
 1222
-00:56:54,430 --> 00:56:56,440
-And notice if I move it over to the trash can,
+00: 56: 54,430 -> 00: 56: 56.440
+E observe se eu mover para a lata de lixo,
 
 1223
-00:56:56,440 --> 00:57:00,330
-the trash can opens up, which is a Sensing question.
+00: 56: 56,440 -> 00: 57: 00.330
+a lata de lixo se abre, o que é uma questão de sensoriamento.
 
 1224
-00:57:00,330 --> 00:57:03,370
-If touching trash can, then open up.
+00: 57: 00,330 -> 00: 57: 03.370
+Se tocar na lata de lixo, abre.
 
-1225
-00:57:03,370 --> 00:57:06,190
-And open up probably just means change the costume
+12: 25h
+00: 57: 03,370 -> 00: 57: 06.190
+E abrir provavelmente significa apenas mudar a fantasia
 
 1226
-00:57:06,190 --> 00:57:09,160
-to show a different image instead of the original, thereby
+00: 57: 06,190 -> 00: 57: 09.160
+para mostrar uma imagem diferente em vez da original, assim
 
 1227
-00:57:09,160 --> 00:57:11,420
-a very simple idea of animation.
+00: 57: 09,160 -> 00: 57: 11.420
+uma ideia muito simples de animação.
 
 1228
-00:57:11,420 --> 00:57:17,100
-And now notice when I let go, if touching trash can and let go,
+00: 57: 11,420 -> 00: 57: 17.100
+E agora observe quando eu solto, se eu tocar na lata de lixo e soltar,
 
 1229
-00:57:17,100 --> 00:57:21,390
-Oscar should come out of the trash can, count up to one, which is my score,
+00: 57: 17,100 -> 00: 57: 21.390
+Oscar deve sair da lata de lixo, contar até um, que é a minha pontuação,
 
 1230
-00:57:21,390 --> 00:57:22,688
-and then the game continues.
+00: 57: 21,390 -> 00: 57: 22.688
+e então o jogo continua.
 
 1231
-00:57:22,688 --> 00:57:23,980
-Now there's more trash falling.
+00: 57: 22,688 -> 00: 57: 23.980
+Agora há mais lixo caindo.
 
 1232
-00:57:23,980 --> 00:57:25,610
-Let me go ahead and do this.
+00: 57: 23,980 -> 00: 57: 25.610
+Deixe-me ir em frente e fazer isso.
 
 1233
-00:57:25,610 --> 00:57:28,870
-And you'll see that these basic ideas of conditions and loops
+00: 57: 25,610 -> 00: 57: 28.870
+E você verá que essas idéias básicas de condições e loops
 
 1234
-00:57:28,870 --> 00:57:31,000
-and variables and Boolean expressions together
+00: 57: 28,870 -> 00: 57: 31.000
+e variáveis ​​e expressões booleanas juntas
 
 1235
-00:57:31,000 --> 00:57:34,030
-can compose a pretty interactive game.
+00: 57: 31.000 -> 00: 57: 34.030
+pode compor um jogo bastante interativo.
 
 1236
-00:57:34,030 --> 00:57:36,520
-This game took me eight or more hours to make,
+00: 57: 34,030 -> 00: 57: 36.520
+Este jogo levou oito horas ou mais para fazer,
 
 1237
-00:57:36,520 --> 00:57:39,700
-and it's because I did not sit down and just make the whole thing at once.
+00: 57: 36,520 -> 00: 57: 39.700
+e é porque eu não sentei e apenas fiz tudo de uma vez.
 
 1238
-00:57:39,700 --> 00:57:41,328
-I took baby steps, so to speak.
+00: 57: 39,700 -> 00: 57: 41.328
+Eu dei "passos de bebê", por assim dizer.
 
 1239
-00:57:41,328 --> 00:57:44,620
-I first, frankly, did the easy part and I just found an image of Sesame Street,
+00: 57: 41,328 -> 00: 57: 44.620
+Eu primeiro, francamente, fiz a parte fácil e só achei uma imagem da Vila Sésamo,
 
 1240
-00:57:44,620 --> 00:57:45,870
-put it on the stage, and boom.
+00: 57: 44,620 -> 00: 57: 45.870
+coloque-o no palco e bum!
 
 1241
-00:57:45,870 --> 00:57:48,540
-At least version one, all it did was say Sesame Street.
+00: 57: 45,870 -> 00: 57: 48.540
+Pelo menos a versão um, tudo o que fiz foi dizer Vila Sésamo.
 
 1242
-00:57:48,540 --> 00:57:49,940
-And it's not interactive at all.
+00: 57: 48,540 -> 00: 57: 49.940
+E não é nada interativo.
 
 1243
-00:57:49,940 --> 00:57:52,630
-Then I added a sprite, which instead of being a cat,
+00: 57: 49,940 -> 00: 57: 52.630
+Então eu adicionei um sprite, que em vez de ser um gato,
 
 1244
-00:57:52,630 --> 00:57:54,940
-I changed the costume to be the trash icon.
+00: 57: 52,630 -> 00: 57: 54.940
+Mudei a fantasia para ser o ícone do lixo.
 
 1245
-00:57:54,940 --> 00:57:57,550
-And I just figured out the code, the puzzle pieces,
+00: 57: 54,940 -> 00: 57: 57.550
+E só imaginei o código, as peças do quebra-cabeça,
 
 1246
-00:57:57,550 --> 00:58:00,220
-to make that puzzle piece fall from the sky
+00: 57: 57.550 -> 00: 58: 00.220
+fazerem aquelas peças cairem do céu
 
 1247
 00:58:00,220 --> 00:58:02,410
