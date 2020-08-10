@@ -10,8 +10,8 @@ O objetivo deste repositório é manter as traduções das legendas de todas as 
 Como a versão original do curso é em inglês resolvi traduzir as legendas para facilitar o entendimento dos brasileiros.
 
 ### Observações finais
-As traduções são livres e em alguns pontos não são traduções literais, algumas frazes foram adaptadas para um melhor entendimento de brasileiros, o repositório a todos que tiverem interesse em colaborar e melhorar essas traduções.  
-O trabalho de traduções inicial foi feito por mim, é um trabalho árduo que está em andamento, os arquivos tem em média mais de 5 mil linhas e cada arquivo estima-se 10 horas de trabalho.
+As traduções são livres e em alguns pontos não são traduções literais, algumas frazes foram adaptadas para um melhor entendimento de brasileiros, o repositório é aberto a todos que tiverem interesse em colaborar e melhorar essas traduções.  
+O trabalho de tradução inicial foi feito por mim, é um trabalho árduo que está em andamento, os arquivos tem em média mais de 5 mil linhas e cada arquivo estima-se 10 horas de trabalho.
 
 Obrigado
 
