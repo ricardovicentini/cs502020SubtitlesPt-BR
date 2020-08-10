@@ -6,7 +6,7 @@ O curso é aberto a qualquer um do mundo, é indicado a qualquer pessoa interess
 Para se increver acesse: https://courses.edx.org/courses/course-v1:HarvardX+CS50+X/course/
 
 ### Objetivo deste Repositório
-O objetivo deste repositório é manter as traduções das legendas de todas as aulas do CS50
+O objetivo deste repositório é manter as traduções das legendas de todas as aulas do CS50.  
 Como a versão original do curso é em inglês resolvi traduzir as legendas para facilitar o entendimento dos brasileiros.
 
 ### Observações finais
