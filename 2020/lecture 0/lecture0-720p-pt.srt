@@ -4980,62 +4980,62 @@ Então eu adicionei um sprite, que em vez de ser um gato,
 
 1244
 00: 57: 52,630 -> 00: 57: 54.940
-Mudei a fantasia para ser o ícone do lixo.
+mudei a fantasia para ser o ícone do lixo.
 
 1245
 00: 57: 54,940 -> 00: 57: 57.550
-E só imaginei o código, as peças do quebra-cabeça,
+E só imaginei o código, juntei as peças do quebra-cabeça,
 
 1246
 00: 57: 57.550 -> 00: 58: 00.220
-fazerem aquelas peças cairem do céu
+para fazerem aquelas fantasias cairem do céu
 
 1247
-00:58:00,220 --> 00:58:02,410
-and then stop when it's on the edge, just
+00: 58: 00,220 -> 00: 58: 02.410
+e então pararem quando estiver no limite, apenas
 
 1248
-00:58:02,410 --> 00:58:05,643
-like the cat was able to make a decision to bounce when it touched the edge.
+00: 58: 02,410 -> 00: 58: 05.643
+igual ao gato, do outro exercício, foi capaz de tomar a decisão de deslizar ao tocar a borda.
 
 1249
-00:58:05,643 --> 00:58:07,060
-And now things get a little crazy.
+00: 58: 05,643 -> 00: 58: 07.060
+E agora as coisas ficam um pouco malucas.
 
 1250
-00:58:07,060 --> 00:58:08,435
-The song gets more sophisticated.
+00: 58: 07,060 -> 00: 58: 08.435
+A música fica mais sofisticada.
 
 1251
-00:58:08,435 --> 00:58:13,450
-I added more and more sprites that just fall in lockstep with the music.
+00: 58: 08,435 -> 00: 58: 13.450
+Eu adicionei mais e mais sprites que simplesmente acompanham a música.
 
 1252
-00:58:13,450 --> 00:58:16,090
-So this was quite a few hours of effort, but it boils down
+00: 58: 13,450 -> 00: 58: 16.090
+Então, isso custou algumas horas de esforço, mas se resume
 
 1253
-00:58:16,090 --> 00:58:21,500
-to really the same principle, just as this other program here does, too.
+00: 58: 16,090 -> 00: 58: 21.500
+realmente ao mesmo princípio, assim como este outro programa também faz.
 
 1254
-00:58:21,500 --> 00:58:23,500
-And for this, rather than me play it, let
+00: 58: 21,500 -> 00: 58: 23.500
+E para isso, ao invés de eu jogar, novamente vamos
 
 1255
-00:58:23,500 --> 00:58:27,948
-me invite one other volunteer to come on up who's got to be--
+00: 58: 23,500 -> 00: 58: 27.948
+eu vou convidar um outro voluntário para vir, que deve ser 
 
 1256
-00:58:27,948 --> 00:58:28,990
-OK, I see your hand here.
+00: 58: 27,948 -> 00: 58: 28.990
+OK, vejo sua mão aqui.
 
 1257
-00:58:28,990 --> 00:58:29,470
-What's your name?
+00: 58: 28,990 -> 00: 58: 29.470
+Qual o seu nome?
 
 1258
-00:58:29,470 --> 00:58:30,160
+00: 58: 29,470 -> 00: 58: 30.160
 MEGAN: Megan.
 
 1259
@@ -5043,300 +5043,300 @@ MEGAN: Megan.
 DAVID MALAN: Megan.
 
 1260
-00:58:30,952 --> 00:58:34,510
-All right, Megan, we have a game for you called-- maybe
+00: 58: 30,952 -> 00: 58: 34.510
+Tudo bem, Megan, temos um jogo para você chamado - talvez
 
 1261
-00:58:34,510 --> 00:58:36,910
-I mentioned this-- [? IB's ?] hardest game.
+00: 58: 34,510 -> 00: 58: 36.910
+eu deva mencionar "O jogo mais difícil do Ivy".
 
 1262
-00:58:36,910 --> 00:58:38,380
-OK, come on up.
+00: 58: 36,910 -> 00: 58: 38.380
+OK, suba.
 
 1263
-00:58:38,380 --> 00:58:39,700
-Nice to meet you.
+00: 58: 38,380 -> 00: 58: 39.700
+Prazer em conhecê-lo.
 
 1264
-00:58:39,700 --> 00:58:42,010
-This is a game by one of your former predecessors,
+00: 58: 39,700 -> 00: 58: 42.010
+Este é um jogo de um de seus colegas, já formado,
 
 1265
-00:58:42,010 --> 00:58:45,700
-who their problems said zero, implemented this.
+00: 58: 42,010 -> 00: 58: 45.700
+quem seus problemas dito zero, implementou isso.
 
 1266
-00:58:45,700 --> 00:58:49,510
-You'll see the instructions in just a moment on the screen.
+00: 58: 45,700 -> 00: 58: 49.510
+Você verá as instruções em alguns instantes na tela.
 
 1267
-00:58:49,510 --> 00:58:54,480
-We'll see if we can't inspire some folks to root for you here.
+00: 58: 49,510 -> 00: 58: 54.480
+Veremos se não podemos inspirar algumas pessoas a torcer por você aqui.
 
 1268
-00:58:54,480 --> 00:59:00,000
-And after this, as is the tradition in CS50, we will adjourn for some cake.
+00: 58: 54,480 -> 00: 59: 00.000
+E depois disso, como é tradição no CS50, vamos nos juntar em uma jornada para comer um pouco de bolo.
 
 1269
-00:59:00,000 --> 00:59:03,423
-So Megan, we have here for you, [? IB's ?] hardest game.
+00: 59: 00.000 -> 00: 59: 03.423
+Então, Megan, temos aqui para você, "O jogo mais difícil do Ivy".
 
 1270
-00:59:03,423 --> 00:59:05,340
-I'm going to go ahead and maximize the window.
+00: 59: 03,423 -> 00: 59: 05.340
+Vou prosseguir e maximizar a janela.
 
 1271
-00:59:05,340 --> 00:59:07,200
-I'm going to go ahead and click Begin and we'll see the instructions.
+00: 59: 05,340 -> 00: 59: 07.200
+Vou prosseguir e clicar em Iniciar e veremos as instruções.
 
 1272
 00:59:07,200 --> 00:59:07,890
 MEGAN: OK.
 
 1273
-00:59:07,890 --> 00:59:08,858
-DAVID MALAN: Good luck.
+00: 59: 07,890 -> 00: 59: 08.858
+DAVID MALAN: Boa sorte.
 
 1274
-00:59:08,858 --> 00:59:10,322
-MEGAN: Thanks.
+00: 59: 08,858 -> 00: 59: 10.322
+MEGAN: Obrigado.
 
 1275
-00:59:10,322 --> 00:59:13,128
+00: 59: 10,322 -> 00: 59: 13.128
 [MUSIC -MC HAMMER, "U CAN'T TOUCH THIS"]
 
 1276
-00:59:13,128 --> 00:59:15,170
-DAVID MALAN: Let's go ahead and raise the volume.
+00: 59: 13,128 -> 00: 59: 15.170
+DAVID MALAN: Vamos em frente e aumentar o volume.
 
 1277
-00:59:15,170 --> 00:59:16,913
-Here we go.
+00: 59: 15,170 -> 00: 59: 16.913
+Aqui vamos nós.
 
 1278
-00:59:16,913 --> 00:59:18,998
+00: 59: 16,913 -> 00: 59: 18.998
 [MUSIC -MC HAMMER, "U CAN'T TOUCH THIS"]
 
 1279
-00:59:18,998 --> 00:59:20,276
-(SINGING) Can't touch this.
+00: 59: 18,998 -> 00: 59: 20.276
+(Cantando) Não posso tocar nisso.
 
 1280
-00:59:20,276 --> 00:59:24,360
-DAVID MALAN: So you're going to move the arrow keys and navigate your way,
+00: 59: 20,276 -> 00: 59: 24.360
+DAVID MALAN: Então você vai mover as setas do teclado e navegar seu caminho,
 
 1281
-00:59:24,360 --> 00:59:26,580
-essentially-- oh, yep-- through a maze.
+00: 59: 24,360 -> 00: 59: 26.580
+essencialmente - oh, sim - através de um labirinto.
 
 1282
-00:59:26,580 --> 00:59:29,400
-Notice Megan's not able to go beyond the black borders
+00: 59: 26,580 -> 00: 59: 29.400
+Observe que Megan não é capaz de ir além das bordas pretas
 
 1283
-00:59:29,400 --> 00:59:33,090
-because if touching edge, logic.
+00: 59: 29,400 -> 00: 59: 33.090
+por causa do bloco de expressão "se tocar na borda".
 
 1284
-00:59:33,090 --> 00:59:36,510
-Now when you touch the other sprite, you advance to the next level.
+00: 59: 33,090 -> 00: 59: 36.510
+Agora, quando você toca naquele outro sprite, você avança para o próximo nível.
 
 1285
 00:59:36,510 --> 00:59:39,120
 
 
 1286
-00:59:39,120 --> 00:59:40,230
-Two sprites now.
+00: 59: 39,120 -> 00: 59: 40.230
+Dois sprites agora.
 
 1287
-00:59:40,230 --> 00:59:42,870
+00: 59: 40,230 -> 00: 59: 42.870
 
 
 1288
-00:59:42,870 --> 00:59:44,040
-Another Yale icon.
+00: 59: 42,870 -> 00: 59: 44.040
+Outro ícone de Yale.
 
 1289
-00:59:44,040 --> 00:59:46,585
-(SINGING) From the Oaktown and I'm known as such.
+00: 59: 44,040 -> 00: 59: 46.585
+(Cantando) Sou de Oaktown e sou conhecido como tal.
 
 1290
-00:59:46,585 --> 00:59:49,507
-And this is a beat you can't touch.
+00: 59: 46,585 -> 00: 59: 49.507
+E esta é uma batida que você não pode tocar.
 
 1291
-00:59:49,507 --> 00:59:50,340
-I told you, homeboy.
+00: 59: 49,507 -> 00: 59: 50.340
+Eu te disse, rapaz.
 
 1292
-00:59:50,340 --> 00:59:51,110
-DAVID MALAN: Nice.
+00: 59: 50,340 -> 00: 59: 51.110
+DAVID MALAN: Legal.
 
 1293
-00:59:51,110 --> 00:59:51,610
-OK.
+00: 59: 51,110 -> 00: 59: 51.610
+ESTÁ BEM.
 
 1294
-00:59:51,610 --> 00:59:52,787
-[LAUGHTER]
+00: 59: 51,610 -> 00: 59: 52.787
+[RISO]
 
 1295
-00:59:52,787 --> 00:59:54,870
-(SINGING) Yeah, that's how we living and you know.
+00: 59: 52,787 -> 00: 59: 54.870
+(Cantando) Sim, é assim que vivemos e você sabe.
 
 1296
-00:59:54,870 --> 00:59:56,790
-Can't touch this.
+00: 59: 54,870 -> 00: 59: 56.790
+Não posso tocar nisso.
 
 1297
-00:59:56,790 --> 00:59:58,680
-Look in my eyes, man.
+00: 59: 56,790 -> 00: 59: 58.680
+Olhe nos meus olhos, cara.
 
 1298
-00:59:58,680 --> 01:00:00,620
-DAVID MALAN: Nice.
+00: 59: 58,680 -> 01: 00: 00.620
+DAVID MALAN: Legal.
 
 1299
-01:00:00,620 --> 01:00:02,370
-(SINGING) Yo, let me but the funky lyrics.
+01: 00: 00,620 -> 01: 00: 02.370
+(Cantando) Ei, deixe-me apenas a letra funky.
 
 1300
-01:00:02,370 --> 01:00:03,078
-Can't touch this.
+01: 00: 02,370 -> 01: 00: 03.078
+Não posso tocar nisso.
 
 1301
-01:00:03,078 --> 01:00:08,050
-[LAUGHTER]
+01: 00: 03,078 -> 01: 00: 08.050
+[RISO]
 
 1302
-01:00:08,050 --> 01:00:09,998
-DAVID MALAN: Nice.
+01: 00: 08,050 -> 01: 00: 09.998
+DAVID MALAN: Legal.
 
 1303
-01:00:09,998 --> 01:00:11,459
-[AUDIENCE GASPING]
+01: 00: 09,998 -> 01: 00: 11.459
+[PÚBLICO GASPING]
 
 1304
-01:00:11,459 --> 01:00:15,237
-[APPLAUSE]
+01: 00: 11,459 -> 01: 00: 15.237
+[Aplausos]
 
 1305
-01:00:15,237 --> 01:00:17,320
-(SINGING) Cold on a mission, so pull them on back.
+01: 00: 15,237 -> 01: 00: 17.320
+(Cantando) Frio em uma missão, então puxe-os para trás.
 
 1306
-01:00:17,320 --> 01:00:22,780
-Let them know that you're too much and this is a beat, uh, they can't touch.
+01: 00: 17.320 -> 01: 00: 22.780
+Deixe-os saber que você é demais e isso é demais, uh, eles não podem tocar.
 
 1307
-01:00:22,780 --> 01:00:23,740
-Yo, I told you.
+01: 00: 22,780 -> 01: 00: 23.740
+Ei, eu te disse.
 
 1308
-01:00:23,740 --> 01:00:25,360
-[LAUGHTER]
+01: 00: 23,740 -> 01: 00: 25.360
+[RISO]
 
 1309
-01:00:25,360 --> 01:00:26,198
+01: 00: 25,360 -> 01: 00: 26.198
 
 
 1310
-01:00:26,198 --> 01:00:27,365
-Why you standing there, man?
+01: 00: 26,198 -> 01: 00: 27.365
+Por que você está parado aí, cara?
 
 1311
-01:00:27,365 --> 01:00:28,470
-Can't touch this.
+01: 00: 27,365 -> 01: 00: 28.470
+Não posso tocar nisso.
 
 1312
-01:00:28,470 --> 01:00:29,720
-Yo, sounds the bells.
+01: 00: 28.470 -> 01: 00: 29.720
+Yo, soam os sinos.
 
 1313
-01:00:29,720 --> 01:00:31,110
-School is in, sucker.
+01: 00: 29,720 -> 01: 00: 31.110
+A escola chegou, otário.
 
 1314
-01:00:31,110 --> 01:00:32,770
-Can't touch this.
+01: 00: 31,110 -> 01: 00: 32.770
+Não posso tocar nisso.
 
 1315
-01:00:32,770 --> 01:00:34,070
+01: 00: 32.770 -> 01: 00: 34.070
 DAVID MALAN: OK.
 
 1316
-01:00:34,070 --> 01:00:35,870
-Good.
+01: 00: 34,070 -> 01: 00: 35.870
+Boa.
 
 1317
-01:00:35,870 --> 01:00:36,370
-Nice.
+01: 00: 35,870 -> 01: 00: 36.370
+Certo.
 
 1318
-01:00:36,370 --> 01:00:39,306
+01: 00: 36,370 -> 01: 00: 39.306
 
 
 1319
-01:00:39,306 --> 01:00:40,290
-[AUDIENCE GASPING]
+01: 00: 39,306 -> 01: 00: 40.290
+[PÚBLICO ADMIRADO]
 
 1320
-01:00:40,290 --> 01:00:41,758
-[LAUGHTER]
+01: 00: 40,290 -> 01: 00: 41.758
+[RISO]
 
 1321
-01:00:41,758 --> 01:00:42,258
+01: 00: 41,758 -> 01: 00: 42.258
 
 
 1322
-01:00:42,258 --> 01:00:45,220
-(SINGING) Or a tape to learn what's it going to take?
+01: 00: 42,258 -> 01: 00: 45.220
+(Cantando) Ou uma fita para saber o que é preciso?
 
 1323
-01:00:45,220 --> 01:00:47,064
-And now he's going to burn the charts.
+01: 00: 45,220 -> 01: 00: 47.064
+E agora ele vai queimar as paradas.
 
 1324
-01:00:47,064 --> 01:00:48,518
+01: 00: 47,064 -> 01: 00: 48.518
 DAVID MALAN: Oh!
 
 1325
-01:00:48,518 --> 01:00:50,060
-(SINGING) And you might as well quit.
+01: 00: 48.518 -> 01: 00: 50.060
+(Cantando) E você também pode desistir.
 
 1326
-01:00:50,060 --> 01:00:52,096
-That's word because you know--
+01: 00: 50,060 -> 01: 00: 52.096
+Essa palavra porque você sabe -
 
 1327
-01:00:52,096 --> 01:00:53,440
-DAVID MALAN: No!
+01: 00: 52,096 -> 01: 00: 53.440
+DAVID MALAN: Não!
 
 1328
-01:00:53,440 --> 01:00:54,010
-That's OK.
+01: 00: 53.440 -> 01: 00: 54.010
+tá bom.
 
 1329
-01:00:54,010 --> 01:00:59,380
+01: 00: 54,010 -> 01: 00: 59.380
 
 
 1330
-01:00:59,380 --> 01:00:59,880
+01: 00: 59,380 -> 01: 00: 59.880
 Oh.
 
 1331
-01:00:59,880 --> 01:01:00,380
-It's OK.
+01: 00: 59,880 -> 01: 01: 00.380
+Está certo.
 
 1332
-01:01:00,380 --> 01:01:03,842
+01: 01: 00,380 -> 01: 01: 03.842
 
 
 1333
-01:01:03,842 --> 01:01:04,342
-Nice.
+01: 01: 03,842 -> 01: 01: 04.342
+Boa.
 
 1334
 01:01:04,342 --> 01:01:09,331
@@ -5360,11 +5360,11 @@ Oh!
 
 1339
 01:01:20,010 --> 01:01:22,090
-Couple more lives.
+Mais algumas vidas.
 
 1340
 01:01:22,090 --> 01:01:22,590
-Nice.
+Boa.
 
 1341
 01:01:22,590 --> 01:01:23,090
@@ -5372,7 +5372,7 @@ Oh!
 
 1342
 01:01:23,090 --> 01:01:28,890
-[AUDIENCE GASPING]
+[PLATÉIA ADMIRADA]
 
 1343
 01:01:28,890 --> 01:01:29,420
@@ -5380,149 +5380,149 @@ OK.
 
 1344
 01:01:29,420 --> 01:01:30,660
-Yeah, you got it.
+Boa, você conseguiu.
 
 1345
 01:01:30,660 --> 01:01:31,160
-MEGAN: Yes.
+MEGAN: Sim!
 
 1346
 01:01:31,160 --> 01:01:32,770
-Yep.
+Isso.
 
 1347
 01:01:32,770 --> 01:01:33,680
-Oh my God.
+Meu Deus.
 
 1348
 01:01:33,680 --> 01:01:34,638
-DAVID MALAN: All right.
+DAVID MALAN: Ta certo.
 
 1349
 01:01:34,638 --> 01:01:37,100
-One more life-- two more lives!
+Mais uma vida-- Mais duas vidas!
 
 1350
 01:01:37,100 --> 01:01:40,360
-Three more lives!
+três vidas a mais!
 
 1351
 01:01:40,360 --> 01:01:41,060
-Come on.
+Qual é.
 
 1352
-01:01:41,060 --> 01:01:42,102
-(SINGING) Bring the bill.
+01: 01: 41.060 -> 01: 01: 42.102
+(Cantando) Traga a conta.
 
 1353
-01:01:42,102 --> 01:01:43,220
-School's back in.
+01: 01: 42,102 -> 01: 01: 43.220
+A escola voltou.
 
 1354
-01:01:43,220 --> 01:01:45,465
-Break it down.
+01: 01: 43.220 -> 01: 01: 45.465
+Divida-o.
 
 1355
-01:01:45,465 --> 01:01:46,920
-DAVID MALAN: Yes!
+01: 01: 45.465 -> 01: 01: 46.920
+DAVID MALAN: Sim!
 
 1356
-01:01:46,920 --> 01:01:48,860
-[APPLAUSE]
+01: 01: 46.920 -> 01: 01: 48.860
+[Aplausos]
 
 1357
-01:01:48,860 --> 01:01:51,990
+01: 01: 48.860 -> 01: 01: 51.990
 
 
 1358
-01:01:51,990 --> 01:01:52,740
-MEGAN: Up, up, up.
+01: 01: 51,990 -> 01: 01: 52.740
+MEGAN: Suba, suba, suba.
 
 1359
-01:01:52,740 --> 01:01:56,775
+01: 01: 52,740 -> 01: 01: 56.775
 
 
 1360
-01:01:56,775 --> 01:01:57,400
-(SINGING) Stop.
+01: 01: 56,775 -> 01: 01: 57.400
+(Cantando) Pare.
 
 1361
-01:01:57,400 --> 01:01:58,832
-Hammer time.
+01: 01: 57.400 -> 01: 01: 58.832
+Hora do martelo.
 
 1362
-01:01:58,832 --> 01:01:59,790
-DAVID MALAN: All right.
+01: 01: 58,832 -> 01: 01: 59.790
+DAVID MALAN: Tudo bem.
 
 1363
-01:01:59,790 --> 01:02:00,310
-Last life.
+01: 01: 59,790 -> 01: 02: 00.310
+Última vida.
 
 1364
-01:02:00,310 --> 01:02:00,810
-Last life.
+01: 02: 00,310 -> 01: 02: 00.810
+Última vida.
 
 1365
-01:02:00,810 --> 01:02:02,080
-Go, go!
+01: 02: 00,810 -> 01: 02: 02.080
+Vá, vá!
 
 1366
-01:02:02,080 --> 01:02:02,580
-Here we go.
+01: 02: 02.080 -> 01: 02: 02.580
+Aqui vamos nós.
 
 1367
-01:02:02,580 --> 01:02:05,520
+01: 02: 02.580 -> 01: 02: 05.520
 
 
 1368
-01:02:05,520 --> 01:02:06,020
-All right.
+01: 02: 05.520 -> 01: 02: 06.020
+Tudo certo.
 
 1369
-01:02:06,020 --> 01:02:07,790
-Nice, nice.
+01: 02: 06,020 -> 01: 02: 07.790
+Legal legal.
 
 1370
-01:02:07,790 --> 01:02:08,530
-Yes, yes.
+01: 02: 07,790 -> 01: 02: 08.530
+Sim Sim.
 
 1371
-01:02:08,530 --> 01:02:10,920
+01: 02: 08.530 -> 01: 02: 10.920
 Ah!
 
 1372
-01:02:10,920 --> 01:02:11,420
-All right.
+01: 02: 10.920 -> 01: 02: 11.420
+Tudo certo.
 
 1373
-01:02:11,420 --> 01:02:13,867
-A round of applause for Megan, if we could.
+01: 02: 11.420 -> 01: 02: 13.867
+Uma salva de palmas para Megan, se pudéssemos.
 
 1374
-01:02:13,867 --> 01:02:14,450
-Check her out.
+01: 02: 13.867 -> 01: 02: 14.450
+Verifique ela.
 
 1375
-01:02:14,450 --> 01:02:15,336
-Here you go.
+01: 02: 14,450 -> 01: 02: 15.336
+Aqui está.
 
 1376
 01:02:15,336 --> 01:02:18,990
 [APPLAUSE]
 
 1377
-01:02:18,990 --> 01:02:20,870
-This, then, is CS50.
+01: 02: 18.990 -> 01: 02: 20.870
+Este, então, é o CS50.
 
 1378
-01:02:20,870 --> 01:02:21,710
-Welcome aboard.
+01: 02: 20.870 -> 01: 02: 21.710
+Bem vindo a bordo.
 
 1379
-01:02:21,710 --> 01:02:23,980
-Cake is now served.
+01: 02: 21,710 -> 01: 02: 23.980
+O bolo está servido.
 
 1380
-01:02:23,980 --> 01:02:25,126
+01: 02: 23.980 -> 01: 02: 25.126
 
 
