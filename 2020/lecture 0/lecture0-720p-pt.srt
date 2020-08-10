@@ -5524,5 +5524,6 @@ O bolo está servido.
 
 1380
 01: 02: 23.980 -> 01: 02: 25.126
+[Traduzido por Ricardo Vicentini. Solicite revisões em: https://github.com/ricardovicentini/cs502020SubtitlesPt-BR]
 
 
