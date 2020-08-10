@@ -1,0 +1,5528 @@
+0
+00:00:00,000 --> 00:00:03,479
+[Tocando Música]
+
+1
+00:00:03,479 --> 00:01:23,150
+
+
+2
+00:01:23,150 --> 00:01:26,360
+DAVID MALAN: Este é o CS50, Introdução a Universidade de Havard!
+
+3
+00:01:26,360 --> 00:01:28,730
+para grandes empresas intelectuais da ciência da computação
+
+4
+00:01:28,730 --> 00:01:30,170
+e a arte da programação.
+
+5
+00:01:30,170 --> 00:01:32,660
+Meu nome é David Malan, e eu na verdade participei deste curso
+
+6
+00:01:32,660 --> 00:01:35,710
+no meu segundo ano, há alguns anos atrás.
+
+7
+00:01:35,710 --> 00:01:36,980
+Mas quase não consegui.
+
+8
+00:01:36,980 --> 00:01:39,540
+Naquela época, eu estava bastante desconfortável com essa idéia,
+
+9
+00:01:39,540 --> 00:01:42,720
+francamente, em cursar ciências da computação, e muito menos este curso.
+
+10
+00:01:42,720 --> 00:01:44,512
+Então no meu ano de calouro, pelo menos, eu realmente
+
+11
+00:01:44,512 --> 00:01:46,340
+me apeguei nos cursos e departamentos
+
+12
+00:01:46,340 --> 00:01:48,860
+em que eu tinha muito mais familiaridade.
+
+13
+00:01:48,860 --> 00:01:52,432
+Ciência da computação estava muito além da minha zona de conforto na época,
+
+14
+00:01:52,432 --> 00:01:54,140
+eram de fato águas desconhecidas
+
+15
+00:01:54,140 --> 00:01:57,290
+que eu não estava preparado para enfrentar, mesmo no meu primeiro ano.
+
+16
+00:01:57,290 --> 00:02:01,070
+Mas no segundo ano, Eu finalmente tive coragem de atravessar a porta do CS50,
+
+17
+00:02:01,070 --> 00:02:05,160
+e somente porque o professor daquela época me garantiu que eu passaria, mesmo com uma nota abaixo da média.
+
+18
+00:02:05,160 --> 00:02:06,110
+Eu estava mesmo desconfortável.
+
+19
+00:02:06,110 --> 00:02:09,240
+E se eu apenas soubesse naquela época o que sei hoje,
+
+20
+00:02:09,240 --> 00:02:12,320
+que 2/3 dos alunos do CS50 nunca
+
+21
+00:02:12,320 --> 00:02:14,270
+tiveram aulas de ciências da computação antes.
+
+22
+00:02:14,270 --> 00:02:18,230
+Então se você está se sentindo assim, desconfortável com a idéia de experimentar algo novo,
+
+23
+00:02:18,230 --> 00:02:20,140
+ou até mesmo se ja tem conhecimento prévio mas está
+
+24
+00:02:20,140 --> 00:02:21,890
+tentando preencher lacunas no seu conhecimento,
+
+25
+00:02:21,890 --> 00:02:23,930
+ou se você é autodidata, perceba
+
+26
+00:02:23,930 --> 00:02:25,880
+você está em ótima companhia.
+
+27
+00:02:25,880 --> 00:02:27,770
+E finalmente, o que importa neste curso
+
+28
+00:02:27,770 --> 00:02:30,330
+não é tanto onde você chega em relação aos seus colegas,
+
+29
+00:02:30,330 --> 00:02:34,160
+mas onde você chega em relação a você mesmo quando você começou, ou seja,
+
+30
+00:02:34,160 --> 00:02:35,570
+do curso, hoje.
+
+31
+00:02:35,570 --> 00:02:37,730
+Então o que é, então, ciência da computação?
+
+32
+00:02:37,730 --> 00:02:39,970
+E o que é isso que que eu estava tão desconfortável?
+
+33
+00:02:39,970 --> 00:02:42,410
+Bem, eu ouso dizer que podemos descrever ciência da computação assim.
+
+34
+00:02:42,410 --> 00:02:44,512
+É simplismente o processo de resolver problemas.
+
+35
+00:02:44,512 --> 00:02:46,220
+E o que significa resolver um problema?
+
+36
+00:02:46,220 --> 00:02:47,510
+Você recebe uma entrada.
+
+37
+00:02:47,510 --> 00:02:52,100
+E o objetivo é conseguir algum tipo de saída, a solução para um problema específico.
+
+38
+00:02:52,100 --> 00:02:54,540
+E no meio, realmente, é ciência da computação.
+
+39
+00:02:54,540 --> 00:02:57,290
+E nós vamos ver o que está dentro desta caixa preta na tela
+
+40
+00:02:57,290 --> 00:02:59,610
+conforme começamos a preencher alguns desses espaços.
+
+41
+00:02:59,610 --> 00:03:02,618
+Mas quando consideramos um problema a ser resolvido,
+
+42
+00:03:02,618 --> 00:03:05,660
+devemos concordar desde o início, principalmente se estivermos usando máquinas,
+
+43
+00:03:05,660 --> 00:03:08,460
+como vamos representar essas entradas e saídas?
+
+44
+00:03:08,460 --> 00:03:11,120
+e assim um dos primeiros conceitos que exploramos em ciência da computação
+
+45
+00:03:11,120 --> 00:03:14,210
+é como representar a informação propriamente dita.
+
+46
+00:03:14,210 --> 00:03:16,580
+E provavelmente você sabe que está entrando neste curso
+
+47
+00:03:16,580 --> 00:03:19,752
+que os computadores falam apenas qual língua, por assim dizer?
+
+48
+00:03:19,752 --> 00:03:20,460
+Platéia: Binária.
+
+49
+00:03:20,460 --> 00:03:20,680
+DAVID MALAN: Isso.
+
+50
+00:03:20,680 --> 00:03:21,333
+Binário.
+
+51
+00:03:21,333 --> 00:03:23,750
+E se você nunca ouviu esse termo antes, tudo bem.
+
+52
+00:03:23,750 --> 00:03:25,167
+zeros e uns, de alguma forma.
+
+53
+00:03:25,167 --> 00:03:26,500
+Mas como chegamos neste ponto?
+
+54
+00:03:26,500 --> 00:03:29,530
+Bem, mesmo que você meio que sabia que computadores falam binário,
+
+55
+00:03:29,530 --> 00:03:31,690
+seja lá o que isso significa, mas você não necessariamente
+
+56
+00:03:31,690 --> 00:03:34,720
+Pense como isso funciona, bem, considere como a maioria de nós
+
+57
+00:03:34,720 --> 00:03:37,503
+aprende a contar, talvez primeiro com suas mãos.
+
+58
+00:03:37,503 --> 00:03:39,670
+Se eu quero contar o numero de pessoas na sala,
+
+59
+00:03:39,670 --> 00:03:45,070
+Eu posso fazer 1, 2, 3, 4, 5, levantando um dedo para cada pessoa na sala.
+
+60
+00:03:45,070 --> 00:03:47,290
+Então é isso que é conhecido como notação unária.
+
+61
+00:03:47,290 --> 00:03:50,590
+você deve saber que "Uno" implica em 1 porque estou levantando um dedo
+
+62
+00:03:50,590 --> 00:03:52,990
+ou não contaria as pessoas na sala.
+
+63
+00:03:52,990 --> 00:03:55,300
+Claro, só consigo contar o tanto que cabe em uma mão.
+
+64
+00:03:55,300 --> 00:04:00,520
+Mas francamente, nós temos tantos símbolos em nosso assim chamado mundo humano dos decimais.
+
+65
+00:04:00,520 --> 00:04:03,250
+Dec significa 10, nós temos os dígitos de 0 á 9.
+
+66
+00:04:03,250 --> 00:04:07,120
+E com eles, podemos expressar qualquer numero com o qual todos nós estamos familiarizados.
+
+67
+00:04:07,120 --> 00:04:10,060
+Mas computadores não tem tantos dígitos.
+
+68
+00:04:10,060 --> 00:04:12,190
+Eles tem somente zeros e uns.
+
+69
+00:04:12,190 --> 00:04:14,830
+E ainda de algum modo, eles são capazes de armazenar não somente números,
+
+70
+00:04:14,830 --> 00:04:18,422
+mas letras, imagens, videos e sons... e um tanto mais.
+
+71
+00:04:18,422 --> 00:04:19,339
+Então como isso funciona?
+
+72
+00:04:19,339 --> 00:04:22,464
+Certo, vamos dar uma rápida olhada nisso para colocar todo mundo na mesma página
+
+73
+00:04:22,464 --> 00:04:25,930
+em como você pode construir os telefones nos seus bolsos, os computadores nas suas mesas
+
+74
+00:04:25,930 --> 00:04:28,430
+hoje, apenas usando zeros e uns.
+
+75
+00:04:28,430 --> 00:04:31,120
+Certo, estes são apenas símbolos nesta tela.
+
+76
+00:04:31,120 --> 00:04:34,210
+O que isso, é claro, representa?
+
+77
+00:04:34,210 --> 00:04:36,180
+123, mas porque?
+
+78
+00:04:36,180 --> 00:04:38,640
+Quero dizer, literalmente, são apenas símbolos ou glifos
+
+79
+00:04:38,640 --> 00:04:41,970
+na tela, um tipo de rabisco com uma caneta que nós todos atribuímos um significado.
+
+80
+00:04:41,970 --> 00:04:43,910
+Nós apenas vemos isso como 123.
+
+81
+00:04:43,910 --> 00:04:44,610
+Mas por que é assim?
+
+82
+00:04:44,610 --> 00:04:46,860
+Bem, se você for como eu, você provavelmente aprendeu a moda antiga
+
+83
+00:04:46,860 --> 00:04:50,520
+quando pensar no dígito mais à direita sendo o lugar das unidades 
+
+84
+00:04:50,520 --> 00:04:52,410
+ou sendo a coluna da unidade, o digito do meio sendo as dezenas,
+
+85
+00:04:52,410 --> 00:04:55,410
+e o dígito mais a esquerda como sendo as centenas.
+
+86
+00:04:55,410 --> 00:04:59,550
+Então, como passamos desse padrão de 1, 2, 3 para o número 123?
+
+87
+00:04:59,550 --> 00:05:02,430
+Bem, é um pouco de conta que fazemos rapidamente de cabeça, instintivamente.
+
+88
+00:05:02,430 --> 00:05:08,730
+Isso é 100 vezes 1, mais 10 vezes 2, mais 1 vezes 3.
+
+89
+00:05:08,730 --> 00:05:13,800
+Quem, é claro, nos dá 100 mais 20 mais 3, ou 123.
+
+90
+00:05:13,800 --> 00:05:16,590
+Então, todos nós meio que tomamos esse processo como garantido agora.
+
+91
+00:05:16,590 --> 00:05:19,230
+Mas, demonstra que existe um sistema em jogo
+
+92
+00:05:19,230 --> 00:05:23,287
+aqui, um sistema tal qual nos permite imaginar qualquer outro número da mesma forma.
+
+93
+00:05:23,287 --> 00:05:26,370
+Então se temos nossa coluna de unidades, dezenas e centenas, é claro,
+
+94
+00:05:26,370 --> 00:05:28,530
+no mundo dos decimais, este é o número 1,
+
+95
+00:05:28,530 --> 00:05:33,030
+este é o número 2, 3, 4, 5, 6, 7, 8, 9.
+
+96
+00:05:33,030 --> 00:05:35,370
+Algo interessante acontece , é claro, depois do 9.
+
+97
+00:05:35,370 --> 00:05:36,990
+Você meio que carrega o 1.
+
+98
+00:05:36,990 --> 00:05:41,190
+E por que então 010, ou se ignorarmos os zeros à esquerda como sendo
+
+99
+00:05:41,190 --> 00:05:45,870
+insignificante, por que um 0 representa o número que todos nós obviamente conhecemos como 10?
+
+100
+00:05:45,870 --> 00:05:48,900
+Bem, é só porque é 10 vezes 1 mais 1 vezes 0.
+
+101
+00:05:48,900 --> 00:05:51,010
+Assim é o sistema que nós estamos usando há anos.
+
+102
+00:05:51,010 --> 00:05:54,520
+E acontece que essas colunas, percebam, são apenas potências de 10.
+
+103
+00:05:54,520 --> 00:05:59,880
+Portanto, 10 elevado a 0 é 1, 10 elevado a 1 é 10 e 10 elevado a 2 é 100.
+
+104
+00:05:59,880 --> 00:06:02,280
+É assim que conseguimos as unidades, dezenas e centenas.
+105
+00:06:02,280 --> 00:06:05,730
+Agora, no mundo dos computadores, você não tem 10 dígitos, de 0 a 9.
+
+106
+00:06:05,730 --> 00:06:08,130
+Você tem apenas dois dígitos, 0 e 1.
+
+107
+00:06:08,130 --> 00:06:11,290
+Portanto, podemos apenas fazer um pequeno ajuste em nosso modelo mental aqui,
+
+108
+00:06:11,290 --> 00:06:15,850
+por assim dizer, e agora use 2, potências de 2, em vez de potências de 10.
+
+109
+00:06:15,850 --> 00:06:18,150
+Isso significa que a coluna da direita será 1,
+
+110
+00:06:18,150 --> 00:06:21,060
+a coluna do meio será 2, a coluna da esquerda será 4,
+
+111
+00:06:21,060 --> 00:06:27,330
+e se continuássemos, seria 8, 16, 32 em vez de 1.000, 10.000, 100.000.
+
+112
+00:06:27,330 --> 00:06:29,320
+Mas a ideia é exatamente a mesma.
+
+113
+00:06:29,320 --> 00:06:32,820
+Portanto, proponho que os computadores só falem zeros e uns, é claro.
+
+114
+00:06:32,820 --> 00:06:37,210
+Mas como eles representam números maiores do que 0 e 1?
+
+115
+00:06:37,210 --> 00:06:39,130
+Bem, isso está representando 0.
+
+116
+00:06:39,130 --> 00:06:40,350
+Isso está representando 1.
+
+117
+00:06:40,350 --> 00:06:43,140
+Qual padrão de símbolos na tela representaria o número
+
+118
+00:06:43,140 --> 00:06:45,860
+que nós, humanos, conhecemos como 2?
+
+119
+00:06:45,860 --> 00:06:46,360
+Isso.
+
+120
+00:06:46,360 --> 00:06:47,760
+Assim 010.
+
+121
+00:06:47,760 --> 00:06:49,490
+Então você acabou de falar binário.
+
+122
+00:06:49,490 --> 00:06:53,360
+Então, mesmo que você sabia apenas genericamente que binário é falado por computadores,
+
+123
+00:06:53,360 --> 00:06:56,540
+significa apenas que um computador, para representar o número que conhecemos como 2,
+
+124
+00:06:56,540 --> 00:06:59,720
+de alguma forma armazena um padrão de símbolos de 010.
+
+125
+00:06:59,720 --> 00:07:01,910
+Como eles representam 3?
+
+126
+00:07:01,910 --> 00:07:03,920
+011, pelo mesmo motivo.
+
+127
+00:07:03,920 --> 00:07:07,310
+É 2 vezes 1, mais 1 vezes 1, nos dá, é claro, três.
+
+128
+00:07:07,310 --> 00:07:11,960
+E agora, como há pouco, quando nós fizemos 9 para 10, agora na verdade nós vamos de 3 para 4.
+
+129
+00:07:11,960 --> 00:07:13,820
+carregando o 1 agora.
+
+130
+00:07:13,820 --> 00:07:21,020
+Então, em binário, bi significa dois, portanto, 0 e 1, 100 não é 100, por assim dizer,
+
+131
+00:07:21,020 --> 00:07:23,210
+este é literalmente o número que conhecemos como 4.
+
+132
+00:07:23,210 --> 00:07:24,530
+E podemos continuar.
+
+133
+00:07:24,530 --> 00:07:26,330
+Este é claro, é o 5 agora.
+
+134
+00:07:26,330 --> 00:07:27,380
+Este deve ser o 6.
+
+135
+00:07:27,380 --> 00:07:28,430
+Este deve ser o 7.
+
+136
+00:07:28,430 --> 00:07:31,760
+E o que acontece se nós queremos representar o 8?
+
+137
+00:07:31,760 --> 00:07:32,260
+Isso.
+
+138
+00:07:32,260 --> 00:07:33,820
+Então, temos que resolver isso de alguma forma.
+
+139
+00:07:33,820 --> 00:07:34,762
+Precisamos de outro dígito.
+
+140
+00:07:34,762 --> 00:07:35,720
+E tudo bem, certo?
+
+141
+00:07:35,720 --> 00:07:39,940
+Na aula de matemática, você apenas adicionaria outra posição, outra coluna, 
+
+142
+00:07:39,940 --> 00:07:42,800
+com o objetivo de obter o valor que você deseja.
+
+143
+00:07:42,800 --> 00:07:47,170
+Portanto, precisamos de mais zeros ou uns, agora conhecidos como bit.
+
+144
+00:07:47,170 --> 00:07:50,410
+Se você já ouviu falar da frase bit, significa apenas dígito binário,
+
+145
+00:07:50,410 --> 00:07:53,410
+e 0 ou 1 é apenas algo que conhecemos como bit.
+
+146
+00:07:53,410 --> 00:07:55,480
+E por que isso é pertinente aos computadores?
+
+147
+00:07:55,480 --> 00:07:58,460
+Bem, por mais sofisticados que nossos Macs, PCs e telefones sejam hoje,
+
+148
+00:07:58,460 --> 00:08:00,460
+considere, no final das contas, que no final do dia,
+
+149
+00:08:00,460 --> 00:08:04,090
+o que você tem que fazer, normalmente, com seu laptop, desktop,
+
+150
+00:08:04,090 --> 00:08:07,730
+seu telefone hoje em dia?
+
+151
+00:08:07,730 --> 00:08:09,530
+O que você faz no final do dia?
+
+152
+00:08:09,530 --> 00:08:10,880
+Isso, então você carrega, certo?
+
+153
+00:08:10,880 --> 00:08:12,680
+Você o conecta a algum recurso físico.
+
+154
+00:08:12,680 --> 00:08:16,967
+Esse é o único recurso físico desses computadores que usamos hoje em dia.
+
+155
+00:08:16,967 --> 00:08:18,800
+E isso é legal, porque, é claro,
+
+156
+00:08:18,800 --> 00:08:21,680
+o núcleo pode ser conectado ou não conectado.
+
+157
+00:08:21,680 --> 00:08:27,260
+Ou talvez possamos chamar isso de 1 ou 0, verdadeiro ou falso, ativado ou desativado,
+
+158
+00:08:27,260 --> 00:08:30,080
+ou seja, se a eletricidade é nossa única entrada
+
+159
+00:08:30,080 --> 00:08:32,929
+e há tanto "com eletricidade" ou "sem eletricidade,
+
+160
+00:08:32,929 --> 00:08:36,200
+bem, isso na verdade mapeia muito bem a ideia de binário
+
+161
+00:08:36,200 --> 00:08:41,270
+porque precisamos de apenas dois símbolos, 0 e 1, ligados e desligados, para representar essa ideia.
+
+162
+00:08:41,270 --> 00:08:43,880
+Claro, com um único bit, você não pode fazer tudo isso.
+
+163
+00:08:43,880 --> 00:08:46,760
+Você só pode contar de 0 a 1, e é isso.
+
+164
+00:08:46,760 --> 00:08:50,900
+Portanto, os computadores tendem a usar um número maior de bits para representar as informações.
+
+165
+00:08:50,900 --> 00:08:53,010
+E eles fazem isso fisicamente.
+
+166
+00:08:53,010 --> 00:08:55,830
+Acontece que com ambos conectados na parede,
+
+167
+00:08:55,830 --> 00:09:00,380
+ou até mesmo uma lâmpada ou um interruptor, com todos eles, você pode representar 0 or 1.
+
+168
+00:09:00,380 --> 00:09:02,870
+Mas se você quiser representar mais zeros e uns,
+
+169
+00:09:02,870 --> 00:09:05,760
+bem, só precisamos, talvez, de 8 bits por vez.
+
+170
+00:09:05,760 --> 00:09:10,400
+E se você já ouviu falar da expressão byte, um byte é apenas um termo
+
+171
+00:09:10,400 --> 00:09:15,950
+descrevendo oito bits, oito zeros e uns, uma medida mais útil.
+
+172
+00:09:15,950 --> 00:09:19,100
+Considerando isso, acho que é hora, talvez,
+
+173
+00:09:19,100 --> 00:09:22,310
+para ver se não podemos resolver o problema sozinhos.
+
+174
+00:09:22,310 --> 00:09:25,440
+Talvez possamos conseguir, digamos, dois voluntários?
+
+175
+00:09:25,440 --> 00:09:25,940
+OK.
+
+176
+00:09:25,940 --> 00:09:28,640
+Viu uma mão aqui e outra lá.
+
+177
+00:09:28,640 --> 00:09:32,760
+Venha, se quiser me encontrar na outra ponta do palco.
+
+178
+00:09:32,760 --> 00:09:33,570
+Venha aqui.
+
+179
+00:09:33,570 --> 00:09:36,620
+
+
+180
+00:09:36,620 --> 00:09:37,290
+Venha.
+
+181
+00:09:37,290 --> 00:09:37,795
+Qual seu nome?
+
+182
+00:09:37,795 --> 00:09:38,440
+PRIYANKA: Priyanka.
+
+183
+00:09:38,440 --> 00:09:39,720
+DAVID MALAN: Priyanka, prazer em conhece-la.
+
+184
+00:09:39,720 --> 00:09:40,220
+David.
+
+185
+00:09:40,220 --> 00:09:42,585
+Venha e se quiser esperar bem aqui.
+
+186
+00:09:42,585 --> 00:09:43,460
+E qual o seu nome?
+
+187
+00:09:43,460 --> 00:09:44,180
+CALVIN: Calvin.
+
+188
+00:09:44,180 --> 00:09:44,520
+DAVID MALAN: Calvin?
+
+189
+00:09:44,520 --> 00:09:45,080
+CALVIN: Isso.
+
+190
+00:09:45,080 --> 00:09:45,480
+DAVID MALAN: David.
+
+191
+00:09:45,480 --> 00:09:46,188
+Prazer em conhece-lo.
+
+192
+00:09:46,188 --> 00:09:47,957
+Venha aqui onde Priyanka está.
+
+193
+00:09:47,957 --> 00:09:50,540
+Então, Priyanka, você levantou a mão primeiro, então pode escolher.
+
+194
+00:09:50,540 --> 00:09:53,320
+Você quer ir primeiro ou em segundo neste pequeno desafio pela frente?
+
+195
+00:09:53,320 --> 00:09:54,400
+PRIYANKA: Uh, vou primeiro.
+
+196
+00:09:54,400 --> 00:09:54,670
+DAVID MALAN: OK.
+
+197
+00:09:54,670 --> 00:09:56,045
+Então Priyanka vai primeiro.
+
+198
+00:09:56,045 --> 00:09:57,820
+Se você quiser ficar ali, Calvin.
+
+199
+00:09:57,820 --> 00:09:59,740
+Então, o desafio aqui é: você poderia
+
+200
+00:09:59,740 --> 00:10:04,330
+tomar a frente e represente para nós em binário, usando cada uma dessas lâmpadas
+
+201
+00:10:04,330 --> 00:10:08,170
+e, ligar os interruptores, sendo zeros e uns, dizer, o numero 50?
+
+202
+00:10:08,170 --> 00:10:10,882
+
+
+203
+00:10:10,882 --> 00:10:14,190
+Então você pode acender uma lâmpada representando a casa dos 32s.
+
+204
+00:10:14,190 --> 00:10:18,420
+
+
+205
+00:10:18,420 --> 00:10:21,030
+Pode acender uma lâmpada representando a casa do 8.
+
+206
+00:10:21,030 --> 00:10:27,950
+Nossa contagem total agora é de 32 mais não 8 mais 16,
+
+207
+00:10:27,950 --> 00:10:33,600
+Eu acho, o que nos dará 32 mais 16, que é 48.
+
+208
+00:10:33,600 --> 00:10:38,600
+E assim recebemos agora uma salva de palmas, se possível, para Priyanka.
+
+209
+00:10:38,600 --> 00:10:40,610
+Muito obrigado.
+
+210
+00:10:40,610 --> 00:10:41,630
+Nos de um momento.
+
+211
+00:10:41,630 --> 00:10:44,570
+Portanto, cada uma dessas lâmpadas representa apenas um interruptor ou um bit.
+
+212
+00:10:44,570 --> 00:10:48,130
+E dentro do seu computador, se você já ouviu a frase transistor,
+
+213
+00:10:48,130 --> 00:10:50,690
+um transistor é apenas um pequeno interruptor em nossos computadores.
+
+214
+00:10:50,690 --> 00:10:53,210
+Então, eles têm milhões ou bilhões dessas chaves
+
+215
+00:10:53,210 --> 00:10:57,140
+que eles usam fisicamente para representar informações e armazenar valores,
+
+216
+00:10:57,140 --> 00:10:58,770
+assim como Priyanka fez aqui.
+
+217
+00:10:58,770 --> 00:11:01,100
+Então, se um computador representasse o número 50,
+
+218
+00:11:01,100 --> 00:11:03,770
+literalmente ligaria três interruptores destes,
+
+219
+00:11:03,770 --> 00:11:05,810
+ele armazena um pouco de eletricidade aqui, aqui,
+
+220
+00:11:05,810 --> 00:11:09,860
+e aqui para representar 50, e isso deixaria desligado
+
+221
+00:11:09,860 --> 00:11:11,240
+todos os outros interruptores.
+
+222
+00:11:11,240 --> 00:11:14,900
+Os outros 5, neste caso, se estivermos usando 8 bits ou 1 byte.
+
+223
+00:11:14,900 --> 00:11:19,790
+Calvin, você levantou a mão em segundo lugar, então temos um outro desafio pela frente.
+
+224
+00:11:19,790 --> 00:11:25,830
+Felizmente, essas coisas são magnéticas, então vamos dificultar um pouco as coisas.
+
+225
+00:11:25,830 --> 00:11:27,774
+E se você puder, Calvin--
+
+226
+00:11:27,774 --> 00:11:29,960
+[Risos]
+
+227
+00:11:29,960 --> 00:11:33,020
+-- que tal o número 13, se puder.
+
+228
+00:11:33,020 --> 00:11:35,300
+Como um computador representaria o numero 13
+
+229
+00:11:35,300 --> 00:11:42,270
+onde cada uma dessas lâmpadas de 1 a 128 representa um bit?
+
+
+230
+00:11:42,270 --> 00:11:44,890
+
+
+231
+00:11:44,890 --> 00:11:52,050
+Tínhamos, é claro, a casa dos uns aqui, a casa dos dois, quatro, oito,
+
+
+232
+00:11:52,050 --> 00:11:55,190
+16, e assim por diante.
+
+233
+00:11:55,190 --> 00:12:00,858
+Então podemos perguntar para a platéia, devemos ligar, por exemplo, está lâmpada aqui?
+
+
+234
+00:12:00,858 --> 00:12:01,400
+Platéia: Não.
+
+235
+00:12:01,400 --> 00:12:02,067
+DAVID MALAN: Não.
+
+236
+00:12:02,067 --> 00:12:02,570
+Muito grande.
+
+237
+00:12:02,570 --> 00:12:03,170
+Que tal está?
+
+238
+00:12:03,170 --> 00:12:04,160
+CALVIN: não, muito grande.
+
+239
+00:12:04,160 --> 00:12:04,180
+DAVID MALAN: OK.
+
+240
+00:12:04,180 --> 00:12:05,055
+E você está no comando.
+
+241
+00:12:05,055 --> 00:12:06,706
+Pergunte a platéia.
+
+242
+00:12:06,706 --> 00:12:07,915
+CALVIN: Este aqui?
+
+243
+00:12:07,915 --> 00:12:08,540
+AUDIENCE: Sim.
+
+244
+00:12:08,540 --> 00:12:09,082
+CALVIN: Sim.
+
+245
+00:12:09,082 --> 00:12:09,950
+DAVID MALAN: OK.
+
+246
+00:12:09,950 --> 00:12:12,855
+Então temos 1, 2, 4, 8.
+
+247
+00:12:12,855 --> 00:12:13,355
+CALVIN: 4.
+
+248
+00:12:13,355 --> 00:12:15,560
+DAVID MALAN: 4 nos dá 8 mais 4 é igual à 12.
+
+249
+00:12:15,560 --> 00:12:20,190
+E mais uma rodada de aplausos, se pudermos.
+
+250
+00:12:20,190 --> 00:12:20,690
+Obrigado.
+
+251
+00:12:20,690 --> 00:12:21,690
+Você tem o trabalho mais pesado.
+
+252
+00:12:21,690 --> 00:12:22,730
+Obrigado aos dois.
+
+253
+00:12:22,730 --> 00:12:26,960
+Então, no final do dia, embora esta seja uma encarnação física muito grande
+
+254
+00:12:26,960 --> 00:12:30,530
+de noção binária, isso é tudo que acontece dentro de nossos computadores
+
+255
+00:12:30,530 --> 00:12:32,900
+todos os dias quando eles representam informações.
+
+256
+00:12:32,900 --> 00:12:36,170
+
+Mas, até agora, só temos a capacidade de representar números, ao que parece.
+
+257
+00:12:36,170 --> 00:12:39,680
+Como então um computador nos permite enviar mensagens de texto e emails
+
+258
+00:12:39,680 --> 00:12:41,480
+e compor documentos e assim por diante?
+
+259
+00:12:41,480 --> 00:12:44,270
+Todos precisamos concordar em como estamos fazendo para representar
+
+260
+00:12:44,270 --> 00:12:48,810
+caracteres ou letras de um alfabeto, seja inglês, ou qualquer outro.
+
+261
+00:12:48,810 --> 00:12:51,590
+E alguma idéia de como, se um computador apenas
+
+262
+00:12:51,590 --> 00:12:55,520
+tem milhões ou bilhões de interruptores que podem ser ligados ou desligados, assim
+
+263
+00:12:55,520 --> 00:12:58,880
+representando números, nós poderíamos possivelmente representar algo 
+
+264
+00:12:58,880 --> 00:13:02,600
+além de números, como a letra A?
+
+265
+00:13:02,600 --> 00:13:04,150
+Diga novamente?
+
+266
+00:13:04,150 --> 00:13:04,840
+Com um digito.
+
+267
+00:13:04,840 --> 00:13:07,360
+Então nós talvez apenas precisemos entrar em acordo já que somos um grupo, entenderam?
+
+268
+00:13:07,360 --> 00:13:11,140
+Vamos concordar que a letra A, no contexto de um processador de textos
+
+269
+00:13:11,140 --> 00:13:14,920
+ou mensagem de texto ou email, apenas precisa ser representada por um número,
+
+270
+00:13:14,920 --> 00:13:17,240
+e todos nós precisamos concordar qual é esse número.
+
+271
+00:13:17,240 --> 00:13:22,237
+Então, talvez de forma super simples, digamos que A é 1, B é 2, C é 3 e assim por diante.
+
+272
+00:13:22,237 --> 00:13:24,070
+E você pode imaginar então um computador tendo que
+
+273
+00:13:24,070 --> 00:13:28,300
+ascender muitos destes pequenos transistores para representar a letra A e B e C,
+
+274
+00:13:28,300 --> 00:13:31,870
+contanto que o software naquele computador, como veremos,
+
+275
+00:13:31,870 --> 00:13:34,420
+sabe que é um programa de processamento de texto e não,
+
+276
+00:13:34,420 --> 00:13:37,720
+digamos, uma calculadora ou algo que espera usar apenas números.
+
+277
+00:13:37,720 --> 00:13:41,480
+Acontece que os computadores não usam o número 1 para A ou 2
+
+278
+00:13:41,480 --> 00:13:43,390
+para B. É um pouco mais do que isso.
+
+279
+00:13:43,390 --> 00:13:46,830
+O mundo decidiu há décadas que a letra maiúscula A seria
+
+280
+00:13:46,830 --> 00:13:50,050
+representado pelo número 65.
+
+281
+00:13:50,050 --> 00:13:53,710
+65, ou seja, se você tiver um byte de informação no computador,
+
+282
+00:13:53,710 --> 00:13:59,560
+e esta é a casa dos 1s, 2s, 4, 8, 16, 32, 64.
+
+283
+00:13:59,560 --> 00:14:04,360
+Se um computador for armazenar a letra maiúscula A usando oito bits ou interruptores,
+
+284
+00:14:04,360 --> 00:14:09,100
+simplesmente ascenderia estes dois, a casa dos 64s e a casa de 1s.
+
+285
+00:14:09,100 --> 00:14:12,790
+E assim, quando você realmente recebeu uma mensagem de texto ou um e-mail 
+
+286
+00:14:12,790 --> 00:14:15,010
+com uma letra maiúscula A, você acaba de receber
+
+287
+00:14:15,010 --> 00:14:18,670
+um padrão de zeros e uns de certa forma, sem fio ou com fios,
+
+288
+00:14:18,670 --> 00:14:20,770
+representando este padrão.
+
+289
+00:14:20,770 --> 00:14:23,860
+Especificamente, este padrão aqui, se não o desenharmos como lâmpadas,
+
+290
+00:14:23,860 --> 00:14:25,690
+mas sim com zeros e uns.
+
+291
+00:14:25,690 --> 00:14:30,670
+Acontece que certamente existem mais números do que apenas A's, B's e C's.
+
+292
+00:14:30,670 --> 00:14:33,460
+Temos todo o alfabeto mais pontuação, graças a um sistema
+
+293
+00:14:33,460 --> 00:14:36,970
+chamado ASCII, o código padrão americano para intercâmbio de informações, que
+
+294
+00:14:36,970 --> 00:14:40,390
+é apenas uma maneira elegante de dizer que existe um mapa bem definido que os humanos
+
+295
+00:14:40,390 --> 00:14:42,850
+ao redor do mundo concordaram anos atrás que parece
+
+296
+00:14:42,850 --> 00:14:44,660
+um pouco com isto.
+
+297
+00:14:44,660 --> 00:14:50,770
+Portanto, A é 65, um I é 73 e ponto ponto ponto em ambas as extremidades.
+
+298
+00:14:50,770 --> 00:14:54,340
+Ou seja, se você recebesse uma mensagem de um computador ou de
+
+299
+00:14:54,340 --> 00:15:00,340
+um amigo dizendo 72, 73, 33, ou o padrão de zeros e uns representando
+
+300
+00:15:00,340 --> 00:15:04,710
+esses dígitos, que mensagem você acabou de receber?
+
+301
+00:15:04,710 --> 00:15:08,790
+72, 73, 33.
+
+302
+00:15:08,790 --> 00:15:09,290
+Isso.
+
+303
+00:15:09,290 --> 00:15:09,820
+Então, "hi"
+
+304
+00:15:09,820 --> 00:15:11,920
+Então, literalmente, se você mandasse uma mensagem de texto para um amigo,
+
+305
+00:15:11,920 --> 00:15:15,460
+"hi", eles receberiam uma mensagem que é essencialmente um padrão de zeros
+
+306
+00:15:15,460 --> 00:15:17,818
+e uns, 72, 73, então temos algo.
+
+307
+00:15:17,818 --> 00:15:20,110
+Na verdade, não é óbvio no gráfico o que são,
+
+308
+00:15:20,110 --> 00:15:24,250
+mas descobriu-se que 33 era o número que os humanos deram anos atrás para representar
+
+309
+00:15:24,250 --> 00:15:25,655
+um ponto de exclamação.
+
+310
+00:15:25,655 --> 00:15:28,780
+Então alguns dos outros símbolos de pontuação que você pode ver no seu teclado,
+
+311
+00:15:28,780 --> 00:15:32,380
+similarmente tem números que um computador poderia usar, ao qual todos nós
+
+312
+00:15:32,380 --> 00:15:35,230
+concordamos anos atrás, que representam aquele valor.
+
+313
+00:15:35,230 --> 00:15:37,780
+Mas é claro, isso é muito centrado nos americanos no momento.
+
+314
+00:15:37,780 --> 00:15:40,990
+E, de fato, o acrônimo ASCII tem American nela.
+
+315
+00:15:40,990 --> 00:15:44,288
+Portanto, foi baseado totalmente no inglês americano, por exemplo.
+
+316
+00:15:44,288 --> 00:15:46,330
+Mas há muitos outros caracteres no mundo,
+
+317
+00:15:46,330 --> 00:15:50,260
+é claro, como caracteres acentuados e outras línguas.
+
+318
+00:15:50,260 --> 00:15:53,440
+E, francamente, há também essas coisas hoje em dia,
+
+319
+00:15:53,440 --> 00:15:55,660
+que, embora pareçam imagens,
+
+320
+00:15:55,660 --> 00:15:58,690
+você os acessa através do teclado porque eles são de fato
+
+321
+00:15:58,690 --> 00:16:01,390
+apenas símbolos do alfabeto.
+
+322
+00:16:01,390 --> 00:16:05,200
+Existem apenas zeros e uns, padrões de zeros e uns,
+
+323
+00:16:05,200 --> 00:16:07,540
+Que representam aqueles caracteres, de fato.
+
+324
+00:16:07,540 --> 00:16:11,140
+Isso é conhecido como Unicode, e isso é, como um superconjunto de ASCII.
+
+325
+00:16:11,140 --> 00:16:14,770
+Porque ASCII, lá atrás, usava apenas oito bits, o que não é muita coisa,
+
+326
+00:16:14,770 --> 00:16:16,000
+para representar caracteres.
+
+327
+00:16:16,000 --> 00:16:20,050
+Unicode utiliza 8 or 16 or 24 or even 32, o que
+
+328
+00:16:20,050 --> 00:16:24,400
+quer dizer que temos muito mais padrões possíveis de zeros e uns
+
+329
+00:16:24,400 --> 00:16:26,930
+com o qual representamos coisas como estas.
+
+330
+00:16:26,930 --> 00:16:29,320
+Portanto, este é o rosto com lágrimas de alegria.
+
+331
+00:16:29,320 --> 00:16:34,690
+Desde 2019, é o emoji mais popular enviado em dispositivos iOS, pelo menos.
+
+332
+00:16:34,690 --> 00:16:37,390
+Alguém quer arriscar um palpite sobre qual
+
+333
+00:16:37,390 --> 00:16:41,560
+é o número decimal que representa o rosto com lágrimas de alegria?
+
+334
+00:16:41,560 --> 00:16:45,010
+
+
+335
+00:16:45,010 --> 00:16:46,000
+Não é 65.
+
+336
+00:16:46,000 --> 00:16:46,660
+Não é 72.
+
+337
+00:16:46,660 --> 00:16:49,600
+Não é 73.
+
+338
+00:16:49,600 --> 00:16:50,350
+800.
+
+339
+00:16:50,350 --> 00:16:52,340
+Maior que esse.
+
+340
+00:16:52,340 --> 00:16:53,620
+10,000.
+
+341
+00:16:53,620 --> 00:16:54,920
+Maior que esse.
+
+342
+00:16:54,920 --> 00:16:57,580
+é 128,514.
+
+343
+00:16:57,580 --> 00:17:00,775
+É desse jeito que podemos aguardar muitos novos emojis
+
+344
+00:17:00,775 --> 00:17:02,650
+Por
+porque os números agora estão ficando tão grandes.
+
+345
+00:17:02,650 --> 00:17:05,290
+Ou, de forma equivalente, este padrão de zeros e uns.
+
+346
+00:17:05,290 --> 00:17:08,560
+Correndo o risco de tirar toda a diversão de mandar a alguém
+
+347
+00:17:08,560 --> 00:17:11,349
+um emoji, quando você envia aquele rosto com lágrimas de alegria,
+
+348
+00:17:11,349 --> 00:17:14,560
+você está literalmente fazendo seu telefone enviar ao telefone de um amigo
+
+349
+00:17:14,560 --> 00:17:16,470
+esse padrão de zeros e uns.
+
+350
+00: 17: 16,470 -> 00: 17: 21.400
+E o Android ou iOS estão apresentando essa imagem amarela.
+
+351
+00: 17: 21,400 -> 00: 17: 24.490
+Mas essa imagem amarela, é claro, em si é uma imagem.
+
+352
+00: 17: 24,490 -> 00: 17: 26.230
+E é composto de muitos pequenos pontos.
+
+353
+00: 17: 26,230 -> 00: 17: 28.022
+E possibilidades estão surgindo nesta aula, você está
+
+354
+00: 17: 28,022 -> 00: 17: 30.070
+geralmente familiarizado com o uso de imagens, certamente,
+
+355
+00: 17: 30,070 -> 00: 17: 32.150
+e observando os pontinhos que compõem uma imagem.
+
+356
+00: 17: 32,150 -> 00: 17: 34.983
+Especialmente se eles forem de baixa qualidade, você poderia realmente ver esses pontos.
+
+357
+00: 17: 34,983 -> 00: 17: 38.260
+E então, em um rosto como o do emoji, temos muitos pontos amarelos.
+
+358
+00: 17: 38,260 -> 00: 17: 40.930
+Como o computador representa cada um desses pontos?
+
+359
+00: 17: 40,930 -> 00: 17: 42.970
+Bem, de acordo com um sistema chamado RGB.
+
+360
+00: 17: 42,970 -> 00: 17: 44.360
+Vermelho, verde, azul.
+
+361
+00: 17: 44,360 -> 00: 17: 47.380
+Então, novamente, décadas atrás, as pessoas em uma sala decidiam, você sabe o que?
+
+362
+00: 17: 47,380 -> 00: 17: 51.520
+Representar as cores, continuamos tendo que usar apenas zeros e uns,
+
+363
+00: 17: 51,520 -> 00: 17: 53.290
+pequenos interruptores, mecanicamente.
+
+364
+00: 17: 53,290 -> 00: 17: 56.950
+Mas vamos todos concordar sobre quais números representam quais cores.
+
+365
+00: 17: 56,950 -> 00: 17: 59.230
+Então, só precisamos de outro sistema para isso.
+
+366
+00: 17: 59,230 -> 00: 18: 04.540
+Agora, descobriu-se que RGB basicamente compõe qualquer cor do arco-íris
+
+367
+00: 18: 04,540 -> 00: 18: 08.710
+misturando um pouco de vermelho, algum verde, algum azul.
+
+368
+00: 18: 08,710 -> 00: 18: 11.180
+E combinando essas cores uma em cima da outra,
+
+369
+00: 18: 11,180 -> 00: 18: 13.630
+você pode obter qualquer cor do arco-íris que desejar.
+
+370
+00: 18: 13,630 -> 00: 18: 17.990
+Então, diga-se armazenar qualquer ponto na tela, um pixel,
+
+371
+00: 18: 17,990 -> 00: 18: 22.150
+Então, digamos, em uma imagem que você pode tirar como foto ou enviar a um amigo,
+
+372
+00: 18: 22,150 -> 00: 18: 24.160
+você está, na verdade, armazenando três valores.
+
+373
+00: 18: 24,160 -> 00: 18: 24.970
+Um, dois, três.
+
+374
+00: 18: 24,970 -> 00: 18: 27.880
+Três números, realmente, que, claro, a final de contas,
+
+375
+00: 18: 27,880 -> 00: 18: 29.050
+são zeros e uns.
+
+376
+00: 18: 29,050 -> 00: 18: 32.380
+Esses três números apenas dizem ao computador quanto vermelho, quanto verde,
+
+377
+00: 18: 32,380 -> 00: 18: 36.730
+e quanto azul usar para representar algum ponto em uma tela.
+
+378
+00: 18: 36,730 -> 00: 18: 41.860
+Então, suponha que, coincidentemente, um computador esteja armazenando o padrão 72,
+
+379
+00: 18: 41,860 -> 00: 18: 45.820
+73, 33, tanto com zeros e uns ou lâmpadas,
+
+380
+00: 18: 45,820 -> 00: 18: 47.780
+costas com costas com costas assim.
+
+381
+00: 18: 47,780 -> 00: 18: 52.510
+Bem, no contexto do Photoshop ou de um navegador ou de fotos em um Apple ou similares,
+
+382
+00: 18: 52,510 -> 00: 18: 55.180
+no contexto de um programa gráfico, seu computador
+
+383
+00: 18: 55,180 -> 00: 18: 59.170
+vai interpretar este mesmo padrão de dígitos,
+
+384
+00: 18: 59,170 -> 00: 19: 02.210
+e manipular, bits, não tão altos, como o ponto de exclamação,
+
+385
+00: 19: 02,210 -> 00: 19: 05.230
+mas como um pouco de vermelho, um pouco verde, e alguma quantidade de azul.
+
+386
+00: 19: 05,230 -> 00: 19: 10.450
+E acontece que se você combinar esse tanto vermelho, 72, com esse tanto de verde, 73,
+
+387
+00: 19: 10,450 -> 00: 19: 15.250
+seguido por esse tanto de azul, 33, o que você obtém quando combina todos os três
+
+388
+00: 19: 15,250 -> 00: 19: 17.980
+é um tom de amarelo.
+
+389
+00: 19: 17,980 -> 00: 19: 21.130
+Então, para cada ponto nesse emoji, esse
+
+390
+00: 19: 21,130 -> 00: 19: 24.650
+rosto com lágrimas de alegria, cada ponto nesta imagem 
+
+391
+00: 19: 24,650 -> 00: 19: 26.950
+e podemos ver se realmente aumentarmos o zoom 
+
+392
+00: 19: 26,950 -> 00: 19: 28.872
+é armazenado usando três valores.
+
+393
+00: 19: 28,872 -> 00: 19: 30.580
+um pouco de vermelho, um pouco de verde,
+
+394
+00: 19: 30,580 -> 00: 19: 32.470
+e um pouco de azul que podemos juntar e dar
+
+395
+00: 19: 32,470 -> 00: 19: 35.770
+você amarelo ou preto ou cinza ou qualquer outra coisa,
+
+396
+00: 19: 35,770 -> 00: 19: 38.440
+dependendo de como você codificar esses valores.
+
+397
+00: 19: 38,440 -> 00: 19: 43.150
+Enquanto isso, imagens ou vídeos, coisas assim que você pode ver na internet
+
+398
+00: 19: 43,150 -> 00: 19: 45.810
+hoje em dia na forma de memes ou qualquer outra coisa,
+
+399
+00: 19: 45,810 -> 00: 19: 49.965
+são apenas imagens, mas são várias imagens no mesmo arquivo.
+
+400
+00: 19: 49,965 -> 00: 19: 52.840
+Se você já viu o que é chamado de GIF animado, o que acontece
+
+401
+00: 19: 52,840 -> 00: 19: 56.140
+acontece que é um loop, tudo que nossos olhos humanos estão vendo
+
+402
+00: 19: 56,140 -> 00: 19: 59.200
+são apenas imagens, uma após a outra e após a outra, realmente
+
+403
+00: 19: 59,200 -> 00: 20: 02.680
+rapidamente, criando a ilusão, portanto, de movimento.
+
+404
+00: 20: 02,680 -> 00: 20: 04.180
+Mas este gato não está realmente se movendo.
+
+405
+00: 20: 04,180 -> 00: 20: 07.960
+São cinco ou dez fotos de um gato em posições diferentes
+
+406
+00: 20: 07,960 -> 00: 20: 09.430
+apenas sendo repetido indefinidamente.
+
+407
+00: 20: 09,430 -> 00: 20: 11.500
+E isso também é tudo o que um vídeo é.
+
+408
+00: 20: 11,500 -> 00: 20: 15.010
+Um vídeo é apenas uma sequência de imagens passando por seus olhos tão rapidamente,
+
+409
+00: 20: 15,010 -> 00: 20: 18.020
+nós, humanos, percebemos isso como um movimento real.
+
+410
+00: 20: 18,020 -> 00: 20: 21.250
+E isso é quase tudo que usamos para representar informações hoje
+
+411
+00: 20: 21,250 -> 00: 20: 22.090
+em nossos computadores.
+
+412
+00: 20: 22,090 -> 00: 20: 24.280
+Temos zeros e uns dos quais obtemos binários
+
+413
+00: 20: 24,280 -> 00: 20: 26.560
+para o qual obtemos dígitos decimais, mas nós
+
+414
+00: 20: 26,560 -> 00: 20: 30.700
+podemos usar esses dígitos para representar, digamos, caracteres na tela ou cores
+
+415
+00: 20: 30,700 -> 00: 20: 33.790
+na tela e, em turnos, agora ainda mais interativa.
+
+416
+00: 20: 33,790 -> 00: 20: 36.010
+Agora, que tal algo como música em um computador?
+
+417
+00: 20: 36,010 -> 00: 20: 38.530
+Outro tipo de informação que você pode querer representar?
+
+418
+00: 20: 38,530 -> 00: 20: 40.810
+Bem, se tivéssemos um piano aqui no palco,
+
+419
+00: 20: 40,810 -> 00: 20: 45.190
+poderíamos codificar as notas que você está tocando usando apenas números também.
+
+420
+00: 20: 45,190 -> 00: 20: 49.420
+A nota que você está tocando, talvez fossem A, B, C, D, E, F ou G ou alguma variante
+
+421
+00: 20: 49,420 -> 00: 20: 50.080
+disso.
+
+422
+00: 20: 50,080 -> 00: 20: 53.200
+Talvez por quanto tempo você mantém a tecla pressionada, e se você bate com muita força,
+
+423
+00: 20: 53,200 -> 00: 20: 54.520
+talvez o quão alto seja.
+
+424
+00: 20: 54,520 -> 00: 20: 59.080
+Então você pode imaginar o uso de três valores, a nota, a duração e o volume
+
+425
+00: 20: 59,080 -> 00: 21: 02.420
+apenas para representar algo como uma música de piano.
+
+426
+00: 21: 02,420 -> 00: 21: 05.360
+[PIANO TOCANDO]
+
+427
+00: 21: 05,360 -> 00: 21: 06.890
+Pode ser uma codificação de uma música.
+
+428
+00: 21: 06,890 -> 00: 21: 10.160
+E posso usar valores diferentes se quiser tocá-lo ainda mais alto e por mais tempo.
+
+429
+00: 21: 10,160 -> 00: 21: 13.960
+[PIANO TOCANDO]
+
+430
+00: 21: 13,960 -> 00: 21: 14.788
+E assim por diante.
+
+431
+00: 21: 14,788 -> 00: 21: 16.580
+O que quer dizer que a final de contas,
+
+432
+00: 21: 16,580 -> 00: 21: 19.330
+não importa a mídia que usamos para representar as informações,
+
+433
+00: 21: 19,330 -> 00: 21: 21.610
+tudo se reduz a zeros e uns.
+
+434
+00: 21: 21,610 -> 00: 21: 23.740
+Então, uma vez que nós temos a capacidade de representar as entradas,
+
+435
+00: 21: 23,740 -> 00: 21: 29.200
+sejam números ou letras ou cores ou vídeos, agora podemos falar sobre saídas.
+
+436
+00: 21: 29,200 -> 00: 21: 31.330
+Então, como passamos das entradas para as saídas?
+
+437
+00: 21: 31,330 -> 00: 21: 34.600
+Isso é o que está dentro da chamada caixa preta,
+
+438
+00: 21: 34,600 -> 00: 21: 36.840
+e é aí que entra a ciência da computação.
+
+439
+00: 21: 36,840 -> 00: 21: 37.540
+Um algoritmo.
+
+440
+00: 21: 37,540 -> 00: 21: 40.517
+Alguém sabe o que é esse termo?
+
+441
+00: 21: 40,517 -> 00: 21: 41.350
+O que é um algoritmo?
+
+442
+00: 21: 41,350 -> 00: 21: 43.433
+Você meio que lê sobre isso o tempo todo nos dias de hoje,
+
+443
+00: 21: 43,433 -> 00: 21: 47.078
+especialmente no contexto de carros autônomos e Siri e Alexa
+
+444
+00: 21: 47,078 -> 00: 21: 47.620
+e assim por diante.
+
+445
+00: 21: 47,620 -> 00: 21: 49.670
+Sim?
+
+446
+00: 21: 49,670 -> 00: 21: 51.300
+Uma forma definida de fazer algo, sim.
+
+447
+00: 21: 51,300 -> 00: 21: 53.580
+No contexto da resolução de problemas, um algoritmo
+
+448
+00: 21: 53,580 -> 00: 21: 57.160
+é apenas um passo a passo para resolver algum problema.
+
+449
+00: 21: 57,160 -> 00: 22: 00.900
+Então, como pode ser um algoritmo para um problema que podemos querer resolver?
+
+450
+00: 22: 00,900 -> 00: 22: 01.875
+Bem, considere isso.
+
+451
+00: 22: 01,875 -> 00: 22: 03.750
+Este é um problema antigo onde você pode
+
+452
+00: 22: 03,750 -> 00: 22: 06.480
+ter muitos e muitos nomes e muitos números,
+
+453
+00: 22: 06,480 -> 00: 22: 09.960
+e esses nomes estão desejadamente classificados em ordem alfabética de A a Z
+
+454
+00: 22: 09,960 -> 00: 22: 11.110
+em um livro como este.
+
+455
+00: 22: 11,110 -> 00: 22: 14.340
+E mesmo que a maioria de nós não tenha mais contato com essa tecnologia,
+
+456
+00: 22: 14,340 -> 00: 22: 17.640
+considere que é realmente igual ao seu iPhone ou telefone Android
+
+457
+00: 22: 17,640 -> 00: 22: 20.880
+ou outro dispositivo, que tem todos os seus contatos de cima para baixo
+
+458
+00: 22: 20,880 -> 00: 22: 23.010
+e você pode percorrê-los de A a Z,
+
+459
+00: 22: 23,010 -> 00: 22: 26.370
+ou você pode procurá-los digitando na pequena caixa de preenchimento automático.
+
+460
+00: 22: 26,370 -> 00: 22: 29.230
+Como seu telefone está resolvendo esse problema?
+
+461
+00: 22: 29,230 -> 00: 22: 31.905
+Bem, vamos considerar uma abordagem simples.
+
+462
+00: 22: 31,905 -> 00: 22: 35.030
+Vou olhar a primeira página e procurar alguém na lista telefônica.
+
+463
+00: 22: 35,030 -> 00: 22: 37.560
+Suponha que o nome dessa pessoa seja Mike Smith, o sobrenome começando
+
+464
+00: 22: 37,560 -> 00: 22: 39.480
+com S. Deixe-me ir em frente e olhar para baixo.
+
+465
+00: 22: 39,480 -> 00: 22: 40.500
+Ele não está aqui.
+
+466
+00: 22: 40,500 -> 00: 22: 41.940
+Deixe-me virar a página.
+
+467
+00: 22: 41,940 -> 00: 22: 43.285
+Deixe-me virar a página.
+
+468
+00: 22: 43,285 -> 00: 22: 44.160
+Deixe-me virar a página.
+
+469
+00: 22: 44,160 -> 00: 22: 45.060
+Este é um algoritmo.
+
+470
+00: 22: 45,060 -> 00: 22: 48.840
+É um processo passo a passo para resolver um problema, encontrar Mike Smith.
+
+471
+00: 22: 48,840 -> 00: 22: 52.100
+Este algoritmo está correto, você diria?
+
+472
+00: 22: 52,100 -> 00: 22: 52.610
+Sim.
+
+473
+00: 22: 52,610 -> 00: 22: 55.730
+Quer dizer, é muito lento, é muito estúpido, pois vai demorar,
+
+474
+00: 22: 55,730 -> 00: 22: 59.120
+meu Deus, para sempre, tipo, centenas de viradas de página para encontrar Mike Smith.
+
+475
+00: 22: 59,120 -> 00: 23: 01.400
+Mas se ele estiver lá, vou encontrá-lo de acordo
+
+476
+00: 23: 01,400 -> 00: 23: 03.060
+com esta abordagem passo a passo.
+
+477
+00: 23: 03,060 -> 00: 23: 05.970
+E se eu acelerar um pouco as coisas só porque é entediante?
+
+478
+00: 23: 05,970 -> 00: 23: 11.690
+Então, faço dois, quatro, seis, oito, 10, 12, 14, 16 e assim por diante.
+
+479
+00: 23: 11,690 -> 00: 23: 13.610
+Esse algoritmo é mais rápido?
+
+480
+00: 23: 13,610 -> 00: 23: 14.360
+Absolutamente.
+
+481
+00: 23: 14,360 -> 00: 23: 15.410
+Literalmente duas vezes mais rápido.
+
+482
+00: 23: 15,410 -> 00: 23: 16.100
+Está correto?
+
+483
+00: 23: 16,100 -> 00: 23: 17.030
+PÚBLICO: Não.
+
+484
+00: 23: 17,030 -> 00: 23: 17.697
+DAVID MALAN: Não.
+
+485
+00: 23: 17,697 -> 00: 23: 18.610
+Por quê?
+
+486
+00: 23: 18,610 -> 00: 23: 19.590
+[VOZES INTERPOSTAS]
+
+487
+00: 23: 19,590 -> 00: 23: 21.173
+DAVID MALAN: Sim, podemos passar ele.
+
+488
+00: 23: 21,173 -> 00: 23: 23.800
+Posso ter azar e, eventualmente, posso chegar ao S's.
+
+489
+00: 23: 23,800 -> 00: 23: 28.490
+Mas maldito seja se Mike não estivesse entre duas páginas enquanto eu as viro de uma vez.
+
+490
+00: 23: 28,490 -> 00: 23: 29.680
+Portanto, não é uma falha fatal.
+
+491
+00: 23: 29,680 -> 00: 23: 31.600
+Esse algoritmo, eu poderia corrigi-lo apenas dizendo
+
+492
+00: 23: 31,600 -> 00: 23: 36.100
+se você acertar a seção T ou talvez Sn em vez de Sm, basta voltar
+
+493
+00: 23: 36,100 -> 00: 23: 40.840
+até uma ou mais páginas apenas para corrigir esse bug ou erro, por assim dizer.
+
+494
+00: 23: 40,840 -> 00: 23: 43.130
+Mas, pelo menos, é duas vezes mais rápido.
+
+495
+00: 23: 43,130 -> 00: 23: 45.760
+Mas se esta lista telefônica tiver 1.000 páginas,
+
+496
+00: 23: 45,760 -> 00: 23: 51.130
+ainda vou levar cerca de 500 voltas só para encontrar Mike Smith.
+
+497
+00: 23: 51,130 -> 00: 23: 53.192
+É uma demora apenas para procurar alguém.
+
+498
+00: 23: 53,192 -> 00: 23: 55.150
+Mas a maioria de nós, se você já usou essa tecnologia,
+
+499
+00: 23: 55,150 -> 00: 23: 58.370
+em vez disso, fez o quê, naquela época?
+
+500
+00: 23: 58,370 -> 00: 24: 02.410
+Vá mais ou menos para o meio se não hover letras pequenas ao lado
+
+501
+00: 24: 02,410 -> 00: 24: 03.125
+para trapacear.
+
+502
+00: 24: 03,125 -> 00: 24: 04.250
+Quase no meio.
+
+503
+00: 24: 04,250 -> 00: 24: 05.510
+Estou na seção M.
+
+504
+00: 24: 05,510 -> 00: 24: 08.720
+Agora os M's, é claro, significam que Mike não é por aqui,
+
+505
+00: 24: 08,720 -> 00: 24: 09.860
+que poderiam ser os A's.
+
+506
+00: 24: 09,860 -> 00: 24: 12.620
+Ele está provavelmente nessa direção, indo até os Z porque S, é claro,
+
+507
+00: 24: 12,620 -> 00: 24: 14.210
+está entre o M e o Z.
+
+508
+00: 24: 14,210 -> 00: 24: 18.350
+Então, neste ponto, posso literalmente dividir o problema pela metade,
+
+509
+00: 24: 18,350 -> 00: 24: 24.320
+jogue fora metade do problema de maneira muito dramática e desnecessária,
+
+510
+00: 24: 24,320 -> 00: 24: 27.580
+deixando claro que agora passamos de 1.000 páginas estranhas para o quê?
+
+511
+00: 24: 27,580 -> 00: 24: 28.443
+500.
+
+512
+00: 24: 28,443 -> 00: 24: 29.360
+E eu posso fazer isso de novo.
+
+513
+00: 24: 29,360 -> 00: 24: 30.660
+Ah, fui um pouco longe demais.
+
+514
+00: 24: 30,660 -> 00: 24: 34.190
+Agora estou na seção T, então posso dividir o problema ao meio novamente,
+
+515
+00: 24: 34,190 -> 00: 24: 39.890
+jogue essa metade fora e agora eu reduzi de 1.000 para 500 para 250 páginas
+
+516
+00: 24: 39,890 -> 00: 24: 44.130
+apenas, após apenas duas etapas neste processo passo a passo.
+
+517
+00: 24: 44,130 -> 00: 24: 46.820
+E se eu repetir isso de novo e de novo, espero
+
+518
+00: 24: 46,820 -> 00: 24: 50.720
+ser deixado, em última análise, com, digamos, apenas uma página na qual
+
+519
+00: 24: 50,720 -> 00: 24: 53.070
+Mike Smith é ou não é.
+
+520
+00: 24: 53,070 -> 00: 24: 55.110
+E posso ligar para ele ou desistir.
+
+521
+00: 24: 55,110 -> 00: 24: 58.320
+Esse algoritmo me levaria à solução muito mais rápido.
+
+522
+00: 24: 58,320 -> 00: 25: 01.580
+E podemos apreciar isso mesmo se apenas olharmos para alguns dos números,
+
+523
+00: 25: 01,580 -> 00: 25: 03.810
+em última análise, como segue.
+
+524
+00: 25: 03,810 -> 00: 25: 08.180
+Então, se eu começar com, digamos, 1.024 páginas na lista telefônica,
+
+525
+00: 25: 08,180 -> 00: 25: 11.420
+e estou procurando por Mike Smith, e divido e supero esse problema,
+
+526
+00: 25: 11,420 -> 00: 25: 14.960
+dividindo o problema ao meio e ao meio, vou para 512,
+
+527
+00: 25: 14,960 -> 00: 25: 21.710
+Vou para 256, 128, 64, 32, 16, oito, quatro, dois e um.
+
+528
+00: 25: 21,710 -> 00: 25: 25.850
+Depois de apenas 10 passos, encontrei a página de Mike Smith
+
+529
+00: 25: 25,850 -> 00: 25: 28.210
+Em contraste, com aquele primeiro algoritmo onde eu apenas
+
+530
+00: 25: 28,210 -> 00: 25: 30.650
+fiz uma página de cada vez, quantos passos, talvez, podem
+
+531
+00: 25: 30,650 -> 00: 25: 33.462
+levar para encontrar Mike Smith?
+
+532
+00: 25: 33,462 -> 00: 25: 36.750
+Sim, tipo, 700, 800, mais ou menos onde o S deve estar.
+
+533
+00: 25: 36,750 -> 00: 25: 39.990
+e na pior das hipóteses, 1.000 passos, se eu examinar tudo.
+
+534
+00: 25: 39,990 -> 00: 25: 43.710
+O segundo algoritmo, talvez, 500 passos porque estou acessando duas páginas por vez.
+
+535
+00: 25: 43,710 -> 00: 25: 47.343
+Mas meu Deus, 10 passos com este algoritmo aqui.
+
+536
+00: 25: 47,343 -> 00: 25: 50.010
+E as chances são de que esse seria o algoritmo que a maioria de nós nesta sala
+
+537
+00: 25: 50,010 -> 00: 25: 53.640
+alcançaria por padrão, o que quer dizer que muitos problemas para resolver
+
+538
+00: 25: 53,640 -> 00: 25: 57.480
+na verdade, como veremos, trata-se apenas de controlar sua intuição existente
+
+539
+00: 25: 57,480 -> 00: 26: 01.530
+e se sentir confortável com ideias que agora você só precisa traduzir de tal forma
+
+540
+00: 26: 01,530 -> 00: 26: 04.620
+que as máquinas e outros humanos podem entender.
+
+541
+00: 26: 04,620 -> 00: 26: 08.460
+Então, como podemos apenas pensar sobre o quanto esse algoritmo é melhor?
+
+542
+00: 26: 08,460 -> 00: 26: 10.980
+Bem, considere esta primeira linha aqui.
+
+543
+00: 26: 10.980 -> 00: 26: 14.100
+Neste eixo y, ou eixo vertical, deixe-me descrever
+
+544
+00: 26: 14,100 -> 00: 26: 16.270
+esta é a hora de resolver algum problema.
+
+545
+00: 26: 16,270 -> 00: 26: 19.930
+E na horizontal, ou eixo x, o tamanho do problema.
+
+546
+00: 26: 19,930 -> 00: 26: 23.610
+Assim, o número de páginas na lista telefônica ficaria maior conforme você avançasse para a direita
+
+547
+00: 26: 23,610 -> 00: 26: 28.100
+e o número de segundos ou viradas de página necessários aumentaria ao longo do eixo y
+
+548
+00: 26: 28,100 -> 00: 26: 28.600
+aqui.
+
+549
+00: 26: 28,600 -> 00: 26: 31.230
+Portanto, esse primeiro algoritmo, representado aqui em vermelho,
+
+550
+00: 26: 31,230 -> 00: 26: 35.700
+sugere uma relação um-para-um entre o número de páginas do livro
+
+551
+00: 26: 35,700 -> 00: 26: 37.800
+e o número de segundos para encontrar alguém.
+
+552
+00: 26: 37,800 -> 00: 26: 39.210
+Então você tem essa linha reta.
+
+553
+00: 26: 39,210 -> 00: 26: 41.950
+Uma inclinação de 1 sobre 1, se preferir.
+
+554
+00: 26: 41,950 -> 00: 26: 44.580
+E então, se considerarmos o segundo algoritmo,
+
+555
+00: 26: 44,580 -> 00: 26: 47.070
+o segundo algoritmo também será uma linha reta,
+
+556
+00: 26: 47,070 -> 00: 26: 49.560
+mas essa linha reta será mais baixa no gráfico.
+
+557
+00: 26: 49,560 -> 00: 26: 50.190
+Por quê?
+
+558
+00: 26: 50,190 -> 00: 26: 53.490
+Porque para qualquer tamanho de problema, vou levar metade do tempo
+
+559
+00: 26: 53,490 -> 00: 26: 57.340
+para pesquisar aquela lista telefônica porque, é claro, estou passando duas páginas de cada vez.
+
+560
+00: 26: 57,340 -> 00: 26: 59.520
+Então, se virmos isso, por exemplo, se essa linha tracejada
+
+561
+00: 26: 59,520 -> 00: 27: 02.130
+representa um certo número de páginas na lista telefônica,
+
+562
+00: 27: 02,130 -> 00: 27: 05.700
+talvez 1.024, bem, você pode ver que pode levar tantos segundos
+
+563
+00: 27: 05,700 -> 00: 27: 09.690
+ou viradas de páginas, para realmente encontrar Mike Smith com esse segundo algoritmo.
+
+564
+00: 27: 09,690 -> 00: 27: 12.630
+Mas no primeiro algoritmo, esse mesmo número de páginas
+
+565
+00: 27: 12,630 -> 00: 27: 16.230
+levaria muito mais tempo para resolver, literalmente duas vezes
+
+566
+00: 27: 16,230 -> 00: 27: 17.690
+neste caso.
+
+567
+00: 27: 17,690 -> 00: 27: 19.230
+Bem, e o terceiro algoritmo?
+
+568
+00: 27: 19,230 -> 00: 27: 22.170
+Bem, mesmo que a sua memória sobre logaritmos seja um pouco nebulosa,
+
+569
+00: 27: 22,170 -> 00: 27: 24.880
+apenas descrevo uma forma fundamentalmente diferente.
+
+570
+00: 27: 24,880 -> 00: 27: 27.810
+A linha verde descreve o terceiro e último algoritmo
+
+571
+00: 27: 27,810 -> 00: 27: 31.980
+onde você dividiu o problema não em uma página por vez ou duas páginas por vez,
+
+572
+00: 27: 31,980 -> 00: 27: 35.040
+mas em 50% sucessivamente.
+
+573
+00: 27: 35,040 -> 00: 27: 37.290
+Você fez isso de novo e de novo e de novo.
+
+574
+00: 27: 37,290 -> 00: 27: 41.130
+E observe que, à medida que o número de páginas da lista telefônica fica muito grande,
+
+575
+00: 27: 41,130 -> 00: 27: 47.040
+você mal afeta o tempo que leva para resolver esse problema.
+
+576
+00: 27: 47,040 -> 00: 27: 50.610
+Por exemplo, se Cambridge e Allston, duas cidades aqui em Massachusetts,
+
+577
+00: 27: 50,610 -> 00: 27: 52.650
+fundir no próximo ano e suas listas telefônicas tornam-se
+
+578
+00: 27: 52,650 -> 00: 27: 56.130
+uma lista telefônica que é duas vezes maior, então não serão 1.000 páginas cada,
+
+579
+00: 27: 56,130 -> 00: 27: 58.950
+mas 2.000 páginas no total, quantas etapas a mais
+
+580
+00: 27: 58,950 -> 00: 28: 01.650
+talvez demore para encontrar Mike Smith na lista telefônica do próximo ano
+
+581
+00: 28: 01,650 -> 00: 28: 04.950
+se tiver 2.000 páginas em vez de 1.000?
+
+582
+00: 28: 04,950 -> 00: 28: 06.360
+Só mais um passo.
+
+583
+00: 28: 06,360 -> 00: 28: 09.480
+Mas os dois primeiros algoritmos, são outros 1.000 passos, talvez,
+
+584
+00: 28: 09,480 -> 00: 28: 10.770
+ou mais 500.
+
+585
+00: 28: 10,770 -> 00: 28: 15.780
+Essas são diferenças fundamentalmente grandes em eficiência, por assim dizer.
+
+586
+00: 28: 15,780 -> 00: 28: 18.450
+Então, vamos traduzir essa ideia, essa intuição,
+
+587
+00: 28: 18,450 -> 00: 28: 20.233
+do primeiro exemplo de código.
+
+588
+00: 28: 20,233 -> 00: 28: 21.150
+Com um pseudo código.
+
+589
+00: 28: 21,150 -> 00: 28: 23.025
+E não há uma definição formal disso.
+
+590
+00: 28: 23,025 -> 00: 28: 25.350
+Pseudo código é uma sintaxe semelhante a um código que você escreve
+
+591
+00: 28: 25,350 -> 00: 28: 28.920
+em inglês ou na sua própria língua falada que represente as suas ideias,
+
+592
+00: 28: 28,920 -> 00: 28: 30.390
+mas de forma sucinta.
+
+593
+00: 28: 30,390 -> 00: 28: 33.450
+E então eu posso propor que este algoritmo para encontrar Mike Smith
+
+594
+00: 28: 33,450 -> 00: 28: 37.240
+podemos escrever pseudo código sintaticamente semelhante ao inglês, assim.
+
+595
+00: 28: 37,240 -> 00: 28: 40.470
+Passo um, pegar a lista telefônica, que foi de fato a primeira coisa que fiz.
+
+596
+00: 28: 40,470 -> 00: 28: 43.980
+Passo dois, abrir no meio da lista telefônica, que foi a próxima coisa que fiz.
+
+597
+00: 28: 43,980 -> 00: 28: 47.430
+O passo três pode ser olhar a página para ver se alguém está lá
+
+598
+00: 28: 47,430 -> 00: 28: 50.250
+e se Smith estiver nessa página, o que eu quero fazer?
+
+599
+00: 28: 50,250 -> 00: 28: 52.500
+Bem, meu código ficará um pouco diferente agora,
+
+600
+00: 28: 52,500 -> 00: 28: 55.290
+e vou identar de propósito para deixar claro que há
+
+601
+00: 28: 55,290 -> 00: 28: 57.330
+uma dependência aqui de algum tipo.
+
+602
+00: 28: 57,330 -> 00: 29: 02.640
+Vou prosseguir e passo cinco e ligar para Mike apenas se a linha quatro for verdadeira,
+
+603
+00: 29: 02,640 -> 00: 29: 04.010
+que ele está na página.
+
+604
+00: 29: 04,010 -> 00: 29: 08.010
+Caso contrário, se Smith estiver antes no livro, à esquerda, por assim dizer,
+
+605
+00: 29: 08,010 -> 00: 29: 11.800
+Vou prosseguir e abrir no meio da metade esquerda do livro,
+
+606
+00: 29: 11,800 -> 00: 29: 14.037
+e então o que provavelmente vou fazer a seguir?
+
+607
+00: 29: 14,037 -> 00: 29: 15.273
+PÚBLICO: [INAUDÍVEL]
+
+608
+00: 29: 15,273 -> 00: 29: 16.940
+DAVID MALAN: Então, sim, isso, em última análise.
+
+609
+00: 29: 16,940 -> 00: 29: 18.580
+Como faço isso sucessivamente?
+
+610
+00: 29: 18,580 -> 00: 29: 22.780
+Bem, eu já tenho algum código, se você notar, na linha três que fazemos isso.
+
+611
+00: 29: 22,780 -> 00: 29: 26.110
+Olhe na página e tome a decisão de ir para a esquerda ou para a direita.
+
+612
+00: 29: 26,110 -> 00: 29: 29.190
+Então, direi apenas: Volte para a linha três depois de ir
+
+613
+00: 29: 29,190 -> 00: 29: 30.940
+no meio da metade esquerda do livro
+
+614
+00: 29: 30,940 -> 00: 29: 33.552
+se Smith está realmente antes no livro.
+
+615
+00: 29: 33,552 -> 00: 29: 35.510
+O outro cenário, é claro, é o oposto.
+
+616
+00: 29: 35,510 -> 00: 29: 38.470
+Do contrário, se Smith estiver mais adiante no livro, vamos abrir no meio
+
+617
+00: 29: 38,470 -> 00: 29: 42.280
+da metade direita do livro, e então vamos para a linha três.
+
+618
+00: 29: 42,280 -> 00: 29: 45.820
+Caso contrário, há um quarto cenário ou caso possível.
+
+619
+00: 29: 45,820 -> 00: 29: 49.395
+O que mais pode acontecer neste algoritmo?
+
+620
+00: 29: 49,395 -> 00: 29: 50.270
+PÚBLICO: [INAUDÍVEL]
+
+621
+00: 29: 50,270 -> 00: 29: 51.380
+DAVID MALAN: Ele não está lá.
+
+622
+00: 29: 51,380 -> 00: 29: 53.510
+E então eu provavelmente quero antecipar isso e apenas
+
+623
+00: 29: 53.510 -> 00: 29: 58.253
+diga Sair se, de fato, ele não estiver na página, à esquerda da página,
+
+624
+00: 29: 58,253 -> 00: 29: 59.420
+ou à direita da página.
+
+625
+00: 29: 59,420 -> 00: 30: 03.410
+Portanto, há uma maneira de expressar esse pseudo código, embora agora
+
+626
+00: 30: 03,410 -> 00: 30: 05.210
+seja apenas uma sintaxe semelhante ao inglês.
+
+627
+00: 30: 05,210 -> 00: 30: 08.260
+Mas nesta sintaxe sozinha, há alguns pontos em comum,
+
+628
+00: 30: 08,260 -> 00: 30: 10.760
+alguns recursos que veremos nas próximas semanas
+
+629
+00: 30: 10,760 -> 00: 30: 13.880
+não apenas em pseudo código, mas em uma linguagem chamada Scratch,
+
+630
+00: 30: 13,880 -> 00: 30: 16.790
+uma linguagem chamada C, uma linguagem chamada Python e mais.
+
+631
+00: 30: 16,790 -> 00: 30: 20.233
+Existem certas construções em programação, programação procedural,
+
+632
+00: 30: 20,233 -> 00: 30: 23.150
+por assim dizer, isso vai ser comum entre todas essas línguas.
+
+633
+00: 30: 23,150 -> 00: 30: 26.060
+Destacados em amarelo aqui estão o que, de agora em diante, hoje e em diante,
+
+634
+00: 30: 26,060 -> 00: 30: 27.560
+vamos apenas chamar funções.
+
+635
+00: 30: 27,560 -> 00: 30: 30.860
+São verbos ou ações que apenas dizem ao computador,
+
+636
+00: 30: 30,860 -> 00: 30: 33.260
+ou, neste caso, o humano, o que fazer.
+
+637
+00: 30: 33,260 -> 00: 30: 34.520
+Então, essas são funções.
+
+638
+00: 30: 34,520 -> 00: 30: 37.640
+Agora destacados em amarelo estão o que vamos chamar de condições.
+
+639
+00: 30: 37,640 -> 00: 30: 41.180
+Estes são ramos, uma espécie de bifurcação na estrada, então você pode fazer isso
+
+640
+00: 30: 41,180 -> 00: 30: 43.760
+ou você pode fazer isso ou talvez essa outra coisa também.
+
+641
+00: 30: 43,760 -> 00: 30: 47.000
+Mas, para tomar essas decisões, você precisa se fazer uma pergunta.
+
+642
+00: 30: 47.000 -> 00: 30: 49.040
+E essas questões, em ciência da computação,
+
+643
+00: 30: 49,040 -> 00: 30: 52.610
+são chamadas de expressões booleanas, em homenagem a um matemático chamado Boole.
+
+644
+00: 30: 52,610 -> 00: 30: 55.190
+E uma expressão booleana, destacada agora em amarelo,
+
+645
+00: 30: 55,190 -> 00: 31: 00.410
+são apenas perguntas com respostas sim ou não ou, se preferir, verdadeiras ou falsas
+
+646
+00: 31: 00,410 -> 00: 31: 04.700
+respostas ou, diabos, agora que sabemos binário, respostas de 1s ou 0s.
+
+647
+00: 31: 04,700 -> 00: 31: 08.887
+Portanto, mesmo no código, vemos uma dica de por que 1s e 0s são úteis.
+
+648
+00: 31: 08,887 -> 00: 31: 10.220
+Por último, há essa coisa aqui.
+
+649
+00: 31: 10,220 -> 00: 31: 11.513
+Volte para a linha três.
+
+650
+00: 31: 11,513 -> 00: 31: 12.680
+Nós o usamos em dois lugares.
+
+651
+00: 31: 12,680 -> 00: 31: 14.870
+Isso se refere a algo que chamaremos de loop.
+
+652
+00: 31: 14,870 -> 00: 31: 18.320
+É um ciclo que faz algo repetidamente.
+
+653
+00: 31: 18,320 -> 00: 31: 21.470
+Além dessas quatro ideias, funções, condições, expressões booleanas,
+
+654
+00: 31: 21,470 -> 00: 31: 24.860
+e loops, estamos prestes a ver vários outros também.
+
+655
+00: 31: 24,860 -> 00: 31: 27.800
+Variáveis, uma vaga memória do que você pode lembrar da álgebra,
+
+656
+00: 31: 27,800 -> 00: 31: 30.350
+porém, mais poderoso agora neste contexto de programação.
+
+657
+00: 31: 30,350 -> 00: 31: 31.850
+Algo chamado threads e eventos.
+
+658
+00: 31: 31,850 -> 00: 31: 35.397
+E vamos fazer isso por meio de uma linguagem de programação real.
+
+659
+00: 31: 35,397 -> 00: 31: 36.980
+Mas ainda não será esse.
+
+660
+00: 31: 36,980 -> 00: 31: 41.660
+Na verdade, daqui a apenas uma semana você realmente entenderá o que isso significa.
+
+661
+00: 31: 41,660 -> 00: 31: 46.640
+As probabilidades são de 2/3 de você não ter ideia do que isso realmente é, e está tudo bem.
+
+662
+00: 31: 46,640 -> 00: 31: 49.430
+Mas é um programa escrito em uma linguagem chamada C
+
+663
+00: 31: 49,430 -> 00: 31: 50.900
+veremos mais disso na próxima
+
+664
+00: 31: 50,900 -> 00: 31: 53.580
+este aqui, simplesmente diz olá para o mundo.
+
+665
+00: 31: 53,580 -> 00: 31: 56.750
+Mas vamos fazer isso hoje no contexto de uma linguagem gráfica
+
+666
+00: 31: 56,750 -> 00: 31: 58.790
+do Media Lab do meu MIT chamado Scratch.
+
+667
+00: 31: 58,790 -> 00: 32: 02.090
+Esta é uma linguagem pela qual você pode programar um computador arrastando
+
+668
+00: 32: 02,090 -> 00: 32: 05.660
+e soltando blocos ou coisas que parecem peças de quebra-cabeça que se encaixam
+
+669
+00: 32: 05,660 -> 00: 32: 09.440
+para que você possa dizer ao computador exatamente o que fazer,
+
+670
+00: 32: 09,440 -> 00: 32: 10.460
+passo a passo.
+
+671
+00: 32: 10,460 -> 00: 32: 13.610
+E veremos esta linguagem hoje, e para o primeiro conjunto de problemas
+
+672
+00: 32: 13,610 -> 00: 32: 16.880
+ou tarefas do programa, que você pode colocar todas essas ideias
+
+673
+00: 32: 16,880 -> 00: 32: 20.600
+do pseudo código em uma linguagem real como Scratch.
+
+674
+00: 32: 20,600 -> 00: 32: 21.800
+Então, o que vem pela frente?
+
+675
+00: 32: 21,800 -> 00: 32: 26.120
+Bem no scratch.mit.edu, que estou prestes a erguer sozinho,
+
+676
+00: 32: 26,120 -> 00: 32: 28.940
+vai ser onde você irá gasta tempo no primeiro desafio.
+
+677
+00: 32: 28,940 -> 00: 32: 31.610
+E vai ser bem parecido com este quando você o abrir.
+
+678
+00: 32: 31,610 -> 00: 32: 35.125
+No lado esquerdo deste site, este ambiente de programação na web
+
+679
+00: 32: 35,125 -> 00: 32: 37.250
+do MIT, você verá no lado esquerdo
+
+680
+00: 32: 37,250 -> 00: 32: 39.170
+um monte de peças de quebra-cabeça, por assim dizer.
+
+681
+00: 32: 39,170 -> 00: 32: 42.140
+E são categorizados de acordo com algumas cores diferentes
+
+682
+00: 32: 42,140 -> 00: 32: 43.010
+à esquerda.
+
+683
+00: 32: 43,010 -> 00: 32: 46.130
+No meio, haverá apenas uma grande tela branca, inicialmente,
+
+684
+00: 32: 46,130 -> 00: 32: 48.620
+onde você pode arrastar e soltar as peças do quebra-cabeça
+
+685
+00: 32: 48,620 -> 00: 32: 52.370
+e trava-los para que o programa faça alguma coisa.
+
+686
+00: 32: 52,370 -> 00: 32: 53.630
+O que você pode fazer?
+
+687
+00: 32: 53,630 -> 00: 32: 56.390
+Bem, no canto superior direito aqui está o chamado palco do Scratch.
+
+688
+00: 32: 56,390 -> 00: 33: 00.140
+Por padrão, há apenas um personagem, ou sprite, naquele palco.
+
+689
+00: 33: 00,140 -> 00: 33: 02.810
+Faça o programa,e ele pode se mover para cima, para baixo, para a esquerda, para a direita
+
+690
+00: 33: 02,810 -> 00: 33: 05.630
+e fazer uma série de outras coisas se você disser
+
+691
+00: 33: 05,630 -> 00: 33: 08.875
+pra ele o que fazer arrastando e soltando as peças do quebra-cabeça.
+
+692
+00: 33: 08,875 -> 00: 33: 11.000
+Se você não gosta daquele gato ou quer muitos outros,
+
+693
+00: 33: 11.000 -> 00: 33: 13.790
+você também pode adicionar vários sprites, ou personagens,
+
+694
+00: 33: 13,790 -> 00: 33: 16.380
+criando-os nessa área.
+
+695
+00: 33: 16,380 -> 00: 33: 19.880
+Então, vamos realmente fazer isso agora com alguns programas de amostra
+
+696
+00: 33: 19,880 -> 00: 33: 24.950
+de forma que possamos realmente começar a programar usando este ambiente.
+
+697
+00: 33: 24,950 -> 00: 33: 27.890
+Vou prosseguir agora e abrir um navegador aqui.
+
+698
+00: 33: 27,890 -> 00: 33: 34.620
+E em um momento, você verá na tela o próprio scratch.mit.edu.
+
+699
+00: 33: 34,620 -> 00: 33: 37.400
+Então, se eu prosseguir e criar simplesmente clicando aqui,
+
+700
+00: 33: 37,400 -> 00: 33: 41.820
+veremos este editor, atualmente, que por padrão, tem este tutorial que estou
+
+701
+00: 33: 41,820 -> 00: 33: 43.070
+que eu vou fechar.
+
+702
+00: 33: 43,070 -> 00: 33: 45.030
+Mas agora vemos o mesmo ambiente.
+
+703
+00: 33: 45,030 -> 00: 33: 47.720
+E você verá que acima do Scratch aqui no canto superior direito,
+
+704
+00: 33: 47,720 -> 00: 33: 49.940
+há uma bandeira verde e um sinal de pare.
+
+705
+00: 33: 49,940 -> 00: 33: 53.600
+A bandeira verde é o que você pode clicar como humano para fazer o programa funcionar.
+
+706
+00: 33: 53,600 -> 00: 33: 56.060
+O sinal de parada fará qualquer programa parar.
+
+707
+00: 33: 56,060 -> 00: 33: 59.330
+Acontece que, entre todas essas categorias aqui,
+
+708
+00: 33: 59,330 -> 00: 34: 02.510
+há, por exemplo, alguns em laranja chamados Controle.
+
+709
+00: 34: 02,510 -> 00: 34: 04.730
+Existem alguns em amarelos chamados Eventos.
+
+710
+00: 34: 04,730 -> 00: 34: 06.800
+E vamos primeiramente nos concentrar neste último.
+
+711
+00: 34: 06,800 -> 00: 34: 10.190
+Se eu prosseguir e arrastar dos eventos esta peça do quebra-cabeça aqui,
+
+712
+00: 34: 10,190 -> 00: 34: 11.989
+é assim que posso começar a programar.
+
+713
+00: 34: 11,989 -> 00: 34: 14.270
+Quando a bandeira verde for clicada, faça o seguinte.
+
+714
+00: 34: 14,270 -> 00: 34: 15.239
+O que eu quero fazer?
+
+715
+00: 34: 15,239 -> 00: 34: 17.031
+Bem, vamos fazer esse gato dizer olá.
+
+716
+00: 34: 17,031 -> 00: 34: 18.739
+E como já usei este programa antes,
+
+717
+00: 34: 18,739 -> 00: 34: 23,090
+Eu sei que em Aparência, posso prosseguir e dizer algo como dizer olá.
+
+718
+00: 34: 23,090 -> 00: 34: 27,230
+E observe que não apenas a forma corresponde à peça laranja do quebra-cabeça
+
+719
+00: 34: 27,230 -> 00: 34: 30,710
+ou peça amarela do quebra-cabeça, observe que ela deseja encaixar magneticamente,
+
+720
+00: 34: 30,710 -> 00: 34: 31,858
+e se eu deixar ir, ela vai.
+
+721
+00: 34: 31,858 -> 00: 34: 34.400
+E vou dizer talvez uma das coisas mais canônicas
+
+722
+00: 34: 34,400 -> 00: 34: 37.310
+dizer que em seu primeiro programa, que é apenas, convencionalmente,
+
+723
+00: 34: 37,310 -> 00: 34: 39.685
+o "Olá, mundo" e finalizar assim.
+
+724
+00: 34: 39,685 -> 00: 34: 41.810
+Vou agora clicar na bandeira verde.
+
+725
+00: 34: 41,810 -> 00: 34: 45.260
+E "voila", nosso primeiro programa.
+
+726
+00: 34: 45,260 -> 00: 34: 46.040
+O mesmo efeito.
+
+727
+00: 34: 46,040 -> 00: 34: 46.580
+[Aplausos]
+
+728
+00: 34: 46,580 -> 00: 34: 47.080
+Obrigado.
+
+729
+00:34:47,080 --> 00:34:50,060
+
+
+730
+00: 34: 50,060 -> 00: 34: 51.380
+Obrigado.
+
+731
+00: 34: 51,380 -> 00: 34: 54.469
+Muito pouco até agora, mas vamos melhorar neste próximo
+
+732
+00: 34: 54,469 -> 00: 34: 58.580
+porque este gato é bastante inanimado e agora está dizendo olá.
+
+733
+00: 34: 58,580 -> 00: 35: 02.150
+E se quiséssemos que ele fizesse mais do que isso e não dissesse olá, mas sim olá para mim
+
+734
+00: 35: 02,150 -> 00: 35: 03.143
+ou olá para você?
+
+735
+00: 35: 03,143 -> 00: 35: 05.810
+Bem, descobrimos que também podemos fazer isso de maneira um pouco diferente.
+
+736
+00: 35: 05,810 -> 00: 35: 08.880
+Vou seguir em frente e jogar isso fora apenas arrastando-o
+
+737
+00: 35: 08,880 -> 00: 35: 09.380
+à esquerda.
+
+738
+00: 35: 09,380 -> 00: 35: 11.147
+E a peça do quebra-cabeça simplesmente vai embora.
+
+739
+00: 35: 11,147 -> 00: 35: 13.730
+E se eu fuçar um pouco mais embaixo nesses blocos azuis,
+
+740
+00: 35: 13,730 -> 00: 35: 16.490
+por exemplo, "Sensores", há um monte de peças de quebra-cabeça
+
+741
+00: 35: 16,490 -> 00: 35: 18.500
+relacionado ao ambiente do Scratch.
+
+742
+00: 35: 18,500 -> 00: 35: 21.770
+E um desses é esse aqui, pergunte, qual é o seu nome?
+
+743
+00: 35: 21,770 -> 00: 35: 22.400
+E espere.
+
+744
+00: 35: 22,400 -> 00: 35: 24.785
+Mas a expressão do seu nome está em uma caixa branca
+
+745
+00: 35: 24,785 -> 00: 35: 25.910
+que eu posso realmente mudar.
+
+746
+00: 35: 25,910 -> 00: 35: 29.990
+Portanto, você pode fazer as perguntas que quiser, mas irei em frente e usarei esse padrão.
+
+747
+00: 35: 29,990 -> 00: 35: 32.722
+E agora observe também aqui em azul está a Resposta,
+
+748
+00: 35: 32,722 -> 00: 35: 35.180
+que é outra forma circular que representa o que 
+
+749
+00: 35: 35,180 -> 00: 35: 36.830
+vamos começar chamando uma variável.
+
+750
+00: 35: 36,830 -> 00: 35: 40.370
+Essa variável vai armazenar tudo o que o humano digitar quando
+
+751
+00: 35: 40,370 -> 00: 35: 41.930
+o programa perguntou por seu nome.
+
+752
+00: 35: 41,930 -> 00: 35: 44.840
+Então, o que eu quero fazer quando conseguir o nome da pessoa?
+
+753
+00: 35: 44,840 -> 00: 35: 46.640
+Bem, deixe-me voltar para "Aparência".
+
+754
+00: 35: 46,640 -> 00: 35: 48.980
+Deixe-me ir em frente e pegar um "dizer olá".
+
+755
+00: 35: 48,980 -> 00: 35: 53.480
+E eu vou em frente e pego "dizer olá" e depois outro, "dizer olá" de novo.
+
+756
+00: 35: 53,480 -> 00: 35: 56.360
+Mas em vez disso, quero que diga meu nome.
+
+757
+00: 35: 56,360 -> 00: 36: 00.710
+Mas seria incorreto apenas digitar meu nome, porque será sempre meu nome
+
+758
+00: 36: 00,710 -> 00: 36: 04.260
+David, não importa quem joga este jogo ou se a pergunta será feita.
+
+759
+00: 36: 04,260 -> 00: 36: 05.390
+Então, eu não quero fazer isso.
+
+760
+00: 36: 05,390 -> 00: 36: 08.680
+Se eu for em "Sensores" e arrastar e soltar esta peça do quebra-cabeça,
+
+761
+00: 36: 08,680 -> 00: 36: 09.500
+observe isso.
+
+762
+00: 36: 09,500 -> 00: 36: 11.240
+Ele deseja encaixar magneticamente lá.
+
+763
+00: 36: 11,240 -> 00: 36: 12.770
+E vai crescer para caber nele.
+
+764
+00: 36: 12,770 -> 00: 36: 16.170
+Agora posso dizer olá e depois posso dizer o nome.
+
+765
+00: 36: 16,170 -> 00: 36: 18.830
+Então, deixe-me ir em frente e clicar em parar e tocar novamente.
+
+766
+00: 36: 18,830 -> 00: 36: 19.657
+Qual o seu nome?
+
+767
+00: 36: 19,657 -> 00: 36: 20.990
+Vou digitar David.
+
+768
+00: 36: 20,990 -> 00: 36: 21.710
+Entrar.
+
+769
+00: 36: 21,710 -> 00: 36: 24.580
+E agora David.
+
+770
+00: 36: 24,580 -> 00: 36: 27.610
+Huh, sinto que esquecemos o olá.
+
+771
+00: 36: 27,610 -> 00: 36: 30.040
+Este é meu primeiro bug.
+
+772
+00: 36: 30,040 -> 00: 36: 31.390
+Alguma ideia do por quê?
+
+773
+00: 36: 31,390 -> 00: 36: 32.610
+O que eu fiz errado?
+
+774
+00: 36: 32,610 -> 00: 36: 33.826
+Sim?
+
+775
+00: 36: 33,826 -> 00: 36: 37.850
+PÚBLICO: [INAUDÍVEL]
+
+776
+00: 36: 37,850 -> 00: 36: 38.600
+DAVID MALAN: Sim.
+
+777
+00: 36: 38,600 -> 00: 36: 42.440
+Quer dizer, eu disse ao computador por meio deste algoritmo para fazer três coisas,
+
+778
+00: 36: 42,440 -> 00: 36: 44.600
+pergunte qual o seu nome e espere, mas então eu...
+
+779
+00: 36: 44,600 -> 00: 36: 47.887
+o "dizer olá" e "diga resposta" ocorrem em uma sucessão muito rápida.
+
+780
+00: 36: 47,887 -> 00: 36: 49.970
+E meu Deus, nossos Macs, PCs e telefones hoje em dia
+
+781
+00: 36: 49,970 -> 00: 36: 53.090
+são tão rápidos, eles farão tantas coisas tão rapidamente que
+
+782
+00: 36: 53,090 -> 00: 36: 55.430
+ele disse olá, mas nenhum de nós realmente viu
+
+783
+00: 36: 55,430 -> 00: 36: 57.470
+porque meu nome imediatamente o substituiu.
+
+784
+00: 36: 57,470 -> 00: 36: 59.330
+Posso consertar isso de algumas maneiras.
+
+785
+00: 36: 59,330 -> 00: 37: 01.670
+Deixe-me ir em frente e voltar para "Aparência" por um momento,
+
+786
+00: 37: 01,670 -> 00: 37: 05.300
+livro-me desta peça do quebra-cabeça e diga olá por dois segundos.
+
+787
+00: 37: 05,300 -> 00: 37: 09.050
+Então, avanço para "dizer meu nome" ou o nome do usuário por dois segundos
+
+788
+00: 37: 09,050 -> 00: 37: 11.810
+como arrastando a resposta agora para cá.
+
+789
+00: 37: 11,810 -> 00: 37: 14.270
+Então esse foi meu primeiro bug no código, por assim dizer.
+
+790
+00: 37: 14,270 -> 00: 37: 19.520
+Deixe-me ir em frente e tocar novamente, digite David, e agora temos olá, David.
+
+791
+00: 37: 19,520 -> 00: 37: 20.150
+Tudo certo.
+
+792
+00: 37: 20,150 -> 00: 37: 20.910
+Muito melhor.
+
+793
+00: 37: 20,910 -> 00: 37: 23.210
+É um pouco estranho porque você normalmente
+
+794
+00: 37: 23,210 -> 00: 37: 27.350
+não cumprimente ninguém dizendo olá... David... depois de dois segundos.
+
+795
+00: 37: 27,350 -> 00: 37: 29.720
+E daí se combinarmos essas expressões
+
+796
+00: 37: 29,720 -> 00: 37: 32.450
+e não diga olá, mundo, mas sim, vírgula David?
+
+797
+00: 37: 32,450 -> 00: 37: 34.350
+Bem, podemos fazer isso de uma maneira diferente.
+
+798
+00: 37: 34,350 -> 00: 37: 38.600
+Deixe-me voltar aqui e, por exemplo, pegar apenas um daqueles
+
+799
+00: 37: 38,600 -> 00: 37: 39.912
+blocos "diga" como este.
+
+800
+00: 37: 39,912 -> 00: 37: 42.620
+Não vou me preocupar em dizer isso por alguns segundos
+
+801
+00: 37: 42,620 -> 00: 37: 44.570
+porque só vou dizer uma coisa agora.
+
+802
+00: 37: 44,570 -> 00: 37: 49.087
+Mas, de alguma forma, quero dizer olá, vírgula e o nome do usuário.
+
+803
+00: 37: 49,087 -> 00: 37: 51.170
+Bem, se eu bisbilhotar mais, e você só
+
+804
+00: 37: 51,170 -> 00: 37: 53.390
+saberia disso por ter visto antes. 
+
+805
+00: 37: 53,390 -> 00: 37: 55.730
+Acontece que tem essa peça do quebra-cabeça aqui chamada "Junte".
+
+806
+00: 37: 55,730 -> 00: 37: 58.940
+E é um pouco estranho que as palavras padrão sejam maçã e banana,
+
+807
+00: 37: 58,940 -> 00: 38: 00.590
+mas esses são apenas espaços reservados.
+
+808
+00: 38: 00,590 -> 00: 38: 04.090
+Se eu for em frente e arrastar isso aqui, ele cresce para preencher
+
+809
+00: 38: 04,090 -> 00: 38: 06.140
+e sobrescreve o que estava lá.
+
+810
+00: 38: 06,140 -> 00: 38: 10.040
+Posso dizer olá, vírgula e, em vez de olá banana,
+
+811
+00: 38: 10,040 -> 00: 38: 13.640
+deixe-me voltar para "Sensores", arrastar a resposta do usuário,
+
+812
+00: 38: 13,640 -> 00: 38: 16.820
+e agora dizemos olá, vírgula fulano e pronto.
+
+813
+00: 38: 16,820 -> 00: 38: 18.410
+Então, vamos tentar isso agora.
+
+814
+00: 38: 18,410 -> 00: 38: 21.380
+Bandeira verde, digite meu nome, Enter.
+
+815
+00: 38: 21,380 -> 00: 38: 23.090
+Olá vírgula David.
+
+816
+00: 38: 23,090 -> 00: 38: 25.760
+Então agora o programa não é muito mais complicado,
+
+817
+00: 38: 25,760 -> 00: 38: 28.940
+mas observe que estamos começando a aninhar esses verbos, essas funções.
+
+818
+00: 38: 28,940 -> 00: 38: 31.700
+Estamos pedindo um nome e depois dizendo o resultado
+
+819
+00: 38: 31,700 -> 00: 38: 34.050
+de juntar as duas coisas a seguir.
+
+820
+00: 38: 34,050 -> 00: 38: 36.410
+Portanto, há algumas ideias para acompanhar de cada vez.
+
+821
+00: 38: 36,410 -> 00: 38: 40.340
+Mas isso é bem parecido com o que estávamos fazendo desde o início
+
+822
+00: 38: 40,340 -> 00: 38: 41.270
+como a seguir.
+
+823
+00: 38: 41,270 -> 00: 38: 44.420
+Por exemplo, se quisermos apenas dizer "olá, mundo" com esta peça do quebra-cabeça
+
+824
+00: 38: 44,420 -> 00: 38: 48.590
+aqui, isso na verdade mapeia perfeitamente para nossa definição fundamental
+
+825
+00: 38: 48,590 -> 00: 38: 50.060
+do que é a resolução de problemas.
+
+826
+00: 38: 50,060 -> 00: 38: 53.720
+A entrada para daquela peça do quebra-cabeça é, obviamente, apenas "olá mundo".
+
+827
+00: 38: 53,720 -> 00: 38: 58.190
+A função ou algoritmo que você deseja executar, passo a passo
+
+828
+00: 38: 58,190 -> 00: 39: 02.600
+para dizer algo, Scratch chama "dizer" em roxo, e a saída que você deseja,
+
+829
+00: 39: 02,600 -> 00: 39: 05.060
+claro, o Scratch está dizendo olá, mundo.
+
+830
+00: 39: 05,060 -> 00: 39: 07.337
+Agora, no exemplo mais sofisticado, considere isso.
+
+831
+00: 39: 07,337 -> 00: 39: 08.420
+Perguntamos qual é o seu nome?
+
+832
+00: 39: 08,420 -> 00: 39: 09.500
+E então esperamos.
+
+833
+00: 39: 09,500 -> 00: 39: 12.050
+Bem, essa imagem seria assim.
+
+834
+00: 39: 12,050 -> 00: 39: 15.290
+A entrada para essa pergunta é, claro, qual é o seu nome?
+
+835
+00: 39: 15,290 -> 00: 39: 17.480
+O algoritmo, ou neste caso, função,
+
+836
+00: 39: 17,480 -> 00: 39: 22.250
+através do qual estamos resolvendo esse problema é perguntar e esperar, recebendo essa entrada.
+
+837
+00: 39: 22,250 -> 00: 39: 25.070
+E a saída que recebemos agora é a resposta.
+
+838
+00: 39: 25,070 -> 00: 39: 28.070
+E, finalmente, naquele terceiro exemplo, onde as coisas ficaram um pouco mais extravagantes
+
+839
+00: 39: 28,070 -> 00: 39: 31.040
+e você teve que começar a arrastar e soltar e aninhar esses quebra-cabeças
+
+840
+00: 39: 31,040 -> 00: 39: 33.300
+observe que esta é a mesma ideia.
+
+841
+00: 39: 33,300 -> 00: 39: 36.680
+A entrada agora são duas coisas, olá e resposta.
+
+842
+00: 39: 36,680 -> 00: 39: 39.530
+Eles vão para uma função chamada "Junte", a saída
+
+843
+00: 39: 39,530 -> 00: 39: 41.990
+do qual deve ser Olá, vírgula David.
+
+844
+00: 39: 41,990 -> 00: 39: 47.850
+Mas agora queremos passar essa saída como entrada para o bloco "Diga"
+
+845
+00: 39: 47,850 -> 00: 39: 52.467
+para que o resultado final seja "olá, David" direto da boca do gato.
+
+846
+00: 39: 52,467 -> 00: 39: 54.800
+Assim, mesmo com as peças mais simples do quebra-cabeça,
+
+847
+00: 39: 54,800 -> 00: 39: 59.210
+tudo se encaixa neste mesmo modelo de solução de problemas.
+
+848
+00: 39: 59,210 -> 00: 40: 01.430
+Mas agora vamos tornar as coisas um pouco mais interessantes.
+
+849
+00: 40: 01,430 -> 00: 40: 04.520
+Em vez de apenas conversar e enviar mensagens de texto com este gato, vamos em frente
+
+850
+00: 40: 04,520 -> 00: 40: 06.590
+e fazer outras coisas.
+
+851
+00: 40: 06,590 -> 00: 40: 08.620
+Deixe-me prosseguir em "Som", por exemplo,
+
+852
+00: 40: 08,620 -> 00: 40: 11.810
+e parece que há um bloco em rosa aqui chamado "Toque o som miau"
+
+853
+00: 40: 11,810 -> 00: 40: 12.860
+até o fim.
+
+854
+00: 40: 12,860 -> 00: 40: 15.996
+E agora, deixe-me interromper o programa antigo e iniciar o novo.
+
+855
+00: 40: 15,996 -> 00: 40: 17.480
+[GATO MIANDO]
+
+856
+00: 40: 17,480 -> 00: 40: 17.980
+ESTÁ BEM.
+
+857
+00: 40: 17,980 -> 00: 40: 19.833
+Um pouco agudo, mas adorável.
+
+858
+00: 40: 19,833 -> 00: 40: 21.250
+E se você quiser ouvir de novo 
+
+859
+00: 40: 21,250 -> 00: 40: 22.450
+[GATO MIANDO]
+
+860
+00: 40: 22,450 -> 00: 40: 23.700
+Eu posso clicar na bandeira verde
+
+861
+00: 40: 23,700 -> 00: 40: 24.660
+[GATO MIANDO]
+
+862
+00: 40: 24,660 -> 00: 40: 26.080
+e posso clicar na bandeira verde.
+
+863
+00: 40: 26,080 -> 00: 40: 31.180
+Claro, este é um gato muito chato se ficar assim parado
+
+864
+00: 40: 31,180 -> 00: 40: 32.650
+depois disse miau.
+
+865
+00: 40: 32,650 -> 00: 40: 37.060
+Como faríamos para perpetuar esse som e miar a cada poucos segundos?
+
+866
+00: 40: 37,060 -> 00: 40: 39.235
+Que ideia de construtor podemos usar aqui?
+
+867
+00: 40: 39,235 -> 00: 40: 40.110
+PÚBLICO: [INAUDÍVEL]
+
+868
+00: 40: 40,110 -> 00: 40: 41.530
+DAVID MALAN: Sim, algum tipo de loop.
+
+869
+00: 40: 41,530 -> 00: 40: 44.090
+Então, no Scratch, há algumas maneiras de fazer isso.
+
+870
+00: 40: 44,090 -> 00: 40: 47.170
+Mas se eu descer para o "Controle", você verá alguns blocos aqui.
+
+871
+00: 40: 47,170 -> 00: 40: 50.800
+Repita algumas vezes, por padrão, 10 ou para sempre.
+
+872
+00: 40: 50,800 -> 00: 40: 53.140
+Vou prosseguir e talvez fazer isso para sempre.
+
+873
+00: 40: 53,140 -> 00: 40: 54.627
+[RISO]
+
+874
+00: 40: 54,627 -> 00: 40: 56.710
+E vou arrastar e soltar isso agora aqui.
+
+875
+00: 40: 56,710 -> 00: 40: 58.930
+Observe que posso mover as coisas para onde eu quiser.
+
+876
+00: 40: 58,930 -> 00: 41: 01.480
+E agora posso reconectar isso aqui.
+
+877
+00: 41: 01,480 -> 00: 41: 02.761
+E agora jogue.
+
+878
+00: 41: 02,761 -> 00: 41: 06.060
+[GOT MIANDO REPETIDAMENTE]
+
+879
+00: 41: 06,060 -> 00: 41: 08.280
+É um gato muito agitado no momento.
+
+880
+00: 41: 08,280 -> 00: 41: 11.670
+Posso acalmá-lo, talvez, arrastando e largando isso.
+
+881
+00: 41: 11,670 -> 00: 41: 15.298
+E observe que mesmo se não houver espaço, ele crescerá para preencher.
+
+882
+00: 41: 15,298 -> 00: 41: 16.340
+[MIADO DO GATO REDUZIDO]
+
+883
+00: 41: 16,340 -> 00: 41: 17.390
+Um segundo.
+
+884
+00: 41: 17,390 -> 00: 41: 20.880
+Agora é um gato mais feliz, se você me permiti.
+
+885
+00: 41: 20,880 -> 00: 41: 23.823
+Mas agora que temos a capacidade de fazer com que o gato faça algo para sempre,
+
+886
+00: 41: 23,823 -> 00: 41: 26.240
+ele não precisa apenas fazer a mesma coisa repetidamente.
+
+887
+00: 41: 26,240 -> 00: 41: 29.780
+Ele pode interagir comigo ou com seu ambiente.
+
+888
+00: 41: 29,780 -> 00: 41: 31.910
+Então, em vez de tocar o som aqui 
+
+889
+00: 41: 31,910 -> 00: 41: 33.320
+alguém acompanhando comigo?
+
+890
+00: 41: 33,320 -> 00: 41: 37.080
+Então, em vez de reproduzir o som aqui, deixe-me prosseguir e tentar isso.
+
+891
+00: 41: 37,080 -> 00: 41: 42.020
+Deixe-me ir para "Sensores" e ir em frente para ...
+
+892
+00: 41: 42,020 -> 00: 41: 43.520
+o que posso querer fazer aqui?
+
+893
+00: 41: 43,520 -> 00: 41: 50.210
+Vamos prosseguir e em Movimento, em vez disso, aqui, aponte para o ponteiro do mouse.
+
+894
+00: 41: 50,210 -> 00: 41: 54.180
+Portanto, aponte para o ponteiro do mouse e siga em frente e mova alguns passos.
+
+895
+00: 41: 54,180 -> 00: 41: 57.690
+E vou mover um passo ou ponto ou pixel de cada vez.
+
+896
+00: 41: 57,690 -> 00: 42: 00.050
+E aqui agora vamos obter esse efeito.
+
+897
+00: 42: 00,050 -> 00: 42: 03.200
+Parece que agora ele vai me seguir, certo?
+
+898
+00: 42: 03,200 -> 00: 42: 06.020
+E conforme eu movo meu cursor, ele está sempre apontando
+
+899
+00: 42: 06,020 -> 00: 42: 08.050
+em direção ao cursor, movendo um passo.
+
+900
+00: 42: 08,050 -> 00: 42: 09.300
+Claro, ele é um pouco lento.
+
+901
+00: 42: 09,300 -> 00: 42: 10.508
+E deixe-me ir em frente e parar.
+
+902
+00: 42: 10,508 -> 00: 42: 15.620
+Se eu o fizer dar 10 passos de cada vez, ou 10 pontos ou pixels na tela,
+
+903
+00: 42: 15,620 -> 00: 42: 17.990
+agora parece um pouco mais difícil de evitar.
+
+904
+00: 42: 17,990 -> 00: 42: 19.580
+E você meio que pode ...
+
+905
+00: 42: 19,580 -> 00: 42: 22.770
+ele fará literalmente enquanto você move o cursor aqui.
+
+906
+00: 42: 22,770 -> 00: 42: 23.270
+Beleza.
+
+907
+00: 42: 23,270 -> 00: 42: 26.210
+Agora que temos a capacidade de fazer algo de novo e de novo, vamos
+
+908
+00: 42: 26,210 -> 00: 42: 27.620
+ter algo para contar.
+
+909
+00: 42: 27,620 -> 00: 42: 32.000
+Para este, deixe-me ir em frente e pegar algo online.
+
+910
+00: 42: 32.000 -> 00: 42: 36,140
+Portanto, no site do CS50, sempre disponibilizaremos os exemplos e códigos
+
+911
+00: 42: 36,140 -> 00: 42: 37,520
+fonte de cada classe.
+
+912
+00: 42: 37,520 -> 00: 42: 41,130
+E desta vez, eu quero avançar e trazer esta ovelha aqui.
+
+913
+00: 42: 41,130 -> 00: 42: 43,230
+Acontece que você não precisa apenas usar um gato.
+
+914
+00: 42: 43,230 -> 00: 42: 44,720
+Você pode usar uma ovelha, se preferir.
+
+915
+00: 42: 44,720 -> 00: 42: 45,303
+E vamos ver.
+
+916
+00: 42: 45,303 -> 00: 42: 49,460
+Olhando primeiro para este código, o que esta ovelha vai fazer?
+
+917
+00: 42: 49,460 -> 00: 42: 52,910
+Quando a bandeira verde é clicada, há esta peça laranja do quebra-cabeça
+
+918
+00: 42: 52,910 -> 00: 42: 54,138
+chamado Contador para um.
+
+919
+00: 42: 54,138 -> 00: 42: 54,680
+O que é isso?
+
+920
+00: 42: 54,680 -> 00: 42: 56,630
+Este é um exemplo de 
+
+921
+00: 42: 56,630 -> 00: 42: 58,790
+como podemos chamar isso?
+
+922
+00: 42: 58,790 -> 00: 42: 59.290
+Sim.
+
+923
+00: 42: 59,290 -> 00: 43: 00.580
+É chamado de variável.
+
+924
+00: 43: 00,580 -> 00: 43: 04.050
+Agora, em álgebra, normalmente usamos x e y e z para variáveis.
+
+925
+00: 43: 04,050 -> 00: 43: 06.720
+Na programação, quando você deseja armazenar algum valor
+
+926
+00: 43: 06,720 -> 00: 43: 09.330
+em um espaço reservado como uma variável, você normalmente
+
+927
+00: 43: 09,330 -> 00: 43: 11.970
+usa palavras mais descritivas porque x, y e z não
+
+928
+00: 43: 11,970 -> 00: 43: 14.560
+diz ao programador ou a alguém que está lendo o que está fazendo.
+
+929
+00: 43: 14,560 -> 00: 43: 17.560
+Então, chamamos essa variável de "Counter" e a definimos igual a 1.
+
+930
+00: 43: 17,560 -> 00: 43: 19.480
+Agora, para sempre, a ovelha vai fazer o quê?
+
+931
+00: 43: 19,480 -> 00: 43: 21.490
+Vai "dizer o contador" por um segundo,
+
+932
+00: 43: 21,490 -> 00: 43: 23.490
+vai então esperar um segundo, e então
+
+933
+00: 43: 23,490 -> 00: 43: 28.200
+vai mudar ou adicionar 1 ao contador na sua etapa final.
+
+934
+00: 43: 28,200 -> 00: 43: 31.710
+Então aqui temos, se você permitir, ovelha contadora
+
+935
+00: 43: 31,710 -> 00: 43: 39.000
+em que agora contará apenas perpetuamente de 1 a 2 a 3.
+
+936
+00: 43: 39.000 -> 00: 43: 43.110
+E provavelmente, se deixarmos essa coisa continuar, irá até o infinito.
+
+937
+00: 43: 43,110 -> 00: 43: 45.870
+Então uma vez que temos a capacidade de criar variáveis,
+
+938
+00: 43: 45,870 -> 00: 43: 48.390
+e se começarmos a tornar nossos programas mais interativos
+
+939
+00: 43: 48,390 -> 00: 43: 50.130
+e começar a se lembrar de informações?
+
+940
+00: 43: 50,130 -> 00: 43: 54.240
+Deixe-me avançar e a partir dos exemplos anteriores,
+
+941
+00: 43: 54,240 -> 00: 43: 56.700
+pegar outro exemplo aqui agora.
+
+942
+00: 43: 56,700 -> 00: 43: 59.280
+Vou voltar para o que é chamado de Estúdio no Scratch,
+
+943
+00: 43: 59,280 -> 00: 44: 02.460
+onde todos esses exemplos estão atualmente.
+
+944
+00: 44: 02,460 -> 00: 44: 05.430
+E vou abrir um exemplo chamado pet 0.
+
+945
+00: 44: 05,430 -> 00: 44: 07.710
+Cientistas da computação normalmente começam a contar do zero
+
+946
+00: 44: 07,710 -> 00: 44: 10.710
+porque isso simboliza todas as lâmpadas apagadas.
+
+947
+00: 44: 10,710 -> 00: 44: 13.020
+E aqui está um programa agora que se eu acertar
+
+948
+00: 44: 13,020 -> 00: 44: 16.530
+O jogo não parece fazer nada no início,
+
+949
+00: 44: 16,530 -> 00: 44: 18.330
+mas observe enquanto eu movo meu cursor sobre -
+
+950
+00: 44: 18,330 -> 00: 44: 20.630
+[GATO MIANDO]
+
+951
+00: 44: 20,630 -> 00: 44: 24.050
+- Estou meio que acariciando o gato agora, se você me permite.
+
+952
+00: 44: 24,050 -> 00: 44: 25.610
+Então, como isso está funcionando?
+
+953
+00: 44: 25,610 -> 00: 44: 29.840
+Bem, ele também está sempre ouvindo ou esperando que algo aconteça.
+
+954
+00: 44: 29,840 -> 00: 44: 33.320
+Ele está sempre fazendo isso se tocar o ponteiro do mouse,
+
+955
+00: 44: 33,320 -> 00: 44: 35.120
+toque o som Miau até terminar.
+
+956
+00: 44: 35,120 -> 00: 44: 38.880
+Então, agora o gato está respondendo à entrada do usuário, não seguindo meu cursor,
+
+957
+00: 44: 38,880 -> 00: 44: 42.860
+mas respondendo apenas se eu realmente estiver passando sobre ele.
+
+958
+00: 44: 42,860 -> 00: 44: 46.370
+Podemos, é claro, mudar isso um pouco isso na versão dois,
+
+959
+00: 44: 46,370 -> 00: 44: 50.480
+também conhecido como "pet 1" porque começamos a contar em 0.
+
+960
+00: 44: 50,480 -> 00: 44: 52.970
+O que não devo fazer com este programa?
+
+961
+00: 44: 52,970 -> 00: 44: 58.680
+[GATO MIANDO]
+
+962
+00: 44: 58,680 -> 00: 45: 00.090
+Talvez não acaricie este gato.
+
+963
+00: 45: 00,090 -> 00: 45: 00.930
+Por quê?
+
+964
+00: 45: 00,930 -> 00: 45: 05.440
+Bem, desta vez estou sempre verificando se estou tocando com ponteiro do mouse.
+
+965
+00: 45: 05,440 -> 00: 45: 08.700
+E assim, aparentemente vai tocar um som de rugido,
+
+966
+00: 45: 08,700 -> 00: 45: 12.460
+caso contrário, toca o som Miau, o que parece estar acontecendo.
+
+967
+00: 45: 12,460 -> 00: 45: 13.492
+Aqui vamos nos.
+
+968
+00: 45: 13,492 -> 00: 45: 16.796
+[GATO MIANDO]
+
+969
+00: 45: 16,796 -> 00: 45: 18.690
+[GATO RUGINDO]
+
+970
+00: 45: 18,690 -> 00: 45: 19.860
+Portanto, não acaricie o gato.
+
+971
+00: 45: 19,860 -> 00: 45: 23.150
+E isso é apenas uma condição, uma questão Booleana, assim chamada 
+
+972
+00: 45: 23,150 -> 00: 45: 26.053
+lendo-se: se Tocar com o ponteiro do Mouse.
+
+973
+00: 45: 26,053 -> 00: 45: 28.220
+Bem, agora vamos fazer algo um pouco mais sofisticado.
+
+974
+00: 45: 28,220 -> 00: 45: 30.660
+Deixe-me prosseguir aqui e fazer isso.
+
+975
+00: 45: 30,660 -> 00: 45: 34.160
+Deixe-me ir em frente e fazer este do zero, sem trocadilhos.
+
+976
+00: 45: 34,160 -> 00: 45: 36.650
+E vou prosseguir e começar com um evento.
+
+977
+00: 45: 36,650 -> 00: 45: 41.840
+Quando a bandeira verde for clicada, deixe-me prosseguir e fazer algum movimento aqui.
+
+978
+00: 45: 41,840 -> 00: 45: 45.800
+Deixe-me prosseguir e pegar "Defina o estilo de rotação para a esquerda-direita"
+
+979
+00: 45: 45,800 -> 00: 45: 49.520
+só porque isso garantirá que ele, em última análise, faça o que pretendemos.
+
+980
+00: 45: 49,520 -> 00: 45: 50.960
+Eu vou para o "Controle".
+
+981
+00: 45: 50,960 -> 00: 45: 52.730
+Vou fazer o seguinte para sempre.
+
+982
+00: 45: 52,730 -> 00: 45: 56.387
+Suponha que eu queira que o gato apenas deslize para a frente e para trás na tela.
+
+983
+00: 45: 56,387 -> 00: 45: 58.970
+Bem, a primeira coisa que preciso fazer é animá-lo e realmente
+
+984
+00: 45: 58,970 -> 00: 46: 00.410
+faça-o começar a se mover.
+
+985
+00: 46: 00,410 -> 00: 46: 03.680
+E a melhor maneira de fazer isso, francamente, seria ir para o "Movimento"
+
+986
+00: 46: 03,680 -> 00: 46: 07.400
+e mover alguns passos, talvez 10 passos para ir rápido ou um passo
+
+987
+00: 46: 07,400 -> 00: 46: 08.510
+para ir devagar.
+
+988
+00: 46: 08,510 -> 00: 46: 11.780
+Mas posso fazer uma pergunta sempre que o gato se move.
+
+989
+00: 46: 11,780 -> 00: 46: 14.420
+Eu posso ir e perguntar algo assim.
+
+990
+00: 46: 14,420 -> 00: 46: 18.702
+Se algo for verdade, vá em frente e talvez faça outra coisa.
+
+991
+00: 46: 18,702 -> 00: 46: 19.910
+Então, talvez deslize para fora da parede.
+
+992
+00: 46: 19,910 -> 00: 46: 24.673
+Então, como posso dizer se você está tocando a borda, agora deslize de volta?
+
+993
+00: 46: 24,673 -> 00: 46: 27.590
+Bem, acontece que se você fuçar, verá algo assim.
+
+994
+00: 46: 27,590 -> 00: 46: 32.030
+"Se tocar em" não no ponteiro do mouse, mas na borda,
+
+995
+00: 46: 32,030 -> 00: 46: 35.150
+Posso usar o pequeno menu suspenso, e mudar o que a peça do quebra-cabeça diz.
+
+996
+00: 46: 35,150 -> 00: 46: 38.180
+Agora posso mover essa expressão booleana para o lugar.
+
+997
+00: 46: 38,180 -> 00: 46: 40.070
+A condição crescerá para preencher.
+
+998
+00: 46: 40,070 -> 00: 46: 41.630
+E o que eu quero fazer agora?
+
+999
+00: 46: 41,630 -> 00: 46: 44.660
+Bem, se ele tocar a borda, vou prosseguir e dizer
+
+1000
+00: 46: 44,660 -> 00: 46: 50.900
+não girar 15 graus, que é o padrão, mas farei girar 180 em vez disso.
+
+1001
+00: 46: 50,900 -> 00: 46: 56.530
+E agora temos nossa própria pequena animação, onde ele vai e volta
+
+1002
+00: 46: 56,530 -> 00: 46: 57.930
+e para frente e para trás.
+
+1003
+00: 46: 57,930 -> 00: 46: 59.680
+Claro, isso parece um pouco irreal
+
+1004
+00: 46: 59,680 -> 00: 47: 04.240
+que ele esteja deslizando feliz, então há uma característica não acadêmica
+
+1005
+00: 47: 04,240 -> 00: 47: 05.230
+que podemos conhecer.
+
+1006
+00: 47: 05,230 -> 00: 47: 11.390
+Por exemplo, você pode ligar o microfone do seu computador e dizer "ai".
+
+1007
+00: 47: 11,390 -> 00: 47: 13.430
+É assim que "AI" se parece.
+
+1008
+00: 47: 13,430 -> 00: 47: 18.380
+Se eu for em frente e salvar isso, chame isso de "AI", volte agora para o meu código.
+
+1009
+00: 47: 18,380 -> 00: 47: 23.540
+em seguida no "Som" aqui talvez não toque o som Miau,
+
+1010
+00: 47: 23,540 -> 00: 47: 28.022
+mas sim o som "Ai", tal que agora este gato -
+
+1011
+00: 47: 28,022 -> 00: 47: 32.750
+[SOM DE DOR TOCANDO REPETIDAMENTE]
+
+1012
+00: 47: 32,750 -> 00: 47: 33.530
+BELZA!
+
+1013
+00: 47: 33,530 -> 00: 47: 36.510
+Então, talvez um pouco mais dinâmico.
+
+1014
+00: 47: 36,510 -> 00: 47: 39.120
+Mas acontece que ele não está andando nem correndo.
+
+1015
+00: 47: 39,120 -> 00: 47: 39.870
+Ele é realmente apenas -
+
+1016
+00: 47: 39,870 -> 00: 47: 40.370
+[SOM DE DOR]
+
+1017
+00: 47: 40,370 -> 00: 47: 42.140
+- desliza pela tela, certo?
+
+1018
+00: 47: 42,140 -> 00: 47: 44.240
+Suas pernas nunca estão realmente se movendo.
+
+1019
+00: 47: 44,240 -> 00: 47: 45.480
+Agora, por que isso?
+
+1020
+00: 47: 45,480 -> 00: 47: 48.230
+Bem, acontece que a fantasia que este "sprite" está vestindo,
+
+1021
+00: 47: 48,230 -> 00: 47: 49.820
+de gato, é apenas uma foto.
+
+1022
+00: 47: 49,820 -> 00: 47: 51.980
+É uma imagem composta por muitos pontinhos.
+
+1023
+00: 47: 51,980 -> 00: 47: 52.730
+E sabe de uma coisa?
+
+1024
+00: 47: 52,730 -> 00: 47: 55.970
+Para animar um personagem e dar alguma vida a ele, por assim dizer,
+
+1025
+00: 47: 55,970 -> 00: 47: 58.730
+tudo o que realmente precisamos é de pelo menos mais uma foto.
+
+1026
+00: 47: 58,730 -> 00: 48: 01.970
+Afinal, um GIF animado ou um vídeo é isso, várias imagens.
+
+1027
+00: 48: 01,970 -> 00: 48: 04.070
+Então aqui está um, aqui está dois.
+
+1028
+00: 48: 04,070 -> 00: 48: 06.020
+Aqui está um, aqui está dois.
+
+1029
+00: 48: 06,020 -> 00: 48: 09.230
+E mesmo que ele esteja definitivamente dando alguns saltos a cada passo,
+
+1030
+00: 48: 09,230 -> 00: 48: 11.030
+se você fizer isso rápido o suficiente, parece
+
+1031
+00: 48: 11,030 -> 00: 48: 13.760
+que o gato está realmente fazendo algum movimento
+
+1032
+00: 48: 13,760 -> 00: 48: 15.980
+e caminhar em vez de apenas deslizar.
+
+1033
+00: 48: 15,980 -> 00: 48: 18.030
+Então, como posso ir em frente e fazer isso?
+
+1034
+00: 48: 18,030 -> 00: 48: 21.050
+Deixe-me ir em frente e abrir este exemplo, que fiz com antecedência.
+
+1035
+00: 48: 21,050 -> 00: 48: 22.670
+Este é chamado de bounce1.
+
+1036
+00: 48: 22,670 -> 00: 48: 28.220
+E no bounce1 aqui, eu tenho em seguida a segunda fantasia.
+
+1037
+00: 48: 28,220 -> 00: 48: 31.910
+Se eu prosseguir e clicar em "Ver dentro" e em Jogar agora,
+
+1038
+00: 48: 31,910 -> 00: 48: 34.160
+você notará agora que ele está se movendo.
+
+1039
+00: 48: 34,160 -> 00: 48: 38.180
+É um pouco irregular porque ele está se movendo de uma posição para outra, realmente
+
+1040
+00: 48: 38,180 -> 00: 48: 41.543
+rapidamente, mas agora é a ilusão de movimento.
+
+1041
+00: 48: 41,543 -> 00: 48: 43.460
+Então, se você já jogou um jogo ou alguma vez
+
+1042
+00: 48: 43,460 -> 00: 48: 45.830
+criou alguma animação ou até mesmo um filme,
+
+1043
+00: 48: 45,830 -> 00: 48: 49.608
+isso realmente é o que está acontecendo por baixo do capô todo esse tempo.
+
+1044
+00: 48: 49,608 -> 00: 48: 52.400
+Mas você não precisa ter apenas um gato ou um sprite em um programa.
+
+1045
+00: 48: 52,400 -> 00: 48: 53.690
+Na verdade, podemos ter vários.
+
+1046
+00: 48: 53,690 -> 00: 48: 56.570
+Deixe-me ir em frente e abrir outro animal aqui.
+
+1047
+00: 48: 56,570 -> 00: 48: 58.220
+Este aqui, um leão marinho.
+
+1048
+00: 48: 58,220 -> 00: 49: 01.520
+Então, neste leão-marinho aqui, se eu "Ver dentro" e ver seu código,
+
+1049
+00: 49: 01,520 -> 00: 49: 03.120
+há muita coisa acontecendo aqui.
+
+1050
+00: 49: 03,120 -> 00: 49: 04.850
+Então, vamos ver o que essa coisa faz primeiro.
+
+1051
+00: 49: 04,850 -> 00: 49: 06.517
+Se eu for em frente e clicar na bandeira verde -
+
+1052
+00: 49: 06,517 -> 00: 49: 08.240
+[SOM DE LEÃO DO MAR]
+
+1053
+00: 49: 08,240 -> 00: 49: 09.830
+--é muito, muito chato.
+
+1054
+00: 49: 09,830 -> 00: 49: 11.360
+[SOM DE LEÃO DO MAR]
+
+1055
+00: 49: 11,360 -> 00: 49: 12.590
+Agora, por que isso?
+
+1056
+00: 49: 12,590 -> 00: 49: 16.380
+Há algum loop aqui, claramente, que está fazendo a mesma coisa novamente
+
+1057
+00: 49: 16,380 -> 00: 49: 18.020
+e novamente e novamente.
+
+1058
+00: 49: 18,020 -> 00: 49: 24.760
+Como poderia, com base neste código, impedir que o leão-marinho fizesse isso?
+
+1059
+00: 49: 24,760 -> 00: 49: 25.260
+Sim.
+
+1060
+00: 49: 25,260 -> 00: 49: 26.630
+Então essa é a solução.
+
+1061
+00: 49: 26,630 -> 00: 49: 31.830
+Vamos em frente e aperte a barra de espaço.
+
+1062
+00: 49: 31,830 -> 00: 49: 34.050
+Por que isso realmente o fez parar de falar?
+
+1063
+00: 49: 34,050 -> 00: 49: 35.190
+Bem, observe isso.
+
+1064
+00: 49: 35,190 -> 00: 49: 37.133
+Existem dois scripts neste programa, que
+
+1065
+00: 49: 37,133 -> 00: 49: 38.550
+é um pouco diferente de antes.
+
+1066
+00: 49: 38,550 -> 00: 49: 40.508
+Cada um deles representa um script ou programa.
+
+1067
+00: 49: 40,508 -> 00: 49: 43.800
+Observe aqui que há uma variável chamada "mute" e, por padrão, é falsa.
+
+1068
+00: 49: 43,800 -> 00: 49: 44.520
+está desligada.
+
+1069
+00: 49: 44,520 -> 00: 49: 47.190
+Portanto, "mute" é falso ou desativado, o que significa que não está mutado
+
+1070
+00: 49: 47,190 -> 00: 49: 48.510
+é por isso que ouvimos.
+
+1071
+00: 49: 48,510 -> 00: 49: 50.190
+Então, conforme a seguir, ele faz para sempre.
+
+1072
+00: 49: 50,190 -> 00: 49: 55.350
+Se a tecla espaço for pressionada, vá em frente e verifique a seguinte pergunta.
+
+1073
+00: 49: 55,350 -> 00: 50: 00.220
+Se "mute" for "verdadeiro", altere "mute" para "falso", caso contrário, altere mute para "verdadeiro".
+
+1074
+00: 50: 00,220 -> 00: 50: 02.220
+Portanto, esta é uma abordagem muito comum na programação
+
+1075
+00: 50: 02,220 -> 00: 50: 04.887
+onde se você tem uma variável, como algo chamado mute que é
+
+1076
+00: 50: 04,887 -> 00: 50: 08.130
+verdadeiro ou falso, 1 ou 0, ligado ou desligado, você
+
+1077
+00: 50: 08,130 -> 00: 50: 10.890
+pode mudar seu valor apenas fazendo essa pergunta.
+
+1078
+00: 50: 10.890 -> 00: 50: 15.450
+Se mute for verdadeiro, altere para falso, caso contrário, mude para verdadeiro.
+
+1079
+00: 50: 15,450 -> 00: 50: 19.140
+Enquanto isso, se rolarmos para cima, há outro script aqui
+
+1080
+00: 50: 19,140 -> 00: 50: 21.240
+que estava fazendo algo sucessivamente.
+
+1081
+00: 50: 21,240 -> 00: 50: 22.620
+E vou ampliar este.
+
+1082
+00: 50: 22,620 -> 00: 50: 26.940
+Quando a bandeira verde foi clicada, o leão-marinho também estava sempre fazendo isso.
+
+1083
+00: 50: 26,940 -> 00: 50: 29.760
+Se mute for falso, ou seja, se não estiver silenciado,
+
+1084
+00: 50: 29,760 -> 00: 50: 33.150
+vá em frente e toque o som do leão-marinho e diga oi, oi, oi
+
+1085
+00: 50: 33,150 -> 00: 50: 35.580
+por dois segundos e, em seguida, aguarde um segundo.
+
+1086
+00: 50: 35,580 -> 00: 50: 38.220
+E faça isso de novo e de novo e de novo.
+
+1087
+00: 50: 38,220 -> 00: 50: 42.150
+Então, na programação, como no Scratch aqui, você pode fazer várias coisas ao mesmo tempo
+
+1088
+00: 50: 42,150 -> 00: 50: 44.400
+às vezes, com as linguagens, de modo que ambos os processos
+
+1089
+00: 50: 44,400 -> 00: 50: 47.790
+executam juntos em paralelo, se preferir, ou em loop novamente.
+
+1090
+00: 50: 47,790 -> 00: 50: 52.300
+E eles podem se intercomunicar de alguma forma usando algo como uma variável.
+
+1091
+00: 50: 52,300 -> 00: 50: 55.230
+Vejamos um exemplo final envolvendo dois sprites diferentes,
+
+1092
+00: 50: 55,230 -> 00: 50: 58.500
+este é um jogo da dos velhos tempos que você deve se lembrar da infância
+
+1093
+00: 50: 58,500 -> 00: 50: 59.790
+chamado Marco Polo.
+
+1094
+00: 50: 59,790 -> 00: 51: 02.790
+Neste jogo do Marco Polo, uma pessoa grita
+
+1095
+00: 51: 02,790 -> 00: 51: 05.790
+Marco e uma ou mais pessoas gritam Polo.
+
+1096
+00: 51: 05,790 -> 00: 51: 07.830
+E o primeiro deles é normalmente vendado,
+
+1097
+00: 51: 07,830 -> 00: 51: 11.520
+então você está tentando encontrar essa pessoa baseado apenas 
+
+1098
+00: 51: 11,520 -> 00: 51: 12.520
+na resposta de sua voz.
+
+1099
+00: 51: 12,520 -> 00: 51: 16.290
+Portanto, neste programa aqui, se eu for em frente e clicar na bandeira verde,
+
+1100
+00: 51: 16,290 -> 00: 51: 20.850
+observe que nada acontece ainda até que eu pressione a barra de espaço.
+
+1101
+00: 51: 20,850 -> 00: 51: 25.260
+E veremos que o boneco laranja diz Marco e o boneco azul
+
+1102
+00: 51: 25,260 -> 00: 51: 26.490
+diz Polo.
+
+1103
+00: 51: 26,490 -> 00: 51: 27.690
+Mas como isso funciona?
+
+1104
+00: 51: 27,690 -> 00: 51: 30.490
+Bem, aqui está o código para o boneco laranja.
+
+1105
+00: 51: 30,490 -> 00: 51: 33.720
+Para sempre, ele está fazendo o seguinte.
+
+1106
+00: 51: 33,720 -> 00: 51: 38.010
+Se a tecla de espaço for pressionada, essa é a barra de espaço, Diga Marco por dois segundos,
+
+1107
+00: 51: 38,010 -> 00: 51: 39.340
+esta é uma outra característica.
+
+1108
+00: 51: 39,340 -> 00: 51: 40.050
+E ela é nova.
+
+1109
+00: 51: 40,050 -> 00: 51: 41.822
+Ela transmite abertamente (broadcast) o que é chamado de evento.
+
+1110
+00: 51: 41,822 -> 00: 51: 43.530
+Acontece que os computadores não podem simplesmente
+
+1111
+00: 51: 43,530 -> 00: 51: 46.530
+vew o que outro programa ou sprite está fazendo,
+
+1112
+00: 51: 46,530 -> 00: 51: 48.900
+mas eles podem ouvir algo chamado de evento.
+
+1113
+00: 51: 48,900 -> 00: 51: 51.720
+É uma espécie de mensagem secreta de um programa para outro.
+
+1114
+00: 51: 51,720 -> 00: 51: 56.220
+Portanto, no evento "transmita" é essa outra peça do quebra-cabeça que pode apenas transmitir "event".
+
+1115
+00: 51: 56,220 -> 00: 51: 59.070
+E agora observe se clicar não no boneco laranja aqui embaixo,
+
+1116
+00: 51: 59,070 -> 00: 52: 02.580
+mas no azul, o boneco azul tem ainda menos código,
+
+1117
+00: 52: 02,580 -> 00: 52: 05.430
+mas não está esperando que a bandeira verde seja clicada.
+
+1118
+00: 52: 05,430 -> 00: 52: 09.120
+Em vez disso, está esperando até que receba o assim chamado
+
+1119
+00: 52: 09,120 -> 00: 52: 12.750
+"event", uma espécie de mensagem invisível de um sprite para outro.
+
+1120
+00: 52: 12,750 -> 00: 52: 19.980
+E quando ele recebe esse evento, diz Polo por dois segundos.
+
+1121
+00: 52: 19,980 -> 00: 52: 20.550
+Beleza!
+
+1122
+00: 52: 20,550 -> 00: 52: 23.430
+Ao longo do caminho, descobrimos que existem maneiras melhores
+
+1123
+00: 52: 23,430 -> 00: 52: 25.140
+para resolver alguns desses problemas.
+
+1124
+00: 52: 25,140 -> 00: 52: 30.310
+E podemos realmente começar a pensar agora um pouco mais em termos de design,
+
+1125
+00: 52: 30,310 -> 00: 52: 32.250
+o design da qualidade do seu código.
+
+1126
+00: 52: 32,250 -> 00: 52: 35.040
+Vou prosseguir e fazer isso.
+
+1127
+00: 52: 35,040 -> 00: 52: 38.430
+Em "Eventos", vou prosseguir e pegar "quando a bandeira verde for clicada",
+
+1128
+00: 52: 38,430 -> 00: 52: 40.740
+e vou prosseguir e dizer algo desta vez.
+
+1129
+00: 52: 40,740 -> 00: 52: 45.750
+Vamos dizer tossir por um segundo assim.
+
+1130
+00: 52: 45,750 -> 00: 52: 49.307
+E então deixe-me ir em frente e esperar alguns segundos, como 1.
+
+1131
+00: 52: 49,307 -> 00: 52: 50.265
+E então você sabe o quê?
+
+1132
+00: 52: 50,265 -> 00: 52: 51.840
+Deixe-me ir em frente e tossir três vezes.
+
+1133
+00: 52: 51,840 -> 00: 52: 53.820
+Não é incomum quando você está tossindo, no mundo real,
+
+1134
+00: 52: 53,820 -> 00: 52: 54.885
+tossir três vezes.
+
+1135
+00: 52: 54,885 -> 00: 52: 56.760
+Vou clicar com o botão direito ou Control Click,
+
+1136
+00: 52: 56,760 -> 00: 52: 59.843
+em seguida duplicar e anexar outro desses.
+
+1137
+00: 52: 59,843 -> 00: 53: 02.910
+E vou clicar com o botão direito ou Duplicar mais um desses.
+
+1138
+00: 53: 02,910 -> 00: 53: 09.280
+E agora, é claro, o gato vai tossir, tossir, tossir ou miar,
+
+1139
+00: 53: 09,280 -> 00: 53: 10.780
+e três vezes seguidas.
+
+1140
+00: 53: 10,780 -> 00: 53: 12.250
+Agora, este código está correto.
+
+1141
+00: 53: 12,250 -> 00: 53: 15.460
+Tosse três vezes e espera um segundo depois de cada uma,
+
+1142
+00: 53: 15,460 -> 00: 53: 17.080
+mas não é um código muito bom.
+
+1143
+00: 53: 17,080 -> 00: 53: 20.500
+Não é bem projetado, como diria um cientista da computação.
+
+1144
+00: 53: 20,500 -> 00: 53: 23.975
+O que poderíamos fazer melhor com este código com base nas ideias que vimos até agora?
+
+1145
+00: 53: 23,975 -> 00: 53: 24.850
+PÚBLICO: [INAUDÍVEL]
+
+1146
+00: 53: 24,850 -> 00: 53: 25.080
+DAVID MALAN: Sim.
+
+1147
+00: 53: 25,080 -> 00: 53: 26.810
+Então, podemos fazer um loop, certo?
+
+1148
+00: 53: 26,810 -> 00: 53: 29.320
+E copiar e colar raramente é a solução quando
+
+1149
+00: 53: 29,320 -> 00: 53: 33.080
+programando, seja em Scratch ou em C ou em Python ou outras linguagens.
+
+1150
+00: 53: 33,080 -> 00: 53: 35.140
+Na verdade, vou jogar tudo isso fora.
+
+1151
+00: 53: 35,140 -> 00: 53: 37.440
+Deixe-me ir em frente e pegar um bloco de repetição,
+
+1152
+00: 53: 37,440 -> 00: 53: 39.490
+mude esse padrão de dez para três.
+
+1153
+00: 53: 39,490 -> 00: 53: 42.040
+Deixe-me pegar esses pares de blocos e colocá-los aqui,
+
+1154
+00: 53: 42,040 -> 00: 53: 43.880
+arraste e solte aqui.
+
+1155
+00: 53: 43,880 -> 00: 53: 48.040
+Agora vou repetir três vezes, dizer tosse por um segundo,
+
+1156
+00: 53: 48,040 -> 00: 53: 49.150
+e espere um segundo.
+
+1157
+00: 53: 49,150 -> 00: 53: 52.240
+E agora o programa está melhor desenhado.
+
+1158
+00: 53: 52,240 -> 00: 53: 55.000
+Não é diferente de antes, mas é um pouco mais fácil
+
+1159
+00: 53: 55.000 -> 00: 53: 57.370
+para manter agora para mim ou outra pessoa, porque se eu
+
+1160
+00: 53: 57,370 -> 00: 54: 00.950
+quero mudar o quanto tempo algo está acontecendo ou o que está sendo dito,
+
+1161
+00: 54: 00,950 -> 00: 54: 04.150
+Posso alterár agora em um lugar só em vez de vários lugares.
+
+1162
+00: 54: 04,150 -> 00: 54: 07.930
+Mas existe essa outra ideia na ciência da computação, essa noção de abstração.
+
+1163
+00: 54: 07,930 -> 00: 54: 10.570
+No momento, este é um programa que simplesmente acontece
+
+1164
+00: 54: 10,570 -> 00: 54: 12.490
+para implementar a noção de tosse.
+
+1165
+00: 54: 12,490 -> 00: 54: 16.660
+Mas e se eu quiser usar a mesma ideia em vários programas
+
+1166
+00: 54: 16,660 -> 00: 54: 19.450
+e eu quero dar a mim mesmo uma peça de quebra-cabeça personalizada que não
+
+1167
+00: 54: 19,450 -> 00: 54: 22.150
+vem com o Scratch chamado tosse?
+
+1168
+00: 54: 22,150 -> 00: 54: 25.870
+Bem, há um outro recurso aqui que posso usar como meus blocos,
+
+1169
+00: 54: 25,870 -> 00: 54: 27.130
+e eu posso fazer um bloqueio.
+
+1170
+00: 54: 27,130 -> 00: 54: 29.080
+E vou prosseguir e chamar isso de tosse.
+
+1171
+00: 54: 29,080 -> 00: 54: 34.300
+E aquela peça do quebra-cabeça, assim que eu clicar em OK, vai me dar este bloco rosa
+
+1172
+00: 54: 34,300 -> 00: 54: 35.050
+aqui.
+
+1173
+00: 54: 35,050 -> 00: 54: 38.620
+Vou prosseguir agora, por exemplo, e mover tudo isso
+
+1174
+00:54:38,620 --> 00:54:40,570
+down to the custom puzzle piece.
+
+1175
+00:54:40,570 --> 00:54:44,290
+And now notice because I've made a new block, I have this pink piece here.
+
+1176
+00:54:44,290 --> 00:54:46,150
+I can now move this over here.
+
+1177
+00:54:46,150 --> 00:54:48,190
+And frankly, out of sight, out of mind.
+
+1178
+00:54:48,190 --> 00:54:52,510
+I can literally ignore those puzzle pieces
+
+1179
+00:54:52,510 --> 00:54:55,660
+I created because now I have a new puzzle piece just
+
+1180
+00:54:55,660 --> 00:54:57,280
+called cough that says what it does.
+
+1181
+00:54:57,280 --> 00:54:59,380
+This is an abstraction in the sense that I
+
+1182
+00:54:59,380 --> 00:55:04,062
+don't care how you implement coughing, I just care that your program can cough.
+
+1183
+00:55:04,062 --> 00:55:05,770
+And so we have this notion of reusability
+
+1184
+00:55:05,770 --> 00:55:08,780
+that starts to make our code no less sophisticated, but much,
+
+1185
+00:55:08,780 --> 00:55:12,358
+much smaller and much less prone, potentially, to mistakes.
+
+1186
+00:55:12,358 --> 00:55:13,900
+And I can take this one step further.
+
+1187
+00:55:13,900 --> 00:55:17,770
+Let me go ahead and open up a different variant of this one altogether,
+
+1188
+00:55:17,770 --> 00:55:19,240
+this one in cough three.
+
+1189
+00:55:19,240 --> 00:55:23,388
+You can have these custom puzzle pieces even take arguments.
+
+1190
+00:55:23,388 --> 00:55:25,180
+You can have this puzzle piece called cough
+
+1191
+00:55:25,180 --> 00:55:28,660
+say, well, how many times do you want to cough, thereby taking an input.
+
+1192
+00:55:28,660 --> 00:55:34,340
+Then you can repeat that number of times cough for a second and wait one second.
+
+1193
+00:55:34,340 --> 00:55:37,310
+So if you want to now use this fancier puzzle piece up here,
+
+1194
+00:55:37,310 --> 00:55:40,060
+notice this now looks even simpler.
+
+1195
+00:55:40,060 --> 00:55:42,130
+Go ahead and cough three times.
+
+1196
+00:55:42,130 --> 00:55:44,530
+And everything has been abstracted away.
+
+1197
+00:55:44,530 --> 00:55:46,810
+If I scroll up and out of the way, you don't even
+
+1198
+00:55:46,810 --> 00:55:51,010
+know or have to care how or why cough was implemented.
+
+1199
+00:55:51,010 --> 00:55:52,990
+And so whereas we began this whole conversation
+
+1200
+00:55:52,990 --> 00:55:56,590
+just looking for Mike Smith and trying to find an answer to a problem
+
+1201
+00:55:56,590 --> 00:56:01,180
+correctly, we talked then about efficiency and finding that solution
+
+1202
+00:56:01,180 --> 00:56:03,610
+not only for sure, but also quicker.
+
+1203
+00:56:03,610 --> 00:56:06,100
+And now we've spoken a little bit to ideas
+
+1204
+00:56:06,100 --> 00:56:10,370
+that lie ahead when it comes to the design of the quality of your code.
+
+1205
+00:56:10,370 --> 00:56:12,050
+So where does that actually leave us?
+
+1206
+00:56:12,050 --> 00:56:14,680
+Well, let me go ahead and open up a couple of final examples
+
+1207
+00:56:14,680 --> 00:56:18,670
+here, one of them that I actually made back in my day.
+
+1208
+00:56:18,670 --> 00:56:23,500
+And so this, when I actually started using Scratch for the first time,
+
+1209
+00:56:23,500 --> 00:56:26,470
+it gave me this program here called Oscar Time.
+
+1210
+00:56:26,470 --> 00:56:30,820
+And Oscar Time, reminiscent of an old song from Oscar the Grouch singing,
+
+1211
+00:56:30,820 --> 00:56:31,420
+does this.
+
+1212
+00:56:31,420 --> 00:56:31,920
+[SINGING]
+
+1213
+00:56:31,920 --> 00:56:33,070
+There's this stage.
+
+1214
+00:56:33,070 --> 00:56:35,070
+Notice the lamp post here and the trashcan.
+
+1215
+00:56:35,070 --> 00:56:37,150
+And apparently, something falling from the sky
+
+1216
+00:56:37,150 --> 00:56:39,700
+that looks like a piece of trash, but it's just a sprite.
+
+1217
+00:56:39,700 --> 00:56:43,000
+It's what could have been a cat, but I changed the costume on the cat
+
+1218
+00:56:43,000 --> 00:56:44,530
+to be a piece of trash.
+
+1219
+00:56:44,530 --> 00:56:47,890
+But notice if I move my cursor and click and drag,
+
+1220
+00:56:47,890 --> 00:56:52,360
+notice that this piece of trash follows the cursor just like Scratch followed
+
+1221
+00:56:52,360 --> 00:56:54,430
+my cursor before on the screen.
+
+1222
+00:56:54,430 --> 00:56:56,440
+And notice if I move it over to the trash can,
+
+1223
+00:56:56,440 --> 00:57:00,330
+the trash can opens up, which is a Sensing question.
+
+1224
+00:57:00,330 --> 00:57:03,370
+If touching trash can, then open up.
+
+1225
+00:57:03,370 --> 00:57:06,190
+And open up probably just means change the costume
+
+1226
+00:57:06,190 --> 00:57:09,160
+to show a different image instead of the original, thereby
+
+1227
+00:57:09,160 --> 00:57:11,420
+a very simple idea of animation.
+
+1228
+00:57:11,420 --> 00:57:17,100
+And now notice when I let go, if touching trash can and let go,
+
+1229
+00:57:17,100 --> 00:57:21,390
+Oscar should come out of the trash can, count up to one, which is my score,
+
+1230
+00:57:21,390 --> 00:57:22,688
+and then the game continues.
+
+1231
+00:57:22,688 --> 00:57:23,980
+Now there's more trash falling.
+
+1232
+00:57:23,980 --> 00:57:25,610
+Let me go ahead and do this.
+
+1233
+00:57:25,610 --> 00:57:28,870
+And you'll see that these basic ideas of conditions and loops
+
+1234
+00:57:28,870 --> 00:57:31,000
+and variables and Boolean expressions together
+
+1235
+00:57:31,000 --> 00:57:34,030
+can compose a pretty interactive game.
+
+1236
+00:57:34,030 --> 00:57:36,520
+This game took me eight or more hours to make,
+
+1237
+00:57:36,520 --> 00:57:39,700
+and it's because I did not sit down and just make the whole thing at once.
+
+1238
+00:57:39,700 --> 00:57:41,328
+I took baby steps, so to speak.
+
+1239
+00:57:41,328 --> 00:57:44,620
+I first, frankly, did the easy part and I just found an image of Sesame Street,
+
+1240
+00:57:44,620 --> 00:57:45,870
+put it on the stage, and boom.
+
+1241
+00:57:45,870 --> 00:57:48,540
+At least version one, all it did was say Sesame Street.
+
+1242
+00:57:48,540 --> 00:57:49,940
+And it's not interactive at all.
+
+1243
+00:57:49,940 --> 00:57:52,630
+Then I added a sprite, which instead of being a cat,
+
+1244
+00:57:52,630 --> 00:57:54,940
+I changed the costume to be the trash icon.
+
+1245
+00:57:54,940 --> 00:57:57,550
+And I just figured out the code, the puzzle pieces,
+
+1246
+00:57:57,550 --> 00:58:00,220
+to make that puzzle piece fall from the sky
+
+1247
+00:58:00,220 --> 00:58:02,410
+and then stop when it's on the edge, just
+
+1248
+00:58:02,410 --> 00:58:05,643
+like the cat was able to make a decision to bounce when it touched the edge.
+
+1249
+00:58:05,643 --> 00:58:07,060
+And now things get a little crazy.
+
+1250
+00:58:07,060 --> 00:58:08,435
+The song gets more sophisticated.
+
+1251
+00:58:08,435 --> 00:58:13,450
+I added more and more sprites that just fall in lockstep with the music.
+
+1252
+00:58:13,450 --> 00:58:16,090
+So this was quite a few hours of effort, but it boils down
+
+1253
+00:58:16,090 --> 00:58:21,500
+to really the same principle, just as this other program here does, too.
+
+1254
+00:58:21,500 --> 00:58:23,500
+And for this, rather than me play it, let
+
+1255
+00:58:23,500 --> 00:58:27,948
+me invite one other volunteer to come on up who's got to be--
+
+1256
+00:58:27,948 --> 00:58:28,990
+OK, I see your hand here.
+
+1257
+00:58:28,990 --> 00:58:29,470
+What's your name?
+
+1258
+00:58:29,470 --> 00:58:30,160
+MEGAN: Megan.
+
+1259
+00:58:30,160 --> 00:58:30,952
+DAVID MALAN: Megan.
+
+1260
+00:58:30,952 --> 00:58:34,510
+All right, Megan, we have a game for you called-- maybe
+
+1261
+00:58:34,510 --> 00:58:36,910
+I mentioned this-- [? IB's ?] hardest game.
+
+1262
+00:58:36,910 --> 00:58:38,380
+OK, come on up.
+
+1263
+00:58:38,380 --> 00:58:39,700
+Nice to meet you.
+
+1264
+00:58:39,700 --> 00:58:42,010
+This is a game by one of your former predecessors,
+
+1265
+00:58:42,010 --> 00:58:45,700
+who their problems said zero, implemented this.
+
+1266
+00:58:45,700 --> 00:58:49,510
+You'll see the instructions in just a moment on the screen.
+
+1267
+00:58:49,510 --> 00:58:54,480
+We'll see if we can't inspire some folks to root for you here.
+
+1268
+00:58:54,480 --> 00:59:00,000
+And after this, as is the tradition in CS50, we will adjourn for some cake.
+
+1269
+00:59:00,000 --> 00:59:03,423
+So Megan, we have here for you, [? IB's ?] hardest game.
+
+1270
+00:59:03,423 --> 00:59:05,340
+I'm going to go ahead and maximize the window.
+
+1271
+00:59:05,340 --> 00:59:07,200
+I'm going to go ahead and click Begin and we'll see the instructions.
+
+1272
+00:59:07,200 --> 00:59:07,890
+MEGAN: OK.
+
+1273
+00:59:07,890 --> 00:59:08,858
+DAVID MALAN: Good luck.
+
+1274
+00:59:08,858 --> 00:59:10,322
+MEGAN: Thanks.
+
+1275
+00:59:10,322 --> 00:59:13,128
+[MUSIC -MC HAMMER, "U CAN'T TOUCH THIS"]
+
+1276
+00:59:13,128 --> 00:59:15,170
+DAVID MALAN: Let's go ahead and raise the volume.
+
+1277
+00:59:15,170 --> 00:59:16,913
+Here we go.
+
+1278
+00:59:16,913 --> 00:59:18,998
+[MUSIC -MC HAMMER, "U CAN'T TOUCH THIS"]
+
+1279
+00:59:18,998 --> 00:59:20,276
+(SINGING) Can't touch this.
+
+1280
+00:59:20,276 --> 00:59:24,360
+DAVID MALAN: So you're going to move the arrow keys and navigate your way,
+
+1281
+00:59:24,360 --> 00:59:26,580
+essentially-- oh, yep-- through a maze.
+
+1282
+00:59:26,580 --> 00:59:29,400
+Notice Megan's not able to go beyond the black borders
+
+1283
+00:59:29,400 --> 00:59:33,090
+because if touching edge, logic.
+
+1284
+00:59:33,090 --> 00:59:36,510
+Now when you touch the other sprite, you advance to the next level.
+
+1285
+00:59:36,510 --> 00:59:39,120
+
+
+1286
+00:59:39,120 --> 00:59:40,230
+Two sprites now.
+
+1287
+00:59:40,230 --> 00:59:42,870
+
+
+1288
+00:59:42,870 --> 00:59:44,040
+Another Yale icon.
+
+1289
+00:59:44,040 --> 00:59:46,585
+(SINGING) From the Oaktown and I'm known as such.
+
+1290
+00:59:46,585 --> 00:59:49,507
+And this is a beat you can't touch.
+
+1291
+00:59:49,507 --> 00:59:50,340
+I told you, homeboy.
+
+1292
+00:59:50,340 --> 00:59:51,110
+DAVID MALAN: Nice.
+
+1293
+00:59:51,110 --> 00:59:51,610
+OK.
+
+1294
+00:59:51,610 --> 00:59:52,787
+[LAUGHTER]
+
+1295
+00:59:52,787 --> 00:59:54,870
+(SINGING) Yeah, that's how we living and you know.
+
+1296
+00:59:54,870 --> 00:59:56,790
+Can't touch this.
+
+1297
+00:59:56,790 --> 00:59:58,680
+Look in my eyes, man.
+
+1298
+00:59:58,680 --> 01:00:00,620
+DAVID MALAN: Nice.
+
+1299
+01:00:00,620 --> 01:00:02,370
+(SINGING) Yo, let me but the funky lyrics.
+
+1300
+01:00:02,370 --> 01:00:03,078
+Can't touch this.
+
+1301
+01:00:03,078 --> 01:00:08,050
+[LAUGHTER]
+
+1302
+01:00:08,050 --> 01:00:09,998
+DAVID MALAN: Nice.
+
+1303
+01:00:09,998 --> 01:00:11,459
+[AUDIENCE GASPING]
+
+1304
+01:00:11,459 --> 01:00:15,237
+[APPLAUSE]
+
+1305
+01:00:15,237 --> 01:00:17,320
+(SINGING) Cold on a mission, so pull them on back.
+
+1306
+01:00:17,320 --> 01:00:22,780
+Let them know that you're too much and this is a beat, uh, they can't touch.
+
+1307
+01:00:22,780 --> 01:00:23,740
+Yo, I told you.
+
+1308
+01:00:23,740 --> 01:00:25,360
+[LAUGHTER]
+
+1309
+01:00:25,360 --> 01:00:26,198
+
+
+1310
+01:00:26,198 --> 01:00:27,365
+Why you standing there, man?
+
+1311
+01:00:27,365 --> 01:00:28,470
+Can't touch this.
+
+1312
+01:00:28,470 --> 01:00:29,720
+Yo, sounds the bells.
+
+1313
+01:00:29,720 --> 01:00:31,110
+School is in, sucker.
+
+1314
+01:00:31,110 --> 01:00:32,770
+Can't touch this.
+
+1315
+01:00:32,770 --> 01:00:34,070
+DAVID MALAN: OK.
+
+1316
+01:00:34,070 --> 01:00:35,870
+Good.
+
+1317
+01:00:35,870 --> 01:00:36,370
+Nice.
+
+1318
+01:00:36,370 --> 01:00:39,306
+
+
+1319
+01:00:39,306 --> 01:00:40,290
+[AUDIENCE GASPING]
+
+1320
+01:00:40,290 --> 01:00:41,758
+[LAUGHTER]
+
+1321
+01:00:41,758 --> 01:00:42,258
+
+
+1322
+01:00:42,258 --> 01:00:45,220
+(SINGING) Or a tape to learn what's it going to take?
+
+1323
+01:00:45,220 --> 01:00:47,064
+And now he's going to burn the charts.
+
+1324
+01:00:47,064 --> 01:00:48,518
+DAVID MALAN: Oh!
+
+1325
+01:00:48,518 --> 01:00:50,060
+(SINGING) And you might as well quit.
+
+1326
+01:00:50,060 --> 01:00:52,096
+That's word because you know--
+
+1327
+01:00:52,096 --> 01:00:53,440
+DAVID MALAN: No!
+
+1328
+01:00:53,440 --> 01:00:54,010
+That's OK.
+
+1329
+01:00:54,010 --> 01:00:59,380
+
+
+1330
+01:00:59,380 --> 01:00:59,880
+Oh.
+
+1331
+01:00:59,880 --> 01:01:00,380
+It's OK.
+
+1332
+01:01:00,380 --> 01:01:03,842
+
+
+1333
+01:01:03,842 --> 01:01:04,342
+Nice.
+
+1334
+01:01:04,342 --> 01:01:09,331
+
+
+1335
+01:01:09,331 --> 01:01:09,831
+Ah!
+
+1336
+01:01:09,831 --> 01:01:15,935
+
+
+1337
+01:01:15,935 --> 01:01:18,552
+[INAUDIBLE]
+
+1338
+01:01:18,552 --> 01:01:20,010
+Oh!
+
+1339
+01:01:20,010 --> 01:01:22,090
+Couple more lives.
+
+1340
+01:01:22,090 --> 01:01:22,590
+Nice.
+
+1341
+01:01:22,590 --> 01:01:23,090
+Oh!
+
+1342
+01:01:23,090 --> 01:01:28,890
+[AUDIENCE GASPING]
+
+1343
+01:01:28,890 --> 01:01:29,420
+OK.
+
+1344
+01:01:29,420 --> 01:01:30,660
+Yeah, you got it.
+
+1345
+01:01:30,660 --> 01:01:31,160
+MEGAN: Yes.
+
+1346
+01:01:31,160 --> 01:01:32,770
+Yep.
+
+1347
+01:01:32,770 --> 01:01:33,680
+Oh my God.
+
+1348
+01:01:33,680 --> 01:01:34,638
+DAVID MALAN: All right.
+
+1349
+01:01:34,638 --> 01:01:37,100
+One more life-- two more lives!
+
+1350
+01:01:37,100 --> 01:01:40,360
+Three more lives!
+
+1351
+01:01:40,360 --> 01:01:41,060
+Come on.
+
+1352
+01:01:41,060 --> 01:01:42,102
+(SINGING) Bring the bill.
+
+1353
+01:01:42,102 --> 01:01:43,220
+School's back in.
+
+1354
+01:01:43,220 --> 01:01:45,465
+Break it down.
+
+1355
+01:01:45,465 --> 01:01:46,920
+DAVID MALAN: Yes!
+
+1356
+01:01:46,920 --> 01:01:48,860
+[APPLAUSE]
+
+1357
+01:01:48,860 --> 01:01:51,990
+
+
+1358
+01:01:51,990 --> 01:01:52,740
+MEGAN: Up, up, up.
+
+1359
+01:01:52,740 --> 01:01:56,775
+
+
+1360
+01:01:56,775 --> 01:01:57,400
+(SINGING) Stop.
+
+1361
+01:01:57,400 --> 01:01:58,832
+Hammer time.
+
+1362
+01:01:58,832 --> 01:01:59,790
+DAVID MALAN: All right.
+
+1363
+01:01:59,790 --> 01:02:00,310
+Last life.
+
+1364
+01:02:00,310 --> 01:02:00,810
+Last life.
+
+1365
+01:02:00,810 --> 01:02:02,080
+Go, go!
+
+1366
+01:02:02,080 --> 01:02:02,580
+Here we go.
+
+1367
+01:02:02,580 --> 01:02:05,520
+
+
+1368
+01:02:05,520 --> 01:02:06,020
+All right.
+
+1369
+01:02:06,020 --> 01:02:07,790
+Nice, nice.
+
+1370
+01:02:07,790 --> 01:02:08,530
+Yes, yes.
+
+1371
+01:02:08,530 --> 01:02:10,920
+Ah!
+
+1372
+01:02:10,920 --> 01:02:11,420
+All right.
+
+1373
+01:02:11,420 --> 01:02:13,867
+A round of applause for Megan, if we could.
+
+1374
+01:02:13,867 --> 01:02:14,450
+Check her out.
+
+1375
+01:02:14,450 --> 01:02:15,336
+Here you go.
+
+1376
+01:02:15,336 --> 01:02:18,990
+[APPLAUSE]
+
+1377
+01:02:18,990 --> 01:02:20,870
+This, then, is CS50.
+
+1378
+01:02:20,870 --> 01:02:21,710
+Welcome aboard.
+
+1379
+01:02:21,710 --> 01:02:23,980
+Cake is now served.
+
+1380
+01:02:23,980 --> 01:02:25,126
+
+
