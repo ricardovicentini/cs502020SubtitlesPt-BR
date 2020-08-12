@@ -304,7 +304,7 @@ Então, vamos considerar como você implementaria isso em C,
 
 76
 00: 04: 48,260 -> 00: 04: 50.930
-sendo um idioma baseado em texto ou teclado.
+sendo uma linguagem baseada em texto ou teclado.
 
 77
 00: 04: 50,930 -> 00: 04: 55.490
@@ -335,52 +335,52 @@ parênteses de abertura e o parênteses de fechamento.
 E isso é uma espécie de reminiscência desta forma oval em que usamos anteriormente
 
 84
-00:05:14,180 --> 00:05:15,770
-putting input into in the first place.
+00:05:14,180 -> 00:05:15.770
+colocando informações em primeiro lugar.
 
 85
-00:05:15,770 --> 00:05:19,210
-And the input we provided last week was to just say, hello world.
+00: 05: 15,770 -> 00: 05: 19.210
+E a contribuição que demos na semana passada foi apenas dizer olá, mundo.
 
 86
-00:05:19,210 --> 00:05:21,770
-So literally, in C, you're going to write "hello world"
+00: 05: 19,210 -> 00: 05: 21.770
+Então, literalmente, em C, você vai escrever "hello world"
 
 87
-00:05:21,770 --> 00:05:24,200
-in between those two parentheses.
+00: 05: 21,770 -> 00: 05: 24.200
+entre esses dois parênteses.
 
 88
-00:05:24,200 --> 00:05:25,850
-But C is a little more nit-picky.
+00: 05: 24,200 -> 00: 05: 25.850
+Mas C é um pouco mais minucioso.
 
 89
-00:05:25,850 --> 00:05:28,850
-You can't just start writing words in between parentheses.
+00: 05: 25,850 -> 00: 05: 28.850
+Você não pode simplesmente começar a escrever palavras entre parênteses.
 
 90
-00:05:28,850 --> 00:05:32,870
-Anytime you have characters or words or sentences or phrases,
+00: 05: 28,850 -> 00: 05: 32.870
+Sempre que você tiver caracteres, palavras, sentenças ou frases,
 
 91
-00:05:32,870 --> 00:05:36,290
-you need to actually encapsulate that text with double quotes,
+00: 05: 32,870 -> 00: 05: 36.290
+você precisa realmente encapsular esse texto com aspas duplas,
 
 92
-00:05:36,290 --> 00:05:37,090
-as in this case.
+00: 05: 36,290 -> 00: 05: 37.090
+como neste caso.
 
 93
-00:05:37,090 --> 00:05:40,340
-So you just have to surround whatever it is you want to say or print
+00: 05: 37,090 -> 00: 05: 40.340
+Então você só tem que cercar o que quer que você queira dizer ou imprimir
 
 94
-00:05:40,340 --> 00:05:41,540
-with double quotes here.
+00: 05: 40,340 -> 00: 05: 41.540
+com aspas duplas aqui.
 
 95
-00:05:41,540 --> 00:05:44,480
-And the last thing with C that's so easy to forget early on,
+00: 05: 41,540 -> 00: 05: 44.480
+E a última coisa com C que é tão fácil de esquecer no início,
 
 96
 00:05:44,480 --> 00:05:47,520
