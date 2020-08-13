@@ -4448,7 +4448,7 @@ Acontece que os computadores não podem simplesmente
 
 1111
 00: 51: 43,530 -> 00: 51: 46.530
-vew o que outro programa ou sprite está fazendo,
+ver o que outro programa ou sprite está fazendo,
 
 1112
 00: 51: 46,530 -> 00: 51: 48.900
