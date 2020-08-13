@@ -1874,2088 +1874,2088 @@ estava realmente executando o programa.
 00: 22: 19,133 -> 00: 22: 21.300
 Então aquele programa parecia um pouco com isso.
 469
-00:22:21,300 --> 00:22:25,590
-These two lines of code were attached to a when green flag clicked last week.
+00: 22: 21,300 -> 00: 22: 25.590
+Essas duas linhas de código foram anexadas ao bloco "quando a bandeira verde for clicada".
 
 470
-00:22:25,590 --> 00:22:28,170
-This blue block here at top was a function,
+00: 22: 25,590 -> 00: 22: 28.170
+Este bloco azul aqui no topo era uma função,
 
 471
-00:22:28,170 --> 00:22:32,940
-and that function returned an argument, returned a response.
+00: 22: 28,170 -> 00: 22: 32.940
+e essa função retornou um argumento, retornou uma resposta.
 
 472
-00:22:32,940 --> 00:22:35,170
-It returned the answer that the user had typed in.
+00: 22: 32,940 -> 00: 22: 35.170
+Ele retornou a resposta que o usuário havia digitado.
 
 473
-00:22:35,170 --> 00:22:38,130
-And that was useful, because we then used the user's answer
+00: 22: 35,170 -> 00: 22: 38.130
+E isso foi útil, porque usamos a resposta do usuário
 
 474
-00:22:38,130 --> 00:22:42,600
-to join it together, or concatenate left and right, with the word hello.
+00: 22: 38,130 -> 00: 22: 42.600
+para juntá-los, ou concatenar esquerda e direita, com a palavra hello.
 
 475
-00:22:42,600 --> 00:22:45,160
-And then we said the result of that.
+00: 22: 42,600 -> 00: 22: 45.160
+E então dissemos o resultado disso.
 
 476
-00:22:45,160 --> 00:22:46,255
-So how do we do this in C?
+00: 22: 45,160 -> 00: 22: 46.255
+Então, como fazemos isso em C?
 
 477
-00:22:46,255 --> 00:22:48,630
-Well, this is where things are going to escalate quickly.
+00: 22: 46,255 -> 00: 22: 48.630
+Bem, é aqui que as coisas vão se complicar rapidamente.
 
 478
-00:22:48,630 --> 00:22:51,570
-But again, it's all going to follow certain rules and patterns that
+00: 22: 48,630 -> 00: 22: 51.570
+Mas, novamente, é tudo uma questão de seguir certas regras e padrões que
 
 479
-00:22:51,570 --> 00:22:54,190
-are going to get more and more familiar over time.
+00: 22: 51,570 -> 00: 22: 54.190
+vão ficar cada vez mais familiares com o tempo.
 
 480
-00:22:54,190 --> 00:22:57,990
-In C, at least in the CS50 Sandbox, the closest equivalent
+00: 22: 54,190 -> 00: 22: 57.990
+Em C, pelo menos no CS50 Sandbox, o equivalente mais próximo
 
 481
-00:22:57,990 --> 00:23:03,810
-to the ask function in Scratch is going to be a C function called get_string.
+00: 22: 57,990 -> 00: 23: 03.810
+para a função "ask/pergunte" no Scratch será uma função C chamada get_string.
 
 482
-00:23:03,810 --> 00:23:06,180
-A string is just a programmer's expression
+00: 23: 03,810 -> 00: 23: 06.180
+Uma string é apenas uma expressão de programadores
 
 483
-00:23:06,180 --> 00:23:09,750
-for a word or phrase or a sentence.
+00: 23: 06,180 -> 00: 23: 09.750
+para uma palavra ou frase ou sentença.
 
 484
-00:23:09,750 --> 00:23:14,470
-So text as opposed to numbers or some other piece of data.
+00: 23: 09,750 -> 00: 23: 14.470
+Portanto, texto, o oposto de números ou algum outro dado.
 
 485
-00:23:14,470 --> 00:23:19,680
-So get_string is the closest analog to the ask function there.
+00: 23: 14,470 -> 00: 23: 19.680
+Portanto, get_string é o análogo mais próximo da função ask.
 
 486
-00:23:19,680 --> 00:23:22,830
-In between the parentheses, which imply here's
+00: 23: 19,680 -> 00: 23: 22.830
+Entre os parênteses, o que implica que aqui está
 
 487
-00:23:22,830 --> 00:23:24,840
-where you can provide some input, I can go ahead
+00: 23: 22,830 -> 00: 23: 24.840
+onde você pode fornecer alguma entrada, eu posso seguir
 
 488
-00:23:24,840 --> 00:23:27,673
-and provide the prompt that the user is going to see on the screen--
+00: 23: 24,840 -> 00: 23: 27.673
+e fornecer o prompt que o usuário verá na tela -
 
 489
-00:23:27,673 --> 00:23:30,217
-for instance, what's your name, quote unquote.
+00: 23: 27,673 -> 00: 23: 30.217
+por exemplo, qual é o seu nome, abre aspas, fecha aspas.
 
 490
-00:23:30,217 --> 00:23:31,050
-Now, why the quotes?
+00: 23: 30,217 -> 00: 23: 31.050
+Agora, por que as aspas?
 
 491
-00:23:31,050 --> 00:23:34,050
-I just claimed earlier that anytime you pass a string--
+00: 23: 31,050 -> 00: 23: 34.050
+Eu acabei de afirmar que sempre que você passar uma string -
 
 492
-00:23:34,050 --> 00:23:36,450
-a word, a phrase, alphabetical characters--
+00: 23: 34,050 -> 00: 23: 36.450
+uma palavra, uma frase, caracteres alfanuméricos -
 
 493
-00:23:36,450 --> 00:23:38,460
-you have to surround them with double quotes
+00: 23: 36,450 -> 00: 23: 38.460
+você tem que colocá-los entre aspas duplas
 
 494
-00:23:38,460 --> 00:23:40,380
-on the left and double quotes on the right.
+00: 23: 38,460 -> 00: 23: 40.380
+à esquerda e aspas duplas à direita.
 
 495
-00:23:40,380 --> 00:23:44,994
-And to be clear, why did I have this weird incantation here, backslash n?
+00: 23: 40,380 -> 00: 23: 44.994
+E para ser claro, por que eu tenho esse encantamento estranho aqui, barra invertida n?
 
 496
-00:23:44,994 --> 00:23:45,786
-AUDIENCE: New line.
+00: 23: 44,994 -> 00: 23: 45.786
+PÚBLICO: Nova linha.
 
 497
-00:23:45,786 --> 00:23:47,970
-DAVID MALAN: Yeah, it just moves the cursor to the new line.
+00: 23: 45,786 -> 00: 23: 47.970
+DAVID MALAN: Sim, ele apenas move o cursor para a nova linha.
 
 498
-00:23:47,970 --> 00:23:48,540
-Why?
+00: 23: 47,970 -> 00: 23: 48.540
+Por quê?
 
 499
-00:23:48,540 --> 00:23:50,207
-Just because it looks a little prettier.
+00: 23: 48,540 -> 00: 23: 50.207
+Só porque parece um pouco mais bonito.
 
 500
-00:23:50,207 --> 00:23:51,000
-I don't have to.
+00: 23: 50,207 -> 00: 23: 51.000
+Não é necessário.
 
 501
-00:23:51,000 --> 00:23:54,370
-And indeed, a moment ago, my own computer prompted me to say yes or no,
+00: 23: 51.000 -> 00: 23: 54.370
+E, de fato, um momento atrás, meu próprio computador me solicitou a resposta sim ou não,
 
 502
-00:23:54,370 --> 00:23:56,780
-and it did not move the cursor to the next line.
+00: 23: 54,370 -> 00: 23: 56.780
+e não moveu o cursor para a próxima linha.
 
 503
-00:23:56,780 --> 00:23:59,470
-That's because that programmer decided not to bother doing that.
+00: 23: 56,780 -> 00: 23: 59.470
+Isso porque aquele programador decidiu não se preocupar em fazer isso.
 
 504
-00:23:59,470 --> 00:24:02,120
-But I'll go ahead and keep things clean by doing this.
+00: 23: 59,470 -> 00: 24: 02.120
+Mas irei em frente e manterei as coisas limpas fazendo isso.
 
 505
-00:24:02,120 --> 00:24:07,150
-Now, once I ask the user for their name by way of this get_string function,
+00: 24: 02,120 -> 00: 24: 07.150
+Agora, uma vez que eu pergunto ao usuário por seu nome por meio desta função get_string,
 
 506
-00:24:07,150 --> 00:24:08,680
-I need to do something with it.
+00: 24: 07,150 -> 00: 24: 08.680
+Eu preciso fazer algo com isso.
 
 507
-00:24:08,680 --> 00:24:12,220
-And in C, the way you do this is you literally
+00: 24: 08,680 -> 00: 24: 12.220
+E em C, a maneira como você faz isso é literalmente
 
 508
-00:24:12,220 --> 00:24:15,837
-give yourself a variable, which is a piece of storage for a value.
+00: 24: 12,220 -> 00: 24: 15.837
+dê a si mesmo uma variável, que é um pedaço de armazenamento para um valor.
 
 509
-00:24:15,837 --> 00:24:18,670
-And I'm going to go ahead and call it answer, just like Scratch did.
+00: 24: 15,837 -> 00: 24: 18.670
+E vou prosseguir e chamá-la de resposta, assim como foi feito no Scratch.
 
 510
-00:24:18,670 --> 00:24:21,040
-But in C, I can call this anything I want.
+00: 24: 18,670 -> 00: 24: 21.040
+Mas em C, posso chamar isso do que quiser.
 
 511
-00:24:21,040 --> 00:24:22,565
-I could call it xyz.
+00: 24: 21,040 -> 00: 24: 22.565
+Eu poderia chamá-la de xyz.
 
 512
-00:24:22,565 --> 00:24:25,690
-None of those are very descriptive, so I'm going to call it answer instead.
+00: 24: 22,565 -> 00: 24: 25.690
+Nenhuma delas é muito descritiva, então vou chamá-la de resposta.
 
 513
-00:24:25,690 --> 00:24:27,100
-You can use any word.
+00: 24: 25,690 -> 00: 24: 27.100
+Você pode usar qualquer palavra.
 
 514
-00:24:27,100 --> 00:24:28,990
-But C is a little different.
+00: 24: 27,100 -> 00: 24: 28.990
+Mas C é um pouco diferente.
 
 515
-00:24:28,990 --> 00:24:34,480
-C is old school, and you have to be super explicit as to what type of value
+00: 24: 28,990 -> 00: 24: 34.480
+C é da velha guarda, e você tem que ser super explícito quanto ao tipo de valor
 
 516
-00:24:34,480 --> 00:24:37,630
-you are getting and, therefore, storing in the variable.
+00: 24: 34,480 -> 00: 24: 37.630
+que está obtendo e, portanto, armazenando na variável.
 
 517
-00:24:37,630 --> 00:24:40,040
-So to the left of the name of the variable,
+00: 24: 37,630 -> 00: 24: 40.040
+Então, à esquerda do nome da variável,
 
 518
-00:24:40,040 --> 00:24:43,810
-I have to tell the computer the type of value I need to store
+00: 24: 40,040 -> 00: 24: 43.810
+Tenho que dizer ao computador o tipo de valor que preciso armazenar
 
 519
-00:24:43,810 --> 00:24:45,010
-is going to be a string.
+00: 24: 43,810 -> 00: 24: 45.010
+vai ser uma string.
 
 520
-00:24:45,010 --> 00:24:49,180
-And we're going to see in a moment, there's other types of values.
+00: 24: 45,010 -> 00: 24: 49.180
+E veremos em um momento, que há outros tipos de valores.
 
 521
-00:24:49,180 --> 00:24:53,860
-There's numbers and more, but for now, we're just going to store a string.
+00: 24: 49,180 -> 00: 24: 53.860
+Existem números e muito mais, mas por enquanto, vamos apenas armazenar uma string.
 
 522
-00:24:53,860 --> 00:24:56,760
-And there's one thing missing from this line of code.
+00: 24: 53,860 -> 00: 24: 56.760
+E há uma coisa faltando nesta linha de código.
 
 523
-00:24:56,760 --> 00:24:57,700
-AUDIENCE: Semicolon.
+00: 24: 56,760 -> 00: 24: 57.700
+PÚBLICO: Ponto e vírgula.
 
 524
-00:24:57,700 --> 00:24:58,600
-DAVID MALAN: Semicolon, right?
+00: 24: 57,700 -> 00: 24: 58.600
+DAVID MALAN: Ponto e vírgula, certo?
 
 525
-00:24:58,600 --> 00:25:00,392
-End of thought, and that was a big thought,
+00: 24: 58,600 -> 00: 25: 00.392
+Fim do pensamento, e esse foi um grande pensamento,
 
 526
-00:25:00,392 --> 00:25:02,200
-but a semicolon finishes this thought.
+00: 25: 00,392 -> 00: 25: 02.200
+mas um ponto-e-vírgula finaliza esse pensamento.
 
 527
-00:25:02,200 --> 00:25:04,700
-Now, this equals sign is a little different from algebra,
+00: 25: 02,200 -> 00: 25: 04.700
+Agora, este sinal de igual é um pouco diferente da álgebra,
 
 528
-00:25:04,700 --> 00:25:07,750
-if you think back to your math days, where you might say x equals y.
+00: 25: 04,700 -> 00: 25: 07.750
+se você pensar em seus dias de matemática, onde poderia dizer que x é igual a y.
 
 529
-00:25:07,750 --> 00:25:11,440
-When x equals y, that means, literally, x is the same thing as y.
+00: 25: 07,750 -> 00: 25: 11.440
+Quando x é igual a y, isso significa, literalmente, x é a mesma coisa que y.
 
 530
-00:25:11,440 --> 00:25:14,740
-But here, the equals sign in programming languages
+00: 25: 11,440 -> 00: 25: 14.740
+Mas aqui, o sinal de igual nas linguagens de programação
 
 531
-00:25:14,740 --> 00:25:17,990
-typically is the kind of a motion from right to left.
+00: 25: 14,740 -> 00: 25: 17.990
+normalmente é o tipo de movimento da direita para a esquerda.
 
 532
-00:25:17,990 --> 00:25:20,560
-This equal sign doesn't technically mean equal.
+00: 25: 17,990 -> 00: 25: 20.560
+Este sinal de igual não significa tecnicamente igual.
 
 533
-00:25:20,560 --> 00:25:24,070
-It means assign, or the assignment operator.
+00: 25: 20,560 -> 00: 25: 24.070
+Significa atribuir, ou o operador de atribuição.
 
 534
-00:25:24,070 --> 00:25:27,200
-Move from the right something to the left.
+00: 25: 24,070 -> 00: 25: 27.200
+Mova algo da direita para a esquerda.
 
 535
-00:25:27,200 --> 00:25:31,600
-So if this get_string function, just like the ask function,
+00: 25: 27,200 -> 00: 25: 31.600
+Então, se esta função get_string, assim como a função ask,
 
 536
-00:25:31,600 --> 00:25:35,140
-asks the user for their name and hands back a value,
+00: 25: 31,600 -> 00: 25: 35.140
+pede ao usuário o nome dele e devolve um valor,
 
 537
-00:25:35,140 --> 00:25:37,930
-you want to put that name into a variable
+00: 25: 35,140 -> 00: 25: 37.930
+você quer colocar esse nome em uma variável
 
 538
-00:25:37,930 --> 00:25:40,192
-called answer, from right to left.
+00: 25: 37,930 -> 00: 25: 40.192
+chamada de resposta, da direita para a esquerda.
 
 539
-00:25:40,192 --> 00:25:42,650
-So even though we-- just as we wrote it from right to left,
+00: 25: 40,192 -> 00: 25: 42.650
+Então, embora nós - assim como escrevemos da direita para a esquerda,
 
 540
-00:25:42,650 --> 00:25:45,710
-so do you think about it executing from right to left.
+00: 25: 42,650 -> 00: 25: 45.710
+então você pensa sobre isso executando da direita para a esquerda.
 
 541
-00:25:45,710 --> 00:25:48,310
-So at this point in the story, we now have
+00: 25: 45,710 -> 00: 25: 48.310
+Então, neste ponto da história, agora temos
 
 542
-00:25:48,310 --> 00:25:52,960
-somewhere in the computer's memory, in a so-called variable, the user's answer
+00: 25: 48,310 -> 00: 25: 52.960
+em algum lugar da memória do computador, em uma chamada variável, a resposta do usuário
 
 543
-00:25:52,960 --> 00:25:54,130
-to their name.
+00: 25: 52,960 -> 00: 25: 54.130
+ao seu nome.
 
 544
-00:25:54,130 --> 00:25:55,540
-What do I want to do with it?
+00: 25: 54,130 -> 00: 25: 55.540
+O que eu quero fazer com isso?
 
 545
-00:25:55,540 --> 00:25:58,093
-Well, in C, there isn't a join function, so we're
+00: 25: 55,540 -> 00: 25: 58.093
+Bem, em C, não há uma função de junção, então vamos
 
 546
-00:25:58,093 --> 00:26:00,010
-going to have to do this a little differently.
+00: 25: 58,093 -> 00: 26: 00.010
+ter que fazer isso um pouco diferente.
 
 547
-00:26:00,010 --> 00:26:03,613
-But there kind of is a say function, and what was that say function called?
+00: 26: 00,010 -> 00: 26: 03.613
+Mas existe um tipo de função "say/diga", e como essa função foi chamada?
 
 548
-00:26:03,613 --> 00:26:04,340
-AUDIENCE: Printf.
+00: 26: 03,613 -> 00: 26: 04.340
+PÚBLICO: Printf.
 
 549
 00:26:04,340 --> 00:26:05,173
 DAVID MALAN: Printf.
 
 550
-00:26:05,173 --> 00:26:08,440
-So printf is the go-to function any time you want to print or say something
+00: 26: 05,173 -> 00: 26: 08.440
+Então, printf é a função que pode ser acessada sempre que você quiser imprimir ou dizer algo
 
 551
-00:26:08,440 --> 00:26:09,320
-on the screen.
+00: 26: 08,440 -> 00: 26: 09.320
+na tela.
 
 552
-00:26:09,320 --> 00:26:10,993
-So I'm going to go ahead and use printf.
+00: 26: 09,320 -> 00: 26: 10.993
+Então, vou prosseguir e usar printf.
 
 553
-00:26:10,993 --> 00:26:13,660
-And I'm going to use parentheses, because parentheses mean, here
+00: 26: 10,993 -> 00: 26: 13.660
+E vou usar parênteses, porque parênteses significam, aqui
 
 554
-00:26:13,660 --> 00:26:18,670
-come my inputs, otherwise known as arguments or parameters in programming.
+00: 26: 13,660 -> 00: 26: 18.670
+com estas entradas, também conhecidas como argumentos ou parâmetros na programação.
 
 555
-00:26:18,670 --> 00:26:21,100
-But these are synonymous for our purposes.
+00: 26: 18,670 -> 00: 26: 21.100
+Mas esses são sinônimos para nossos propósitos.
 
 556
-00:26:21,100 --> 00:26:23,350
-And now this is a little non-obvious, right?
+00: 26: 21,100 -> 00: 26: 23.350
+E agora isso não é um tanto óbvio, certo?
 
 557
-00:26:23,350 --> 00:26:29,180
-Because I don't want to just put, quote unquote, hello, comma, answer.
+00: 26: 23,350 -> 00: 26: 29.180
+Porque eu não quero apenas colocar, abre fecha aspas, "oi, vírgula, resposta".
 
 558
-00:26:29,180 --> 00:26:29,680
-Why?
+00: 26: 29,180 -> 00: 26: 29.680
+Por quê?
 
 559
-00:26:29,680 --> 00:26:34,480
-Why would it be incorrect to do quote unquote, hello, comma, answer?
+00: 26: 29,680 -> 00: 26: 34.480
+Por que seria incorreto abre, fecha aspas, olá, vírgula, resposta?
 
 560
-00:26:34,480 --> 00:26:35,155
-What's that?
+00: 26: 34,480 -> 00: 26: 35.155
+O que é isso?
 
 561
-00:26:35,155 --> 00:26:36,400
-AUDIENCE: It will just print out answer.
+00: 26: 35,155 -> 00: 26: 36.400
+PÚBLICO: Vai apenas imprimir "resposta".
 
 562
-00:26:36,400 --> 00:26:39,323
-DAVID MALAN: Right, it will literally say hello, comma, answer, right?
+00: 26: 36,400 -> 00: 26: 39.323
+DAVID MALAN: Certo, vai literalmente dizer olá, vírgula, resposta, certo?
 
 563
-00:26:39,323 --> 00:26:40,490
-And that's not what we want.
+00: 26: 39,323 -> 00: 26: 40.490
+E não é isso que queremos.
 
 564
-00:26:40,490 --> 00:26:41,530
-We don't want to say "hello answer."
+00: 26: 40,490 -> 00: 26: 41.530
+Não queremos dizer "Olá, resposta".
 
 565
-00:26:41,530 --> 00:26:43,450
-We want to say, hello, David or hello, Brian,
+00: 26: 41,530 -> 00: 26: 43.450
+Queremos dizer olá David ou olá Brian,
 
 566
-00:26:43,450 --> 00:26:45,280
-or whoever is playing this program.
+00: 26: 43,450 -> 00: 26: 45.280
+ou quem quer esteja rodando este programa.
 
 567
-00:26:45,280 --> 00:26:49,900
-So I somehow do need to join the word hello with the user's input.
+00: 26: 45,280 -> 00: 26: 49.900
+Então, de alguma forma, preciso juntar a palavra hello com a entrada do usuário.
 
 568
-00:26:49,900 --> 00:26:53,335
-And the way to do this in printf is a little different from Scratch.
+00: 26: 49,900 -> 00: 26: 53.335
+E a maneira de fazer isso no printf é um pouco diferente do Scratch.
 
 569
-00:26:53,335 --> 00:26:55,550
-You use what's called a placeholder.
+00: 26: 53,335 -> 00: 26: 55.550
+Você usa o que é chamado de "placeholder/espaço reservado".
 
 570
-00:26:55,550 --> 00:26:57,550
-So you literally write the sentence or phrase
+00: 26: 55,550 -> 00: 26: 57.550
+Então você literalmente escreve a sentença ou frase
 
 571
-00:26:57,550 --> 00:27:00,220
-that you want to say or print to the screen,
+00: 26: 57.550 -> 00: 27: 00.220
+que você quer dizer ou imprimir na tela,
 
 572
-00:27:00,220 --> 00:27:03,340
-but wherever you don't yet know the value in advance,
+00: 27: 00,220 -> 00: 27: 03.340
+mas onde quer que você ainda não saiba o valor com antecedência,
 
 573
-00:27:03,340 --> 00:27:08,570
-you put a placeholder using a percent sign and then an s denoting string.
+00: 27: 03,340 -> 00: 27: 08.570
+você coloca um espaço reservado usando um sinal de porcentagem e, em seguida, um s para representar sua string.
 
 574
-00:27:08,570 --> 00:27:11,320
-And this is because, of course, if I'm writing this program today,
+00: 27: 08,570 -> 00: 27: 11.320
+E isso porque, é claro, se estou escrevendo este programa hoje,
 
 575
-00:27:11,320 --> 00:27:13,840
-I have no idea who's going to run it tomorrow.
+00: 27: 11,320 -> 00: 27: 13.840
+Não tenho ideia de quem vai executá-lo amanhã.
 
 576
-00:27:13,840 --> 00:27:15,910
-So I want to dynamically put a placeholder
+00: 27: 13,840 -> 00: 27: 15.910
+Quero colocar dinamicamente um "placeholder/marcador de posição"
 
 577
-00:27:15,910 --> 00:27:19,400
-so that if someone plays this program tomorrow or the next day,
+00: 27: 15,910 -> 00: 27: 19.400
+então se alguém rodar este programa amanhã ou no dia seguinte,
 
 578
-00:27:19,400 --> 00:27:21,070
-their name gets dynamically inserted.
+00: 27: 19,400 -> 00: 27: 21.070
+seu nome é inserido dinamicamente.
 
 579
-00:27:21,070 --> 00:27:23,410
-I, of course, don't know their name today.
+00: 27: 21,070 -> 00: 27: 23.410
+Eu, claro, não sei o nome deles hoje.
 
 580
-00:27:23,410 --> 00:27:26,350
-So quote unquote, hello, comma, percent s.
+00: 27: 23,410 -> 00: 27: 26.350
+Portanto, entre aspas, aspas, "olá, vírgula, %s".
 
 581
-00:27:26,350 --> 00:27:30,130
-And that percent s is just a placeholder for whatever I want to plug in there.
+00: 27: 26,350 -> 00: 27: 30.130
+E esse %s é apenas um espaço reservado para tudo o que eu quiser inserir lá.
 
 582
-00:27:30,130 --> 00:27:32,590
-Backslash n, of course, just means new line.
+00: 27: 30,130 -> 00: 27: 32.590
+"barra invertida n", é claro, significa apenas nova linha.
 
 583
-00:27:32,590 --> 00:27:35,590
-So the only new thing here is this percent s.
+00: 27: 32,590 -> 00: 27: 35.590
+Portanto, a única coisa nova aqui é esse percentual s.
 
 584
-00:27:35,590 --> 00:27:39,490
-Now, it turns out that functions in C, just like in Scratch,
+00: 27: 35,590 -> 00: 27: 39.490
+Agora, acontece que funções em C, assim como em Scratch,
 
 585
-00:27:39,490 --> 00:27:40,990
-can take no arguments.
+00: 27: 39,490 -> 00: 27: 40.990
+podem não ter argumentos.
 
 586
 00:27:40,990 --> 00:27:42,550
-Or they can take one arguments.
+Ou podem ter argumentos.
 
 587
 00:27:42,550 --> 00:27:44,650
-Or they can take two or more arguments.
+Ou podem ter 2 ou mais argumentos.
 
 588
-00:27:44,650 --> 00:27:49,310
-And if they take two or more, you just separate them with commas.
+00: 27: 44,650 -> 00: 27: 49.310
+E se elas tiverem dois ou mais, basta separá-los com vírgulas.
 
 589
-00:27:49,310 --> 00:27:50,450
-So the way printf works--
+00: 27: 49,310 -> 00: 27: 50.450
+Então, a maneira como printf funciona -
 
 590
-00:27:50,450 --> 00:27:53,200
-and you would only know this, again, by being taught it or reading
+00: 27: 50,450 -> 00: 27: 53.200
+e você só saberia disso, novamente, sendo ensinado ou lendo
 
 591
-00:27:53,200 --> 00:27:55,720
-the documentation-- is that you can, yes,
+00: 27: 53,200 -> 00: 27: 55.720
+a documentação - é que você pode, sim,
 
 592
-00:27:55,720 --> 00:27:59,560
-provide just a single string as its input--
+00: 27: 55,720 -> 00: 27: 59.560
+fornecer apenas uma única string como entrada -
 
 593
-00:27:59,560 --> 00:28:00,910
-quote unquote, something.
+00: 27: 59,560 -> 00: 28: 00.910
+entre aspas, alguma coisa.
 
 594
-00:28:00,910 --> 00:28:03,010
-But if you have some placeholders in there,
+00: 28: 00,910 -> 00: 28: 03.010
+Mas se você tiver alguns "placeholders/marcadores" lá,
 
 595
-00:28:03,010 --> 00:28:06,520
-you can tell the computer what to plug in by adding a comma
+00: 28: 03,010 -> 00: 28: 06.520
+você pode dizer ao computador o que concatenar adicionando uma vírgula
 
 596
-00:28:06,520 --> 00:28:10,570
-and then the name of the value or variable that you want to plug in.
+00: 28: 06,520 -> 00: 28: 10.570
+e, em seguida, o nome do valor ou variável que você deseja conectar.
 
 597
-00:28:10,570 --> 00:28:14,120
-So now, these two lines of code are equivalent to these here.
+00: 28: 10,570 -> 00: 28: 14.120
+Portanto, agora, essas duas linhas de código são equivalentes a estas aqui.
 
 598
-00:28:14,120 --> 00:28:15,870
-But again, even though at first glance, it
+00: 28: 14,120 -> 00: 28: 15.870
+Mas, novamente, embora à primeira vista,
 
 599
-00:28:15,870 --> 00:28:17,620
-might look especially cryptic, if you just
+00: 28: 15,870 -> 00: 28: 17.620
+pode parecer especialmente enigmático, se você apenas
 
 600
-00:28:17,620 --> 00:28:19,480
-break it down to the individual components
+00: 28: 17,620 -> 00: 28: 19.480
+decompô-lo em componentes individuais
 
 601
-00:28:19,480 --> 00:28:23,020
-from right to left and then from outside to inside,
+00: 28: 19,480 -> 00: 28: 23.020
+da direita para a esquerda e de fora para dentro,
 
 602
-00:28:23,020 --> 00:28:28,150
-you can generally infer even what new code that you've never seen before
+00: 28: 23,020 -> 00: 28: 28.150
+você pode genericamente supor até mesmo o que um novo código que você nunca viu antes
 
 603
-00:28:28,150 --> 00:28:29,860
-is doing.
+00: 28: 28,150 -> 00: 28: 29.860
+está fazendo.
 
 604
-00:28:29,860 --> 00:28:33,880
-Any questions on these two lines of Scratch or C?
+00: 28: 29,860 -> 00: 28: 33.880
+Alguma dúvida sobre essas duas linhas do Scratch ou C?
 
 605
-00:28:33,880 --> 00:28:34,594
-Yeah?
+00: 28: 33,880 -> 00: 28: 34.594
+Sim?
 
 606
-00:28:34,594 --> 00:28:36,570
-AUDIENCE: Can you add [INAUDIBLE]?
+00: 28: 34,594 -> 00: 28: 36.570
+PÚBLICO: Você pode adicionar [INAUDÍVEL]?
 
 607
-00:28:36,570 --> 00:28:40,220
+00: 28: 36,570 -> 00: 28: 40.220
 
 
 608
-00:28:40,220 --> 00:28:41,220
-DAVID MALAN: Absolutely.
+00: 28: 40,220 -> 00: 28: 41.220
+DAVID MALAN: Com certeza.
 
 609
-00:28:41,220 --> 00:28:42,450
-Can you add other variables?
+00: 28: 41,220 -> 00: 28: 42.450
+Você pode adicionar outras variáveis?
 
 610
-00:28:42,450 --> 00:28:46,290
-If I had more variables in this program, thanks to more lines of code,
+00: 28: 42,450 -> 00: 28: 46.290
+Se eu tivesse mais variáveis ​​neste programa, graças a mais linhas de código,
 
 611
-00:28:46,290 --> 00:28:49,740
-I could just do comma, something else, comma, something else, comma.
+00: 28: 46,290 -> 00: 28: 49.740
+Eu poderia apenas fazer vírgula, outra coisa, vírgula, outra coisa, vírgula.
 
 612
-00:28:49,740 --> 00:28:52,620
-And I could just have one placeholder in that quoted
+00: 28: 49,740 -> 00: 28: 52.620
+E eu poderia ter apenas um "placeholder" nesta 
 
 613
-00:28:52,620 --> 00:28:56,340
-expression for all of those variables that I want to plug in.
+00: 28: 52,620 -> 00: 28: 56.340
+expressão para todas as variáveis ​​que desejo inserir.
 
 614
-00:28:56,340 --> 00:28:57,670
-And they go from left to right.
+00: 28: 56,340 -> 00: 28: 57.670
+E eles vão da esquerda para a direita.
 
 615
-00:28:57,670 --> 00:29:00,510
-So if I had two percent s's here, the first one
+00: 28: 57,670 -> 00: 29: 00.510
+Então, se eu tivesse dois sinais de "%" aqui, o primeiro
 
 616
-00:29:00,510 --> 00:29:01,890
-would come after the first comma.
+00: 29: 00,510 -> 00: 29: 01.890
+viria após a primeira vírgula.
 
 617
-00:29:01,890 --> 00:29:04,481
-The second one would come after the second comma.
+00: 29: 01,890 -> 00: 29: 04.481
+O segundo viria após a segunda vírgula.
 
 618
-00:29:04,481 --> 00:29:06,485
-AUDIENCE: So you need a percent s [INAUDIBLE]??
+00: 29: 04,481 -> 00: 29: 06.485
+PÚBLICO: Então você precisa de %s [INAUDÍVEL] ??
 
 619
-00:29:06,485 --> 00:29:07,360
-DAVID MALAN: Correct.
+00: 29: 06,485 -> 00: 29: 07.360
+DAVID MALAN: Correto.
 
 620
-00:29:07,360 --> 00:29:10,962
-You need a percent s for any placeholder you want to plug in if it's a string.
+00: 29: 07,360 -> 00: 29: 10.962
+Você precisa de um %s para qualquer "placeholder" que deseja inserir, se for uma string.
 
 621
-00:29:10,962 --> 00:29:13,420
-And we're going to see other placeholders in just a moment.
+00: 29: 10,962 -> 00: 29: 13.420
+E veremos outros "placeholders" em apenas um momento.
 
 622
-00:29:13,420 --> 00:29:14,720
-Good question.
+00: 29: 13,420 -> 00: 29: 14.720
+Boa pergunta.
 
 623
-00:29:14,720 --> 00:29:16,464
-Other questions?
+00: 29: 14,720 -> 00: 29: 16.464
+Outras perguntas?
 
 624
-00:29:16,464 --> 00:29:17,230
-No?
+00: 29: 16,464 -> 00: 29: 17.230
+Não?
 
 625
-00:29:17,230 --> 00:29:18,440
-Oh, yeah, in back.
+00: 29: 17,230 -> 00: 29: 18.440
+Oh, sim, la trás.
 
 626
-00:29:18,440 --> 00:29:20,705
-AUDIENCE: Is there another way to concatenate strings?
+00: 29: 18,440 -> 00: 29: 20.705
+PÚBLICO: Existe outra maneira de concatenar strings?
 
 627
-00:29:20,705 --> 00:29:23,080
-DAVID MALAN: Is there another way to concatenate strings?
+00: 29: 20,705 -> 00: 29: 23.080
+DAVID MALAN: Existe outra maneira de concatenar strings?
 
 628
-00:29:23,080 --> 00:29:26,533
-Short answer-- yes, many ways, none of them easy.
+00: 29: 23,080 -> 00: 29: 26.533
+Resposta curta - sim, de muitas maneiras, nenhuma delas fácil.
 
 629
-00:29:26,533 --> 00:29:29,200
-So we'll build up to that, actually, in a couple of weeks' time.
+00: 29: 26,533 -> 00: 29: 29.200
+Então, vamos chegar a isso, na verdade, em algumas semanas.
 
 630
-00:29:29,200 --> 00:29:33,290
-Printf, for now, is by far the easiest way to do it.
+00: 29: 29,200 -> 00: 29: 33.290
+Printf, por enquanto, é de longe a maneira mais fácil de fazer isso.
 
 631
-00:29:33,290 --> 00:29:34,175
-Other questions?
+00: 29: 33,290 -> 00: 29: 34.175
+Outras perguntas?
 
 632
-00:29:34,175 --> 00:29:36,550
-And if I ever miss your hand, there's just lots of glare.
+00: 29: 34,175 -> 00: 29: 36.550
+Se eu não enxergar as mãos de vocês, é porque há tanto brilho.
 
 633
-00:29:36,550 --> 00:29:37,510
-Do just call out.
+00: 29: 36,550 -> 00: 29: 37.510
+Apenas chame.
 
 634
-00:29:37,510 --> 00:29:38,200
-Over here.
+00: 29: 37,510 -> 00: 29: 38.200
+Por aqui.
 
 635
-00:29:38,200 --> 00:29:40,550
-OK, all three of you.
+00: 29: 38,200 -> 00: 29: 40.550
+OK, vocês três.
 
 636
-00:29:40,550 --> 00:29:41,571
-Over here on the right.
+00: 29: 40,550 -> 00: 29: 41.571
+Aqui à direita.
 
 637
-00:29:41,571 --> 00:29:43,890
-AUDIENCE: [INAUDIBLE].
+00: 29: 41,571 -> 00: 29: 43.890
+PÚBLICO: [INAUDÍVEL].
 
 638
-00:29:43,890 --> 00:29:44,640
-DAVID MALAN: Sure.
+00: 29: 43,890 -> 00: 29: 44.640
+DAVID MALAN: Claro.
 
 639
-00:29:44,640 --> 00:29:45,420
-What is a string?
+00: 29: 44,640 -> 00: 29: 45.420
+O que é uma string?
 
 640
-00:29:45,420 --> 00:29:50,530
-A string is a sequence of zero or more characters in double quotes.
+00: 29: 45,420 -> 00: 29: 50.530
+Uma string é uma sequência de zero ou mais caracteres entre aspas duplas.
 
 641
-00:29:50,530 --> 00:29:54,060
-So put another way, it's a word, a phrase, a sentence, a paragraph-- zero
+00: 29: 50,530 -> 00: 29: 54.060
+Colocado de outra forma, é uma palavra, uma frase, uma sentença, um parágrafo - zero
 
 642
-00:29:54,060 --> 00:29:58,883
-or more characters, alphabetical letters, in double quotes.
+00: 29: 54,060 -> 00: 29: 58.883
+ou mais caracteres, letras do alfabeto, entre aspas duplas.
 
 643
-00:29:58,883 --> 00:29:59,550
-Other questions?
+00: 29: 58,883 -> 00: 29: 59.550
+Outras perguntas?
 
 644
-00:29:59,550 --> 00:30:01,100
-Yeah?
+00: 29: 59,550 -> 00: 30: 01.100
+Sim?
 
 645
-00:30:01,100 --> 00:30:07,083
-AUDIENCE: What would happen if your backslash n was outside the quotations.
+00: 30: 01,100 -> 00: 30: 07.083
+PÚBLICO: O que aconteceria se sua barra invertida estivesse fora das aspas.
 
 646
-00:30:07,083 --> 00:30:08,500
-DAVID MALAN: Really good question.
+00: 30: 07,083 -> 00: 30: 08.500
+DAVID MALAN: Boa pergunta.
 
 647
-00:30:08,500 --> 00:30:11,270
-What would happen if your backslash n is outside the quotations?
+00: 30: 08,500 -> 00: 30: 11.270
+O que aconteceria se sua barra invertida n estivesse fora das aspas?
 
 648
-00:30:11,270 --> 00:30:12,210
-Well, let me go ahead and do this.
+00: 30: 11,270 -> 00: 30: 12.210
+Bem, deixe-me fazer isso.
 
 649
-00:30:12,210 --> 00:30:14,210
-And frankly, this is the right instinct to have.
+00: 30: 12,210 -> 00: 30: 14.210
+E, francamente, esse é o instinto certo de se ter.
 
 650
-00:30:14,210 --> 00:30:17,250
-Any time, moving forward, you have those same instinctive questions,
+00: 30: 14,210 -> 00: 30: 17.250
+A qualquer momento, a frente, que você tenha as mesmas perguntas instintivas,
 
 651
-00:30:17,250 --> 00:30:17,880
-just try it.
+00: 30: 17,250 -> 00: 30: 17.880
+apenas tente.
 
 652
-00:30:17,880 --> 00:30:19,770
-You can do no harm to the computer.
+00: 30: 17,880 -> 00: 30: 19.770
+Você não pode fazer mal ao computador.
 
 653
-00:30:19,770 --> 00:30:22,170
-So let me go ahead and just accidentally, if you will,
+00: 30: 19,770 -> 00: 30: 22.170
+Então deixe-me ir em frente e acidentalmente, se vocês me permitem,
 
 654
-00:30:22,170 --> 00:30:24,510
-put the backslash n outside of the quotes,
+00: 30: 22,170 -> 00: 30: 24.510
+coloque a barra invertida n fora das aspas,
 
 655
-00:30:24,510 --> 00:30:25,978
-is what I think your question is.
+00: 30: 24,510 -> 00: 30: 25.978
+é o que eu acho que foi sua pergunta.
 
 656
-00:30:25,978 --> 00:30:27,520
-All right, so let's see what happens.
+00: 30: 25,978 -> 00: 30: 27.520
+Tudo bem, então vamos ver o que acontece.
 
 657
-00:30:27,520 --> 00:30:29,490
-So I'm going to go ahead now and run Clang.
+00: 30: 27,520 -> 00: 30: 29.490
+Então, vou agora e executar o Clang.
 
 658
-00:30:29,490 --> 00:30:31,470
-I know how to make a customized name now,
+00: 30: 29,490 -> 00: 30: 31.470
+Eu sei como fazer um nome personalizado agora,
 
 659
-00:30:31,470 --> 00:30:34,380
-so I'm going to adopt that convention. -o hello.
+00: 30: 31,470 -> 00: 30: 34.380
+então vou adotar essa convenção. -o hello.
 
 660
-00:30:34,380 --> 00:30:36,720
-And now I'm going to go ahead and say hello.c,
+00: 30: 34,380 -> 00: 30: 36.720
+E agora vou dizer hello.c
 
 661
-00:30:36,720 --> 00:30:38,940
-which I think is going to be broken.
+00: 30: 36,720 -> 00: 30: 38.940
+que eu acho que vai quebrar.
 
 662
-00:30:38,940 --> 00:30:41,910
-And indeed, something, indeed, has broken here.
+00: 30: 38,940 -> 00: 30: 41.910
+E, de fato, algo, de fato, quebrou aqui.
 
 663
-00:30:41,910 --> 00:30:43,420
-Let's see what the error is.
+00: 30: 41,910 -> 00: 30: 43.420
+Vamos ver qual é o erro.
 
 664
-00:30:43,420 --> 00:30:48,210
-So it's a little arcane, too, but hello.c, colon 5, colon 26.
+00: 30: 43,420 -> 00: 30: 48.210
+Portanto, é um pouco arcaico também, mas hello.c, dois pontos 5, dois pontos 26.
 
 665
-00:30:48,210 --> 00:30:49,240
-What's going on there?
+00: 30: 48,210 -> 00: 30: 49.240
+O que está acontecendo lá?
 
 666
-00:30:49,240 --> 00:30:50,370
-Well, let me zoom out.
+00: 30: 49,240 -> 00: 30: 50.370
+Bem, deixe-me diminuir o zoom.
 
 667
-00:30:50,370 --> 00:30:53,110
-Anytime you make a mistake in your code like this,
+00: 30: 50,370 -> 00: 30: 53.110
+Sempre que você cometer um erro em seu código como este,
 
 668
-00:30:53,110 --> 00:30:57,870
-Clang is going to try to help you figure out where that mistake or that bug is.
+00: 30: 53,110 -> 00: 30: 57.870
+O Clang vai tentar ajudá-lo a descobrir onde está esse erro ou bug.
 
 669
-00:30:57,870 --> 00:31:02,760
-So hello.c colon five means look on line 5 for your mistake.
+00: 30: 57,870 -> 00: 31: 02.760
+Portanto, hello.c Dois pontos 5 significa procurar na linha 5 por seu erro.
 
 670
-00:31:02,760 --> 00:31:07,930
-Then, see, it says error-- expected close parentheses right around here.
+00: 31: 02,760 -> 00: 31: 07.930
+Então, veja, ele diz erro - esperado parênteses de fechamento bem por aqui.
 
 671
-00:31:07,930 --> 00:31:11,500
-So it's a little weird, because no, I don't want a close parentheses,
+00: 31: 07,930 -> 00: 31: 11.500
+Então é um pouco estranho, porque não, eu não quero fechar parênteses,
 
 672
-00:31:11,500 --> 00:31:12,000
-I think.
+00: 31: 11,500 -> 00: 31: 12.000
+Eu acho.
 
 673
-00:31:12,000 --> 00:31:13,170
-I want the new line.
+00: 31: 12.000 -> 00: 31: 13.170
+Eu quero a nova linha.
 
 674
-00:31:13,170 --> 00:31:16,080
-So it's not perfectly able to tell you, hey,
+00: 31: 13,170 -> 00: 31: 16.080
+Portanto, não é perfeitamente capaz de dizer a você, ei,
 
 675
-00:31:16,080 --> 00:31:18,450
-that backslash n should be inside of the quotes.
+00: 31: 16,080 -> 00: 31: 18.450
+essa "\n" deve estar entre as aspas.
 
 676
-00:31:18,450 --> 00:31:21,780
-But it can at least help you hone in on where the mistake is.
+00: 31: 18,450 -> 00: 31: 21.780
+Mas pode pelo menos ajudá-lo a descobrir onde está o erro.
 
 677
-00:31:21,780 --> 00:31:24,000
-So it's somewhere around there, at which point
+00: 31: 21,780 -> 00: 31: 24.000
+Então, está em algum lugar por aí, ao qual
 
 678
-00:31:24,000 --> 00:31:26,850
-your own memory or your own googling should kick in to figure out,
+00: 31: 24.000 -> 00: 31: 26.850
+sua própria memória ou sua própria pesquisa no Google deve funcionar para descobrir,
 
 679
-00:31:26,850 --> 00:31:29,717
-oh, that's got to be inside of the quotes.
+00: 31: 26,850 -> 00: 31: 29.717
+oh, isso tem que estar entre as aspas.
 
 680
-00:31:29,717 --> 00:31:30,300
-Good question.
+00: 31: 29,717 -> 00: 31: 30.300
+Boa pergunta.
 
 681
-00:31:30,300 --> 00:31:31,883
-Was there a third question back there?
+00: 31: 30,300 -> 00: 31: 31.883
+Houve uma terceira pergunta lá atrás?
 
 682
-00:31:31,883 --> 00:31:32,430
-Yeah?
+00: 31: 31,883 -> 00: 31: 32.430
+Sim?
 
 683
-00:31:32,430 --> 00:31:32,930
-No?
+00: 31: 32,430 -> 00: 31: 32.930
+Não?
 
 684
-00:31:32,930 --> 00:31:33,480
-OK.
+00: 31: 32,930 -> 00: 31: 33.480
+ESTÁ BEM.
 
 685
-00:31:33,480 --> 00:31:37,860
-All right, so let's go ahead now and transition to a few other features
+00: 31: 33,480 -> 00: 31: 37.860
+Tudo bem, então vamos prosseguir agora e fazer a transição para alguns outros recursos
 
 686
-00:31:37,860 --> 00:31:39,360
-that we can do, as well--
+00: 31: 37,860 -> 00: 31: 39.360
+que podemos fazer, também -
 
 687
-00:31:39,360 --> 00:31:42,630
-namely, implementing the same program that I just had.
+00: 31: 39,360 -> 00: 31: 42.630
+ou seja, implementar o mesmo programa que acabei de fazer.
 
 688
-00:31:42,630 --> 00:31:45,600
-Let me go ahead and close this file and create a new one called,
+00: 31: 42,630 -> 00: 31: 45.600
+Vou fechar este arquivo e criar um novo chamado,
 
 689
-00:31:45,600 --> 00:31:49,173
-say, string.c, because I'm now experimenting with strings.
+00: 31: 45,600 -> 00: 31: 49.173
+digamos, string.c, porque agora estou fazendo experiências com strings.
 
 690
-00:31:49,173 --> 00:31:50,590
-And I'm going to start as before--
+00: 31: 49,173 -> 00: 31: 50.590
+E vou começar como antes -
 
 691
-00:31:50,590 --> 00:31:55,260
-include stdio.h int main void.
+00: 31: 50,590 -> 00: 31: 55.260
+incluir stdio.h int main void.
 
 692
-00:31:55,260 --> 00:32:01,470
-And then I'm going to go ahead here and say string answer get get_string,
+00: 31: 55,260 -> 00: 32: 01.470
+E então vou prosseguir aqui e dizer string resposta get_string,
 
 693
-00:32:01,470 --> 00:32:07,020
-quote unquote, what's your name, question mark, backslash n, semicolon.
+00: 32: 01,470 -> 00: 32: 07.020
+entre aspas, qual é o seu nome, ponto de interrogação, "\n", ponto e vírgula.
 
 694
-00:32:07,020 --> 00:32:09,448
-And as an aside, everything I type on the keyboard
+00: 32: 07,020 -> 00: 32: 09.448
+E, à parte, tudo que eu digito no teclado
 
 695
-00:32:09,448 --> 00:32:11,490
-today we will post on the course's website after.
+00: 32: 09,448 -> 00: 32: 11.490
+hoje vamos postar no site do curso depois.
 
 696
-00:32:11,490 --> 00:32:15,010
-So no need to type down every little character if you'd prefer not.
+00: 32: 11,490 -> 00: 32: 15.010
+Portanto, não há necessidade de digitar cada pequeno caractere, se você não quiser.
 
 697
-00:32:15,010 --> 00:32:18,448
-And then I'm going to go ahead and say printf, quote unquote, hello answer.
+00: 32: 15,010 -> 00: 32: 18.448
+E então vou dizer printf, abre aspas fecha aspas, olá, resposta.
 
 698
-00:32:18,448 --> 00:32:20,490
-Not answer, because we claimed that that was bad.
+00: 32: 18,448 -> 00: 32: 20.490
+Não "resposta", porque afirmamos que isso era ruim.
 
 699
-00:32:20,490 --> 00:32:22,440
-That would literally say answer.
+00: 32: 20,490 -> 00: 32: 22.440
+Isso diria literalmente resposta.
 
 700
-00:32:22,440 --> 00:32:24,750
-I want to do a placeholder, percent s.
+00: 32: 22,440 -> 00: 32: 24.750
+Eu quero fazer um placeholder, %s.
 
 701
-00:32:24,750 --> 00:32:29,920
-And now backslash n, comma, answer, semicolon.
+00: 32: 24,750 -> 00: 32: 29.920
+E agora "\n", vírgula, resposta, ponto e vírgula.
 
 702
-00:32:29,920 --> 00:32:32,910
-So I think I have transcribed the code from the slide
+00: 32: 29,920 -> 00: 32: 32.910
+Então Acho que transcrevi o código do slide
 
 703
-00:32:32,910 --> 00:32:37,920
-into my programming environment now in a file called string.c.
+00: 32: 32,910 -> 00: 32: 37.920
+em meu ambiente de programação agora em um arquivo chamado string.c.
 
 704
-00:32:37,920 --> 00:32:39,300
-So let me go ahead and zoom out.
+00: 32: 37,920 -> 00: 32: 39.300
+Então, deixe-me ir em frente e diminuir o zoom.
 
 705
-00:32:39,300 --> 00:32:41,790
-And if I want to compile this program, convert it
+00: 32: 39,300 -> 00: 32: 41.790
+E se eu quiser compilar este programa, convertê-lo
 
 706
-00:32:41,790 --> 00:32:46,795
-from source code to machine code, what command can I type down here?
+00: 32: 41,790 -> 00: 32: 46.795
+do código-fonte ao código de máquina, que comando posso digitar aqui?
 
 707
-00:32:46,795 --> 00:32:47,295
-So Clang.
+00: 32: 46,795 -> 00: 32: 47.295
+Então, Clang.
 
 708
-00:32:47,295 --> 00:32:50,150
+00: 32: 47,295 -> 00: 32: 50.150
 
 
 709
-00:32:50,150 --> 00:32:51,210
-So string.c.
+00: 32: 50,150 -> 00: 32: 51.210
+Então string.c.
 
 710
-00:32:51,210 --> 00:32:53,590
-But that's going to give me a program, by default, called
+00: 32: 51,210 -> 00: 32: 53.590
+Mas isso vai me dar um programa, por padrão, chamado
 
 711
-00:32:53,590 --> 00:32:56,030
-a.out, which is just very non-helpful.
+00: 32: 53,590 -> 00: 32: 56.030
+a.out, o que é muito inútil.
 
 712
-00:32:56,030 --> 00:32:58,670
-So let me go ahead and say -o string, just so
+00: 32: 56,030 -> 00: 32: 58.670
+Então, deixe-me ir em frente e dizer -o string, apenas para
 
 713
-00:32:58,670 --> 00:33:00,230
-that my program is called string.
+00: 32: 58,670 -> 00: 33: 00.230
+que meu programa seja chamado de string
 
 714
-00:33:00,230 --> 00:33:02,090
-But I could call it anything I want.
+00: 33: 00,230 -> 00: 33: 02.090
+Mas eu poderia chamá-lo do que eu quiser.
 
 715
-00:33:02,090 --> 00:33:04,975
-I could call it program two, if I prefer.
+00: 33: 02,090 -> 00: 33: 04.975
+Eu poderia chamá-lo de programa dois, se preferir.
 
 716
-00:33:04,975 --> 00:33:06,350
-So let me go ahead and hit Enter.
+00: 33: 04,975 -> 00: 33: 06.350
+Deixe-me ir em frente e pressione Enter.
 
 717
-00:33:06,350 --> 00:33:10,220
-And oh my god, there are more errors than there are lines
+00: 33: 06,350 -> 00: 33: 10.220
+E ai meu Deus, há mais erros do que linhas
 
 718
-00:33:10,220 --> 00:33:12,320
-of code, which is a little worrisome.
+00: 33: 10,220 -> 00: 33: 12.320
+de código, o que é um pouco preocupante.
 
 719
-00:33:12,320 --> 00:33:15,530
-And this tier two is where you should take some comfort that that just means
+00: 33: 12,320 -> 00: 33: 15.530
+E esta segunda camada é onde você deve se consolar, pois isso significa apenas
 
 720
-00:33:15,530 --> 00:33:17,113
-the computer's gotten confused, right?
+00: 33: 15,530 -> 00: 33: 17.113
+o computador ficou confuso, certo?
 
 721
-00:33:17,113 --> 00:33:20,480
-You're not that bad at programming that you generate more errors than lines
+00: 33: 17,113 -> 00: 33: 20.480
+Você não é tão ruim em programação que gera mais erros do que linhas
 
 722
-00:33:20,480 --> 00:33:21,860
-of code you've written yourself.
+00: 33: 20,480 -> 00: 33: 21.860
+de código que você mesmo escreveu.
 
 723
-00:33:21,860 --> 00:33:25,370
-It's just that the computer got really confused at some point,
+00: 33: 21,860 -> 00: 33: 25.370
+É que o computador ficou realmente confuso em algum momento,
 
 724
-00:33:25,370 --> 00:33:28,670
-and it kind of starts tripping over itself, so to speak, conceptually.
+00: 33: 25,370 -> 00: 33: 28.670
+e meio que começa a tropeçar em si mesmo, por assim dizer, conceitualmente.
 
 725
-00:33:28,670 --> 00:33:31,910
-It doesn't know where the error is, so it starts misinterpreting correct code
+00: 33: 28,670 -> 00: 33: 31.910
+Ele não sabe onde está o erro, então começa a interpretar mal o código correto
 
 726
-00:33:31,910 --> 00:33:33,020
-as incorrect code.
+00: 33: 31,910 -> 00: 33: 33.020
+como código incorreto.
 
 727
-00:33:33,020 --> 00:33:38,100
-So the place to start is always with the very first error message.
+00: 33: 33,020 -> 00: 33: 38.100
+Portanto, o ponto de partida é sempre a primeira mensagem de erro.
 
 728
-00:33:38,100 --> 00:33:41,450
-So you'll notice that I already scrolled all the way up to the command
+00: 33: 38,100 -> 00: 33: 41.450
+Então, você notará que eu já rolei até o comando
 
 729
-00:33:41,450 --> 00:33:44,570
-that I typed, which was right here, as I've highlighted.
+00: 33: 41,450 -> 00: 33: 44.570
+que digitei, que estava bem aqui, como destaquei.
 
 730
-00:33:44,570 --> 00:33:47,270
-Focus on the first error you see, and maybe the others
+00: 33: 44,570 -> 00: 33: 47.270
+Concentre-se no primeiro erro que você vê e talvez nos outros
 
 731
-00:33:47,270 --> 00:33:50,985
-are just phantom errors, confusion that arose instead.
+00: 33: 47,270 -> 00: 33: 50.985
+são apenas erros fantasmas, confusões que surgiram em seu lugar.
 
 732
-00:33:50,985 --> 00:33:53,360
-So let me go ahead and zoom in on this part of the screen
+00: 33: 50,985 -> 00: 33: 53.360
+Então, deixe-me ir em frente e ampliar essa parte da tela
 
 733
-00:33:53,360 --> 00:33:55,700
-and see if we can't diagnose this issue.
+00: 33: 53,360 -> 00: 33: 55.700
+e ver se não podemos diagnosticar esse problema.
 
 734
-00:33:55,700 --> 00:33:59,420
-The command I ran was Clang -o string string.c.
+00: 33: 55,700 -> 00: 33: 59.420
+O comando que executei foi Clang -o string string.c.
 
 735
-00:33:59,420 --> 00:34:02,480
-That just means my input is my source code in string.c.
+00: 33: 59,420 -> 00: 34: 02.480
+Isso significa apenas que minha entrada é meu código-fonte em string.c.
 
 736
-00:34:02,480 --> 00:34:06,500
-I want my output to be machine code in a file called string.
+00: 34: 02,480 -> 00: 34: 06.500
+Quero que minha saída seja um código de máquina em um arquivo chamado string.
 
 737
-00:34:06,500 --> 00:34:09,409
-All right, string.c line 5 is where the error begins,
+00: 34: 06,500 -> 00: 34: 09.409
+Tudo bem, string.c linha 5 é onde o erro começa,
 
 738
-00:34:09,409 --> 00:34:11,540
-so that seems to be a familiar location.
+00: 34: 09,409 -> 00: 34: 11.540
+então esse parece ser um local familiar.
 
 739
-00:34:11,540 --> 00:34:13,820
-Use of undeclared identifier string.
+00: 34: 11,540 -> 00: 34: 13.820
+Uso de identificador "string" não declarado.
 
 740
-00:34:13,820 --> 00:34:19,960
-Did you mean-- anticipation-- stdin?
+00: 34: 13,820 -> 00: 34: 19.960
+Você quis dizer - antecipação - stdin?
 
 741
-00:34:19,960 --> 00:34:21,280
-No, I didn't.
+00: 34: 19,960 -> 00: 34: 21.280
+Não, não quis.
 
 742
-00:34:21,280 --> 00:34:22,600
-I meant string in this case.
+00: 34: 21,280 -> 00: 34: 22.600
+Eu quis dizer string neste caso.
 
 743
-00:34:22,600 --> 00:34:25,159
-So here, too, the computer's gotten confused,
+00: 34: 22,600 -> 00: 34: 25.159
+Então, aqui também, o computador ficou confuso,
 
 744
-00:34:25,159 --> 00:34:28,179
-and even it's green helpful message is actually not helpful.
+00: 34: 25,159 -> 00: 34: 28.179
+e mesmo que seja uma útil mensagem em verde na verdade não é útil.
 
 745
-00:34:28,179 --> 00:34:29,679
-No, I want a string.
+00: 34: 28,179 -> 00: 34: 29.679
+Não, eu quero uma string.
 
 746
-00:34:29,679 --> 00:34:31,270
-I don't want standard n.
+00: 34: 29,679 -> 00: 34: 31.270
+Eu não quero "standard n".
 
 747
-00:34:31,270 --> 00:34:34,060
-But the reason for this is that technically,
+00: 34: 31,270 -> 00: 34: 34.060
+Mas a razão para isso é que, tecnicamente,
 
 748
-00:34:34,060 --> 00:34:37,420
-at least this point in the story, there is no such thing as a string,
+00: 34: 34,060 -> 00: 34: 37.420
+pelo menos neste ponto da história, não existe essa tal de string,
 
 749
-00:34:37,420 --> 00:34:41,699
-S-T-R-I-N-G in C. That's actually a training wheel of sorts that
+00: 34: 37,420 -> 00: 34: 41.699
+S-T-R-I-N-G em C. Na verdade, é uma espécie de rodinhas de apoio
 
 750
-00:34:41,699 --> 00:34:44,949
-we're going to use for just a couple of weeks until, to your question earlier,
+00: 34: 41,699 -> 00: 34: 44.949
+vamos usar por apenas algumas semanas até que, para sua pergunta anterior,
 
 751
-00:34:44,949 --> 00:34:48,340
-we're going to show what's really going on underneath the hood of the computer,
+00: 34: 44,949 -> 00: 34: 48.340
+vamos mostrar o que realmente está acontecendo sob o capô do computador,
 
 752
-00:34:48,340 --> 00:34:51,130
-so to speak, when it comes to implementing a string.
+00: 34: 48,340 -> 00: 34: 51.130
+por assim dizer, quando se trata de implementar uma string.
 
 753
-00:34:51,130 --> 00:34:56,620
-So string is something that the CS50 course provides to you
+00: 34: 51,130 -> 00: 34: 56.620
+Então string é algo que o curso CS50 oferece a você
 
 754
-00:34:56,620 --> 00:35:01,570
-in a file called CS50.h.
+00: 34: 56,620 -> 00: 35: 01.570
+em um arquivo chamado CS50.h.
 
 755
-00:35:01,570 --> 00:35:06,355
-So just as there's a file called standard I/O--
+00: 35: 01,570 -> 00: 35: 06.355
+Assim como existe um arquivo chamado "stardard I/O"-
 
 756
-00:35:06,355 --> 00:35:10,330
-where I/O just means input/output, like printing and getting input.
+00: 35: 06,355 -> 00: 35: 10.330
+onde I/O significa apenas "input/output" entrada/saída, como imprimir e obter entrada.
 
 757
-00:35:10,330 --> 00:35:16,060
-Just as there's a file called stdio.h, in which printf was invented,
+00: 35: 10,330 -> 00: 35: 16.060
+Assim como existe um arquivo chamado stdio.h, no qual printf foi inventado,
 
 758
-00:35:16,060 --> 00:35:19,420
-all of these other functions that I might use in this program,
+00: 35: 16,060 -> 00: 35: 19.420
+todas essas outras funções que posso usar neste programa,
 
 759
-00:35:19,420 --> 00:35:25,000
-like get_string, happen to be stored in a file called CS50.h.
+00: 35: 19,420 -> 00: 35: 25.000
+como get_string, está armazenado em um arquivo chamado CS50.h.
 
 760
-00:35:25,000 --> 00:35:28,150
-So my problem arose a moment ago when compiling this code,
+00: 35: 25.000 -> 00: 35: 28.150
+Então, meu problema surgiu um momento atrás, ao compilar este código,
 
 761
-00:35:28,150 --> 00:35:30,640
-because the computer had no idea what a string is.
+00: 35: 28,150 -> 00: 35: 30.640
+porque o computador não tinha ideia do que é uma string.
 
 762
-00:35:30,640 --> 00:35:34,870
-And it has no idea-- we'll see what the function get_string is.
+00: 35: 30,640 -> 00: 35: 34.870
+E não tem ideia - veremos o que é a função get_string.
 
 763
-00:35:34,870 --> 00:35:37,570
-So let me go ahead and recompile this now.
+00: 35: 34,870 -> 00: 35: 37.570
+Deixe-me ir em frente e recompilar isso agora.
 
 764
-00:35:37,570 --> 00:35:46,130
-I'm going to go ahead and do Clang -o string string.c and zoom in.
+00: 35: 37,570 -> 00: 35: 46.130
+Vou prosseguir e fazer Clang -o string string.c e aumentar o zoom.
 
 765
-00:35:46,130 --> 00:35:46,630
-Here we go.
+00: 35: 46,130 -> 00: 35: 46.630
+Aqui vamos nós.
 
 766
-00:35:46,630 --> 00:35:47,820
+00: 35: 46,630 -> 00: 35: 47.820
 Enter.
 
 767
-00:35:47,820 --> 00:35:49,930
-OK, progress.
+00: 35: 47,820 -> 00: 35: 49.930
+OK, progresso.
 
 768
-00:35:49,930 --> 00:35:51,100
-Still a bug.
+00: 35: 49,930 -> 00: 35: 51.100
+Ainda é um bug.
 
 769
-00:35:51,100 --> 00:35:53,230
-There's still a mistake, because red can't possibly
+00: 35: 51,100 -> 00: 35: 53.230
+Ainda há um erro, porque o vermelho não pode
 
 770
-00:35:53,230 --> 00:35:54,850
-mean anything good in this context.
+00: 35: 53,230 -> 00: 35: 54.850
+significa qualquer coisa boa neste contexto.
 
 771
-00:35:54,850 --> 00:35:56,590
-And indeed, it's an error.
+00: 35: 54,850 -> 00: 35: 56.590
+E, de fato, é um erro.
 
 772
-00:35:56,590 --> 00:35:58,940
-But it's many fewer errors.
+00: 35: 56,590 -> 00: 35: 58.940
+Mas são muito menos erros.
 
 773
-00:35:58,940 --> 00:36:02,080
-So there's the last piece of commands that we need to introduce now.
+00: 35: 58,940 -> 00: 36: 02.080
+Portanto, este é o último comando que precisamos apresentar agora.
 
 774
-00:36:02,080 --> 00:36:04,240
-Notice what the error message is saying.
+00: 36: 02,080 -> 00: 36: 04.240
+Observe o que a mensagem de erro está dizendo.
 
 775
-00:36:04,240 --> 00:36:07,450
-So after I run Clang -o string string.c, there's
+00: 36: 04,240 -> 00: 36: 07.450
+Depois de executar o Clang -o string string.c, há
 
 776
-00:36:07,450 --> 00:36:09,490
-still a problem in my function main.
+00: 36: 07,450 -> 00: 36: 09.490
+ainda é um problema na minha função principal.
 
 777
-00:36:09,490 --> 00:36:11,170
-What is the problem?
+00: 36: 09,490 -> 00: 36: 11.170
+Qual é o problema?
 
 778
-00:36:11,170 --> 00:36:13,480
-Undefined reference to get_string.
+00: 36: 11,170 -> 00: 36: 13.480
+Referência indefinida para get_string.
 
 779
-00:36:13,480 --> 00:36:18,490
-So it turns out that when using the CS50 library, you have to do two things.
+00: 36: 13,480 -> 00: 36: 18.490
+Portanto, ao usar a biblioteca CS50, você precisa fazer duas coisas.
 
 780
-00:36:18,490 --> 00:36:21,100
-In your source code, you have to tell the computer
+00: 36: 18,490 -> 00: 36: 21.100
+Em seu código-fonte, você tem que dizer ao computador
 
 781
-00:36:21,100 --> 00:36:23,800
-to include this file CS50.h, where, again,
+00: 36: 21,100 -> 00: 36: 23.800
+para incluir este arquivo CS50.h, onde, novamente,
 
 782
-00:36:23,800 --> 00:36:26,860
-functions like get_string and the word string
+00: 36: 23,800 -> 00: 36: 26.860
+funções como get_string e a palavra string
 
 783
-00:36:26,860 --> 00:36:28,870
-are actually implemented for you.
+00: 36: 26,860 -> 00: 36: 28.870
+são realmente implementados para você.
 
 784
-00:36:28,870 --> 00:36:32,170
-But when compiling your code, you need to, somewhat redundantly
+00: 36: 28,870 -> 00: 36: 32.170
+Mas ao compilar seu código, você precisa, de forma um tanto redundante
 
 785
-00:36:32,170 --> 00:36:37,060
-but for different reasons, tell the computer to add all of the code
+00: 36: 32,170 -> 00: 36: 37.060
+mas por diferentes razões, dizer ao computador para adicionar todo o código
 
 786
-00:36:37,060 --> 00:36:40,600
-that the CS50 staff wrote to implement get_string and string
+00: 36: 37,060 -> 00: 36: 40.600
+que a equipe do CS50 escreveu para implementar get_string e string
 
 787
-00:36:40,600 --> 00:36:44,110
-and other functions like this.
+00: 36: 40,600 -> 00: 36: 44.110
+e outras funções como esta.
 
 788
-00:36:44,110 --> 00:36:50,530
-I'm going to go ahead and write Clang -o string string.c, just like before,
+00: 36: 44,110 -> 00: 36: 50.530
+Então escrever Clang -o string string.c, como antes,
 
 789
-00:36:50,530 --> 00:36:54,400
-but I need to tell the computer this special instruction
+00: 36: 50,530 -> 00: 36: 54.400
+mas preciso dizer ao computador esta instrução especial
 
 790
-00:36:54,400 --> 00:36:56,410
-to link it with CS50.
+00: 36: 54,400 -> 00: 36: 56.410
+para vinculá-lo ao CS50.
 
 791
-00:36:56,410 --> 00:36:59,320
-And this will make more sense in just a couple of weeks' time.
+00: 36: 56,410 -> 00: 36: 59.320
+E isso fará mais sentido em apenas algumas semanas.
 
 792
-00:36:59,320 --> 00:37:02,620
-But this is just a -l for link and CS50.
+00: 36: 59,320 -> 00: 37: 02.620
+Mas isso é apenas um -l para link e CS50.
 
 793
-00:37:02,620 --> 00:37:04,720
-And all this tells the computer is this--
+00: 37: 02,620 -> 00: 37: 04.720
+E tudo isso diz que o computador o que é isso -
 
 794
-00:37:04,720 --> 00:37:10,550
-the zeros and ones for my actual program are going to come from string.c right
+00: 37: 04,720 -> 00: 37: 10.550
+os zeros e uns para o meu programa real virão de string.c certo
 
 795
-00:37:10,550 --> 00:37:11,050
-here.
+00: 37: 10,550 -> 00: 37: 11.050
+aqui.
 
 796
-00:37:11,050 --> 00:37:12,400
-This is my source code.
+00: 37: 11,050 -> 00: 37: 12.400
+Este é meu código-fonte.
 
 797
-00:37:12,400 --> 00:37:16,780
-But CS50 staff, years ago, also wrote code in C in order
+00: 37: 12,400 -> 00: 37: 16.780
+Mas a equipe do CS50, anos atrás, também escreveu código em C para
 
 798
-00:37:16,780 --> 00:37:19,420
-to give you functions like get_string, in order
+00: 37: 16,780 -> 00: 37: 19.420
+fornecer funções como get_string, para
 
 799
-00:37:19,420 --> 00:37:22,390
-to give you variables like strings.
+00: 37: 19,420 -> 00: 37: 22.390
+fornecer variáveis ​​como strings.
 
 800
-00:37:22,390 --> 00:37:27,070
-The zeros and ones from the CS50 library are stored elsewhere in the cloud.
+00: 37: 22,390 -> 00: 37: 27.070
+Os zeros e uns da biblioteca CS50 são armazenados em outro lugar na nuvem.
 
 801
-00:37:27,070 --> 00:37:29,920
-They need to be linked in together with yours.
+00: 37: 27,070 -> 00: 37: 29.920
+Eles precisam estar ligados aos seus.
 
 802
-00:37:29,920 --> 00:37:34,000
-So just as your code is in this file, our code is in that file.
+00: 37: 29,920 -> 00: 37: 34.000
+Então, assim como seu código está neste arquivo, nosso código está nesse arquivo.
 
 803
-00:37:34,000 --> 00:37:37,330
-And so by telling the computer to include it in your source code
+00: 37: 34.000 -> 00: 37: 37.330
+E assim, dizendo ao computador para incluí-lo em seu código-fonte
 
 804
-00:37:37,330 --> 00:37:40,980
-and to link it in this command is just the arcane way of saying,
+00: 37: 37,330 -> 00: 37: 40.980
+e vinculá-lo a este comando é apenas a maneira arcaica de dizer,
 
 805
-00:37:40,980 --> 00:37:46,930
-combine my code with CS50's code into one program that I can actually run.
+00: 37: 40,980 -> 00: 37: 46.930
+combine meu código com o código do CS50 em um programa que eu possa realmente executar.
 
 806
-00:37:46,930 --> 00:37:49,180
-Now, all of this, frankly is very quickly
+00: 37: 46,930 -> 00: 37: 49.180
+Agora, tudo isso, francamente é muito rápido
 
 807
-00:37:49,180 --> 00:37:53,170
-becoming very overwhelming, I think, and very unnecessarily complicated.
+00: 37: 49,180 -> 00: 37: 53.170
+tornando-se muito opressor, eu acho, e muito desnecessariamente complicado.
 
 808
-00:37:53,170 --> 00:37:56,200
-So there is a better way than this.
+00: 37: 53,170 -> 00: 37: 56.200
+Portanto, há uma maneira melhor do que essa.
 
 809
-00:37:56,200 --> 00:38:00,310
-It turns out, moving forward, if you would like to compile your code,
+00: 37: 56,200 -> 00: 38: 00.310
+Acontece que, seguindo em frente, se você gostaria de compilar seu código,
 
 810
-00:38:00,310 --> 00:38:01,720
-you don't have to remember -o.
+00: 38: 00,310 -> 00: 38: 01.720
+você não precisa se lembrar.
 
 811
-00:38:01,720 --> 00:38:03,935
-You don't have to remember -l CS50.
+00: 38: 01,720 -> 00: 38: 03.935
+Você não precisa se lembrar de -l CS50.
 
 812
-00:38:03,935 --> 00:38:07,060
-You don't have to remember any of those commands, hopefully just the ideas.
+00: 38: 03,935 -> 00: 38: 07.060
+Você não precisa se lembrar de nenhum desses comandos, espero que apenas das ideias.
 
 813
-00:38:07,060 --> 00:38:12,130
-You can instead say, make me a program called string, and be done with it.
+00: 38: 07,060 -> 00: 38: 12.130
+Em vez disso, você pode dizer, faça-me um programa chamado string e pronto.
 
 814
-00:38:12,130 --> 00:38:15,970
-All this white output is just automatically generated for you
+00: 38: 12,130 -> 00: 38: 15.970
+Toda essa saída é gerada automaticamente para você
 
 815
-00:38:15,970 --> 00:38:18,610
-when you tell the computer, make my program.
+00: 38: 15,970 -> 00: 38: 18.610
+quando você disser ao computador, "make/faça" meu programa.
 
 816
-00:38:18,610 --> 00:38:24,130
-And the program make will figure out what command-line arguments to use,
+00: 38: 18,610 -> 00: 38: 24.130
+E o programa "make" descobrirá quais argumentos de linha de comando usar,
 
 817
-00:38:24,130 --> 00:38:26,800
-what name to give the file, what libraries
+00: 38: 24,130 -> 00: 38: 26.800
+que nome dar ao arquivo, quais bibliotecas
 
 818
-00:38:26,800 --> 00:38:29,650
-or code that other people have written to link in.
+00: 38: 26,800 -> 00: 38: 29.650
+ou código que outras pessoas escreveram para serem ligados no seu.
 
 819
-00:38:29,650 --> 00:38:32,500
-So henceforth, when you want to compile your program,
+00: 38: 29,650 -> 00: 38: 32.500
+Portanto, de agora em diante, quando você quiser compilar seu programa,
 
 820
-00:38:32,500 --> 00:38:36,460
-literally just say make and the name of the program.
+00: 38: 32,500 -> 00: 38: 36.460
+literalmente, diga apenas  "make" e o nome do programa.
 
 821
-00:38:36,460 --> 00:38:38,680
-But it's not make string.c.
+00: 38: 36,460 -> 00: 38: 38.680
+Mas não é "make string.c".
 
 822
-00:38:38,680 --> 00:38:41,260
-It's make and the name of the program.
+00: 38: 38,680 -> 00: 38: 41.260
+É só "make" e o nome do programa.
 
 823
-00:38:41,260 --> 00:38:43,180
-Make, this other program, will figure out
+00: 38: 41,260 -> 00: 38: 43.180
+Make, este outro programa, descobrirá
 
 824
-00:38:43,180 --> 00:38:46,630
-that you mean something called string.c.
+00: 38: 43,180 -> 00: 38: 46.630
+que você quis dizer algo chamado string.c.
 
 825
-00:38:46,630 --> 00:38:48,910
-And I can rewind and do this for hello, too.
+00: 38: 46,630 -> 00: 38: 48.910
+E posso retroceder e fazer isso para hello também.
 
 826
-00:38:48,910 --> 00:38:50,770
-Make hello.
+00: 38: 48,910 -> 00: 38: 50.770
+make hello.
 
 827
-00:38:50,770 --> 00:38:53,150
-Oh, I never fixed the problem from before.
+00: 38: 50,770 -> 00: 38: 53.150
+Oh, eu nunca corrigi o problema de antes.
 
 828
-00:38:53,150 --> 00:38:56,660
-So let me go into hello.c by opening that file.
+00: 38: 53,150 -> 00: 38: 56.660
+Então, deixe-me entrar em hello.c abrindo esse arquivo.
 
 829
-00:38:56,660 --> 00:38:59,740
-Let me fix this for posterity.
+00: 38: 56,660 -> 00: 38: 59.740
+Deixe-me consertar isso para a posteridade.
 
 830
-00:38:59,740 --> 00:39:02,110
-Save this file, or let the file auto save.
+00: 38: 59,740 -> 00: 39: 02.110
+Salvar este arquivo ou deixe o arquivo ser salvo automaticamente.
 
 831
-00:39:02,110 --> 00:39:03,310
-Now do make hello.
+00: 39: 02,110 -> 00: 39: 03.310
+Agora make hello.
 
 832
-00:39:03,310 --> 00:39:06,100
-And viola, it's done the same thing for me now.
+00: 39: 03,310 -> 00: 39: 06.100
+E viola, fez a mesma coisa pra mim agora.
 
 833
-00:39:06,100 --> 00:39:06,820
-Yeah?
+00: 39: 06,100 -> 00: 39: 06.820
+Sim?
 
 834
-00:39:06,820 --> 00:39:09,543
-AUDIENCE: Is make like a standard thing [INAUDIBLE]..
+00: 39: 06,820 -> 00: 39: 09.543
+PÚBLICO: make é algo padrão... [INAUDÍVEL] ?..
 
 835
-00:39:09,543 --> 00:39:10,960
-DAVID MALAN: Really good question.
+00: 39: 09,543 -> 00: 39: 10.960
+DAVID MALAN: Boa pergunta.
 
 836
-00:39:10,960 --> 00:39:13,300
-Is make a standard thing or CS50 specific?
+00: 39: 10,960 -> 00: 39: 13.300
+"make é algo padrão ou específico do CS50?
 
 837
-00:39:13,300 --> 00:39:16,280
-It is not a CS50 specific thing.
+00: 39: 13,300 -> 00: 39: 16.280
+Não é uma coisa específica do CS50.
 
 838
-00:39:16,280 --> 00:39:19,460
-It is a standard tool that exists on Macs and PCs and computers
+00: 39: 16,280 -> 00: 39: 19.460
+É uma ferramenta padrão que existe em Macs, PCs e computadores
 
 839
-00:39:19,460 --> 00:39:21,410
-generally running Unix or Linux.
+00: 39: 19,460 -> 00: 39: 21.410
+geralmente executando Unix ou Linux.
 
 840
-00:39:21,410 --> 00:39:24,020
-And indeed, the sandbox tool that we're using
+00: 39: 21,410 -> 00: 39: 24.020
+E, de fato, a ferramenta sandbox que estamos usando
 
 841
-00:39:24,020 --> 00:39:26,480
-is itself a computer in the cloud, even though it just
+00: 39: 24,020 -> 00: 39: 26.480
+é em si um computador na nuvem, embora apenas
 
 842
-00:39:26,480 --> 00:39:30,960
-has these two windows, tabs up top and the terminal window down below.
+00: 39: 26,480 -> 00: 39: 30.960
+tem essas duas janelas, guias no topo e a janela do terminal embaixo.
 
 843
-00:39:30,960 --> 00:39:32,960
-When you log in to CS50 Sandbox, you have access
+00: 39: 30,960 -> 00: 39: 32.960
+Ao fazer login no CS50 Sandbox, você tem acesso
 
 844
-00:39:32,960 --> 00:39:36,620
-to your own server in the cloud running an operating system called Linux.
+00: 39: 32,960 -> 00: 39: 36.620
+ao seu próprio servidor na nuvem executando um sistema operacional chamado Linux.
 
 845
-00:39:36,620 --> 00:39:41,600
-And Clang and make and other tools we'll see, like ls and rm,
+00: 39: 36,620 -> 00: 39: 41.600
+E Clang e make e outras ferramentas que veremos, como ls e rm,
 
 846
-00:39:41,600 --> 00:39:43,700
-all exist in that operating system.
+00: 39: 41,600 -> 00: 39: 43.700
+todos existem nesse sistema operacional.
 
 847
-00:39:43,700 --> 00:39:46,580
-They're not at all CS50 specific.
+00: 39: 43,700 -> 00: 39: 46.580
+Eles não são específicos do CS50.
 
 848
-00:39:46,580 --> 00:39:47,768
-Yeah?
+00: 39: 46,580 -> 00: 39: 47.768
+Sim?
 
 849
-00:39:47,768 --> 00:39:51,235
-AUDIENCE: With that, so would hello be machine code, not [INAUDIBLE]??
+00: 39: 47,768 -> 00: 39: 51.235
+PÚBLICO: Com isso, hello seria código de máquina, não [INAUDÍVEL] ??
 
 850
-00:39:51,235 --> 00:39:52,110
-DAVID MALAN: Correct.
+00: 39: 51,235 -> 00: 39: 52.110
+DAVID MALAN: Correto.
 
 851
 00:39:52,110 --> 00:39:53,520
-Hello is the machine code.
+Hello é o código de máquina.
 
 852
-00:39:53,520 --> 00:39:55,756
-Hello.c is the source code.
+00: 39: 53,520 -> 00: 39: 55.756
+Hello.c é o código-fonte.
 
 853
-00:39:55,756 --> 00:39:57,244
-AUDIENCE: So [INAUDIBLE]?
+00: 39: 55,756 -> 00: 39: 57.244
+PÚBLICO: Então [INAUDÍVEL]?
 
 854
-00:39:57,244 --> 00:40:00,915
+00: 39: 57,244 -> 00: 40: 00.915
 
 
 855
-00:40:00,915 --> 00:40:01,790
-DAVID MALAN: Correct.
+00: 40: 00,915 -> 00: 40: 01.790
+DAVID MALAN: Correto.
 
 856
-00:40:01,790 --> 00:40:06,110
-Make is a smart program designed to make our lives easier, no pun intended,
+00: 40: 01,790 -> 00: 40: 06.110
+Make é um programa inteligente projetado para tornar nossas vidas mais fáceis, sem trocadilhos,
 
 857
-00:40:06,110 --> 00:40:11,210
-whereby if you do make hello, it will look for a file called hello.c.
+00: 40: 06,110 -> 00: 40: 11.210
+onde se você fizer "make hello", ele procurará um arquivo chamado hello.c.
 
 858
-00:40:11,210 --> 00:40:14,450
-And if it finds it, it will create the program called hello
+00: 40: 11,210 -> 00: 40: 14.450
+E se o encontrar, criará o programa chamado hello
 
 859
-00:40:14,450 --> 00:40:16,630
-from source code to machine code, respectively.
+00: 40: 14,450 -> 00: 40: 16.630
+do código-fonte ao código de máquina, respectivamente.
 
 860
-00:40:16,630 --> 00:40:17,267
-Yeah?
+00: 40: 16,630 -> 00: 40: 17.267
+Sim?
 
 861
-00:40:17,267 --> 00:40:18,698
-AUDIENCE: [INAUDIBLE].
+00: 40: 17,267 -> 00: 40: 18.698
+PÚBLICO: [INAUDÍVEL].
 
 862
-00:40:18,698 --> 00:40:22,498
+00: 40: 18,698 -> 00: 40: 22.498
 
 
 863
-00:40:22,498 --> 00:40:23,540
-DAVID MALAN: Not exactly.
+00: 40: 22,498 -> 00: 40: 23.540
+DAVID MALAN: Não exatamente.
 
 864
-00:40:23,540 --> 00:40:27,770
-So make is a program that comes with an operating system called Linux,
+00: 40: 23,540 -> 00: 40: 27.770
+Portanto, make é um programa que vem com um sistema operacional chamado Linux,
 
 865
-00:40:27,770 --> 00:40:29,150
-and it also comes with Mac OS.
+00: 40: 27,770 -> 00: 40: 29.150
+e também vem com Mac OS.
 
 866
-00:40:29,150 --> 00:40:31,160
-And these days, it also comes with Windows.
+00: 40: 29,150 -> 00: 40: 31.160
+E hoje em dia, também vem com o Windows.
 
 867
-00:40:31,160 --> 00:40:34,040
-It is a program that you can run by typing its name,
+00: 40: 31,160 -> 00: 40: 34.040
+É um programa que você pode executar digitando seu nome,
 
 868
-00:40:34,040 --> 00:40:37,147
-not that you run by double-clicking an icon.
+00: 40: 34,040 -> 00: 40: 37.147
+não que você execute clicando duas vezes em um ícone.
 
 869
-00:40:37,147 --> 00:40:37,730
-Good question.
+00: 40: 37,147 -> 00: 40: 37.730
+Boa pergunta.
 
 870
-00:40:37,730 --> 00:40:38,882
-Yeah?
+00: 40: 37,730 -> 00: 40: 38.882
+Sim?
 
 871
-00:40:38,882 --> 00:40:39,854
-AUDIENCE: [INAUDIBLE]?
+00: 40: 38,882 -> 00: 40: 39.854
+PÚBLICO: [INAUDÍVEL]?
 
 872
-00:40:39,854 --> 00:40:43,755
+00: 40: 39,854 -> 00: 40: 43.755
 
 
 873
-00:40:43,755 --> 00:40:44,880
-DAVID MALAN: Good question.
+00: 40: 43,755 -> 00: 40: 44.880
+DAVID MALAN: Boa pergunta.
 
 874
-00:40:44,880 --> 00:40:46,610
-So does that mean make is stored on your computer
+00: 40: 44,880 -> 00: 40: 46.610
+Isso significa que o make está armazenado no seu computador
 
 875
-00:40:46,610 --> 00:40:47,930
-or in the cloud-based computer?
+00: 40: 46,610 -> 00: 40: 47.930
+ou no computador baseado em nuvem?
 
 876
-00:40:47,930 --> 00:40:49,350
-In the cloud-based computer.
+00: 40: 47,930 -> 00: 40: 49.350
+No computador baseado em nuvem.
 
 877
-00:40:49,350 --> 00:40:52,100
-So at this point in the semester, and for the first several weeks,
+00: 40: 49,350 -> 00: 40: 52.100
+Então, até esse ponto do semestre, e nas primeiras semanas,
 
 878
-00:40:52,100 --> 00:40:55,310
-everything we do will be in the cloud in a standardized environment
+00: 40: 52,100 -> 00: 40: 55.310
+tudo o que fizermos será na nuvem em um ambiente padronizado
 
 879
-00:40:55,310 --> 00:40:58,670
-called CS50 Sandbox and, soon, something called CS50 Lab.
+00: 40: 55,310 -> 00: 40: 58.670
+chamado CS50 Sandbox e, em breve, algo chamado CS50 Lab.
 
 880
-00:40:58,670 --> 00:41:02,780
-But it's designed to be representative of a standard Linux computer
+00: 40: 58,670 -> 00: 41: 02.780
+Mas é projetado para ser uma representação de um computador Linux padrão
 
 881
-00:41:02,780 --> 00:41:04,210
-and also a Mac or PC.
+00: 41: 02,780 -> 00: 41: 04.210
+e também um Mac ou PC.
 
 882
-00:41:04,210 --> 00:41:05,960
-But the software tends to differ somewhat,
+00: 41: 04,210 -> 00: 41: 05.960
+Mas o software tende a ser um pouco diferente,
 
 883
-00:41:05,960 --> 00:41:09,470
-so we standardize on Linux, which is a very popular operating system
+00: 41: 05,960 -> 00: 41: 09.470
+então padronizamos no Linux, que é um sistema operacional muito popular
 
 884
-00:41:09,470 --> 00:41:12,140
-in the software development world.
+00: 41: 09,470 -> 00: 41: 12.140
+no mundo do desenvolvimento de software.
 
 885
-00:41:12,140 --> 00:41:15,265
-All right, so let's take a look at a couple of other equivalencies and then
+00: 41: 12,140 -> 00: 41: 15.265
+Tudo bem, então vamos dar uma olhada em algumas outras equivalências e então
 
 886
-00:41:15,265 --> 00:41:18,015
-comparisons and start to write more interesting programs than ones
+00: 41: 15,265 -> 00: 41: 18.015
+comparações e começar a escrever programas mais interessantes do que estes
 
 887
-00:41:18,015 --> 00:41:19,220
-that just say hello world.
+00: 41: 18,015 -> 00: 41: 19.220
+que apenas dizem olá, mundo.
 
 888
-00:41:19,220 --> 00:41:22,400
-So here, again, is a summary of how you technically
+00: 41: 19,220 -> 00: 41: 22.400
+Então, aqui está, novamente, um resumo de como você tecnicamente
 
 889
-00:41:22,400 --> 00:41:25,070
-should convert your source code to machine code
+00: 41: 22,400 -> 00: 41: 25.070
+deve converter seu código fonte em código de máquina
 
 890
-00:41:25,070 --> 00:41:28,580
-by using a program called Clang with a command-line argument,
+00: 41: 25,070 -> 00: 41: 28.580
+usando um programa chamado Clang com um argumento de linha de comando,
 
 891
-00:41:28,580 --> 00:41:33,322
-a special parameter, -o hello, to name the file something else.
+00: 41: 28,580 -> 00: 41: 33.322
+um parâmetro especial, -o hello, para nomear o arquivo de outra forma.
 
 892
-00:41:33,322 --> 00:41:35,780
-And honestly, no one's ever going to remember this command.
+00: 41: 33,322 -> 00: 41: 35.780
+E honestamente, ninguém nunca vai se lembrar desse comando.
 
 893
-00:41:35,780 --> 00:41:37,905
-And even if you do, it's just very tedious to type.
+00: 41: 35,780 -> 00: 41: 37.905
+E mesmo se você fizer isso, é muito entediante digitar.
 
 894
-00:41:37,905 --> 00:41:40,250
-That's why programs like make exist, which
+00: 41: 37,905 -> 00: 41: 40.250
+É por isso que programas como o make existem, que
 
 895
-00:41:40,250 --> 00:41:42,142
-just automate that exact same process.
+00: 41: 40,250 -> 00: 41: 42.142
+apenas automatize exatamente o mesmo processo.
 
 896
-00:41:42,142 --> 00:41:43,850
-But they are still doing the same thing--
+00: 41: 42,142 -> 00: 41: 43.850
+Mas eles ainda estão fazendo a mesma coisa -
 
 897
-00:41:43,850 --> 00:41:46,700
-compiling your source code into machine code.
+00: 41: 43,850 -> 00: 41: 46.700
+compilar seu código-fonte em código de máquina.
 
 898
-00:41:46,700 --> 00:41:48,500
-And to run the program thereafter, you say
+00: 41: 46,700 -> 00: 41: 48.500
+E para executar o programa depois disso, você diz
 
 899
-00:41:48,500 --> 00:41:50,920
-dot, which just refers to your current folder,
+00: 41: 48,500 -> 00: 41: 50.920
+ponto, que se refere apenas à sua pasta atual,
 
 900
-00:41:50,920 --> 00:41:54,140
-because we'll see that you can have multiple folders on a server, and hello
+00: 41: 50,920 -> 00: 41: 54.140
+porque veremos que você pode ter várias pastas em um servidor, e hello
 
 901
-00:41:54,140 --> 00:41:55,510
-is the name of the program.
+00: 41: 54,140 -> 00: 41: 55.510
+é o nome do programa.
 
 902
-00:41:55,510 --> 00:41:58,760
-All right, let's take a look at a couple of other types of features of Scratch
+00: 41: 55,510 -> 00: 41: 58.760
+Tudo bem, vamos dar uma olhada em alguns outros tipos de recursos do Scratch
 
 903
-00:41:58,760 --> 00:42:00,510
-and see what it's going to look like in C,
+00: 41: 58,760 -> 00: 42: 00.510
+e ver como ficam em C,
 
 904
-00:42:00,510 --> 00:42:04,560
-and then we'll start to implement some programs in C more manually.
+00: 42: 00,510 -> 00: 42: 04.560
+e então começaremos a implementar alguns programas em C mais manualmente.
 
 905
-00:42:04,560 --> 00:42:07,130
-So consider this example here, which was an example
+00: 42: 04,560 -> 00: 42: 07.130
+Portanto, considere este exemplo aqui, que foi um exemplo
 
 906
-00:42:07,130 --> 00:42:11,450
-of what type of feature in Scratch?
+00: 42: 07,130 -> 00: 42: 11.450
+de que tipo de característica no Scratch?
 
 907
-00:42:11,450 --> 00:42:13,300
-This did what for us?
+00: 42: 11,450 -> 00: 42: 13.300
+Isso fez o quê por nós?
 
 908
-00:42:13,300 --> 00:42:14,260
-AUDIENCE: Variable.
+00: 42: 13,300 -> 00: 42: 14.260
+PÚBLICO: Variável.
 
 909
-00:42:14,260 --> 00:42:16,000
-DAVID MALAN: So this was an example of a variable.
+00: 42: 14,260 -> 00: 42: 16.000
+DAVID MALAN: Este foi um exemplo de variável.
 
 910
-00:42:16,000 --> 00:42:18,167
-And that variable, in this case, was called counter.
+00: 42: 16.000 -> 00: 42: 18.167
+E essa variável, neste caso, foi chamada de contador.
 
 911
-00:42:18,167 --> 00:42:21,130
-And we initialized it to-- that is, we set it equal to-- zero.
+00: 42: 18,167 -> 00: 42: 21.130
+E nós a inicializamos como-- isto é, nós o definimos igual a-- zero.
 
 912
-00:42:21,130 --> 00:42:24,220
-In C, on the right-hand side, if we want to achieve this same result
+00: 42: 21,130 -> 00: 42: 24.220
+Em C, do lado direito, se quisermos obter este mesmo resultado
 
 913
-00:42:24,220 --> 00:42:27,190
-today onward, you're literally going to say the name of the variable,
+00: 42: 24,220 -> 00: 42: 27.190
+de hoje em diante, você vai literalmente dizer o nome da variável,
 
 914
-00:42:27,190 --> 00:42:30,490
-like counter, but you can call it anything you want, equals zero.
+00: 42: 27,190 -> 00: 42: 30.490
+como contador, mas você pode chamá-lo do que quiser, igual a zero.
 
 915
-00:42:30,490 --> 00:42:33,198
-Because recall that the equal sign is the assignment operator.
+00: 42: 30,490 -> 00: 42: 33.198
+Porque lembre-se de que o sinal de igual é o operador de atribuição.
 
 916
-00:42:33,198 --> 00:42:34,990
-So whatever is on the right is going to get
+00: 42: 33,198 -> 00: 42: 34.990
+Então, o que está à direita vai ser
 
 917
-00:42:34,990 --> 00:42:37,210
-copied into whatever is on the left.
+00: 42: 34,990 -> 00: 42: 37.210
+copiado para o que estiver à esquerda.
 
 918
-00:42:37,210 --> 00:42:41,200
-However, that's not quite sufficient, because when you declare a variable
+00: 42: 37,210 -> 00: 42: 41.200
+No entanto, isso não é suficiente, porque quando você declara uma variável
 
 919
-00:42:41,200 --> 00:42:44,230
-and you say, hey, computer, I need some storage for some value,
+00: 42: 41,200 -> 00: 42: 44.230
+e você diz, ei, computador, preciso de algum armazenamento para algum valor,
 
 920
-00:42:44,230 --> 00:42:47,950
-you have to tell the computer what the type of that variable is.
+00: 42: 44,230 -> 00: 42: 47.950
+você tem que dizer ao computador qual é o tipo dessa variável.
 
 921
-00:42:47,950 --> 00:42:52,000
-We've seen strings are variables that store multiple words.
+00: 42: 47,950 -> 00: 42: 52.000
+Vimos que strings são variáveis ​​que armazenam várias palavras.
 
 922
-00:42:52,000 --> 00:42:55,000
-But in this case, we want to store a number.
+00: 42: 52.000 -> 00: 42: 55.000
+Mas, neste caso, queremos armazenar um número.
 
 923
-00:42:55,000 --> 00:42:58,390
-And in C, that type of number is called an int or an integer,
+00: 42: 55.000 -> 00: 42: 58.390
+E em C, esse tipo de número é chamado de int ou integer,
 
 924
-00:42:58,390 --> 00:43:00,070
-but I-N-T for short.
+00: 42: 58,390 -> 00: 43: 00.070
+mas I-N-T para abreviar.
 
 925
-00:43:00,070 --> 00:43:02,147
-There's one thing missing from this line of code.
+00: 43: 00,070 -> 00: 43: 02.147
+Há uma coisa faltando nesta linha de código.
 
 926
-00:43:02,147 --> 00:43:02,980
-AUDIENCE: Semicolon.
+00: 43: 02,147 -> 00: 43: 02.980
+PÚBLICO: Ponto e vírgula.
 
 927
-00:43:02,980 --> 00:43:03,610
-DAVID MALAN: Semicolon.
+00: 43: 02,980 -> 00: 43: 03.610
+DAVID MALAN: Ponto e vírgula.
 
 928
-00:43:03,610 --> 00:43:04,840
-Just finishes the thought.
+00: 43: 03,610 -> 00: 43: 04.840
+Apenas termina o pensamento.
 
 929
-00:43:04,840 --> 00:43:05,830
-So what does this do?
+00: 43: 04,840 -> 00: 43: 05.830
+Então, o que isso faz?
 
 930
-00:43:05,830 --> 00:43:10,270
-Hey, computer, give me a variable whose type is integer, or int.
+00: 43: 05,830 -> 00: 43: 10.270
+Ei, computador, me dê uma variável cujo tipo seja itneger ou int.
 
 931
-00:43:10,270 --> 00:43:15,280
-Call that variable counter, and store the value zero in that variable
+00: 43: 10,270 -> 00: 43: 15.280
+Chame esse contador de variável e armazene o valor zero nessa variável
 
 932
-00:43:15,280 --> 00:43:19,970
-by default. So it turns out that we can do other such operations on variables.
+00: 43: 15,280 -> 00: 43: 19.970
+por padrão. Acontece que podemos fazer outras operações desse tipo em variáveis.
 
 933
-00:43:19,970 --> 00:43:23,460
-For instance, here we have the incrementation feature of Scratch.
+00: 43: 19,970 -> 00: 43: 23.460
+Por exemplo, aqui temos o recurso de incrementação do Scratch.
 
 934
-00:43:23,460 --> 00:43:27,080
-Change the counter by one by adding 1 to the variable.
+00: 43: 23,460 -> 00: 43: 27.080
+Altere o contador em um adicionando 1 à variável.
 
 935
-00:43:27,080 --> 00:43:28,510
-So how do we do this in C?
+00: 43: 27,080 -> 00: 43: 28.510
+Então, como fazemos isso em C?
 
 936
-00:43:28,510 --> 00:43:30,800
-In C, you would do something like this.
+00: 43: 28,510 -> 00: 43: 30.800
+Em C, você faria algo assim.
 
 937
-00:43:30,800 --> 00:43:35,110
-And this is a little paradoxical if you're coming at this from algebra,
+00: 43: 30,800 -> 00: 43: 35.110
+E isso é um pouco paradoxal se você está vindo da álgebra,
 
 938
-00:43:35,110 --> 00:43:38,110
-because how could counter possibly be equal to counter plus 1?
+00: 43: 35,110 -> 00: 43: 38.110
+porque como poderia counter ser igual a counter mais 1?
 
 939
-00:43:38,110 --> 00:43:39,560
-But it's not equality.
+00: 43: 38,110 -> 00: 43: 39.560
+Mas aqui isso não é igualdade.
 
 940
-00:43:39,560 --> 00:43:41,780
-This is assignment from right to left.
+00: 43: 39,560 -> 00: 43: 41.780
+Esta é uma atribuição da direita para a esquerda.
 
 941
-00:43:41,780 --> 00:43:43,780
-So on the left-hand side, you're saying counter.
+00: 43: 41,780 -> 00: 43: 43.780
+Portanto, no lado esquerdo, você está dizendo counter.
 
 942
-00:43:43,780 --> 00:43:45,190
-That's the name of your variable.
+00: 43: 43,780 -> 00: 43: 45.190
+Esse é o nome da sua variável.
 
 943
-00:43:45,190 --> 00:43:47,500
-On the right-hand side, you're saying counter plus 1,
+00: 43: 45,190 -> 00: 43: 47.500
+No lado direito, você está dizendo counter mais 1,
 
 944
-00:43:47,500 --> 00:43:49,390
-whatever that arithmetic answer is.
+00: 43: 47,500 -> 00: 43: 49.390
+qualquer que seja essa resposta aritmética.
 
 945
-00:43:49,390 --> 00:43:53,260
-And you're copying counter plus 1 into counter.
+00: 43: 49,390 -> 00: 43: 53.260
+E você está copiando o contador mais 1 no contador.
 
 946
-00:43:53,260 --> 00:43:56,420
-I'm still missing something here, which is that semicolon.
+00: 43: 53,260 -> 00: 43: 56.420
+Ainda estou sentindo falta de alguma coisa aqui, que é aquele ponto e vírgula.
 
 947
-00:43:56,420 --> 00:44:00,580
-But I do not need to say int in this example.
+00: 43: 56,420 -> 00: 44: 00.580
+Mas não preciso dizer int neste exemplo.
 
 948
-00:44:00,580 --> 00:44:05,200
-At this point in the story, it is assumed that counter exists
+00: 44: 00,580 -> 00: 44: 05.200
+Neste ponto da história, presume-se que counter já exista
 
 949
-00:44:05,200 --> 00:44:08,020
-and that I've used a line of code like the previous one
+00: 44: 05,200 -> 00: 44: 08.020
+e que usei uma linha de código como a anterior
 
 950
-00:44:08,020 --> 00:44:10,270
-somewhere else in my program.
+00: 44: 08,020 -> 00: 44: 10.270
+em outro lugar no meu programa.
 
 951
-00:44:10,270 --> 00:44:13,330
-Because that tells the computer once, give me a variable called counter,
+00: 44: 10,270 -> 00: 44: 13.330
+Porque isso diz ao computador uma vez, dê-me uma variável chamada counter,
 
 952
-00:44:13,330 --> 00:44:14,950
-and let me store ints in it.
+00: 44: 13,330 -> 00: 44: 14.950
+e deixe-me armazenar ints nela.
 
 953
-00:44:14,950 --> 00:44:17,110
-This line of code assumes that counter exists,
+00: 44: 14,950 -> 00: 44: 17.110
+Esta linha de código assume que counter já exista,
 
 954
-00:44:17,110 --> 00:44:20,410
-and so we do not specify the word int again.
+00: 44: 17,110 -> 00: 44: 20.410
+e, portanto, não especificamos a palavra int novamente.
 
 955
-00:44:20,410 --> 00:44:22,060
-You specify it just once.
+00: 44: 20,410 -> 00: 44: 22.060
+Você especifica apenas uma vez.
 
 956
-00:44:22,060 --> 00:44:24,040
-Now, we need the semicolon, as I proposed.
+00: 44: 22,060 -> 00: 44: 24.040
+Agora, precisamos do ponto-e-vírgula, como propus.
 
 957
-00:44:24,040 --> 00:44:26,680
-But frankly, this is such a common operation in programming,
+00: 44: 24,040 -> 00: 44: 26.680
+Mas, francamente, esta é uma operação tão comum na programação,
 
 958
-00:44:26,680 --> 00:44:28,930
-as we'll see, to just increment a variable.
+00: 44: 26,680 -> 00: 44: 28.930
+como veremos, apenas para incrementar uma variável.
 
 959
-00:44:28,930 --> 00:44:31,280
-Turns out there's other ways to do this.
+00: 44: 28,930 -> 00: 44: 31.280
+Acontece que há outras maneiras de fazer isso.
 
 960
-00:44:31,280 --> 00:44:33,520
-You can, instead, equivalently say this--
+00: 44: 31,280 -> 00: 44: 33.520
+Você pode, em vez disso, equivalentemente dizer isso -
 
 961
-00:44:33,520 --> 00:44:36,250
-counter plus equals 1 semicolon.
+00: 44: 33,520 -> 00: 44: 36.250
+counter mais igual 1 ponto-e-vírgula.
 
 962
-00:44:36,250 --> 00:44:37,800
-It is literally the same thing.
+00: 44: 36,250 -> 00: 44: 37.800
+É literalmente a mesma coisa.
 
 963
-00:44:37,800 --> 00:44:39,550
-And if that's too many keystrokes for you,
+00: 44: 37,800 -> 00: 44: 39.550
+E se isso for muito para você,
 
 964
-00:44:39,550 --> 00:44:42,910
-you can literally just say counter plus plus semicolon,
+00: 44: 39,550 -> 00: 44: 42.910
+você pode literalmente apenas dizer counter mais mais ponto-e-vírgula,
 
 965
-00:44:42,910 --> 00:44:44,500
-and that, too, does the same thing.
+00: 44: 42,910 -> 00: 44: 44.500
+e isso também faz a mesma coisa.
 
 966
-00:44:44,500 --> 00:44:47,650
-This is what's known in programming as syntactic sugar.
+00: 44: 44,500 -> 00: 44: 47.650
+Isso é conhecido em programação como sintaxe adocicada.
 
 967
-00:44:47,650 --> 00:44:51,110
-It doesn't add any functionality that you couldn't do some other way.
+00: 44: 47,650 -> 00: 44: 51.110
+Ela não adiciona nenhuma funcionalidade que você não poderia fazer de outra maneira.
 
 968
-00:44:51,110 --> 00:44:53,800
-But it does it in a prettier, often more succinct way.
+00: 44: 51,110 -> 00: 44: 53.800
+Mas faz isso de uma forma mais bonita, geralmente mais sucinta.
 
 969
-00:44:53,800 --> 00:44:56,680
-And it's just more common to write lines of code like this.
+00: 44: 53,800 -> 00: 44: 56.680
+E é mais comum escrever linhas de código como esta.
 
 970
-00:44:56,680 --> 00:44:58,430
-All right, let's consider another example.
+00: 44: 56,680 -> 00: 44: 58.430
+Tudo bem, vamos considerar outro exemplo.
 
 971
-00:44:58,430 --> 00:45:01,750
-This was called what in Scratch?
+00: 44: 58,430 -> 00: 45: 01.750
+Isso foi chamado de quê no Scratch?
 
 972
-00:45:01,750 --> 00:45:03,980
-Yeah, a condition, a decision that you have to make.
+00: 45: 01,750 -> 00: 45: 03.980
+Sim, uma condição, uma decisão que você tem que tomar.
 
 973
-00:45:03,980 --> 00:45:06,310
-So if something is true, then do this.
+00: 45: 03,980 -> 00: 45: 06.310
+Portanto, se algo for verdade, faça isso.
 
 974
-00:45:06,310 --> 00:45:08,720
-In C, we might convert it as follows.
+00: 45: 06,310 -> 00: 45: 08.720
+Em C, podemos convertê-lo da seguinte maneira.
 
 975
-00:45:08,720 --> 00:45:11,260
-If x less than y in parentheses--
+00: 45: 08,720 -> 00: 45: 11.260
+Se x menor que y entre parênteses -
 
 976
-00:45:11,260 --> 00:45:15,300
-which isn't quite the angled shape that we have here in green, but in C,
+00: 45: 11,260 -> 00: 45: 15.300
+que não é bem a forma angular que temos aqui em verde, mas em C,
 
 977
-00:45:15,300 --> 00:45:16,780
-you use parentheses here.
+00: 45: 15,300 -> 00: 45: 16.780
+você usa parênteses aqui.
 
 978
-00:45:16,780 --> 00:45:20,380
-So if x is less than y, open paren, close paren,
+00: 45: 16,780 -> 00: 45: 20.380
+Portanto, se x for menor que y, abre parênteses, fecha parênteses,
 
 979
-00:45:20,380 --> 00:45:21,970
-then go ahead and do the following.
+00: 45: 20,380 -> 00: 45: 21.970
+então vá em frente e faça o seguinte.
 
 980
-00:45:21,970 --> 00:45:25,720
-And just as this yellow or orange puzzle piece kind of looks like it's
+00: 45: 21,970 -> 00: 45: 25.720
+E assim como esta peça amarela ou laranja do quebra-cabeça parece que está
 
 981
-00:45:25,720 --> 00:45:29,920
-hugging the purple puzzle piece, so does this open curly brace
+00: 45: 25,720 -> 00: 45: 29.920
+abraçando a peça roxa do quebra-cabeça, esta chave aberta também
 
 982
-00:45:29,920 --> 00:45:32,830
-and this close curly brace, so to speak, is kind of there
+00: 45: 29,920 -> 00: 45: 32.830
+e esta chave fechada, por assim dizer, está meio que lá
 
 983
-00:45:32,830 --> 00:45:36,050
-ready to hug or encapsulate one or more lines of code.
+00: 45: 32,830 -> 00: 45: 36.050
+pronta para abraçar ou encapsular uma ou mais linhas de código.
 
 984
-00:45:36,050 --> 00:45:37,090
-What's the line of code?
+00: 45: 36,050 -> 00: 45: 37.090
+Qual é a linha de código?
 
 985
-00:45:37,090 --> 00:45:42,640
-It might be something like this-- printf x is less than y backslash n.
+00: 45: 37,090 -> 00: 45: 42.640
+Pode ser algo assim - printf x é menor que y barra invertida n.
 
 986
-00:45:42,640 --> 00:45:47,080
-So, again, new syntax, but we've seen the curly braces before
+00: 45: 42,640 -> 00: 45: 47.080
+Então, novamente, nova sintaxe, mas vimos as chaves antes
 
 987
-00:45:47,080 --> 00:45:48,490
-in the context of main.
+00: 45: 47,080 -> 00: 45: 48.490
+no contexto de principal.
 
 988
-00:45:48,490 --> 00:45:52,280
-And we've seen parentheses before in the context of inputs.
+00: 45: 48,490 -> 00: 45: 52.280
+E vimos parênteses antes no contexto de entradas.
 
 989
-00:45:52,280 --> 00:45:54,520
-So this is just kind of a pattern that we'll
+00: 45: 52,280 -> 00: 45: 54.520
+Portanto, este é apenas um tipo de padrão que iremos
 
 990
 00:45:54,520 --> 00:45:58,530
