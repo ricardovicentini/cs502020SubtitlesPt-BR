@@ -6362,1116 +6362,1114 @@ Bem, deixe-me ver o código aqui.
 O topo do arquivo é quase idêntico a tudo até agora.
 
 1593
-01:13:25,190 --> 01:13:27,650
-Include those two files, int main void.
+01: 13: 25,190 -> 01: 13: 27.650
+Inclui esses dois arquivos, int main void.
 
 1594
-01:13:27,650 --> 01:13:30,320
-But now I'm using get_char, and I'm storing my answer
+01: 13: 27,650 -> 01: 13: 30.320
+Mas agora estou usando get_char e armazenando minha resposta
 
 1595
-01:13:30,320 --> 01:13:33,710
-in a variable called c, but I could store it in anything I want.
+01: 13: 30,320 -> 01: 13: 33.710
+em uma variável chamada c, mas posso armazená-la em qualquer coisa que eu quiser.
 
 1596
-01:13:33,710 --> 01:13:36,350
-And now notice the slightly new syntax.
+01: 13: 33.710 -> 01: 13: 36.350
+E agora observe a sintaxe ligeiramente nova.
 
 1597
-01:13:36,350 --> 01:13:41,300
-What's clearly new about what I'm doing here?
+01: 13: 36,350 -> 01: 13: 41.300
+O que há de novo sobre o que estou fazendo aqui?
 
 1598
-01:13:41,300 --> 01:13:43,910
-What symbols jump out?
+01: 13: 41,300 -> 01: 13: 43.910
+Que símbolos aparecem?
 
 1599
-01:13:43,910 --> 01:13:45,200
-Yeah, the vertical bar.
+01: 13: 43.910 -> 01: 13: 45.200
+Sim, a barra vertical.
 
 1600
-01:13:45,200 --> 01:13:48,020
-So this is a way of saying a logical or.
+01: 13: 45,200 -> 01: 13: 48.020
+Portanto, esta é uma maneira de dizer um ou lógico.
 
 1601
-01:13:48,020 --> 01:13:50,630
-So in Python and a few other languages these days, you
+01: 13: 48,020 -> 01: 13: 50.630
+Então, em Python e em algumas outras linguagens hoje em dia, você
 
 1602
-01:13:50,630 --> 01:13:52,280
-might literally write the word "or."
+01: 13: 50,630 -> 01: 13: 52.280
+pode escrever literalmente a palavra "or/ou".
 
 1603
-01:13:52,280 --> 01:13:57,500
-That doesn't work in C. If you want to ask this question or this question
+01: 13: 52,280 -> 01: 13: 57.500
+Isso não funciona em C. Se você quiser fazer esta pergunta ou esta pergunta
 
 1604
-01:13:57,500 --> 01:14:00,740
-and just take either answer as a valid answer,
+01: 13: 57.500 -> 01: 14: 00.740
+e aceite qualquer uma das respostas como uma resposta válida,
 
 1605
-01:14:00,740 --> 01:14:03,020
-you just use two vertical bars, which are typically
+01: 14: 00,740 -> 01: 14: 03.020
+você apenas usa duas barras verticais, que normalmente são
 
 1606
-01:14:03,020 --> 01:14:05,720
-above your Enter key on an American keyboard, at least.
+01: 14: 03,020 -> 01: 14: 05.720
+acima da tecla Enter em um teclado americano, pelo menos.
 
 1607
-01:14:05,720 --> 01:14:07,760
-So two vertical bars means or.
+01: 14: 05,720 -> 01: 14: 07.760
+Portanto, duas barras verticais significam ou.
 
 1608
-01:14:07,760 --> 01:14:10,640
-Two ampersands, it turns out, means and.
+01: 14: 07,760 -> 01: 14: 10.640
+Dois &, ao que parece, significa e.
 
 1609
-01:14:10,640 --> 01:14:13,940
-But this is just a way of asking two questions in the same breath
+01: 14: 10.640 -> 01: 14: 13.940
+Mas esta é apenas uma maneira de fazer duas perguntas ao mesmo tempo
 
 1610
-01:14:13,940 --> 01:14:16,800
-and accepting either answer as potentially true.
+01: 14: 13,940 -> 01: 14: 16.800
+e aceitar qualquer uma das respostas como potencialmente verdadeiras.
 
 1611
-01:14:16,800 --> 01:14:21,650
-So if c is capital Y or c is lowercase y, assume that the human has agreed.
+01: 14: 16,800 -> 01: 14: 21.650
+Portanto, se c for Y maiúsculo ou c for y minúsculo, assuma que o humano concordou.
 
 1612
-01:14:21,650 --> 01:14:26,090
-Else, if c equals capital N or lowercase n, assume that they've not agreed.
+01: 14: 21.650 -> 01: 14: 26.090
+Caso contrário, se c for igual a N maiúsculo ou n minúsculo, assuma que eles não concordaram.
 
 1613
-01:14:26,090 --> 01:14:28,970
-And suppose I type in some other letter all together,
+01: 14: 26.090 -> 01: 14: 28.970
+E suponha que eu digite alguma outra letra toda junto,
 
 1614
-01:14:28,970 --> 01:14:32,220
-what's the program going to do?
+01: 14: 28.970 -> 01: 14: 32.220
+o que o programa vai fazer?
 
 1615
-01:14:32,220 --> 01:14:32,720
-Say again?
+01: 14: 32,220 -> 01: 14: 32.720
+Repita?
 
 1616
-01:14:32,720 --> 01:14:33,740
-AUDIENCE: Ask you again.
+01: 14: 32,720 -> 01: 14: 33.740
+PÚBLICO: Perguntar novamente.
 
 1617
-01:14:33,740 --> 01:14:35,000
-DAVID MALAN: It's not going to ask me again,
+01: 14: 33.740 -> 01: 14: 35.000
+DAVID MALAN: Não vai me perguntar de novo,
 
 1618
-01:14:35,000 --> 01:14:36,950
-because there's no loop here, right?
+01: 14: 35.000 -> 01: 14: 36.950
+porque não há loop aqui, certo?
 
 1619
-01:14:36,950 --> 01:14:41,360
-There's no evidence of while or for loop.
+01: 14: 36.950 -> 01: 14: 41.360
+Não há evidência de while ou for aqui.
 
 1620
-01:14:41,360 --> 01:14:46,190
-And get_char is literally going to get a char, but it doesn't specify what char.
+01: 14: 41,360 -> 01: 14: 46.190
+E get_char vai literalmente pegar um char, mas não especifica qual char.
 
 1621
-01:14:46,190 --> 01:14:50,900
-What happens if I don't type y or n, capital or lowercase?
+01: 14: 46,190 -> 01: 14: 50.900
+O que acontece se eu não digitar y ou n, maiúsculo ou minúsculo?
 
 1622
-01:14:50,900 --> 01:14:52,103
-It seems nothing.
+01: 14: 50,900 -> 01: 14: 52.103
+Parece que nada.
 
 1623
-01:14:52,103 --> 01:14:54,020
-Just nothing's going to happen, and that's OK.
+01: 14: 52,103 -> 01: 14: 54.020
+Nada vai acontecer, e tudo bem.
 
 1624
-01:14:54,020 --> 01:14:56,210
-Your program doesn't have to print something.
+01: 14: 54,020 -> 01: 14: 56.210
+Seu programa não precisa imprimir nada.
 
 1625
-01:14:56,210 --> 01:15:01,060
-And indeed, if I run this again and ./agree x.
+01: 14: 56,210 -> 01: 15: 01.060
+E, de fato, se eu executar novamente e ./agree x.
 
 1626
-01:15:01,060 --> 01:15:02,130
-It doesn't do anything.
+01: 15: 01.060 -> 01: 15: 02.130
+Não faz nada.
 
 1627
-01:15:02,130 --> 01:15:03,860
-So I've neither agreed nor disagreed.
+01: 15: 02,130 -> 01: 15: 03.860
+Portanto, não concordei nem discordei.
 
 1628
-01:15:03,860 --> 01:15:07,910
-However, you could imagine writing a loop that somehow forces the human
+01: 15: 03,860 -> 01: 15: 07.910
+No entanto, você pode imaginar escrever um loop que de alguma forma força o humano
 
 1629
-01:15:07,910 --> 01:15:10,117
-to cooperate in some way or another.
+01: 15: 07,910 -> 01: 15: 10.117
+para cooperar de uma forma ou de outra.
 
 1630
-01:15:10,117 --> 01:15:12,200
-All right, let's do a different example, this time
+01: 15: 10,117 -> 01: 15: 12.200
+Tudo bem, vamos fazer um exemplo diferente, desta vez
 
 1631
-01:15:12,200 --> 01:15:15,800
-based on an idea from last time-- that of abstraction.
+01: 15: 12,200 -> 01: 15: 15.800
+baseado em uma ideia da última vez - a de abstração.
 
 1632
-01:15:15,800 --> 01:15:18,980
-Recall that in Scratch, there was no puzzle piece for coughing,
+01: 15: 15,800 -> 01: 15: 18.980
+Lembre-se de que no Scratch não havia nenhuma peça do quebra-cabeça para tossir,
 
 1633
-01:15:18,980 --> 01:15:21,620
-to make the cat [COUGHS] on the screen.
+01: 15: 18.980 -> 01: 15: 21.620
+para fazer o gato [TOSSIR] na tela.
 
 1634
-01:15:21,620 --> 01:15:25,070
-And so we implemented this, really, with our own custom puzzle piece,
+01: 15: 21.620 -> 01: 15: 25.070
+E então implementamos isso, realmente, com nossa própria peça de quebra-cabeça personalizada,
 
 1635
-01:15:25,070 --> 01:15:25,850
-ultimately.
+01: 15: 25.070 -> 01: 15: 25.850
+em última análise.
 
 1636
-01:15:25,850 --> 01:15:30,080
-So let me create a program that's called cough0.c.
+01: 15: 25.850 -> 01: 15: 30.080
+Deixe-me criar um programa chamado cough0.c.
 
 1637
-01:15:30,080 --> 01:15:33,140
-That's a generous definition of inactivity, but OK.
+01: 15: 30.080 -> 01: 15: 33.140
+Essa é uma definição generosa de inatividade, mas OK.
 
 1638
-01:15:33,140 --> 01:15:35,960
-Let me reload the screen.
+01: 15: 33,140 -> 01: 15: 35.960
+Deixe-me recarregar a tela.
 
 1639
-01:15:35,960 --> 01:15:38,420
-When in doubt in CS50, as in life, reload.
+01: 15: 35.960 -> 01: 15: 38.420
+Na dúvida, no CS50, como na vida, recarregue.
 
 1640
-01:15:38,420 --> 01:15:39,920
-That will probably fix.
+01: 15: 38.420 -> 01: 15: 39.920
+Isso provavelmente vai resolver.
 
 1641
-01:15:39,920 --> 01:15:43,248
-Unfortunately, with programming and the internet, that sometimes happens.
+01: 15: 39,920 -> 01: 15: 43.248
+Infelizmente, com a programação e a internet, isso às vezes acontece.
 
 1642
-01:15:43,248 --> 01:15:45,290
-So in a moment, what I'm going to go ahead and do
+01: 15: 43.248 -> 01: 15: 45.290
+Então, em um momento, o que vou fazer
 
 1643
-01:15:45,290 --> 01:15:49,730
-is translate that idea from Scratch of implementing the notion of coughing.
+01: 15: 45,290 -> 01: 15: 49.730
+é traduzir essa ideia do Scratch de implementar a noção de tosse.
 
 1644
-01:15:49,730 --> 01:15:54,060
-But instead of the say block, I'm going to use the printf block, or the printf
+01: 15: 49,730 -> 01: 15: 54.060
+Mas em vez do bloco de dizer, vou usar o bloco printf ou 
 
 1645
-01:15:54,060 --> 01:15:54,990
-function.
+01: 15: 54.060 -> 01: 15: 54.990
+a função printf.
 
 1646
-01:15:54,990 --> 01:15:58,700
-And then I'm going to go ahead and design this version of code slightly
+01: 15: 54,990 -> 01: 15: 58.700
+E então vou prosseguir e projetar esta versão do código ligeiramente
 
 1647
-01:15:58,700 --> 01:16:01,920
-better and slightly better each time.
+01: 15: 58,700 -> 01: 16: 01.920
+cada vez melhor e ligeiramente melhor.
 
 1648
-01:16:01,920 --> 01:16:07,010
-So I'm going to go ahead and open up a file cough0.c.
+01: 16: 01,920 -> 01: 16: 07.010
+Vou prosseguir e abrir um arquivo cough0.c.
 
 1649
-01:16:07,010 --> 01:16:11,900
-And I'm going to go ahead and include, let's say, stdio.h.
+01: 16: 07,010 -> 01: 16: 11.900
+E vou prosseguir e incluir, digamos, stdio.h.
 
 1650
-01:16:11,900 --> 01:16:16,180
-I'm going to go ahead and do int main void, which again, is just our boiler
+01: 16: 11.900 -> 01: 16: 16.180
+Vou prosseguir e fazer int main void, que, de novo, é apenas o nosso caldeirão
 
 1651
-01:16:16,180 --> 01:16:18,080
-plate or copy/paste for today.
+01: 16: 16,180 -> 01: 16: 18.080
+de referências ou copiar/colar para hoje.
 
 1652
-01:16:18,080 --> 01:16:21,080
-I'm going to go ahead, then, and say printf, quote unquote,
+01: 16: 18.080 -> 01: 16: 21.080
+Vou prosseguir, então, e dizer printf, aspas, aspas,
 
 1653
-01:16:21,080 --> 01:16:22,580
-cough with a new line.
+01: 16: 21,080 -> 01: 16: 22.580
+tosse e "\n" para uma nova linha.
 
 1654
-01:16:22,580 --> 01:16:25,050
-And recall, in Scratch I wanted this to happen three times,
+01: 16: 22.580 -> 01: 16: 25.050
+E lembre-se, no Scratch eu queria que isso acontecesse três vezes,
 
 1655
-01:16:25,050 --> 01:16:27,300
-so I'm going to do it like this-- cough, cough, cough.
+01: 16: 25,050 -> 01: 16: 27.300
+então vou fazer assim - tosse, tosse, tosse.
 
 1656
-01:16:27,300 --> 01:16:31,520
-All right, I'm going to give myself a terminal window here at the bottom
+01: 16: 27,300 -> 01: 16: 31.520
+Tudo bem, vou me dar uma janela de terminal aqui na parte inferior
 
 1657
-01:16:31,520 --> 01:16:35,330
-so that I can now go ahead and say make cough0, Enter.
+01: 16: 31.520 -> 01: 16: 35.330
+para que agora eu possa ir em frente e dizer make cough0, Enter.
 
 1658
-01:16:35,330 --> 01:16:39,470
-Nothing bad seems to happen. ./cough0 and cough, cough, cough.
+01: 16: 35,330 -> 01: 16: 39.470
+Nada de ruim parece acontecer. ./cough0 e tosse, tosse, tosse.
 
 1659
-01:16:39,470 --> 01:16:42,950
-So last week, I claimed that, eh, you can design this better, right?
+01: 16: 39.470 -> 01: 16: 42.950
+Então, na semana passada, afirmei que, hã, você pode projetar isso melhor, certo?
 
 1660
-01:16:42,950 --> 01:16:44,960
-Anytime you're copying and pasting, odds are
+01: 16: 42.950 -> 01: 16: 44.960
+Sempre que você estiver copiando e colando, provávelmente
 
 1661
-01:16:44,960 --> 01:16:46,850
-you should start to resist that temptation,
+01: 16: 44,960 -> 01: 16: 46.850
+você deve começar a resistir a essa tentação,
 
 1662
-01:16:46,850 --> 01:16:49,933
-because it's going to lead to messy code, longer code than it needs to be.
+01: 16: 46.850 -> 01: 16: 49.933
+porque vai levar a um código confuso, um código mais longo do que o necessário.
 
 1663
-01:16:49,933 --> 01:16:52,133
-What's the solution to this problem from last week?
+01: 16: 49,933 -> 01: 16: 52.133
+Qual é a solução para esse problema da semana passada?
 
 1664
-01:16:52,133 --> 01:16:52,920
-AUDIENCE: A loop.
+01: 16: 52,133 -> 01: 16: 52.920
+PÚBLICO: Um loop.
 
 1665
-01:16:52,920 --> 01:16:54,390
-DAVID MALAN: Yeah, a loop, a for loop.
+01: 16: 52,920 -> 01: 16: 54.390
+DAVID MALAN: Sim, um loop, um loop for.
 
 1666
-01:16:54,390 --> 01:16:55,682
-So let me go ahead and do that.
+01: 16: 54,390 -> 01: 16: 55.682
+Então, deixe-me ir em frente e fazer isso.
 
 1667
-01:16:55,682 --> 01:16:57,693
-Let me create another version, cough1.c.
+01: 16: 55.682 -> 01: 16: 57.693
+Deixe-me criar outra versão, cough1.c.
 
 1668
-01:16:57,693 --> 01:17:00,360
-And I'm going to copy/paste this code, just as a starting point.
+01: 16: 57,693 -> 01: 17: 00.360
+E vou copiar/colar este código, apenas como ponto de partida.
 
 1669
-01:17:00,360 --> 01:17:02,400
-But now I'm going to go ahead and clean it up.
+01: 17: 00,360 -> 01: 17: 02.400
+Mas agora vou limpar tudo.
 
 1670
-01:17:02,400 --> 01:17:04,960
-So I'm going to go ahead and instead do a for loop.
+01: 17: 02.400 -> 01: 17: 04.960
+Então, vou prosseguir e, em vez disso, fazer um loop for.
 
 1671
-01:17:04,960 --> 01:17:07,460
-And I don't quite remember what goes in the parentheses yet,
+01: 17: 04,960 -> 01: 17: 07.460
+E ainda não me lembro bem do que está entre parênteses,
 
 1672
-01:17:07,460 --> 01:17:08,690
-but we'll come back to that.
+01: 17: 07.460 -> 01: 17: 08.690
+mas vamos voltar a isso.
 
 1673
-01:17:08,690 --> 01:17:12,530
-I do know that what I want to do some number of times is just cough.
+01: 17: 08.690 -> 01: 17: 12.530
+Eu sei que o que eu quero fazer algumas vezes é apenas tossir.
 
 1674
-01:17:12,530 --> 01:17:15,333
-So the only question at hand is, what was the syntax here?
+01: 17: 12.530 -> 01: 17: 15.333
+Portanto, a única coisa em questão é: qual era a sintaxe aqui?
 
 1675
-01:17:15,333 --> 01:17:17,250
-Well, we can write this in any number of ways,
+01: 17: 15,333 -> 01: 17: 17.250
+Bem, podemos escrever isso de várias maneiras,
 
 1676
-01:17:17,250 --> 01:17:18,890
-and we could even use a while loop.
+01: 17: 17,250 -> 01: 17: 18.890
+e poderíamos até usar um loop while.
 
 1677
-01:17:18,890 --> 01:17:22,520
-But I do recall saying int and then the name of a variable.
+01: 17: 18,890 -> 01: 17: 22.520
+Mas me lembro de dizer int e depois o nome de uma variável.
 
 1678
-01:17:22,520 --> 01:17:24,960
-I could say counter, or I could just say i
+01: 17: 22.520 -> 01: 17: 24.960
+Eu poderia dizer contar, ou poderia apenas dizer
 
 1679
-01:17:24,960 --> 01:17:28,970
-to keep it succinct, equals 0 by default.
+01: 17: 24,960 -> 01: 17: 28.970
+i para mantê-lo sucinto, é igual a 0 por padrão.
 
 1680
-01:17:28,970 --> 01:17:32,540
-I could do this so long as i is less than 3, for instance.
+01: 17: 28.970 -> 01: 17: 32.540
+Eu poderia fazer isso desde que i seja menor que 3, por exemplo.
 
 1681
-01:17:32,540 --> 01:17:38,070
-And then on each iteration, I can say i equals i plus 1 or, more succinctly,
+01: 17: 32.540 -> 01: 17: 38.070
+E então, em cada iteração, posso dizer que i é igual a i mais 1 ou, mais sucintamente,
 
 1682
-01:17:38,070 --> 01:17:39,710
-i plus plus.
+01: 17: 38,070 -> 01: 17: 39.710
+i mais mais.
 
 1683
-01:17:39,710 --> 01:17:41,223
-So, again, it's a lot of new syntax.
+01: 17: 39,710 -> 01: 17: 41.223
+Portanto, novamente, é uma série de novas sintaxes.
 
 1684
-01:17:41,223 --> 01:17:43,140
-And there's semicolons all over the place now.
+01: 17: 41,223 -> 01: 17: 43.140
+E agora há pontos-e-vírgulas por todo o lugar.
 
 1685
-01:17:43,140 --> 01:17:46,700
-But if I go ahead now and do make cough1,
+01: 17: 43,140 -> 01: 17: 46.700
+Mas se eu for em frente e "make cough1",
 
 1686
-01:17:46,700 --> 01:17:48,410
-nothing bad seems to have happened.
+01: 17: 46,700 -> 01: 17: 48.410
+nada de ruim parece ter acontecido.
 
 1687
-01:17:48,410 --> 01:17:51,020
-./cough1, cough, cough, cough.
+01: 17: 48.410 -> 01: 17: 51.020
+./cough1, tosse, tosse, tosse.
 
 1688
-01:17:51,020 --> 01:17:53,180
-It seems to be slightly better designed.
+01: 17: 51,020 -> 01: 17: 53.180
+Parece ser um pouco melhor projetado.
 
 1689
-01:17:53,180 --> 01:17:55,460
-Unfortunately, there is this paradigm in programming
+01: 17: 53,180 -> 01: 17: 55.460
+Infelizmente, existe esse paradigma na programação
 
 1690
-01:17:55,460 --> 01:18:00,110
-where humans, programmers, tend to think or tend to count starting from zero.
+01: 17: 55.460 -> 01: 18: 00.110
+onde humanos, programadores, tendem a pensar ou a contar começando do zero.
 
 1691
-01:18:00,110 --> 01:18:02,240
-However, if you don't like that, at least early on,
+01: 18: 00,110 -> 01: 18: 02.240
+No entanto, se você não gosta disso, pelo menos no início,
 
 1692
-01:18:02,240 --> 01:18:05,210
-there's nothing stopping me from initializing i to 1
+01: 18: 02,240 -> 01: 18: 05.210
+não há nada me impedindo de inicializar i com 1
 
 1693
-01:18:05,210 --> 01:18:08,420
-and then doing i is less than 4 or, even more explicitly,
+01: 18: 05,210 -> 01: 18: 08.420
+e fazer i é menor que 4 ou, ainda mais explicitamente,
 
 1694
-01:18:08,420 --> 01:18:10,655
-i is less than or equal to 3.
+01: 18: 08,420 -> 01: 18: 10.655
+i é menor ou igual a 3.
 
 1695
-01:18:10,655 --> 01:18:13,280
-There's no less than or equal sign on your keyboard, typically,
+01: 18: 10.655 -> 01: 18: 13.280
+Não há sinal de menor igual no teclado, normalmente,
 
 1696
-01:18:13,280 --> 01:18:17,390
-so you can mimic it by doing a less than and then an equal sign, two characters.
+01: 18: 13,280 -> 01: 18: 17.390
+então você pode imitá-lo fazendo um sinal de menor que e, em seguida, um sinal de igual, dois caracteres.
 
 1697
-01:18:17,390 --> 01:18:18,800
-This is logically the same.
+01: 18: 17,390 -> 01: 18: 18.800
+Isso é logicamente o mesmo.
 
 1698
-01:18:18,800 --> 01:18:20,240
-Set i equal to 1.
+01: 18: 18,800 -> 01: 18: 20.240
+Defina i igual a 1.
 
 1699
-01:18:20,240 --> 01:18:23,450
-Then go ahead and print cough, and then make sure to increment it.
+01: 18: 20.240 -> 01: 18: 23.450
+Então vá em frente e imprima a tosse e certifique-se de incrementá-la.
 
 1700
-01:18:23,450 --> 01:18:26,150
-And then make sure it's still less than 3, and 2 is.
+01: 18: 23.450 -> 01: 18: 26.150
+E certifique-se de que ainda seja menos de 3 e 2 é.
 
 1701
-01:18:26,150 --> 01:18:28,850
-Make sure it's still less than or equal to 3, and it still is.
+01: 18: 26,150 -> 01: 18: 28.850
+Certifique-se de que ainda é menor ou igual a 3 e ainda é.
 
 1702
-01:18:28,850 --> 01:18:31,620
-So that 2 is, logically, going to have the same effect.
+01: 18: 28,850 -> 01: 18: 31.620
+Portanto, o 2, logicamente, terá o mesmo efeito.
 
 1703
-01:18:31,620 --> 01:18:36,590
-However, in the interests of convention, this would be the more common approach.
+01: 18: 31.620 -> 01: 18: 36.590
+No entanto, no interesse da convenção, essa seria a abordagem mais comum.
 
 1704
-01:18:36,590 --> 01:18:42,768
-Do this while i equals 0 and then 1 and then 2, for a total of 3 times.
-
+01: 18: 36.590 -> 01: 18: 42.768
+Faça isso enquanto i for igual a 0 e, em seguida, 1 e 2, para um total de 3 vezes.
 1705
-01:18:42,768 --> 01:18:44,810
-All right, but recall what we did last time, too,
+01: 18: 42,768 -> 01: 18: 44.810
+Tudo bem, mas lembre-se do que fizemos da última vez também,
 
 1706
-01:18:44,810 --> 01:18:47,540
-is that if I'm writing a lot of code, for some reason, that
+01: 18: 44,810 -> 01: 18: 47.540
+é que se eu estou escrevendo muito código, por algum motivo,
 
 1707
-01:18:47,540 --> 01:18:51,800
-involves programs coughing, it would be nice to give myself my own custom
+01: 18: 47,540 -> 01: 18: 51.800
+envolve programas de tosse, seria bom ter a minha própria customização
 
 1708
-01:18:51,800 --> 01:18:52,920
-function.
+01: 18: 51,800 -> 01: 18: 52.920
+desta função.
 
 1709
-01:18:52,920 --> 01:18:54,450
-So let me go ahead and do that.
+01: 18: 52,920 -> 01: 18: 54.450
+Então, deixe-me ir em frente e fazer isso.
 
 1710
-01:18:54,450 --> 01:18:58,430
-Let me go ahead and write my own first brand-new function.
+01: 18: 54.450 -> 01: 18: 58.430
+Deixe-me prosseguir e escrever minha primeira função totalmente nova.
 
 1711
-01:18:58,430 --> 01:19:00,570
-And I'm going to do this as follows.
+01: 18: 58,430 -> 01: 19: 00.570
+E vou fazer isso da seguinte maneira.
 
 1712
-01:19:00,570 --> 01:19:04,220
-I'm going to go ahead and type void, then the name of the function I want.
+01: 19: 00,570 -> 01: 19: 04.220
+Vou prosseguir e digitar void e, em seguida, o nome da função que desejo.
 
 1713
-01:19:04,220 --> 01:19:07,160
-Then I'm going to say void here, for reasons we'll come back to.
+01: 19: 04,220 -> 01: 19: 07.160
+Então vou dizer vazio aqui, por razões às quais voltaremos.
 
 1714
-01:19:07,160 --> 01:19:10,160
-And then I'm going to literally just go ahead and say cough.
+01: 19: 07,160 -> 01: 19: 10.160
+E então vou literalmente apenas ir em frente e dizer cough.
 
 1715
-01:19:10,160 --> 01:19:14,120
-So there are functions we've used today-- printf, get_int, get_string,
-
+01: 19: 10,160 -> 01: 19: 14.120
+Portanto, existem funções que usamos hoje - printf, get_int, get_string,
 1716
-01:19:14,120 --> 01:19:18,650
-get_float-- none of which we showed you the implementation of, because people,
+01: 19: 14,120 -> 01: 19: 18.650
+get_float-- nenhum dos quais mostramos a implementação feita, porque as pessoas,
 
 1717
-01:19:18,650 --> 01:19:21,270
-years ago, both in the staff and in the real world,
+01: 19: 18.650 -> 01: 19: 21.270
+anos atrás, tanto na equipe quanto no mundo real,
 
 1718
-01:19:21,270 --> 01:19:23,000
-implemented those functions for us.
+01: 19: 21,270 -> 01: 19: 23.000
+implementou essas funções para nós.
 
 1719
-01:19:23,000 --> 01:19:26,270
-You, too, can implement your own custom functions or, in Scratch,
+01: 19: 23.000 -> 01: 19: 26.270
+Você também pode implementar suas próprias funções personalizadas ou, no Scratch,
 
 1720
-01:19:26,270 --> 01:19:29,690
-those puzzle pieces that we made in those pink blocks.
+01: 19: 26,270 -> 01: 19: 29.690
+aquelas peças do quebra-cabeça que fizemos nesses blocos rosa.
 
 1721
-01:19:29,690 --> 01:19:31,940
-So if you want to make your own function whose name is
+01: 19: 29.690 -> 01: 19: 31.940
+Então, se você quiser fazer sua própria função cujo nome é
 
 1722
-01:19:31,940 --> 01:19:35,960
-cough, whose purpose in life is to say cough on the screen,
+01: 19: 31.940 -> 01: 19: 35.960
+cough, cujo objetivo na vida é dizer tosse na tela,
 
 1723
-01:19:35,960 --> 01:19:37,010
-this is the syntax.
+01: 19: 35,960 -> 01: 19: 37.010
+esta é a sintaxe.
 
 1724
-01:19:37,010 --> 01:19:40,880
-For today's purposes, you say void and void here, but the name of the function
+01: 19: 37,010 -> 01: 19: 40.880
+Para os fins de hoje, você diz void and void aqui, mas o nome da função
 
 1725
-01:19:40,880 --> 01:19:41,690
-is important.
+01: 19: 40,880 -> 01: 19: 41.690
+é importante.
 
 1726
-01:19:41,690 --> 01:19:43,040
-I'll call it cough.
+01: 19: 41,690 -> 01: 19: 43.040
+Vou chamar de cough.
 
 1727
-01:19:43,040 --> 01:19:45,000
-And then I can use it as follows.
+01: 19: 43.040 -> 01: 19: 45.000
+E então posso usá-lo da seguinte maneira.
 
 1728
-01:19:45,000 --> 01:19:50,750
-I can say cough, cough, cough now in order to cough three times.
+01: 19: 45.000 -> 01: 19: 50.750
+Eu posso dizer tosse, tosse, tosse agora para tossir três vezes.
 
 1729
-01:19:50,750 --> 01:19:53,150
-Or again, we already decided that was bad design.
+01: 19: 50,750 -> 01: 19: 53.150
+Ou ainda, já decidimos que era um design ruim.
 
 1730
-01:19:53,150 --> 01:19:57,770
-For int i get 0, i less than 3, i plus plus.
+01: 19: 53,150 -> 01: 19: 57.770
+Para int eu obtenho 0, i menor que 3, i mais mais.
 
 1731
-01:19:57,770 --> 01:20:00,230
-I can now do something like cough.
+01: 19: 57.770 -> 01: 20: 00.230
+Agora posso fazer algo como tossir.
 
 1732
-01:20:00,230 --> 01:20:03,290
-And so now, again, out of sight, out of mind.
+01: 20: 00,230 -> 01: 20: 03.290
+E agora, novamente, fora de vista, longe da mente.
 
 1733
-01:20:03,290 --> 01:20:07,460
-I don't need to know or care how the cough function is implemented.
+01: 20: 03.290 -> 01: 20: 07.460
+Não preciso saber ou me importar como a função da tosse é implementada.
 
 1734
-01:20:07,460 --> 01:20:10,850
-I can care that my code just tells the computer what to do.
+01: 20: 07.460 -> 01: 20: 10.850
+Posso me importar que meu código apenas diga ao computador o que fazer.
 
 1735
-01:20:10,850 --> 01:20:15,260
-For i from 0 on up to 3, cough, cough, cough.
+01: 20: 10.850 -> 01: 20: 15.260
+Para i de 0 em até 3, tosse, tosse, tosse.
 
 1736
-01:20:15,260 --> 01:20:16,480
-And this is an abstraction.
+01: 20: 15.260 -> 01: 20: 16.480
+E isso é uma abstração.
 
 1737
-01:20:16,480 --> 01:20:18,950
-I don't care that cough is implemented with printf.
+01: 20: 16.480 -> 01: 20: 18.950
+Não me importa se a tosse é implementada com printf.
 
 1738
-01:20:18,950 --> 01:20:22,070
-I just care that there's a function called cough.
+01: 20: 18.950 -> 01: 20: 22.070
+Eu só me importo se houver uma função chamada tosse.
 
 1739
-01:20:22,070 --> 01:20:25,490
-So let me go ahead and run this and see what happens.
+01: 20: 22.070 -> 01: 20: 25.490
+Então, deixe-me executar isso e ver o que acontece.
 
 1740
-01:20:25,490 --> 01:20:28,710
-Let me scroll down to the bottom, do make cough1.
+01: 20: 25.490 -> 01: 20: 28.710
+Deixe-me rolar até o final, faça tosse1.
 
 1741
-01:20:28,710 --> 01:20:29,750
-OK, amazing.
+01: 20: 28,710 -> 01: 20: 29.750
+OK, incrível.
 
 1742
-01:20:29,750 --> 01:20:30,830
-No red errors now.
+01: 20: 29.750 -> 01: 20: 30.830
+Sem erros vermelhos agora.
 
 1743
-01:20:30,830 --> 01:20:34,550
-So ./cough1, cough, cough, cough.
+01: 20: 30.830 -> 01: 20: 34.550
+Então ./tosse1, tosse, tosse, tosse.
 
 1744
-01:20:34,550 --> 01:20:38,553
-But notice that this is a little bad design, I would claim,
+01: 20: 34.550 -> 01: 20: 38.553
+Mas observe que este é um projeto um pouco ruim, eu diria,
 
 1745
-01:20:38,553 --> 01:20:39,470
-because you know what?
+01: 20: 38.553 -> 01: 20: 39.470
+porque você sabe o quê?
 
 1746
-01:20:39,470 --> 01:20:42,890
-If you keep writing custom functions up here, up here, up here,
+01: 20: 39.470 -> 01: 20: 42.890
+Se você continuar escrevendo funções personalizadas aqui, aqui, aqui,
 
 1747
-01:20:42,890 --> 01:20:46,145
-the main part of your program is going to get pushed pretty far down.
+01: 20: 42.890 -> 01: 20: 46.145
+a parte principal de seu programa será empurrada para baixo.
 
 1748
-01:20:46,145 --> 01:20:48,770
-And it's a human convention to generally have the main function
+01: 20: 46,145 -> 01: 20: 48.770
+E é uma convenção humana geralmente ter a função principal
 
 1749
-01:20:48,770 --> 01:20:49,790
-at the top of your file.
+01: 20: 48.770 -> 01: 20: 49.790
+na parte superior do seu arquivo.
 
 1750
-01:20:49,790 --> 01:20:50,790
-Seems pretty reasonable.
+01: 20: 49,790 -> 01: 20: 50.790
+Parece bastante razoável.
 
 1751
-01:20:50,790 --> 01:20:53,420
-So you open the file, boom, the main function's right there.
+01: 20: 50,790 -> 01: 20: 53.420
+Então você abre o arquivo, bum, a função principal está bem ali.
 
 1752
-01:20:53,420 --> 01:20:54,620
-So let's keep it there.
+01: 20: 53.420 -> 01: 20: 54.620
+Então, vamos mantê-lo lá.
 
 1753
-01:20:54,620 --> 01:20:58,448
-So let me actually move the cough function down below just so
+01: 20: 54.620 -> 01: 20: 58.448
+Então, deixe-me mover a função da cough para baixo, apenas para
 
 1754
-01:20:58,448 --> 01:21:01,490
-that, again, the first thing I see is indeed the main part of my program.
+01: 20: 58,448 -> 01: 21: 01.490
+que, novamente, a primeira coisa que vejo é de fato a parte principal do meu programa.
 
 1755
-01:21:01,490 --> 01:21:03,020
-And wherever cough is, I don't care.
+01: 21: 01,490 -> 01: 21: 03.020
+E onde quer que esteja a tosse, não me importo.
 
 1756
-01:21:03,020 --> 01:21:05,090
-That was the whole point of implementing it.
+01: 21: 03,020 -> 01: 21: 05.090
+Esse foi o objetivo de implementá-lo.
 
 1757
-01:21:05,090 --> 01:21:08,990
-Let me go now to my terminal window and do make cough1.
+01: 21: 05.090 -> 01: 21: 08.990
+Deixe-me ir agora para a janela do meu terminal e "make cough1".
 
 1758
-01:21:08,990 --> 01:21:12,500
-Oh my god, some red errors flew by.
+01: 21: 08,990 -> 01: 21: 12.500
+Oh meu Deus, alguns erros vermelhos passaram voando.
 
 1759
-01:21:12,500 --> 01:21:14,030
-What's wrong here?
+01: 21: 12.500 -> 01: 21: 14.030
+O que há de errado aqui?
 
 1760
-01:21:14,030 --> 01:21:19,130
+01: 21: 14.030 -> 01: 21: 19.130
 So error, implicit declaration of function cough is invalid in C '99.
 
 1761
-01:21:19,130 --> 01:21:22,610
-C '99 means the version of C invented in 1999.
+01: 21: 19,130 ​​-> 01: 21: 22.610
+C '99 significa a versão de C inventada em 1999.
 
 1762
-01:21:22,610 --> 01:21:23,690
-What's going on?
+01: 21: 22.610 -> 01: 21: 23.690
+O que está acontecendo?
 
 1763
-01:21:23,690 --> 01:21:25,100
-Implicit declaration?
+01: 21: 23.690 -> 01: 21: 25.100
+Implicit declaration/Declaração Implicita?
 
 1764
-01:21:25,100 --> 01:21:27,500
-So this is where C differs from Scratch again.
+01: 21: 25,100 -> 01: 21: 27.500
+Então é aqui que C difere do Scratch novamente.
 
 1765
-01:21:27,500 --> 01:21:29,840
-C is old, and it's kind of dumb.
+01: 21: 27,500 -> 01: 21: 29.840
+C é velho e meio burro.
 
 1766
-01:21:29,840 --> 01:21:32,840
-It only knows what you tell it, and it only
+01: 21: 29.840 -> 01: 21: 32.840
+Ele só sabe o que você diz, e só
 
 1767
-01:21:32,840 --> 01:21:36,290
-knows what you tell it in order top to bottom, left to right.
+01: 21: 32.840 -> 01: 21: 36.290
+sabe o que você diz em ordem de cima para baixo, da esquerda para a direita.
 
 1768
-01:21:36,290 --> 01:21:41,480
-So in this program right now, I have included stdio.h, as before.
+01: 21: 36,290 -> 01: 21: 41.480
+Portanto, neste programa agora, incluí stdio.h, como antes.
 
 1769
-01:21:41,480 --> 01:21:43,700
-I've included the beginning of main.
+01: 21: 41,480 -> 01: 21: 43.700
+Eu incluí o início de a função "main".
 
 1770
-01:21:43,700 --> 01:21:45,480
-I've started a for loop.
+01: 21: 43,700 -> 01: 21: 45.480
+Eu comecei um loop for.
 
 1771
-01:21:45,480 --> 01:21:48,320
-And then I'm using a function that's apparently called cough.
+01: 21: 45,480 -> 01: 21: 48.320
+E então estou usando uma função que aparentemente é chamada de cough.
 
 1772
-01:21:48,320 --> 01:21:52,640
-However, where is cough now actually implemented?
+01: 21: 48,320 -> 01: 21: 52.640
+No entanto, onde a função cough está implementada agora?
 
 1773
-01:21:52,640 --> 01:21:54,880
-Way down here on line 11 onwards.
+01: 21: 52.640 -> 01: 21: 54.880
+Bem aqui na linha 11 em diante.
 
 1774
-01:21:54,880 --> 01:21:56,600
-C is not that smart.
+01: 21: 54,880 -> 01: 21: 56.600
+C não é tão inteligente.
 
 1775
-01:21:56,600 --> 01:21:59,510
-It's not going to presume to look later in your file to see,
+01: 21: 56.600 -> 01: 21: 59.510
+Não vai presumir e procurar mais adiante em seu arquivo para ver,
 
 1776
-01:21:59,510 --> 01:22:02,150
-maybe they put the function cough down below.
+01: 21: 59.510 -> 01: 22: 02.150
+talvez eles coloquem a função tosse abaixo.
 
 1777
-01:22:02,150 --> 01:22:04,070
-It's only going to do what you tell it.
+01: 22: 02,150 -> 01: 22: 04.070
+Só vai fazer o que você mandar.
 
 1778
-01:22:04,070 --> 01:22:05,503
-So there's a fix for this.
+01: 22: 04,070 -> 01: 22: 05.503
+Portanto, há uma solução para isso.
 
 1779
-01:22:05,503 --> 01:22:07,670
-You can either do what I did initially, which is put
+01: 22: 05,503 -> 01: 22: 07.670
+Você pode fazer o que eu fiz inicialmente, que é colocar
 
 1780
-01:22:07,670 --> 01:22:09,268
-all of your custom functions up top.
+01: 22: 07,670 -> 01: 22: 09.268
+todas as suas funções personalizadas no topo.
 
 1781
-01:22:09,268 --> 01:22:11,810
-But that's kind of a vicious cycle, because you can't forever
+01: 22: 09,268 -> 01: 22: 11.810
+Mas isso é uma espécie de ciclo vicioso, porque você não pode para sempre
 
 1782
-01:22:11,810 --> 01:22:13,107
-put the new functions up top.
+01: 22: 11.810 -> 01: 22: 13.107
+coloque as novas funções no topo.
 
 1783
-01:22:13,107 --> 01:22:15,690
-Eventually, you're going to run into some kind of constraints.
+01: 22: 13,107 -> 01: 22: 15.690
+Eventualmente, você encontrará algum tipo de restrição.
 
 1784
-01:22:15,690 --> 01:22:19,070
-And my god, you want the main function, by convention, to be up top.
+01: 22: 15.690 -> 01: 22: 19.070
+E meu Deus, você quer que a função principal, por convenção, esteja no topo.
 
 1785
-01:22:19,070 --> 01:22:20,880
-So there's another solution here.
+01: 22: 19,070 -> 01: 22: 20.880
+Portanto, há outra solução aqui.
 
 1786
-01:22:20,880 --> 01:22:23,900
-And this is the only time where copy/paste is compelling.
+01: 22: 20,880 -> 01: 22: 23.900
+E este é o único momento em que copiar/colar é atraente.
 
 1787
-01:22:23,900 --> 01:22:29,210
-You literally copy the first line of your function's code on line 11 there.
+01: 22: 23,900 -> 01: 22: 29.210
+Você literalmente copia a primeira linha do código de sua função na linha 11 lá.
 
 1788
-01:22:29,210 --> 01:22:33,660
-And you go ahead and paste it at the top of your file with a semicolon.
+01: 22: 29,210 -> 01: 22: 33.660
+E você vai em frente e cola no topo do seu arquivo com um ponto e vírgula.
 
 1789
-01:22:33,660 --> 01:22:38,113
-So this is a way of sort of tricking C into, oh, you have seen cough before.
+01: 22: 33.660 -> 01: 22: 38.113
+Portanto, esta é uma espécie de enganar C para, oh, você já viu cough antes.
 
 1790
-01:22:38,113 --> 01:22:40,530
-You haven't seen all of it, but you've seen enough of it--
+01: 22: 38,113 -> 01: 22: 40.530
+Você não viu tudo isso, mas você já viu o suficiente -
 
 1791
-01:22:40,530 --> 01:22:41,720
-you've seen its name--
+01: 22: 40.530 -> 01: 22: 41.720
+você viu seu nome -
 
 1792
-01:22:41,720 --> 01:22:45,870
-to now tolerate its appearance in my main function.
+01: 22: 41,720 -> 01: 22: 45.870
+para agora tolere o aparecimento em minha função "main".
 
 1793
-01:22:45,870 --> 01:22:49,130
-So let me go ahead and recompile this code.
+01: 22: 45,870 -> 01: 22: 49.130
+Então, deixe-me recompilar este código.
 
 1794
-01:22:49,130 --> 01:22:51,770
-I'm going to go ahead and run make cough1 enter.
+01: 22: 49,130 ​​-> 01: 22: 51.770
+Vou seguir em frente e fazer cough1 entrar.
 
 1795
-01:22:51,770 --> 01:22:53,510
-OK, now it compiled.
+01: 22: 51,770 -> 01: 22: 53.510
+OK, agora está compilado.
 
 1796
-01:22:53,510 --> 01:22:59,370
-./cough1, and viola, we're back in business there.
+01: 22: 53.510 -> 01: 22: 59.370
+./cough1 e viola, estamos de volta aos negócios lá.
 
 1797
-01:22:59,370 --> 01:23:00,740
-But let me make one refinement.
+01: 22: 59,370 -> 01: 23: 00.740
+Mas deixe-me fazer um refinamento.
 
 1798
-01:23:00,740 --> 01:23:05,810
-And I'm going to jump ahead to what I called in the online examples cough3.c.
+01: 23: 00,740 -> 01: 23: 05.810
+E vou pular para o que chamei nos exemplos online cough3.c.
 
 1799
-01:23:05,810 --> 01:23:08,600
-It turns out your own custom functions can take input.
+01: 23: 05,810 -> 01: 23: 08.600
+Acontece que suas próprias funções personalizadas podem receber entrada.
 
 1800
-01:23:08,600 --> 01:23:11,610
-This word void means that it takes no input.
+01: 23: 08.600 -> 01: 23: 11.610
+Esta palavra "void" significa que não é necessária nenhuma entrada.
 
 1801
-01:23:11,610 --> 01:23:15,938
-And this word void means it returns no value, like get_int and get_string hand
+01: 23: 11,610 -> 01: 23: 15.938
+E esta palavra "void" significa que não retorna nenhum valor, como get_int e get_string manda
 
 1802
-01:23:15,938 --> 01:23:16,730
-you back something.
+01: 23: 15.938 -> 01: 23: 16.730
+algo de volta para você.
 
 1803
-01:23:16,730 --> 01:23:18,647
-That's not applicable now, but we'll come back
+01: 23: 16,730 -> 01: 23: 18.647
+Isso não é aplicável agora, mas vamos voltar
 
 1804
-01:23:18,647 --> 01:23:20,450
-to that in a week or two's time.
+01: 23: 18.647 -> 01: 23: 20.450
+para isso em uma ou duas semanas.
 
 1805
-01:23:20,450 --> 01:23:24,770
-Suppose that you wanted to make the cough function more versatile
+01: 23: 20.450 -> 01: 23: 24.770
+Suponha que você queira tornar a função cough mais versátil
 
 1806
-01:23:24,770 --> 01:23:28,190
-such that it will cough any number of times for you.
+01: 23: 24.770 -> 01: 23: 28.190
+de forma que ele vai tossir várias vezes para você.
 
 1807
-01:23:28,190 --> 01:23:29,660
-You know what you can do, is this.
+01: 23: 28,190 -> 01: 23: 29.660
+Você sabe o que pode fazer, é isso.
 
 1808
-01:23:29,660 --> 01:23:34,670
-You can change the input to cough function to be some value like n,
+01: 23: 29.660 -> 01: 23: 34.670
+Você pode alterar a entrada para a função de tosse para algum valor como n,
 
 1809
-01:23:34,670 --> 01:23:38,840
-and you can then do something like this-- for int i get 0.
+01: 23: 34,670 -> 01: 23: 38.840
+e você pode fazer algo assim - para int eu obtenho 0.
 
 1810
-01:23:38,840 --> 01:23:43,730
-i is less than n, so not hardcoded anymore. i plus plus.
+01: 23: 38,840 -> 01: 23: 43.730
+i é menor que n, portanto, não é mais "hardcoded/fixo no código". i mais mais.
 
 1811
-01:23:43,730 --> 01:23:48,650
-And then inside of your curly braces, you can print this cough line.
+01: 23: 43.730 -> 01: 23: 48.650
+E então, dentro das chaves, você pode imprimir esta linha de tosse.
 
 1812
-01:23:48,650 --> 01:23:52,520
-So now, notice, cough has been parameterized.
+01: 23: 48.650 -> 01: 23: 52.520
+Então agora, observe, a tosse foi parametrizada.
 
 1813
-01:23:52,520 --> 01:23:55,430
-It now takes input of integer called n, and it
+01: 23: 52.520 -> 01: 23: 55.430
+Agora, leva a entrada de um inteiro chamado n, e
 
 1814
-01:23:55,430 --> 01:23:58,220
-uses that input, n, just like you could have done
+01: 23: 55.430 -> 01: 23: 58.220
+usa essa entrada, n, exatamente como você poderia ter feito
 
 1815
-01:23:58,220 --> 01:24:00,740
-in Scratch, to do something n times--
+01: 23: 58,220 -> 01: 24: 00.740
+no Scratch, para fazer algo n vezes -
 
 1816
-01:24:00,740 --> 01:24:04,010
-not once, not three times, but a variable number of times.
+01: 24: 00,740 -> 01: 24: 04.010
+não uma, não três vezes, mas um número variável de vezes.
 
 1817
-01:24:04,010 --> 01:24:06,360
-I have to change my first line here.
+01: 24: 04,010 -> 01: 24: 06.360
+Tenho que mudar minha primeira linha aqui.
 
 1818
-01:24:06,360 --> 01:24:07,520
-This is called a prototype.
+01: 24: 06,360 -> 01: 24: 07.520
+Isso é chamado de protótipo.
 
 1819
-01:24:07,520 --> 01:24:09,860
-This one-liner is what's called a prototype,
+01: 24: 07.520 -> 01: 24: 09.860
+Está função de linha única é o que chamamos de protótipo,
 
 1820
-01:24:09,860 --> 01:24:12,140
-and it's just copy/paste from your actual function.
+01: 24: 09,860 -> 01: 24: 12.140
+e é só copiar/colar da sua função real.
 
 1821
-01:24:12,140 --> 01:24:13,700
-But now notice what I can do.
+01: 24: 12,140 -> 01: 24: 13.700
+Mas agora observe o que posso fazer.
 
 1822
-01:24:13,700 --> 01:24:16,550
-My main function, again, is the essence of my program.
+01: 24: 13,700 -> 01: 24: 16.550
+Minha função principal, novamente, é a essência do meu programa.
 
 1823
-01:24:16,550 --> 01:24:19,190
-It's a little convoluted right now.
+01: 24: 16.550 -> 01: 24: 19.190
+É um pouco complicado agora.
 
 1824
-01:24:19,190 --> 01:24:23,150
-Wouldn't it be nicer if I could just say cough three times?
+01: 24: 19,190 -> 01: 24: 23.150
+Não seria melhor se eu pudesse dizer "cough" três vezes?
 
 1825
-01:24:23,150 --> 01:24:28,040
-And indeed, now I don't need to know or care how coughing is implemented.
+01: 24: 23,150 -> 01: 24: 28.040
+E, de fato, agora não preciso saber ou me importar como a cough é implementada.
 
 1826
-01:24:28,040 --> 01:24:30,950
-That's a well-designed program, arguably.
+01: 24: 28.040 -> 01: 24: 30.950
+É um programa bem desenhado, sem dúvida.
 
 1827
-01:24:30,950 --> 01:24:32,300
-It's one line of code.
+01: 24: 30.950 -> 01: 24: 32.300
+É uma linha de código.
 
 1828
-01:24:32,300 --> 01:24:33,137
-It's descriptive.
+01: 24: 32,300 -> 01: 24: 33.137
+É descritivo.
 
 1829
-01:24:33,137 --> 01:24:33,720
-It says cough.
+01: 24: 33,137 -> 01: 24: 33.720
+diga tosse.
 
 1830
-01:24:33,720 --> 01:24:35,990
-It takes an input, which means it costs three times.
+01: 24: 33,720 -> 01: 24: 35.990
+É preciso uma entrada, o que significa que custará três vezes.
 
 1831
-01:24:35,990 --> 01:24:38,823
-And what's down below in the file, though I could certainly bring it
+01: 24: 35,990 -> 01: 24: 38.823
+E o que está abaixo no arquivo, embora eu certamente pudesse trazê-lo
 
 1832
-01:24:38,823 --> 01:24:40,770
-back up, is just what a computer scientist
+01: 24: 38,823 -> 01: 24: 40.770
+de volta para cima, é exatamente o que um cientista da computação
 
 1833
-01:24:40,770 --> 01:24:43,250
-would call an implementation detail.
+01: 24: 40.770 -> 01: 24: 43.250
+chamaria um detalhe de implementação.
 
 1834
-01:24:43,250 --> 01:24:45,620
-Someone cares how you implement coughing,
+01: 24: 43,250 -> 01: 24: 45.620
+Alguém se preocupa em como você implementa a cough,
 
 1835
-01:24:45,620 --> 01:24:48,200
-but you don't have to care how you implement coughing.
+01: 24: 45,620 -> 01: 24: 48.200
+mas você não precisa se preocupar em como implementar a tosse.
 
 1836
-01:24:48,200 --> 01:24:50,530
-You don't have to how we get integers.
+01: 24: 48,200 -> 01: 24: 50.530
+Você não precisa saber como obtemos inteiros.
 
 1837
-01:24:50,530 --> 01:24:52,930
-You don't have to care about how you printf.
+01: 24: 50.530 -> 01: 24: 52.930
+Você não precisa se preocupar com a forma de imprimir.
 
 1838
-01:24:52,930 --> 01:24:56,140
-You just care that someone else has implemented that functionality
+01: 24: 52.930 -> 01: 24: 56.140
+Você só se importa se outra pessoa implementou essa função
 
 1839
-01:24:56,140 --> 01:25:00,280
-so you can stand on their shoulders and build more interesting programs that
+01: 24: 56,140 -> 01: 25: 00.280
+para que você possa se apoiar nos  ombros deles e construir programas mais interessantes que
 
 1840
-01:25:00,280 --> 01:25:03,310
-are actually interesting to you.
+01: 25: 00,280 -> 01: 25: 03.310
+são realmente interessantes para você.
 
 1841
-01:25:03,310 --> 01:25:06,235
-Let me go ahead and open up an example that builds on this same idea.
+01: 25: 03,310 -> 01: 25: 06.235
+Deixe-me ir em frente e abrir um exemplo que se baseia nessa mesma ideia.
 
 1842
-01:25:06,235 --> 01:25:08,740
+01: 25: 06,235 -> 01: 25: 08.740
 
 
 1843
-01:25:08,740 --> 01:25:14,030
-In, let's see, positive.c, we have this example here,
+01: 25: 08.740 -> 01: 25: 14.030
+Em, vamos ver, positive.c, temos este exemplo aqui,
 
 1844
-01:25:14,030 --> 01:25:16,040
-which makes this all the more clear.
+01: 25: 14.030 -> 01: 25: 16.040
+o que torna isso ainda mais claro.
 
 1845
-01:25:16,040 --> 01:25:20,100
-So here's a program that uses our two libraries, CS50 in standard I/O.
+01: 25: 16.040 -> 01: 25: 20.100
+Então, aqui está um programa que usa nossas duas bibliotecas, CS50 em I/O padrão.
 
 1846
-01:25:20,100 --> 01:25:22,330
-It turns out that the CS50 library does not
+01: 25: 20,100 -> 01: 25: 22.330
+Acontece que a biblioteca CS50 não
 
 1847
-01:25:22,330 --> 01:25:24,730
-come with a function called get_positive_int.
+01: 25: 22,330 -> 01: 25: 24.730
+vem com uma função chamada get_positive_int.
 
 1848
-01:25:24,730 --> 01:25:25,772
-It comes with get_int.
+01: 25: 24,730 -> 01: 25: 25.772
+Ele vem com get_int.
 
 1849
-01:25:25,772 --> 01:25:27,730
-And you could imagine programs where you really
+01: 25: 25.772 -> 01: 25: 27.730
+E você pode imaginar programas onde você realmente
 
 1850
-01:25:27,730 --> 01:25:31,450
-want a positive integer from the human, because negative numbers for a game
+01: 25: 27,730 -> 01: 25: 31.450
+quer um número inteiro positivo do humano, porque os números negativos para um jogo
 
 1851
-01:25:31,450 --> 01:25:33,820
-or for some program just would make no sense.
+01: 25: 31.450 -> 01: 25: 33.820
+ou para algum programa simplesmente não faria sentido.
 
 1852
-01:25:33,820 --> 01:25:35,380
-So how can we implement that?
+01: 25: 33.820 -> 01: 25: 35.380
+Então, como podemos implementar isso?
 
 1853
-01:25:35,380 --> 01:25:38,350
-Well, it would be nice to create it so that you can simply
+01: 25: 35,380 -> 01: 25: 38.350
+Bem, seria bom criá-lo para que você pudesse simplesmente
 
 1854
-01:25:38,350 --> 01:25:40,930
-write a two-line program like this where you call
+01: 25: 38,350 -> 01: 25: 40.930
+escrever um programa de duas linhas como este, onde você chama
 
 1855
-01:25:40,930 --> 01:25:42,820
-a function called get_positive_int.
+01: 25: 40.930 -> 01: 25: 42.820
+uma função chamada get_positive_int.
 
 1856
-01:25:42,820 --> 01:25:46,720
-And if I scroll down, notice there's actually a new feature
+01: 25: 42,820 -> 01: 25: 46.720
+E se eu rolar para baixo, noto que há um novo recurso
 
 1857
-01:25:46,720 --> 01:25:49,810
-here that we've not seen yet, but it's an interesting example
+01: 25: 46,720 -> 01: 25: 49.810
+aqui que ainda não vimos, mas é um exemplo interessante
 
 1858
-01:25:49,810 --> 01:25:52,600
-of another feature of C. What I've highlighted here
+01: 25: 49,810 -> 01: 25: 52.600
+de outro recurso de C. O que destaquei aqui
 
 1859
-01:25:52,600 --> 01:25:56,350
-between lines 15 and 24 is this logic.
+01: 25: 52,600 -> 01: 25: 56.350
+entre as linhas 15 e 24 é essa lógica.
 
 1860
-01:25:56,350 --> 01:25:58,510
-Here's a function called get_positive_int.
+01: 25: 56,350 -> 01: 25: 58.510
+Aqui está uma função chamada get_positive_int.
 
 1861
-01:25:58,510 --> 01:26:01,690
-It takes no inputs, so I don't have to pass anything in parentheses.
+01: 25: 58.510 -> 01: 26: 01.690
+Não requer entradas, então não preciso passar nada entre parênteses.
 
 1862
-01:26:01,690 --> 01:26:03,850
-I just want to get any old positive int.
+01: 26: 01,690 -> 01: 26: 03.850
+Eu só quero obter qualquer número positivo inteiro.
 
 1863
-01:26:03,850 --> 01:26:06,670
-But I do want this function to hand me back something,
+01: 26: 03,850 -> 01: 26: 06.670
+Mas eu quero que essa função me devolva algo,
 
 1864
-01:26:06,670 --> 01:26:09,850
-just like get_int handed me back a value that I could put in a variable,
+01: 26: 06,670 -> 01: 26: 09.850
+assim como get_int me devolveu um valor que eu poderia colocar em uma variável,
 
 1865
-01:26:09,850 --> 01:26:11,170
-just like get_string does.
+01: 26: 09,850 -> 01: 26: 11.170
+assim como get_string faz.
 
 1866
-01:26:11,170 --> 01:26:13,030
-So this is not void.
+01: 26: 11,170 -> 01: 26: 13.030
+Portanto, isso não é vazio.
 
 1867
-01:26:13,030 --> 01:26:13,990
-This is int.
+01: 26: 13,030 -> 01: 26: 13.990
+Isso é int.
 
 1868
-01:26:13,990 --> 01:26:17,290
-So this word to the left of a function is the type of its output.
+01: 26: 13,990 -> 01: 26: 17.290
+Portanto, esta palavra à esquerda de uma função é o tipo de sua saída.
 
 1869
-01:26:17,290 --> 01:26:20,920
-This word in parentheses is the type of its input, if any.
+01: 26: 17,290 -> 01: 26: 20.920
+Esta palavra entre parênteses é o tipo de entrada, se houver.
 
 1870
-01:26:20,920 --> 01:26:24,640
-And if there is nothing, you just say void in either or both place.
+01: 26: 20,920 -> 01: 26: 24.640
+E se não houver nada, basta dizer "void" em um ou nos dois lugares.
 
 1871
 01:26:24,640 --> 01:26:26,190
