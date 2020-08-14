@@ -5305,1068 +5305,1061 @@ Eu também poderia fazer a idade vezes 365 aqui.
 Então C é legal assim.
 
 1327
-01:01:27,660 --> 01:01:32,370
-You can compose, just like in Scratch, bigger ideas from multiple smaller
+01: 01: 27,660 -> 01: 01: 32.370
+Você pode compor, assim como no Scratch, ideias maiores a partir de múltiplas ideias menores
 
 1328
-01:01:32,370 --> 01:01:33,090
-pieces.
+01: 01: 32.370 -> 01: 01: 33.090
+peças.
 
 1329
-01:01:33,090 --> 01:01:35,550
-And frankly, if I really want to get crazy,
+01: 01: 33.090 -> 01: 01: 35.550
+E, francamente, se eu realmente quero ficar louco,
 
 1330
-01:01:35,550 --> 01:01:38,040
-notice I can actually highlight that whole function
+01: 01: 35.550 -> 01: 01: 38.040
+observe que posso destacar toda a função
 
 1331
-01:01:38,040 --> 01:01:42,000
-call, so to speak, get rid of the age all together,
+01: 01: 38.040 -> 01: 01: 42.000
+chamar, por assim dizer, livrar-se da idade todos juntos,
 
 1332
-01:01:42,000 --> 01:01:49,330
-and just plug this in here times 365.
+01: 01: 42.000 -> 01: 01: 49.330
+e basta conectar aqui vezes 365.
 
 1333
-01:01:49,330 --> 01:01:53,190
-But at this point, we're starting to cross an inflection point.
+01: 01: 49,330 -> 01: 01: 53.190
+Mas neste ponto, estamos começando a cruzar um ponto de inflexão.
 
 1334
-01:01:53,190 --> 01:01:55,342
-Yes, this is correct, because I, strictly speaking,
+01: 01: 53,190 -> 01: 01: 55.342
+Sim, isso é correto, porque eu, estritamente falando,
 
 1335
-01:01:55,342 --> 01:01:56,550
-don't need a variable, right?
-
+01: 01: 55,342 -> 01: 01: 56.550
+não precisa de uma variável, certo?
 1336
-01:01:56,550 --> 01:01:58,020
-I can pass-- we saw last week--
+01: 01: 56.550 -> 01: 01: 58.020
+Eu posso passar - vimos semana passada -
 
 1337
-01:01:58,020 --> 01:02:00,870
-one function's output as another function's input
+01: 01: 58,020 -> 01: 02: 00.870
+saída de uma função como entrada de outra função
 
 1338
-01:02:00,870 --> 01:02:02,540
-by just nesting them in this way.
+01: 02: 00,870 -> 01: 02: 02.540
+simplesmente aninhando-os dessa maneira.
 
 1339
-01:02:02,540 --> 01:02:05,040
-But honestly, now we're at the point where this line of code
+01: 02: 02.540 -> 01: 02: 05.040
+Mas, honestamente, agora estamos no ponto em que esta linha de código
 
 1340
-01:02:05,040 --> 01:02:08,080
-is so relatively long, it's just too hard to read.
+01: 02: 05.040 -> 01: 02: 08.080
+é relativamente longa, é muito difícil de ler.
 
 1341
-01:02:08,080 --> 01:02:10,830
-And so this is an example where, for design's sake, you know what?
+01: 02: 08.080 -> 01: 02: 10.830
+E então este é um exemplo onde, pelo bem do design, sabe de uma coisa?
 
 1342
-01:02:10,830 --> 01:02:13,210
-The previous version was probably a bit better,
+01: 02: 10.830 -> 01: 02: 13.210
+A versão anterior provavelmente era um pouco melhor,
 
 1343
-01:02:13,210 --> 01:02:16,950
-because I can read the code more top to bottom than left to right.
+01: 02: 13,210 -> 01: 02: 16.950
+porque posso ler o código mais de cima para baixo do que da esquerda para a direita.
 
 1344
-01:02:16,950 --> 01:02:18,900
-But this is a design decision.
-
+01: 02: 16.950 -> 01: 02: 18.900
+Mas esta é uma decisão de design.
 1345
-01:02:18,900 --> 01:02:21,000
-And indeed, you might agree or disagree.
+01: 02: 18.900 -> 01: 02: 21.000
+E, de fato, você pode concordar ou discordar.
 
 1346
-01:02:21,000 --> 01:02:24,420
-You might agree or disagree with your teaching fellow, or TF, ultimately.
+01: 02: 21.000 -> 01: 02: 24.420
+Você pode concordar ou discordar de seu professor, ou TF, em última instância.
 
 1347
-01:02:24,420 --> 01:02:28,770
-These are the kinds of decisions that go into writing good or bad code
+01: 02: 24.420 -> 01: 02: 28.770
+Esses são os tipos de decisões que envolvem a escrita de códigos bons ou ruins
 
 1348
-01:02:28,770 --> 01:02:30,300
-or good or better code.
+01: 02: 28.770 -> 01: 02: 30.300
+ou código bom ou melhor.
 
 1349
-01:02:30,300 --> 01:02:33,000
-Much like in an English essay or in any written language,
+01: 02: 30,300 -> 01: 02: 33.000
+Muito parecido com uma redação de inglês ou em qualquer idioma escrito,
 
 1350
-01:02:33,000 --> 01:02:36,030
-you could argue that one person has written their document better
+01: 02: 33.000 -> 01: 02: 36.030
+você poderia discutir que uma pessoa escreveu seu documento melhor
 
 1351
-01:02:36,030 --> 01:02:36,730
-than another.
+01: 02: 36.030 -> 01: 02: 36.730
+do que outro.
 
 1352
-01:02:36,730 --> 01:02:40,140
-So we'll begin to appreciate these nuances over time.
+01: 02: 36.730 -> 01: 02: 40.140
+Portanto, começaremos a apreciar essas nuancias com o tempo.
 
 1353
-01:02:40,140 --> 01:02:41,310
-What about float?
+01: 02: 40,140 -> 01: 02: 41.310
+Que tal o float?
 
 1354
-01:02:41,310 --> 01:02:45,758
-Well, let me go ahead and write another program real quick called float.c.
+01: 02: 41,310 -> 01: 02: 45.758
+Bem, deixe-me prosseguir e escrever outro programa bem rápido chamado float.c.
 
 1355
-01:02:45,758 --> 01:02:47,550
-And this one is going to use floating point
+01: 02: 45,758 -> 01: 02: 47.550
+E este vai usar ponto flutuante
 
 1356
-01:02:47,550 --> 01:02:50,800
-values, which again, is just synonymous with real numbers with decimal points.
+01: 02: 47.550 -> 01: 02: 50.800
+valores, que novamente, são apenas sinônimos de números reais com pontos decimais.
 
 1357
-01:02:50,800 --> 01:02:54,150
-Let me go ahead and include CS50.h, include stdio.h.
+01: 02: 50.800 -> 01: 02: 54.150
+Deixe-me ir em frente e incluir CS50.h, incluir stdio.h.
 
 1358
-01:02:54,150 --> 01:02:57,840
+01: 02: 54,150 -> 01: 02: 57.840
 
 
 1359
-01:02:57,840 --> 01:03:02,003
-And then int main void and then my open curly braces.
+01: 02: 57.840 -> 01: 03: 02.003
+E então int main void e então minhas chaves abertas.
 
 1360
-01:03:02,003 --> 01:03:02,920
-And now let's do this.
+01: 03: 02.003 -> 01: 03: 02.920
+E agora vamos fazer isso.
 
 1361
-01:03:02,920 --> 01:03:04,680
-Let me get the price of something.
+01: 03: 02,920 -> 01: 03: 04.680
+Deixe-me ver o preço de alguma coisa.
 
 1362
-01:03:04,680 --> 01:03:10,290
-So int price equals get float, what's the price, for instance.
+01: 03: 04,680 -> 01: 03: 10.290
+Então, "int price" é igual a get_float, qual é o preço, por exemplo.
 
 1363
-01:03:10,290 --> 01:03:11,450
-Semicolon.
+01: 03: 10.290 -> 01: 03: 11.450
+Ponto e vírgula.
 
 1364
-01:03:11,450 --> 01:03:13,660
-And now let me do something mathematical with this.
+01: 03: 11.450 -> 01: 03: 13.660
+E agora deixe-me fazer algo matemático com isso.
 
 1365
-01:03:13,660 --> 01:03:18,120
-Let me go ahead and say, your total is.
+01: 03: 13.660 -> 01: 03: 18.120
+Deixe-me ir em frente e dizer, seu total é.
 
 1366
-01:03:18,120 --> 01:03:21,330
-And now let me just do the total price with tax, for instance.
+01: 03: 18,120 -> 01: 03: 21.330
+E agora deixe-me fazer o preço total com imposto, por exemplo.
 
 1367
-01:03:21,330 --> 01:03:24,353
-In Massachusetts, sales tax is 6.25%.
+01: 03: 21,330 -> 01: 03: 24.353
+Em Massachusetts, o imposto sobre vendas é de 6,25%.
 
 1368
-01:03:24,353 --> 01:03:26,520
-So let's just write a little program that does that.
+01: 03: 24,353 -> 01: 03: 26.520
+Então, vamos escrever um pequeno programa que faça isso.
 
 1369
-01:03:26,520 --> 01:03:30,540
-Your total is-- not percent s, because it's not a string.
+01: 03: 26.520 -> 01: 03: 30.540
+Seu total é-- não o "%s", porque não é uma string.
 
 1370
-01:03:30,540 --> 01:03:33,190
-Not percent i, because it's not an integer.
+01: 03: 30.540 -> 01: 03: 33.190
+Não o percentual i, porque não é um número inteiro.
 
 1371
-01:03:33,190 --> 01:03:37,990
-It should be percent f for float.
-
+01: 03: 33,190 -> 01: 03: 37.990
+Deve ser %f para float.
 1372
-01:03:37,990 --> 01:03:39,350
-And in fact, I goofed.
+01: 03: 37,990 -> 01: 03: 39.350
+E, de fato, eu me enganei.
 
 1373
-01:03:39,350 --> 01:03:41,860
-I actually made a mistake here accidentally.
+01: 03: 39,350 -> 01: 03: 41.860
+Na verdade, cometi um erro aqui acidentalmente.
 
 1374
-01:03:41,860 --> 01:03:44,997
-I don't want to store the price in an int if I'm getting it as a float.
+01: 03: 41,860 -> 01: 03: 44.997
+Não quero armazenar o preço em um int se estou entendendo como um float.
 
 1375
-01:03:44,997 --> 01:03:47,080
-If I'm getting a real number with a decimal point,
+01: 03: 44,997 -> 01: 03: 47.080
+Se estou obtendo um número real com um ponto decimal,
 
 1376
-01:03:47,080 --> 01:03:49,310
-I probably want to store it as a float, as well.
+01: 03: 47.080 -> 01: 03: 49.310
+Provavelmente quero armazená-lo como um float também.
 
 1377
-01:03:49,310 --> 01:03:52,480
-So again, different format codes, different placeholders
+01: 03: 49,310 -> 01: 03: 52.480
+Então, novamente, códigos de formato diferentes, "placeholders" diferentes
 
 1378
-01:03:52,480 --> 01:03:53,787
-for different contexts.
+01: 03: 52.480 -> 01: 03: 53.787
+para contextos diferentes.
 
 1379
-01:03:53,787 --> 01:03:55,120
-Now let me go ahead and do this.
-
+01: 03: 53.787 -> 01: 03: 55.120
+Agora, deixe-me ir em frente e fazer isso.
 1380
-01:03:55,120 --> 01:03:56,995
-And if I want to plug in the price, I'm going
+01: 03: 55,120 -> 01: 03: 56.995
+E se eu quiser adicionar o preço, vou
 
 1381
-01:03:56,995 --> 01:04:05,230
-to do price times 1.0625, which just mathematically means add 106.25%--
+01: 03: 56,995 -> 01: 04: 05.230
+fazer o preço vezes 1,0625, o que significa apenas matematicamente adicionar 106,25% -
 
 1382
-01:04:05,230 --> 01:04:08,770
-or multiply, rather, the price by 106.25%
+01: 04: 05,230 -> 01: 04: 08.770
+ou multiplicar, em vez disso, o preço por 106,25%
 
 1383
-01:04:08,770 --> 01:04:11,203
-so that you actually see the total with tax.
+01: 04: 08,770 -> 01: 04: 11.203
+para que você realmente veja o total com impostos.
 
 1384
-01:04:11,203 --> 01:04:13,120
-All right, so let's go ahead and compile this.
+01: 04: 11.203 -> 01: 04: 13.120
+Tudo bem, então vamos compilar isso.
 
 1385
-01:04:13,120 --> 01:04:14,980
-Make float, Enter.
+01: 04: 13,120 -> 01: 04: 14.980
+"make float", Enter.
 
 1386
-01:04:14,980 --> 01:04:17,320
-No error messages, so that's already promising.
+01: 04: 14.980 -> 01: 04: 17.320
+Sem mensagens de erro, isso já é promissor.
 
 1387
-01:04:17,320 --> 01:04:18,730
+01: 04: 17.320 -> 01: 04: 18.730
 ./float.
 
 1388
-01:04:18,730 --> 01:04:19,990
-And what's the price?
-
+01: 04: 18,730 -> 01: 04: 19.990
+E qual é o preço?
 1389
-01:04:19,990 --> 01:04:23,170
-How about $100.
+01: 04: 19.990 -> 01: 04: 23.170
+Que tal $ 100.
 
 1390
-01:04:23,170 --> 01:04:25,180
-OK, that's a little excessively precise.
+01: 04: 23,170 -> 01: 04: 25.180
+OK, isso é um pouco excessivamente preciso.
 
 1391
-01:04:25,180 --> 01:04:29,932
-The total price is $106.250000.
+01: 04: 25,180 -> 01: 04: 29.932
+O preço total é $ 106,250000.
 
 1392
-01:04:29,932 --> 01:04:33,130
-But that's just because the computer, per last week,
+01: 04: 29.932 -> 01: 04: 33.130
+Mas isso é só porque o computador, de acordo com a semana passada,
 
 1393
-01:04:33,130 --> 01:04:35,440
-is using some number of bits to store values.
+01: 04: 33,130 -> 01: 04: 35.440
+está usando um certo número de bits para armazenar valores.
 
 1394
-01:04:35,440 --> 01:04:40,120
-And the computer happens to be capable of showing this many digits
+01: 04: 35.440 -> 01: 04: 40.120
+E o computador passa a ser capaz de mostrar todos esses dígitos
 
 1395
-01:04:40,120 --> 01:04:41,140
-after the decimal point.
+01: 04: 40,120 -> 01: 04: 41.140
+após o ponto decimal.
 
 1396
-01:04:41,140 --> 01:04:42,830
-But what if you don't want to do that?
+01: 04: 41,140 -> 01: 04: 42.830
+Mas e se você não quiser fazer isso?
 
 1397
-01:04:42,830 --> 01:04:46,660
-Well, it turns out there's some pretty arcane tricks you can do.
+01: 04: 42.830 -> 01: 04: 46.660
+Bem, acontece que existem alguns truques bastante misteriosos que você pode fazer.
 
 1398
-01:04:46,660 --> 01:04:48,910
-Instead of doing percent f, I can actually
+01: 04: 46.660 -> 01: 04: 48.910
+Em vez de fazer "%f", posso realmente
 
 1399
 01:04:48,910 --> 01:04:52,360
-do percent dot 2f, which again, you would only
+fazer %2f, o qual novamente, você poderia somente
 
 1400
-01:04:52,360 --> 01:04:55,570
-know from having heard it before looking it up in a book or reference.
+01: 04: 52,360 -> 01: 04: 55.570
+saber por ter ouvido antes, procurando em um livro ou referência.
 
 1401
-01:04:55,570 --> 01:04:59,150
-That's going to show me only two digits after the decimal point.
+01: 04: 55.570 -> 01: 04: 59.150
+Isso vai me mostrar apenas dois dígitos após a vírgula decimal.
 
 1402
-01:04:59,150 --> 01:05:02,560
-So if I recompile this code and make float and do ./float,
+01: 04: 59,150 -> 01: 05: 02.560
+Então, se eu recompilar este código e "make float" e fazer ./float,
 
 1403
-01:05:02,560 --> 01:05:07,720
-now notice if the price is $100, now my total is a little more user friendly--
+01: 05: 02.560 -> 01: 05: 07.720
+agora observe se o preço é $ 100, agora meu total é um pouco mais amigável -
 
 1404
-01:05:07,720 --> 01:05:09,790
-106.25.
+01: 05: 07,720 -> 01: 05: 09.790
+106,25.
 
 1405
-01:05:09,790 --> 01:05:11,953
-So in short, this is the f in printf.
+01: 05: 09,790 -> 01: 05: 11.953
+Resumindo, este é o f em printf.
 
 1406
-01:05:11,953 --> 01:05:13,870
-Just as you can print something to the screen,
+01: 05: 11.953 -> 01: 05: 13.870
+Assim como você pode imprimir algo na tela,
 
 1407
-01:05:13,870 --> 01:05:19,380
-you can format it as by telling printf to only show so many digits.
+01: 05: 13.870 -> 01: 05: 19.380
+você pode formatá-lo dizendo a printf para mostrar apenas alguns dígitos.
 
 1408
-01:05:19,380 --> 01:05:20,810
-Well, let me try something else.
+01: 05: 19,380 -> 01: 05: 20.810
+Bem, deixe-me tentar outra coisa.
 
 1409
-01:05:20,810 --> 01:05:23,470
-Let me go ahead and copy/paste the beginnings of this code,
+01: 05: 20.810 -> 01: 05: 23.470
+Vou copiar / colar o início deste código,
 
 1410
-01:05:23,470 --> 01:05:24,940
-just to speed things up.
+01: 05: 23.470 -> 01: 05: 24.940
+apenas para acelerar as coisas.
 
 1411
-01:05:24,940 --> 01:05:27,190
-So I can implement a program called parity.c.
+01: 05: 24.940 -> 01: 05: 27.190
+Portanto, posso implementar um programa chamado parity.c.
 
 1412
-01:05:27,190 --> 01:05:30,343
-So parity is a fancy way of saying is a value even or odd.
+01: 05: 27,190 -> 01: 05: 30.343
+Portanto, paridade é uma maneira elegante de dizer que é um valor par ou ímpar.
 
 1413
-01:05:30,343 --> 01:05:32,260
-And I've gone ahead and just copied and pasted
+01: 05: 30,343 -> 01: 05: 32.260
+E eu fui em frente e apenas copiei e colei
 
 1414
-01:05:32,260 --> 01:05:35,708
-the setup of the code, not the essence of my main function.
+01: 05: 32,260 -> 01: 05: 35.708
+a configuração do código, não a essência da minha função principal.
 
 1415
-01:05:35,708 --> 01:05:38,500
-But let's go ahead, in this program, and ask the user for a number.
+01: 05: 35.708 -> 01: 05: 38.500
+Mas vamos prosseguir, neste programa, e pedir ao usuário um número.
 
 1416
-01:05:38,500 --> 01:05:39,540
-We'll call it n.
+01: 05: 38,500 -> 01: 05: 39.540
+Vamos chamá-lo de n.
 
 1417
-01:05:39,540 --> 01:05:41,620
-And we'll use get_int to get that value.
+01: 05: 39.540 -> 01: 05: 41.620
+E usaremos get_int para obter esse valor.
 
 1418
-01:05:41,620 --> 01:05:44,620
-And we're just going to say to the human, what's the value of n?
+01: 05: 41.620 -> 01: 05: 44.620
+E vamos apenas dizer ao humano, qual é o valor de n?
 
 1419
-01:05:44,620 --> 01:05:49,540
-And I'm just going to say n colon space to just prompt them for some integer.
+01: 05: 44.620 -> 01: 05: 49.540
+E vou apenas dizer n espaço-dois-pontos apenas para solicitar algum número inteiro.
 
 1420
-01:05:49,540 --> 01:05:51,460
-Then I'm going to go ahead and ask a question.
+01: 05: 49.540 -> 01: 05: 51.460
+Então, vou fazer uma pergunta.
 
 1421
-01:05:51,460 --> 01:05:55,570
-I want to ultimately print out even if the number is even or odd
+01: 05: 51.460 -> 01: 05: 55.570
+Quero, em última análise, quero imprimir par se o número for par ou ímpar
 
 1422
-01:05:55,570 --> 01:05:56,830
-if the number is odd.
+01: 05: 55.570 -> 01: 05: 56.830
+se o número for ímpar.
 
 1423
-01:05:56,830 --> 01:06:02,650
-So you could imagine doing this the very tedious way, like if n equals equals 1,
+01: 05: 56.830 -> 01: 06: 02.650
+Então você pode imaginar fazer isso de uma maneira muito tediosa, como se n for igual a 1,
 
 1424
-01:06:02,650 --> 01:06:06,130
-I could go ahead and print out odd.
+01: 06: 02,650 -> 01: 06: 06.130
+Eu poderia ir em frente e imprimir impar.
 
 1425
-01:06:06,130 --> 01:06:12,340
-And then else if n equals equals 2, I could print out even.
+01: 06: 06,130 -> 01: 06: 12.340
+E então, se n for igual a 2, eu poderia imprimir par.
 
 1426
-01:06:12,340 --> 01:06:16,190
-And then after that, I could support the number three, else if n--
+01: 06: 12,340 -> 01: 06: 16.190
+E depois disso, eu poderia dar suporte ao número três, senão se n--
 
 1427
-01:06:16,190 --> 01:06:17,440
-I mean, this is stupid, right?
+01: 06: 16,190 -> 01: 06: 17.440
+Quer dizer, isso é estúpido, certo?
 
 1428
-01:06:17,440 --> 01:06:18,880
-I could do this forever.
+01: 06: 17.440 -> 01: 06: 18.880
+Eu poderia fazer isso para sempre.
 
 1429
-01:06:18,880 --> 01:06:21,632
-But it's at least showing a pattern, right?
+01: 06: 18,880 -> 01: 06: 21.632
+Mas está pelo menos mostrando um padrão, certo?
 
 1430
-01:06:21,632 --> 01:06:24,340
-One and then three and then five, of course, are going to be odd,
+01: 06: 21,632 -> 01: 06: 24.340
+Um e depois três e depois cinco, é claro, vão ser impares,
 
 1431
-01:06:24,340 --> 01:06:26,990
-and two and four and six are going to be even, and so forth.
+01: 06: 24,340 -> 01: 06: 26.990
+e dois e quatro e seis vão ser pares, e assim por diante.
 
 1432
-01:06:26,990 --> 01:06:29,240
-Well, it turns out we can compute this mathematically.
+01: 06: 26,990 -> 01: 06: 29.240
+Bem, acontece que podemos calcular isso matematicamente.
 
 1433
-01:06:29,240 --> 01:06:30,970
-And a very common trick might be this--
+01: 06: 29.240 -> 01: 06: 30.970
+E um truque muito comum pode ser este -
 
 1434
-01:06:30,970 --> 01:06:32,500
-we can actually do this.
+01: 06: 30.970 -> 01: 06: 32.500
+podemos realmente fazer isso.
 
 1435
-01:06:32,500 --> 01:06:39,070
-If n divided by 2 has a remainder of, for instance, 0,
+01: 06: 32,500 -> 01: 06: 39.070
+Se n dividido por 2 tem um resto de, por exemplo, 0,
 
 1436
-01:06:39,070 --> 01:06:42,850
-then I'm going to go ahead and conclude that the number is even.
+01: 06: 39,070 -> 01: 06: 42.850
+então, prosseguirei e concluirei que o número é par.
 
 1437
-01:06:42,850 --> 01:06:45,430
-So this percent sign is a new construction.
+01: 06: 42.850 -> 01: 06: 45.430
+Portanto, este sinal de porcentagem é uma construção nova.
 
 1438
-01:06:45,430 --> 01:06:46,090
-It's not plus.
+01: 06: 45,430 -> 01: 06: 46.090
+Não é positivo.
 
 1439
-01:06:46,090 --> 01:06:47,440
-It's not minus.
+01: 06: 46.090 -> 01: 06: 47.440
+Não é menos.
 
 1440
-01:06:47,440 --> 01:06:49,240
-It's not multiplication or division.
+01: 06: 47.440 -> 01: 06: 49.240
+Não é multiplicação ou divisão.
 
 1441
-01:06:49,240 --> 01:06:53,150
-This is the remainder operation, or the modulo operation, so to speak.
+01: 06: 49,240 -> 01: 06: 53.150
+Esta é a operação de resto, ou a operação de módulo, por assim dizer.
 
 1442
-01:06:53,150 --> 01:06:59,470
-And this just means divide n by 2, and if the answer has a remainder of 0,
+01: 06: 53,150 -> 01: 06: 59.470
+E isso significa apenas dividir n por 2, e se a resposta tiver um resto de 0,
 
 1443
-01:06:59,470 --> 01:07:02,670
-you can conclude, by definition of even, that the number is even.
+01: 06: 59.470 -> 01: 07: 02.670
+você pode concluir, por definição de par, que o número é par.
 
 1444
-01:07:02,670 --> 01:07:04,100
-So I'm going to print that.
+01: 07: 02,670 -> 01: 07: 04.100
+Vou imprimir isso.
 
 1445
-01:07:04,100 --> 01:07:08,320
-Else-- I could do else if n percent 2 equals equals 1
+01: 07: 04,100 -> 01: 07: 08.320
+Senão - eu poderia fazer outra coisa se n por cento 2 for igual a 1
 
 1446
-01:07:08,320 --> 01:07:11,380
-and has a remainder of 1, you could imagine saying odd.
+01: 07: 08,320 -> 01: 07: 11.380
+e tem um resto de 1, você pode imaginar dizendo impar.
 
 1447
-01:07:11,380 --> 01:07:15,405
-But as you noted earlier, this is not necessary.
+01: 07: 11,380 -> 01: 07: 15.405
+Mas, como você observou anteriormente, isso não é necessário.
 
 1448
-01:07:15,405 --> 01:07:18,280
-What could I instead do to make the program a little better designed,
-
+01: 07: 15.405 -> 01: 07: 18.280
+O que eu poderia fazer para tornar o programa um pouco melhor projetado,
 1449
-01:07:18,280 --> 01:07:19,600
-a little more efficient?
+01: 07: 18,280 -> 01: 07: 19.600
+um pouco mais eficiente?
 
 1450
-01:07:19,600 --> 01:07:20,248
-Yeah?
+01: 07: 19.600 -> 01: 07: 20.248
+Sim?
 
 1451
-01:07:20,248 --> 01:07:22,440
-AUDIENCE: You could just use else and that would be fine.
+01: 07: 20,248 -> 01: 07: 22.440
+PÚBLICO: Você poderia apenas usar o else e isso seria ótimo.
 
 1452
-01:07:22,440 --> 01:07:22,770
-DAVID MALAN: Yeah.
+01: 07: 22,440 -> 01: 07: 22.770
+DAVID MALAN: Sim.
 
 1453
-01:07:22,770 --> 01:07:24,687
-So if we're talking about integers, I can just
+01: 07: 22,770 -> 01: 07: 24.687
+Então, se estamos falando de inteiros, posso apenas
 
 1454
-01:07:24,687 --> 01:07:28,360
-conclude, well, if it's not even, it must be odd, by definition.
+01: 07: 24.687 -> 01: 07: 28.360
+concluir, bem, se não for par, deve ser impar, por definição.
 
 1455
-01:07:28,360 --> 01:07:30,510
-And so here, we can just do even and odd.
+01: 07: 28,360 -> 01: 07: 30.510
+E aqui, podemos apenas fazer pares e ímpares.
 
 1456
-01:07:30,510 --> 01:07:33,510
-So this program, once run, is going to look like this.
+01: 07: 30.510 -> 01: 07: 33.510
+Portanto, este programa, uma vez executado, terá esta aparência.
 
 1457
-01:07:33,510 --> 01:07:35,400
-Make parity.
+01: 07: 33.510 -> 01: 07: 35.400
+"make parity"
 
 1458
-01:07:35,400 --> 01:07:36,630
-Looks like it compiled OK.
+01: 07: 35.400 -> 01: 07: 36.630
+Parece que compilou bem.
 
 1459
-01:07:36,630 --> 01:07:38,880
-So ./parity is how I run it.
+01: 07: 36.630 -> 01: 07: 38.880
+Então ./paridade é como eu o executo.
 
 1460
-01:07:38,880 --> 01:07:40,290
-Let's type the number 50.
+01: 07: 38,880 -> 01: 07: 40.290
+Vamos digitar o número 50.
 
 1461
-01:07:40,290 --> 01:07:40,950
-That's even.
+01: 07: 40.290 -> 01: 07: 40.950
+Isso mesmo.
 
 1462
-01:07:40,950 --> 01:07:42,510
-Let's type the number 49.
+01: 07: 40,950 -> 01: 07: 42.510
+Vamos digitar o número 49.
 
 1463
-01:07:42,510 --> 01:07:43,380
-That's odd.
+01: 07: 42,510 -> 01: 07: 43.380
+este é impar.
 
 1464
-01:07:43,380 --> 01:07:44,850
-Proof by example.
+01: 07: 43,380 -> 01: 07: 44.850
+Prova por exemplo.
 
 1465
-01:07:44,850 --> 01:07:48,060
-This is not very compelling, but I bet this is going to be correct, just
+01: 07: 44,850 -> 01: 07: 48.060
+Isso não é muito convincente, mas aposto que vai ser correto, apenas
 
 1466
-01:07:48,060 --> 01:07:49,480
-based on those two examples alone.
+01: 07: 48.060 -> 01: 07: 49.480
+com base apenas nesses dois exemplos.
 
 1467
-01:07:49,480 --> 01:07:49,980
-Yeah?
+01: 07: 49.480 -> 01: 07: 49.980
+Sim?
 
 1468
-01:07:49,980 --> 01:07:52,938
-AUDIENCE: [INAUDIBLE] user did not understand our comment that answer's
+01: 07: 49,980 -> 01: 07: 52.938
+PÚBLICO: [INAUDÍVEL] o usuário não entendeu nosso comentário que respondeu
 
 1469
-01:07:52,938 --> 01:07:54,332
-a float or not an integer?
+01: 07: 52,938 -> 01: 07: 54.332
+um float ou não um inteiro?
 
 1470
-01:07:54,332 --> 01:07:55,790
-DAVID MALAN: Sorry, say that again?
+01: 07: 54,332 -> 01: 07: 55.790
+DAVID MALAN: Desculpe, diga isso de novo?
 
 1471
-01:07:55,790 --> 01:07:58,207
-AUDIENCE: What if the user doesn't understand, I'm saying?
+01: 07: 55,790 -> 01: 07: 58.207
+PÚBLICO: E se o usuário não entender, estou dizendo?
 
 1472
-01:07:58,207 --> 01:08:02,783
-Like I just do something like 1 and 1/2 [INAUDIBLE]..
+01: 07: 58,207 -> 01: 08: 02.783
+Tipo, eu faço algo como 1.5 [INAUDÍVEL] ..
 
 1473
-01:08:02,783 --> 01:08:04,200
-DAVID MALAN: Really good question.
+01: 08: 02,783 -> 01: 08: 04.200
+DAVID MALAN: Boa pergunta.
 
 1474
-01:08:04,200 --> 01:08:06,950
-One of the reasons we provide for the first few weeks of the class
+01: 08: 04,200 -> 01: 08: 06.950
+Uma das razões que fornecemos nas primeiras semanas de aula
 
 1475
-01:08:06,950 --> 01:08:10,700
-a few functions in the CS50 library like get_string and get_int and get_float
+01: 08: 06,950 -> 01: 08: 10.700
+algumas funções na biblioteca CS50 como get_string e get_int e get_float
 
 1476
-01:08:10,700 --> 01:08:14,960
-is that it forces the user to behave as you expect so that your program doesn't
+01: 08: 10.700 -> 01: 08: 14.960
+é que força o usuário a se comportar como você espera, para seu programa não
 
 1477
-01:08:14,960 --> 01:08:17,149
-crash because of unexpected user input.
+01: 08: 14.960 -> 01: 08: 17.149
+travar devido a entrada inesperada do usuário.
 
 1478
-01:08:17,149 --> 01:08:20,180
-So to your point, suppose the user is being a little difficult and says,
+01: 08: 17,149 -> 01: 08: 20.180
+Então, para seu ponto, suponha que o usuário esteja sendo um pouco difícil e diga:
 
 1479
-01:08:20,180 --> 01:08:22,939
-my number is going to be 1.5.
+01: 08: 20,180 -> 01: 08: 22.939
+meu número será 1,5.
 
 1480
-01:08:22,939 --> 01:08:27,854
-Get_int is going to prompt them for the same question again and again and again
+01: 08: 22.939 -> 01: 08: 27.854
+Get_int irá solicitar a mesma pergunta repetidas vezes
 
 1481
-01:08:27,854 --> 01:08:28,729
-until they cooperate.
+01: 08: 27.854 -> 01: 08: 28.729
+até que eles cooperem.
 
 1482
-01:08:28,729 --> 01:08:31,819
-If you type in apple, it's going to prompt you again.
+01: 08: 28,729 -> 01: 08: 31.819
+Se você digitar "maça", será exibido novamente.
 
 1483
-01:08:31,819 --> 01:08:34,880
-Only once you provide an actual integer will it cooperate.
+01: 08: 31.819 -> 01: 08: 34.880
+Somente depois de fornecer um número inteiro real ele cooperará.
 
 1484
-01:08:34,880 --> 01:08:37,540
-So those are among the features you get from the CS50 library,
+01: 08: 34.880 -> 01: 08: 37.540
+Portanto, esses estão entre os recursos que você obtém da biblioteca CS50,
 
 1485
-01:08:37,540 --> 01:08:39,410
-just so that we can focus on ideas and not
+01: 08: 37.540 -> 01: 08: 39.410
+apenas para que possamos nos concentrar em ideias e não
 
 1486
-01:08:39,410 --> 01:08:44,270
-on what we would call error checking, or malicious users, in this case.
+01: 08: 39.410 -> 01: 08: 44.270
+no que chamaríamos de verificação de erros, ou usuários mal-intencionados, neste caso.
 
 1487
-01:08:44,270 --> 01:08:46,670
-All right, so what else can we do once we
+01: 08: 44.270 -> 01: 08: 46.670
+Tudo bem, então o que mais podemos fazer uma vez que
 
 1488
-01:08:46,670 --> 01:08:49,279
-have the ability to express conditions?
+01: 08: 46.670 -> 01: 08: 49.279
+temos a capacidade de expressar condições?
 
 1489
-01:08:49,279 --> 01:08:52,010
-Well, let me go ahead and open one that I brought with me.
+01: 08: 49,279 -> 01: 08: 52.010
+Bem, deixe-me ir em frente e abrir um que trouxe comigo.
 
 1490
-01:08:52,010 --> 01:08:54,109
-So rather than type all of these from Scratch,
+01: 08: 52.010 -> 01: 08: 54.109
+Então, em vez de digitar tudo do zero,
 
 1491
-01:08:54,109 --> 01:08:56,618
-let me go ahead and open conditions1.c.
+01: 08: 54,109 -> 01: 08: 56.618
+deixe-me ir em frente e abrir as conditions1.c.
 
 1492
-01:08:56,618 --> 01:08:58,660
-So this is a program that's already been written.
+01: 08: 56.618 -> 01: 08: 58.660
+Portanto, este é um programa que já foi escrito.
 
 1493
-01:08:58,660 --> 01:09:00,920
-And it turns out, it's got some other lines in it,
+01: 08: 58.660 -> 01: 09: 00.920
+E acontece que tem algumas outras linhas,
 
 1494
-01:09:00,920 --> 01:09:03,643
-these grayed-out outlines that begin with slash slash.
+01: 09: 00,920 -> 01: 09: 03.643
+esses contornos acinzentados que começam com barra barra.
 
 1495
-01:09:03,643 --> 01:09:05,810
-You might not have noticed this, but in Scratch, you
+01: 09: 03.643 -> 01: 09: 05.810
+Você pode não ter notado isso, mas no Scratch, você
 
 1496
-01:09:05,810 --> 01:09:06,979
-can have what are called comments.
+01: 09: 05,810 -> 01: 09: 06.979
+pode ter o que se chama de comentários.
 
 1497
-01:09:06,979 --> 01:09:09,050
-They're like little sticky notes that you can add
+01: 09: 06,979 -> 01: 09: 09.050
+Eles são como pequenas notas adesivas que você pode adicionar
 
 1498
-01:09:09,050 --> 01:09:10,550
-that don't do anything functionally.
+01: 09: 09,050 -> 01: 09: 10.550
+que não fazem nada funcionalmente.
 
 1499
-01:09:10,550 --> 01:09:13,825
-It's just like notes to self or notes to your friend or notes to your TF.
+01: 09: 10.550 -> 01: 09: 13.825
+É como notas para você mesmo ou para seu amigo ou notas para o seu TF.
 
 1500
-01:09:13,825 --> 01:09:15,950
-That's what a comment is in a programming language.
+01: 09: 13.825 -> 01: 09: 15.950
+Isso é o que um comentário é em uma linguagem de programação.
 
 1501
-01:09:15,950 --> 01:09:19,310
-So anything starting with a slash slash is a note to self.
+01: 09: 15.950 -> 01: 09: 19.310
+Portanto, qualquer coisa que comece com uma barra é uma nota para mim.
 
 1502
-01:09:19,310 --> 01:09:21,873
-And it's a reminder to me what this line of code does.
+01: 09: 19,310 -> 01: 09: 21.873
+E é um lembrete para mim do que essa linha de código faz.
 
 1503
-01:09:21,873 --> 01:09:24,040
-It's a reminder to your colleagues in the real world
+01: 09: 21,873 -> 01: 09: 24.040
+É um lembrete para seus colegas do mundo real
 
 1504
-01:09:24,040 --> 01:09:27,380
-or your TF in a class to explain to them what this line of code
+01: 09: 24,040 -> 01: 09: 27.380
+ou seu TF em uma aula para explicar a eles o que esta linha de código
 
 1505
-01:09:27,380 --> 01:09:30,520
-is supposed to be doing, even if maybe you have a bug
+01: 09: 27,380 -> 01: 09: 30.520
+deveria estar fazendo, mesmo que você tenha um bug
 
 1506
-01:09:30,520 --> 01:09:32,090
-and it's not actually doing that.
+01: 09: 30.520 -> 01: 09: 32.090
+e não está realmente fazendo isso.
 
 1507
-01:09:32,090 --> 01:09:35,840
-So I've begun, in these pre-created examples, to comment my code,
+01: 09: 32.090 -> 01: 09: 35.840
+Então, comecei, nestes exemplos pré-criados, a comentar meu código,
 
 1508
-01:09:35,840 --> 01:09:37,580
-but the lines are essentially the same.
+01: 09: 35.840 -> 01: 09: 37.580
+mas as linhas são essencialmente as mesmas.
 
 1509
-01:09:37,580 --> 01:09:40,250
-Go ahead and give me access to the CS50 library.
+01: 09: 37.580 -> 01: 09: 40.250
+Vá em frente e me dê acesso à biblioteca CS50.
 
 1510
-01:09:40,250 --> 01:09:43,010
-And a library, again, is just a file of code
+01: 09: 40,250 -> 01: 09: 43.010
+E uma biblioteca, novamente, é apenas um arquivo de código
 
 1511
-01:09:43,010 --> 01:09:45,080
-that someone else wrote that we're using.
+01: 09: 43.010 -> 01: 09: 45.080
+que outra pessoa escreveu que estamos usando.
 
 1512
-01:09:45,080 --> 01:09:47,960
-And give me access to the standard I/O library, which contains
+01: 09: 45,080 -> 01: 09: 47.960
+E me dê acesso à biblioteca padrão de I/O, que contém
 
 1513
-01:09:47,960 --> 01:09:50,430
-printf and some other things, as well.
+01: 09: 47,960 -> 01: 09: 50.430
+printf e algumas outras coisas também.
 
 1514
-01:09:50,430 --> 01:09:54,170
-Notice here, I have x equals get_int in order
+01: 09: 50.430 -> 01: 09: 54.170
+Observe aqui, eu tenho x igual a get_int com o objetivo de
 
 1515
-01:09:54,170 --> 01:09:56,390
-to get one integer from the user called x.
+01: 09: 54,170 -> 01: 09: 56.390
+obter um inteiro do usuário chamado x.
 
 1516
-01:09:56,390 --> 01:09:59,840
-Now I'm going to ask them for a second integer by just calling it y
+01: 09: 56,390 -> 01: 09: 59.840
+Agora vou pedir um segundo inteiro apenas chamando de y
 
 1517
-01:09:59,840 --> 01:10:01,400
-and calling get_int again.
+01: 09: 59.840 -> 01: 10: 01.400
+e chamando get_int novamente.
 
 1518
-01:10:01,400 --> 01:10:03,840
-And now I can do things like compare these values.
+01: 10: 01.400 -> 01: 10: 03.840
+E agora posso fazer coisas como comparar esses valores.
 
 1519
-01:10:03,840 --> 01:10:07,790
-So this is now a complete version of the Scratch-like program
+01: 10: 03.840 -> 01: 10: 07.790
+Portanto, esta é agora uma versão completa do programa tipo Scratch
 
 1520
-01:10:07,790 --> 01:10:11,450
-I pulled up before that allows us to conclude is x less than y,
+01: 10: 07,790 -> 01: 10: 11.450
+Eu puxei antes que nos permite concluir que é x menor do que y,
 
 1521
-01:10:11,450 --> 01:10:15,290
-greater than y, or, by default, equal to y.
+01: 10: 11.450 -> 01: 10: 15.290
+maior que y, ou, por padrão, igual a y.
 
 1522
-01:10:15,290 --> 01:10:19,080
-So the only difference is we saw these lines of code on the screen before.
+01: 10: 15,290 -> 01: 10: 19.080
+Portanto, a única diferença é que vimos essas linhas de código na tela antes.
 
 1523
-01:10:19,080 --> 01:10:22,340
-Now we see, in context, that, oh, for those lines to work,
+01: 10: 19.080 -> 01: 10: 22.340
+Agora vemos, no contexto, que, para essas linhas funcionarem,
 
 1524
-01:10:22,340 --> 01:10:25,640
-we need to get the integers from the user.
+01: 10: 22,340 -> 01: 10: 25.640
+precisamos obter os inteiros do usuário.
 
 1525
-01:10:25,640 --> 01:10:28,520
-And we need to have the equivalent of when green flag clicked,
+01: 10: 25.640 -> 01: 10: 28.520
+E precisamos ter o equivalente a quando a bandeira verde é clicada,
 
 1526
-01:10:28,520 --> 01:10:31,115
-and we need the equivalent of these includes so that it's
+01: 10: 28.520 -> 01: 10: 31.115
+e precisamos do equivalente a estes includes para que seja
 
 1527
-01:10:31,115 --> 01:10:33,575
-a complete self-contained program.
+01: 10: 31,115 -> 01: 10: 33.575
+um programa completo e independente.
 
 1528
-01:10:33,575 --> 01:10:35,450
-And just to be clear, even though I made this
+01: 10: 33.575 -> 01: 10: 35.450
+E só para ficar claro, embora eu tenha feito isso
 
 1529
-01:10:35,450 --> 01:10:38,710
-in advance, if I wanted to run this program, how could I run it?
+01: 10: 35.450 -> 01: 10: 38.710
+antecipadamente, se eu quisesse executar este programa, como poderia executá-lo?
 
 1530
-01:10:38,710 --> 01:10:41,770
-Call conditions.c.
+01: 10: 38,710 -> 01: 10: 41.770
+Chame coditions.c
 
 1531
-01:10:41,770 --> 01:10:45,030
-Yeah, so make conditions first.
+01: 10: 41.770 -> 01: 10: 45.030
+Sim, então estabeleça as condições primeiro.
 
 1532
-01:10:45,030 --> 01:10:45,530
-Sorry.
+01: 10: 45.030 -> 01: 10: 45.530
+Desculpe.
 
 1533
-01:10:45,530 --> 01:10:48,140
-Oh, this is actually a teachable moment.
+01: 10: 45.530 -> 01: 10: 48.140
+Oh, este é realmente um momento para se ensinar.
 
 1534
-01:10:48,140 --> 01:10:49,670
-Why did this not work?
+01: 10: 48,140 -> 01: 10: 49.670
+Por que isso não funcionou?
 
 1535
-01:10:49,670 --> 01:10:54,020
-So no rule to make target conditions stop, which is a little emphatic.
+01: 10: 49.670 -> 01: 10: 54.020
+Portanto, nenhuma regra para impedir as condições-alvo, o que é um pouco enfático.
 
 1536
-01:10:54,020 --> 01:10:55,130
-But what does that mean?
+01: 10: 54.020 -> 01: 10: 55.130
+Mas o que isso significa?
 
 1537
-01:10:55,130 --> 01:10:58,700
-Well, in advance today, what I did was I downloaded into my sandbox
+01: 10: 55,130 -> 01: 10: 58.700
+Bem, antecipadamente hoje, o que eu fiz foi baixar para o meu sandbox
 
 1538
-01:10:58,700 --> 01:11:02,630
-a folder called src1, S-R-C meaning "source" in programmer speak.
-
+01: 10: 58,700 -> 01: 11: 02.630
+uma pasta chamada src1, S-R-C que significa "fonte" na linguagem do programador.
 1539
-01:11:02,630 --> 01:11:06,140
-And I just downloaded this into the sandbox for me.
+01: 11: 02.630 -> 01: 11: 06.140
+E acabei de baixar na sandbox para mim.
 
 1540
-01:11:06,140 --> 01:11:08,540
-Because in that folder are all of the examples
+01: 11: 06,140 -> 01: 11: 08.540
+Porque nessa pasta estão todos os exemplos
 
 1541
-01:11:08,540 --> 01:11:12,050
-not only that I wrote in live, but also some others that I brought with me.
+01: 11: 08.540 -> 01: 11: 12.050
+não só que escrevi ao vivo, mas também algumas outras que trouxe comigo.
 
 1542
-01:11:12,050 --> 01:11:15,920
-Unfortunately, all of those files are in a folder called src1.
+01: 11: 12.050 -> 01: 11: 15.920
+Infelizmente, todos esses arquivos estão em uma pasta chamada src1.
 
 1543
-01:11:15,920 --> 01:11:18,920
-Now, on your Mac or PC, if you want to open a folder, you do what I did.
+01: 11: 15.920 -> 01: 11: 18.920
+Agora, no seu Mac ou PC, se você quiser abrir uma pasta, faça o que eu fiz.
 
 1544
-01:11:18,920 --> 01:11:22,100
-You double-double the icon, and boom, the folder is open.
+01: 11: 18,920 -> 01: 11: 22.100
+Você duplica o ícone e bum, a pasta está aberta.
 
 1545
-01:11:22,100 --> 01:11:25,880
-But in a terminal window, a text-based environment, you can't do that.
+01: 11: 22,100 -> 01: 11: 25.880
+Mas em uma janela de terminal, um ambiente baseado em texto, você não pode fazer isso.
 
 1546
-01:11:25,880 --> 01:11:29,840
-If I type ls, we'll see all of the files that I've created today--
+01: 11: 25,880 -> 01: 11: 29.840
+Se eu digitar ls, veremos todos os arquivos que criei hoje -
 
 1547
-01:11:29,840 --> 01:11:32,120
-float and hello and int.
+01: 11: 29.840 -> 01: 11: 32.120
+float e hello e int.
 
 1548
-01:11:32,120 --> 01:11:34,520
-But notice over here, there's a folder.
+01: 11: 32,120 -> 01: 11: 34.520
+Mas observe aqui, há uma pasta.
 
 1549
-01:11:34,520 --> 01:11:36,145
-And that's what the trailing slash is.
+01: 11: 34.520 -> 01: 11: 36.145
+E é isso que a barra final é.
 
 1550
-01:11:36,145 --> 01:11:38,270
-That's a forward slash that just means, hey, human,
+01: 11: 36,145 -> 01: 11: 38.270
+Essa é uma barra que significa, ei, humano,
 
 1551
-01:11:38,270 --> 01:11:40,250
-this is a folder, just so it's obvious.
+01: 11: 38,270 -> 01: 11: 40.250
+esta é uma pasta, então é óbvio.
 
 1552
-01:11:40,250 --> 01:11:44,150
-Just like the asterisk means here's a machine code that you can run.
+01: 11: 40,250 -> 01: 11: 44.150
+Assim como o asterisco significa que aqui está um código de máquina que você pode executar.
 
 1553
-01:11:44,150 --> 01:11:47,270
-I need to change into that directory, but I can't double-click.
+01: 11: 44,150 -> 01: 11: 47.270
+Preciso mudar para esse diretório, mas não consigo clicar duas vezes.
 
 1554
-01:11:47,270 --> 01:11:49,700
-Nothing's going to happen if I double-click on this text.
+01: 11: 47,270 -> 01: 11: 49.700
+Nada vai acontecer se eu clicar duas vezes neste texto.
 
 1555
-01:11:49,700 --> 01:11:53,650
-But I can type cd space src1.
+01: 11: 49,700 -> 01: 11: 53.650
+Mas posso digitar cd space src1.
 
 1556
-01:11:53,650 --> 01:11:55,760
-cd means change directory.
+01: 11: 53.650 -> 01: 11: 55.760
+cd significa mudança de diretório.
 
 1557
-01:11:55,760 --> 01:11:57,200
-And now I hit Enter.
+01: 11: 55,760 -> 01: 11: 57.200
+E agora eu pressiono Enter.
 
 1558
-01:11:57,200 --> 01:11:59,990
-And now if I hit ls, notice I see even more files,
+01: 11: 57,200 -> 01: 11: 59.990
+E agora, se eu clicar em ls, percebo que vejo ainda mais arquivos,
 
 1559
-01:11:59,990 --> 01:12:03,110
-because these are all of the files from the course's website
+01: 11: 59,990 -> 01: 12: 03.110
+porque esses são todos os arquivos do site do curso
 
 1560
-01:12:03,110 --> 01:12:05,180
-that I brought with me today.
+01: 12: 03,110 -> 01: 12: 05.180
+que eu trouxe comigo hoje.
 
 1561
-01:12:05,180 --> 01:12:08,037
-And if you type a command like this, pwd,
+01: 12: 05,180 -> 01: 12: 08.037
+E se você digitar um comando como este, pwd,
 
 1562
-01:12:08,037 --> 01:12:10,370
-this will reveal even more information about the system,
+01: 12: 08,037 -> 01: 12: 10.370
+isso revelará ainda mais informações sobre o sistema,
 
 1563
-01:12:10,370 --> 01:12:12,050
-but more on this in the weeks to come.
+01: 12: 10,370 -> 01: 12: 12.050
+mas mais sobre isso nas próximas semanas.
 
 1564
-01:12:12,050 --> 01:12:16,160
-You're actually inside a src1 folder that's inside of a sandbox folder
+01: 12: 12.050 -> 01: 12: 16.160
+Na verdade, você está dentro de uma pasta src1 que está dentro de uma pasta sandbox
 
 1565
-01:12:16,160 --> 01:12:17,840
-that's inside of a root folder.
+01: 12: 16,160 -> 01: 12: 17.840
+que está dentro de uma pasta raiz.
 
 1566
-01:12:17,840 --> 01:12:21,140
-Now, odds are, at some point, you'll get confused as to where you are.
+01: 12: 17.840 -> 01: 12: 21.140
+Agora, as chances são de que, em algum ponto, você ficará confuso sobre onde está.
 
 1567
-01:12:21,140 --> 01:12:23,150
-When in doubt, just type cd.
+01: 12: 21,140 -> 01: 12: 23.150
+Em caso de dúvida, basta digitar cd.
 
 1568
-01:12:23,150 --> 01:12:25,950
-That will whisk you away to the default folder where you began,
+01: 12: 23,150 -> 01: 12: 25.950
+Isso o levará para a pasta padrão onde você começou,
 
 1569
-01:12:25,950 --> 01:12:28,430
-no matter where you found yourself to.
+01: 12: 25.950 -> 01: 12: 28.430
+não importa onde você se encontre.
 
 1570
-01:12:28,430 --> 01:12:30,470
-Type ls, and you're back at the beginning.
+01: 12: 28.430 -> 01: 12: 30.470
+Digite ls e você estará de volta ao início.
 
 1571
-01:12:30,470 --> 01:12:32,570
-So when in doubt, just type cd and Enter,
+01: 12: 30.470 -> 01: 12: 32.570
+Então, em caso de dúvida, basta digitar cd e Enter,
 
 1572
-01:12:32,570 --> 01:12:34,430
-and you'll be back at the beginning.
+01: 12: 32.570 -> 01: 12: 34.430
+e você estará de volta ao início.
 
 1573
-01:12:34,430 --> 01:12:37,610
-Well, let me go ahead and open up this program, but run this one first.
+01: 12: 34.430 -> 01: 12: 37.610
+Bem, deixe-me ir em frente e abrir este programa, mas execute este primeiro.
 
 1574
-01:12:37,610 --> 01:12:40,190
-I'm going to go into a program called agree.c.
+01: 12: 37.610 -> 01: 12: 40.190
+Vou entrar em um programa chamado agree.c.
 
 1575
-01:12:40,190 --> 01:12:44,520
-I'm going to hide the code for a moment and make agree.
+01: 12: 40,190 -> 01: 12: 44.520
+Vou ocultar o código por um momento e chamar agree.
 
 1576
-01:12:44,520 --> 01:12:47,360
-I did it again, cd src1, Enter.
+01: 12: 44.520 -> 01: 12: 47.360
+Fiz de novo, cd src1, Enter.
 
 1577
-01:12:47,360 --> 01:12:49,800
-Now I can do make agree.
+01: 12: 47,360 -> 01: 12: 49.800
+Agora posso make agree.
 
 1578
-01:12:49,800 --> 01:12:51,500
-It seems to have compiled the program.
+01: 12: 49.800 -> 01: 12: 51.500
+Parece ter compilado o programa.
 
 1579
-01:12:51,500 --> 01:12:55,700
-And if I do ./agree, this program seems to be asking me a question--
+01: 12: 51,500 -> 01: 12: 55.700
+E se eu fizer ./agree, este programa parece estar me fazendo uma pergunta -
 
 1580
-01:12:55,700 --> 01:12:56,523
-do you agree?
+01: 12: 55,700 -> 01: 12: 56.523
+você concorda?
 
 1581
-01:12:56,523 --> 01:12:58,940
-Now, it's not obvious from the program what I should type,
+01: 12: 56.523 -> 01: 12: 58.940
+Agora, não é óbvio no programa o que devo digitar,
 
 1582
-01:12:58,940 --> 01:13:01,220
-but my gut tells me, sure, yes.
+01: 12: 58.940 -> 01: 13: 01.220
+mas meu instinto me diz, claro, sim.
 
 1583
-01:13:01,220 --> 01:13:04,370
-So I'm going to go ahead and type y for yes and Enter.
+01: 13: 01,220 -> 01: 13: 04.370
+Portanto, vou prosseguir e digitar y para sim e Enter.
 
 1584
-01:13:04,370 --> 01:13:06,050
-And it seems to know that I've agreed.
+01: 13: 04,370 -> 01: 13: 06.050
+E parece saber que concordei.
 
 1585
-01:13:06,050 --> 01:13:07,490
-If I rerun it again--
+01: 13: 06,050 -> 01: 13: 07.490
+Se eu executá-lo novamente -
 
 1586
-01:13:07,490 --> 01:13:11,900
-./agree-- and type n this time, not agreed.
+01: 13: 07.490 -> 01: 13: 11.900
+./agree-- e digite n desta vez, não concordado.
 
 1587
-01:13:11,900 --> 01:13:12,650
-But you know what?
+01: 13: 11.900 -> 01: 13: 12.650
+Mas você sabe o que?
 
 1588
-01:13:12,650 --> 01:13:13,942
-It's actually better than that.
+01: 13: 12,650 -> 01: 13: 13.942
+Na verdade, é melhor do que isso.
 
 1589
-01:13:13,942 --> 01:13:18,650
-If I do ./agree and maybe do a capital Y, Enter, that also seems to work.
+01: 13: 13,942 -> 01: 13: 18.650
+Se eu concordar ./agree e talvez digitar um Y maiúsculo, Enter, isso também parece funcionar.
 
 1590
-01:13:18,650 --> 01:13:20,130
-So how is this happening?
+01: 13: 18.650 -> 01: 13: 20.130
+Então, como isso está acontecendo?
 
 1591
-01:13:20,130 --> 01:13:21,770
-Well, let me look at the code here.
+01: 13: 20,130 -> 01: 13: 21.770
+Bem, deixe-me ver o código aqui.
 
 1592
-01:13:21,770 --> 01:13:25,190
-The top of the file is almost identical to everything thus far.
+01: 13: 21.770 -> 01: 13: 25.190
+O topo do arquivo é quase idêntico a tudo até agora.
 
 1593
 01:13:25,190 --> 01:13:27,650
