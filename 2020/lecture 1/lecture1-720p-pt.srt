@@ -4597,712 +4597,712 @@ E agora a forma como o código funciona, muito parecido com o nosso pseudo códi
 é você meio que implicitamente voltar a esta linha.
 
 1150
-00:53:00,220 --> 00:53:04,010
-Last week, in pseudocode, I literally said, go back to line 3.
+00: 53: 00,220 -> 00: 53: 04.010
+Na semana passada, em pseudocódigo, eu disse literalmente, volte para a linha 3.
 
 1151
-00:53:04,010 --> 00:53:09,460
-Here, it happens automatically by nature of how C interprets these lines of code
+00: 53: 04,010 -> 00: 53: 09.460
+Aqui, isso acontece automaticamente por natureza de como C interpreta essas linhas de código
 
 1152
-00:53:09,460 --> 00:53:10,720
-in these curly braces.
+00: 53: 09,460 -> 00: 53: 10.720
+nessas chaves.
 
 1153
-00:53:10,720 --> 00:53:12,980
-And I can actually simplify this as follows.
+00: 53: 10,720 -> 00: 53: 12.980
+E posso realmente simplificar isso da seguinte maneira.
 
 1154
-00:53:12,980 --> 00:53:14,568
-I can say i plus plus.
+00: 53: 12,980 -> 00: 53: 14.568
+Posso dizer i plus plus.
 
 1155
-00:53:14,568 --> 00:53:17,110
-Now, it's not quite as pretty as Scratch, where you just say,
+00: 53: 14,568 -> 00: 53: 17.110
+Agora, não é tão bonito quanto o Scratch, onde você apenas diz,
 
 1156
-00:53:17,110 --> 00:53:18,760
-repeat the following 50 times.
+00: 53: 17,110 -> 00: 53: 18.760
+repita as seguintes 50 vezes.
 
 1157
-00:53:18,760 --> 00:53:22,630
-But using the principles of last week now translated to C,
+00: 53: 18,760 -> 00: 53: 22.630
+Mas usando os princípios da semana passada agora traduzidos para C,
 
 1158
-00:53:22,630 --> 00:53:24,760
-you can kind of wire together your own logic that
+00: 53: 22,630 -> 00: 53: 24.760
+você pode conectar sua própria lógica que
 
 1159
-00:53:24,760 --> 00:53:27,610
-does something any number of times.
+00: 53: 24,760 -> 00: 53: 27.610
+faz algo inúmeras vezes.
 
 1160
-00:53:27,610 --> 00:53:30,430
-And there's one other way to do this, just so you've seen it here.
+00: 53: 27,610 -> 00: 53: 30.430
+E há uma outra maneira de fazer isso, só para você ver aqui.
 
 1161
-00:53:30,430 --> 00:53:33,850
-It turns out that a more common way to do something a fixed number of times
+00: 53: 30,430 -> 00: 53: 33.850
+Acontece que a maneira mais comum de fazer algo um número fixo de vezes
 
 1162
-00:53:33,850 --> 00:53:36,430
-is using a different preposition-- the word for.
+00: 53: 33,850 -> 00: 53: 36.430
+é usar uma preposição diferente - a palavra "for/para".
 
 1163
-00:53:36,430 --> 00:53:38,710
-And a for loop looks like this.
+00: 53: 36,430 -> 00: 53: 38.710
+E um loop for se parece com isso.
 
 1164
-00:53:38,710 --> 00:53:43,180
-A for loop does something, like print out hello world, again and again,
+00: 53: 38,710 -> 00: 53: 43.180
+Um loop for faz algo, como imprimir hello world, de novo e de novo,
 
 1165
-00:53:43,180 --> 00:53:44,740
-but it's even more mechanical.
+00: 53: 43,180 -> 00: 53: 44.740
+mas é ainda mais mecânico.
 
 1166
-00:53:44,740 --> 00:53:48,580
-But it automates into one line of code the exact same logic
+00: 53: 44,740 -> 00: 53: 48.580
+Mas ele automatiza em uma linha de código exatamente a mesma lógica
 
 1167
-00:53:48,580 --> 00:53:50,020
-we just implemented.
+00: 53: 48,580 -> 00: 53: 50.020
+que acabamos de implementar.
 
 1168
-00:53:50,020 --> 00:53:52,362
-After the word for, you can put parentheses.
+00: 53: 50,020 -> 00: 53: 52.362
+Após a palavra "for", você pode colocar os parênteses.
 
 1169
-00:53:52,362 --> 00:53:54,070
-And then inside of those parentheses, you
+00: 53: 52,362 -> 00: 53: 54.070
+E então dentro desses parênteses, você
 
 1170
-00:53:54,070 --> 00:53:56,740
-can say something like, give me a variable called counter
+00: 53: 54,070 -> 00: 53: 56.740
+pode dizer algo como, me dê uma variável chamada "counter/contador"
 
 1171
-00:53:56,740 --> 00:53:58,180
-and initialize it to zero.
+00: 53: 56,740 -> 00: 53: 58.180
+e inicialize-a com zero.
 
 1172
-00:53:58,180 --> 00:53:59,410
-Or that's a little wordy.
+00: 53: 58,180 -> 00: 53: 59.410
+Ou isso é um pouco verboso.
 
 1173
-00:53:59,410 --> 00:54:00,760
-Let's just use i.
+00: 53: 59,410 -> 00: 54: 00.760
+Vamos apenas usar i.
 
 1174
-00:54:00,760 --> 00:54:04,540
-So that is identical, logically, to what we did a moment ago.
+00: 54: 00,760 -> 00: 54: 04.540
+Então, isso é idêntico, logicamente, ao que fizemos agora pouco.
 
 1175
-00:54:04,540 --> 00:54:09,190
-But the for loop actually takes one, two, three inputs inside
+00: 54: 04,540 -> 00: 54: 09.190
+Mas o "laço for" realmente tem uma, duas, três entradas dentro
 
 1176
-00:54:09,190 --> 00:54:10,000
-of its parentheses.
+00: 54: 09,190 -> 00: 54: 10.000
+de seus parênteses.
 
 1177
-00:54:10,000 --> 00:54:12,520
-It's a little funky in terms of its syntax.
+00: 54: 10.000 -> 00: 54: 12.520
+É um pouco extravagante em termos de sintaxe.
 
 1178
-00:54:12,520 --> 00:54:15,790
-The second input to the for loop is the Boolean expression
+00: 54: 12,520 -> 00: 54: 15.790
+o segundo parâmetro do loop for é a expressão Booleana
 
 1179
-00:54:15,790 --> 00:54:20,380
-you want to ask again and again and again, so is i less than 50?
+00: 54: 15,790 -> 00: 54: 20.380
+o que você quer perguntar repetidamente, então i é menor que 50?
 
 1180
-00:54:20,380 --> 00:54:22,900
-And the last thing that you can do in a for loop
+00: 54: 20,380 -> 00: 54: 22.900
+E a última coisa que você pode fazer em um loop for
 
 1181
-00:54:22,900 --> 00:54:27,410
-is this third input, where you can do your update of one or more variables.
+00: 54: 22,900 -> 00: 54: 27.410
+é o terceiro parâmetro, onde você pode fazer sua atualização de uma ou mais variáveis.
 
 1182
-00:54:27,410 --> 00:54:32,830
-So if I do i equals i plus 1 or, more succinctly, i plus equals 1,
+00: 54: 27,410 -> 00: 54: 32.830
+Então, se eu fizer i igual a i mais 1 ou, mais sucintamente, i mais igual 1,
 
 1183
-00:54:32,830 --> 00:54:36,700
-or even more so tersely, i plus plus, I have now
+00: 54: 32,830 -> 00: 54: 36.700
+ou ainda mais sucinto, i mais mais, eu agora
 
 1184
-00:54:36,700 --> 00:54:40,210
-whittled down to just four lines of code what I previously
+00: 54: 36,700 -> 00: 54: 40.210
+reduzi para apenas quatro linhas de código o que eu anteriormente
 
 1185
-00:54:40,210 --> 00:54:42,440
-did in a few more lines of code.
+00: 54: 40,210 -> 00: 54: 42.440
+fiz com algumas linhas a mais de código.
 
 1186
-00:54:42,440 --> 00:54:43,660
-These are both correct.
+00: 54: 42,440 -> 00: 54: 43.660
+Ambos estão corretos.
 
 1187
-00:54:43,660 --> 00:54:45,800
-They both do exactly the same thing.
+00: 54: 43,660 -> 00: 54: 45.800
+Ambos fazem exatamente a mesma coisa.
 
 1188
-00:54:45,800 --> 00:54:49,580
-And even though the for loop is a little non-obvious-- because this is step one,
+00: 54: 45,800 -> 00: 54: 49.580
+E mesmo que o loop "for" não seja um tanto óbvio - porque esta é a etapa um,
 
 1189
-00:54:49,580 --> 00:54:52,090
-this is step two, this is step three, then
+00: 54: 49,580 -> 00: 54: 52.090
+esta é a etapa dois, esta é a etapa três, então
 
 1190
-00:54:52,090 --> 00:54:54,265
-in increments-- it achieves the same result.
+00: 54: 52,090 -> 00: 54: 54.265
+em incrementos - atinge o mesmo resultado.
 
 1191
-00:54:54,265 --> 00:54:56,890
-And you'll play with this over time in the next couple of weeks
+00: 54: 54,265 -> 00: 54: 56.890
+E você vai brincar com isso ao longo do tempo nas próximas semanas
 
 1192
-00:54:56,890 --> 00:54:58,510
-when doing something again and again.
+00: 54: 56,890 -> 00: 54: 58.510
+quando precisar fazer coisas sucessivamente.
 
 1193
-00:54:58,510 --> 00:55:02,830
-But it's just a more succinct way of achieving that same goal.
+00: 54: 58,510 -> 00: 55: 02.830
+Mas está é apenas uma maneira mais sucinta de atingir o mesmo objetivo.
 
 1194
-00:55:02,830 --> 00:55:06,940
-Any questions, then, on while loops or for loops here?
+00: 55: 02,830 -> 00: 55: 06.940
+Alguma dúvida, então, sobre loops "while" ou loops "for" aqui?
 
 1195
-00:55:06,940 --> 00:55:09,990
+00: 55: 06,940 -> 00: 55: 09.990
 
 
 1196
-00:55:09,990 --> 00:55:15,180
-All right, so let's look at one final set of definitions.
+00: 55: 09,990 -> 00: 55: 15.180
+Tudo bem, então vamos dar uma olhada em um conjunto final de definições.
 
 1197
-00:55:15,180 --> 00:55:18,510
-It turns out that in C, we have a whole list of data types
+00: 55: 15,180 -> 00: 55: 18.510
+Acontece que em C, temos uma lista completa de tipos de dados
 
 1198
-00:55:18,510 --> 00:55:20,210
-besides just strings and besides ints.
+00: 55: 18,510 -> 00: 55: 20.210
+além de apenas strings e além de ints.
 
 1199
-00:55:20,210 --> 00:55:22,260
-And we'll see these and use these over time.
+00: 55: 20,210 -> 00: 55: 22.260
+E veremos isso e usaremos com o tempo.
 
 1200
-00:55:22,260 --> 00:55:26,320
-You can have a bool, so to speak, which is literally the value true or false.
+00: 55: 22,260 -> 00: 55: 26.320
+Você pode ter um bool, por assim dizer, que é literalmente o valor verdadeiro ou falso.
 
 1201
-00:55:26,320 --> 00:55:29,620
-And we use that implicitly earlier when I just said while true.
+00: 55: 26,320 -> 00: 55: 29.620
+E usamos isso implicitamente agora pouco, quando simplismente disse "while true".
 
 1202
-00:55:29,620 --> 00:55:34,140
-You can have a char, or character, which is a single character, not two or more
+00: 55: 29,620 -> 00: 55: 34.140
+Você pode ter um char, ou caractere, que é um único caractere, não dois ou mais
 
 1203
-00:55:34,140 --> 00:55:34,920
-or a phrase.
+00: 55: 34,140 -> 00: 55: 34.920
+ou uma frase.
 
 1204
-00:55:34,920 --> 00:55:39,390
-It's just like the letter Y or N if you're asking the question yes or no.
+00: 55: 34,920 -> 00: 55: 39.390
+É como a letra S ou N se você estiver perguntando sim ou não.
 
 1205
-00:55:39,390 --> 00:55:42,720
-You can have an int, of course, which is an integer, a string, which
+00: 55: 39,390 -> 00: 55: 42.720
+Você pode ter um int, é claro, que é um inteiro, uma string, que
 
 1206
-00:55:42,720 --> 00:55:44,940
-is one or more characters inside of double quotes.
+00: 55: 42,720 -> 00: 55: 44.940
+é um ou mais caracteres entre aspas duplas.
 
 1207
-00:55:44,940 --> 00:55:47,670
-So it's bigger than an individual char, typically.
+00: 55: 44,940 -> 00: 55: 47.670
+Portanto, é maior do que um char individual, normalmente.
 
 1208
-00:55:47,670 --> 00:55:49,650
-And then there's a few other data types--
+00: 55: 47,670 -> 00: 55: 49.650
+E então há alguns outros tipos de dados -
 
 1209
-00:55:49,650 --> 00:55:50,700
-int and long.
+00: 55: 49,650 -> 00: 55: 50.700
+int e longo.
 
 1210
-00:55:50,700 --> 00:55:52,890
-So int is typically a certain size.
+00: 55: 50,700 -> 00: 55: 52.890
+Portanto, int normalmente tem um determinado tamanho.
 
 1211
-00:55:52,890 --> 00:55:55,260
-You can only count so high with an int.
+00: 55: 52,890 -> 00: 55: 55.260
+Você só pode contar até certo ponto com um int.
 
 1212
-00:55:55,260 --> 00:55:58,110
-Typically, you can count as high as 4 billion with an int,
+00: 55: 55,260 -> 00: 55: 58.110
+Normalmente, você pode contar até 4 bilhões com um int,
 
 1213
-00:55:58,110 --> 00:56:00,610
-and that's not big enough for certain applications.
+00: 55: 58,110 -> 00: 56: 00.610
+e isso não é grande o suficiente para determinados aplicativos.
 
 1214
-00:56:00,610 --> 00:56:03,330
-Today's biggest companies like Facebook and Microsoft and Google
+00: 56: 00,610 -> 00: 56: 03.330
+As maiores empresas de hoje, como Facebook, Microsoft e Google
 
 1215
-00:56:03,330 --> 00:56:06,240
-have many more pieces of data than 4 billion.
+00: 56: 03,330 -> 00: 56: 06.240
+tem muito mais dados do que 4 bilhões.
 
 1216
-00:56:06,240 --> 00:56:10,030
-So there exist things called long, which actually use more bits.
+00: 56: 06,240 -> 00: 56: 10.030
+Portanto, existem coisas chamadas longs, que na verdade usam mais bits.
 
 1217
-00:56:10,030 --> 00:56:12,640
-They're wider values, so they can count even higher.
+00: 56: 10,030 -> 00: 56: 12.640
+Eles são valores mais amplos, então podem contar ainda mais.
 
 1218
-00:56:12,640 --> 00:56:14,940
-A float is a floating point value, which is
+00: 56: 12,640 -> 00: 56: 14.940
+Um float é um valor de ponto flutuante, que é
 
 1219
-00:56:14,940 --> 00:56:18,390
-a fancy way of saying a real number, something that has a decimal point.
+00: 56: 14,940 -> 00: 56: 18.390
+uma maneira elegante de dizer um número real, algo que tem um ponto decimal.
 
 1220
-00:56:18,390 --> 00:56:23,130
-And a double is just a real number that can have even more digits
+00: 56: 18,390 -> 00: 56: 23.130
+E um double é apenas um número real que pode ter ainda mais dígitos
 
 1221
-00:56:23,130 --> 00:56:24,790
-after the decimal point.
+00: 56: 23,130 -> 00: 56: 24.790
+após o ponto decimal.
 
 1222
-00:56:24,790 --> 00:56:26,370
-So we'll see those before long.
+00: 56: 24,790 -> 00: 56: 26.370
+Então, veremos isso em breve.
 
 1223
-00:56:26,370 --> 00:56:28,950
-Well, what other features does the CS50 the library provide?
+00: 56: 26,370 -> 00: 56: 28.950
+Bem, que outros recursos a biblioteca do CS50 oferece?
 
 1224
-00:56:28,950 --> 00:56:31,320
-It gives you not only the function get_string,
+00: 56: 28,950 -> 00: 56: 31.320
+Ele fornece não apenas a função get_string,
 
-1225
-00:56:31,320 --> 00:56:35,567
-we'll see a few others like get_int or get_float or get_double or get_char.
+12: 25h
+00: 56: 31,320 -> 00: 56: 35.567
+veremos alguns outros como get_int ou get_float ou get_double ou get_char.
 
 1226
-00:56:35,567 --> 00:56:37,650
-These are all functions that will prompt the human
+00: 56: 35,567 -> 00: 56: 37.650
+Todas essas são funções que irão solicitar do ser humano
 
 1227
-00:56:37,650 --> 00:56:42,360
-with the blinking prompt for certain values that they might want to provide.
+00: 56: 37,650 -> 00: 56: 42.360
+com o prompt piscando por certos valores que eles podem querer fornecer.
 
 1228
-00:56:42,360 --> 00:56:44,540
-And then for placeholders, let's round this out.
+00: 56: 42,360 -> 00: 56: 44.540
+E então, para "placeholders/marcadores de posição" vamos completar isso.
 
 1229
-00:56:44,540 --> 00:56:48,090
-Printf, recall, had a placeholder for percent s for a string.
+00: 56: 44,540 -> 00: 56: 48.090
+Printf, lembre-se, tinha um "placeholder" para "%s" para uma string.
 
 1230
-00:56:48,090 --> 00:56:50,580
-Turns out there's a few other placeholders, as well.
+00: 56: 48,090 -> 00: 56: 50.580
+Acontece que tem alguns outros "placeholders" também.
 
 1231
-00:56:50,580 --> 00:56:53,520
-If you want to plug in an int, we're going to start using percent i.
+00: 56: 50,580 -> 00: 56: 53.520
+Se você quiser conectar um int, vamos começar a usar o "%i".
 
 1232
-00:56:53,520 --> 00:56:55,920
-If you want to plug in a float-- that is, a real number--
+00: 56: 53,520 -> 00: 56: 55.920
+Se você deseja conectar um float - isto é, um número real -
 
 1233
-00:56:55,920 --> 00:56:57,350
-you're going to use percent f.
+00: 56: 55,920 -> 00: 56: 57.350
+você vai usar o %f.
 
 1234
-00:56:57,350 --> 00:57:00,390
-And there's a couple of other format codes, as well.
+00: 56: 57,350 -> 00: 57: 00.390
+E há alguns outros códigos de formatação também.
 
 1235
-00:57:00,390 --> 00:57:02,430
-But we've seen just one of those thus far.
+00: 57: 00,390 -> 00: 57: 02.430
+Mas vimos apenas um deles até agora.
 
 1236
-00:57:02,430 --> 00:57:05,010
-And then in terms of arithmetic operations,
+00: 57: 02,430 -> 00: 57: 05.010
+E então, em termos de operações aritméticas,
 
 1237
-00:57:05,010 --> 00:57:07,290
-you can do a lot of mathematics very simply.
+00: 57: 05,010 -> 00: 57: 07.290
+você pode fazer muita matemática de forma muito simples.
 
 1238
-00:57:07,290 --> 00:57:09,540
-And we'll do just a couple of examples, literally just
+00: 57: 07,290 -> 00: 57: 09.540
+E vamos fazer apenas alguns exemplos, literalmente apenas
 
 1239
-00:57:09,540 --> 00:57:13,320
-by using the characters that you might be inclined to type on the screen.
+00: 57: 09,540 -> 00: 57: 13.320
+usando os caracteres que você pode ser tendenciado a digitar na tela.
 
 1240
-00:57:13,320 --> 00:57:18,603
-So, in short, suppose that we want to go ahead and write one program of our own.
+00: 57: 13,320 -> 00: 57: 18.603
+Então, em resumo, suponha que queiramos ir em frente e escrever um programa nosso.
 
 1241
-00:57:18,603 --> 00:57:21,270
-We can use any number of these functions-- get_int and get_float
+00: 57: 18.603 -> 00: 57: 21.270
+Podemos usar qualquer uma dessas funções - get_int e get_float
 
 1242
-00:57:21,270 --> 00:57:22,240
-and get_more.
+00: 57: 21,270 -> 00: 57: 22.240
+e get_more.
 
 1243
-00:57:22,240 --> 00:57:24,990
-But before that, let's go ahead and take a five-minute break here,
+00: 57: 22,240 -> 00: 57: 24.990
+Mas antes disso, vamos fazer uma pausa de cinco minutos aqui,
 
 1244
-00:57:24,990 --> 00:57:26,865
-because that was quite the fire hose, indeed.
+00: 57: 24,990 -> 00: 57: 26.865
+porque esta foi uma mangueira de incêndio e tanto.
 
 1245
-00:57:26,865 --> 00:57:30,570
-Cookies await in the lobby outside, and we'll resume in five minutes.
+00: 57: 26,865 -> 00: 57: 30.570
+Os biscoitos aguardam no saguão do lado de fora e retomaremos em cinco minutos.
 
 1246
-00:57:30,570 --> 00:57:36,420
-So we are back, and now we begin focusing not just on comparisons
+00: 57: 30,570 -> 00: 57: 36.420
+Então, estamos de volta, e agora começamos a nos concentrar não apenas em comparações
 
 1247
-00:57:36,420 --> 00:57:39,090
-of C with Scratch, but on actually writing
+00: 57: 36,420 -> 00: 57: 39.090
+de C com Scratch, mas na verdade escrevendo
 
 1248
-00:57:39,090 --> 00:57:42,960
-some code from Scratch but in C. And the goal at hand
+00: 57: 39,090 -> 00: 57: 42.960
+algum código que veio do Scratch, mas em C. E o objetivo em mãos
 
 1249
-00:57:42,960 --> 00:57:46,050
-really is to begin to develop the muscle memory via which
+00: 57: 42,960 -> 00: 57: 46.050
+realmente é começar a desenvolver a memória muscular por meio da qual
 
 1250
-00:57:46,050 --> 00:57:49,860
-you can start with literally empty files and start to fill it
+00: 57: 46,050 -> 00: 57: 49.860
+você pode começar com arquivos literalmente vazios e começar a preenchê-los
 
 1251
-00:57:49,860 --> 00:57:54,090
-with C implementations of your ideas.
+00: 57: 49,860 -> 00: 57: 54.090
+com implementações C de suas idéias.
 
 1252
-00:57:54,090 --> 00:57:57,660
-So rest assured that all of the examples we're about to do live
+00: 57: 54,090 -> 00: 57: 57.660
+Portanto, tenha certeza de que todos os exemplos que vamos fazer ao vivo
 
 1253
-00:57:57,660 --> 00:57:59,670
-are already pre-baked online, so you'll be
+00: 57: 57,660 -> 00: 57: 59.670
+já estão prontos online, então você será
 
 1254
-00:57:59,670 --> 00:58:02,580
-able to download all of these examples from the course's website.
+00: 57: 59,670 -> 00: 58: 02.580
+capaz de baixar todos esses exemplos do site do curso.
 
 1255
-00:58:02,580 --> 00:58:05,632
-In Brian's super section will you be able to explore them in more detail.
+00: 58: 02,580 -> 00: 58: 05.632
+Na superseção de Brian, você poderá explorá-los com mais detalhes.
 
 1256
-00:58:05,632 --> 00:58:07,590
-And later this week will you have opportunities
+00: 58: 05,632 -> 00: 58: 07.590
+E ainda esta semana você terá oportunidades
 
 1257
-00:58:07,590 --> 00:58:11,020
-hands-on to work on these same types of programs, as well.
+00: 58: 07,590 -> 00: 58: 11.020
+de trabalhar na prática nesses mesmos tipos de programas também.
 
 1258
-00:58:11,020 --> 00:58:16,140
-For now, the overarching goal is exposure and concepts and the beginning
+00: 58: 11,020 -> 00: 58: 16.140
+Por enquanto, o objetivo geral é exposição e conceitos e o início
 
 1259
-00:58:16,140 --> 00:58:18,270
-of developing that muscle memory.
+00: 58: 16,140 -> 00: 58: 18.270
+de desenvolver essa memória muscular.
 
 1260
-00:58:18,270 --> 00:58:21,947
-So with that said, let me go ahead and create a new file called int.c,
+00: 58: 18,270 -> 00: 58: 21.947
+Com isso dito, deixe-me continuar e criar um novo arquivo chamado int.c,
 
 1261
-00:58:21,947 --> 00:58:24,780
-the purpose of which is going to be to get an integer from the user,
+00: 58: 21,947 -> 00: 58: 24.780
+o objetivo do qual será obter um número inteiro do usuário,
 
 1262
-00:58:24,780 --> 00:58:28,530
-much like a bit ago I got a string from the user.
+00: 58: 24,780 -> 00: 58: 28.530
+muito parecido com o de agora pouco, Eu recebi uma string do usuário.
 
 1263
-00:58:28,530 --> 00:58:30,630
-I'm going to go ahead and, as before, I'm
+00: 58: 28,530 -> 00: 58: 30.630
+Eu vou seguir, como antes, estou
 
 1264
-00:58:30,630 --> 00:58:32,410
-going to include some familiar files.
+00: 58: 30,630 -> 00: 58: 32.410
+incluindo alguns arquivos familiares.
 
 1265
-00:58:32,410 --> 00:58:35,012
-So I'm going to go ahead and include preemptively CS50.h
+00: 58: 32,410 -> 00: 58: 35.012
+Então, vou prosseguir e incluir preventivamente CS50.h
 
 1266
-00:58:35,012 --> 00:58:37,830
-so that have I access to strings and get_string
+00: 58: 35,012 -> 00: 58: 37.830
+para que eu tenha acesso a strings e get_string
 
 1267
-00:58:37,830 --> 00:58:40,800
-and get_int and get_float and other features, as well.
+00: 58: 37,830 -> 00: 58: 40.800
+e get_int e get_float e outros recursos também.
 
 1268
-00:58:40,800 --> 00:58:43,890
-I'm going to include stdio.h so that I have access to printf
+00: 58: 40,800 -> 00: 58: 43.890
+Vou incluir stdio.h para ter acesso ao printf
 
 1269
-00:58:43,890 --> 00:58:45,780
-so I can actually see what we're doing.
+00: 58: 43,890 -> 00: 58: 45.780
+para que eu possa realmente ver o que estamos fazendo.
 
 1270
-00:58:45,780 --> 00:58:48,600
-Then I'm going to do this, which again, for today's purposes
+00: 58: 45,780 -> 00: 58: 48.600
+Então vou fazer isso, que novamente, para os propósitos de hoje
 
 1271
-00:58:48,600 --> 00:58:51,150
-and for a couple of weeks, is just kind of copy/paste.
+00: 58: 48,600 -> 00: 58: 51.150
+e por algumas semanas, será apenas meio que copiar / colar.
 
 1272
-00:58:51,150 --> 00:58:54,090
-This is the equivalent of when green flag clicked,
+00: 58: 51,150 -> 00: 58: 54.090
+Isso é o equivalente a quando a bandeira verde é clicada,
 
 1273
-00:58:54,090 --> 00:58:57,240
-but we'll explain, in a couple of weeks, exactly why you're writing int
+00: 58: 54,090 -> 00: 58: 57.240
+mas vamos explicar, em algumas semanas, exatamente por que você está escrevendo int
 
 1274
-00:58:57,240 --> 00:58:59,235
-and why you're writing void.
+00: 58: 57,240 -> 00: 58: 59.235
+e porque você está escrevendo vazio.
 
 1275
-00:58:59,235 --> 00:59:01,110
-In here, I'm going to do something like this.
+00: 58: 59,235 -> 00: 59: 01.110
+Aqui, vou fazer algo assim.
 
 1276
-00:59:01,110 --> 00:59:03,360
-This time, I want to get not a string but an int.
+00: 59: 01,110 -> 00: 59: 03.360
+Desta vez, não quero uma string, mas um int.
 
 1277
-00:59:03,360 --> 00:59:08,320
-So let's do in age get get_int, what's your age?
+00: 59: 03,360 -> 00: 59: 08.320
+Então vamos começar get_int, qual é a sua idade?
 
 1278
-00:59:08,320 --> 00:59:10,860
-Now, to be fair, I can probably type that pretty quickly,
+00: 59: 08,320 -> 00: 59: 10.860
+Agora, para ser justo, provavelmente posso digitar muito rapidamente,
 
 1279
-00:59:10,860 --> 00:59:13,650
-because I have the muscle memory already for programming in C.
+00: 59: 10.860 -> 00: 59: 13.650
+porque já tenho a memória muscular para programar em C.
 
 1280
-00:59:13,650 --> 00:59:16,150
-But if we look at it real methodically for a moment,
+00: 59: 13,650 -> 00: 59: 16.150
+Mas se olharmos para isso metodicamente por um momento,
 
 1281
-00:59:16,150 --> 00:59:19,540
-this is just another function, get_int, from the CS50 library that's
+00: 59: 16,150 -> 00: 59: 19.540
+esta é apenas outra função, get_int, da biblioteca CS50 que é
 
 1282
-00:59:19,540 --> 00:59:20,800
-going to get an integer.
+00: 59: 19,540 -> 00: 59: 20.800
+obter um número inteiro.
 
 1283
-00:59:20,800 --> 00:59:22,550
-This is the prompt that the human is going
+00: 59: 20,800 -> 00: 59: 22.550
+Este é o prompt que o humano está indo
 
 1284
-00:59:22,550 --> 00:59:25,862
-to see with their cursor moving to a new line because of the backslash n.
+00: 59: 22,550 -> 00: 59: 25.862
+para ver com o cursor se movendo para uma nova linha por causa da barra invertida n.
 
 1285
-00:59:25,862 --> 00:59:27,570
-And whatever they type in is going to get
+00: 59: 25,862 -> 00: 59: 27.570
+E não importa o que eles digitarem será
 
 1286
-00:59:27,570 --> 00:59:31,350
-copied from right to left into a variable called age, the type of which,
+00: 59: 27,570 -> 00: 59: 31.350
+copiado da direita para a esquerda em uma variável chamada idade, cujo tipo,
 
 1287
-00:59:31,350 --> 00:59:34,140
-so to speak, is int, or integer.
+00: 59: 31,350 -> 00: 59: 34.140
+por assim dizer, é int ou inteiro.
 
 1288
-00:59:34,140 --> 00:59:37,717
-Now let me go ahead and compute, like, how many days old this person is.
+00: 59: 34,140 -> 00: 59: 37.717
+Agora deixe-me ir em frente e calcular, tipo, quantos dias de vida essa pessoa tem.
 
 1289
-00:59:37,717 --> 00:59:40,050
-So if I want to do that, I could do something like this.
+00: 59: 37,717 -> 00: 59: 40.050
+Então, se eu quiser fazer isso, posso fazer algo assim.
 
 1290
-00:59:40,050 --> 00:59:41,490
-Well, give me an integer.
+00: 59: 40,050 -> 00: 59: 41.490
+Bem, dê-me um número inteiro.
 
 1291
-00:59:41,490 --> 00:59:42,780
-Call it days.
+00: 59: 41,490 -> 00: 59: 42.780
+Chame isso de dias.
 
 1292
-00:59:42,780 --> 00:59:45,602
-And then just do age times 365.
+00: 59: 42,780 -> 00: 59: 45.602
+E então faça a idade vezes 365.
 
 1293
-00:59:45,602 --> 00:59:47,310
-I proposed a bit ago that there's a bunch
+00: 59: 45,602 -> 00: 59: 47.310
+Eu propus agora a pouco que há um monte
 
 1294
-00:59:47,310 --> 00:59:49,830
-of arithmetic operators like plus and minus
+00: 59: 47,310 -> 00: 59: 49.830
+de operadores aritméticos como mais e menos
 
 1295
-00:59:49,830 --> 00:59:53,850
-and multiplication and subtraction and even the remainder operator.
+00: 59: 49,830 -> 00: 59: 53.850
+e multiplicação e subtração e até mesmo o operador de resto.
 
 1296
-00:59:53,850 --> 00:59:58,680
-So this line, 7, just says multiply age by 365.
+00: 59: 53,850 -> 00: 59: 58.680
+Portanto, esta linha, 7, diz apenas multiplicar a idade por 365.
 
 1297
-00:59:58,680 --> 01:00:02,800
-Copy that value, from right to left, into a new variable called days.
+00: 59: 58,680 -> 01: 00: 02.800
+Copie esse valor, da direita para a esquerda, em uma nova variável chamada dias.
 
 1298
-01:00:02,800 --> 01:00:04,800
-And now I can go ahead and print this if I want.
+01: 00: 02.800 -> 01: 00: 04.800
+E agora posso ir em frente e imprimir isso, se quiser.
 
 1299
-01:00:04,800 --> 01:00:09,090
-So printf something like, you are at least percent--
+01: 00: 04,800 -> 01: 00: 09.090
+Então printf algo como, você tem pelo menos percentual -
 
 1300
-01:00:09,090 --> 01:00:13,620
-not s, because it's not a string, but percent i because it's an integer now--
+01: 00: 09,090 -> 01: 00: 13.620
+não com "s", porque não é uma string, mas percentual i porque é um inteiro agora -
 
 1301
-01:00:13,620 --> 01:00:15,900
-days old, backslash n.
+01: 00: 13,620 -> 01: 00: 15.900
+dias de vida, barra invertida n.
 
 1302
-01:00:15,900 --> 01:00:18,190
-But again, this is a placeholder, so I'm not done yet.
+01: 00: 15.900 -> 01: 00: 18.190
+Mas, novamente, este é um "placeholder", então ainda não terminei.
 
 1303
-01:00:18,190 --> 01:00:23,580
-What do I need to put inside of these parentheses also on line 8?
+01: 00: 18,190 -> 01: 00: 23.580
+O que devo colocar dentro desses parênteses também na linha 8?
 
 1304
-01:00:23,580 --> 01:00:27,990
-Yeah, so comma, days, if that's the value that I want to plug in.
+01: 00: 23.580 -> 01: 00: 27.990
+Sim, então vírgula, dias, se esse for o valor que eu quero exibir.
 
 1305
-01:00:27,990 --> 01:00:29,377
-And I'm missing one more thing.
+01: 00: 27,990 -> 01: 00: 29.377
+E estou esquecendo mais uma coisa.
 
 1306
-01:00:29,377 --> 01:00:30,210
-AUDIENCE: Semicolon.
+01: 00: 29,377 -> 01: 00: 30.210
+PÚBLICO: Ponto e vírgula.
 
 1307
-01:00:30,210 --> 01:00:32,127
-DAVID MALAN: Semicolon at the end of the line.
+01: 00: 30.210 -> 01: 00: 32.127
+DAVID MALAN: Ponto e vírgula no final da linha.
 
 1308
-01:00:32,127 --> 01:00:33,503
-Now, hopefully, I got this right.
+01: 00: 32,127 -> 01: 00: 33.503
+Agora, espero, está tudo feito direito.
 
 1309
-01:00:33,503 --> 01:00:35,670
-But odds are the first time you write your programs,
+01: 00: 33,503 -> 01: 00: 35.670
+Mas as chances de é a primeira vez que você escreve seus programas,
 
 1310
-01:00:35,670 --> 01:00:37,150
-you're going to see error messages.
+01: 00: 35.670 -> 01: 00: 37.150
+aparecerem mensagens de erro.
 
 1311
-01:00:37,150 --> 01:00:41,040
-But let's see, make int is the quickest way now to compile this code.
+01: 00: 37,150 -> 01: 00: 41.040
+Mas vamos ver, "make int" é a maneira mais rápida agora de compilar este código.
 
 1312
-01:00:41,040 --> 01:00:41,850
+01: 00: 41,040 -> 01: 00: 41.850
 Enter.
 
 1313
-01:00:41,850 --> 01:00:43,860
-All right, the big, long white command is OK.
+01: 00: 41,850 -> 01: 00: 43.860
+Tudo bem, o grande e longo comando branco está OK.
 
 1314
-01:00:43,860 --> 01:00:47,490
-So long as you don't see red or yellow or colored output that indicates
+01: 00: 43,860 -> 01: 00: 47.490
+Contanto que você não veja uma saída vermelha, amarela ou colorida que indique
 
 1315
-01:00:47,490 --> 01:00:49,590
-warnings or errors, you should be OK.
+01: 00: 47,490 -> 01: 00: 49.590
+avisos ou erros, você deverá estar indo bem.
 
 1316
-01:00:49,590 --> 01:00:53,910
-I'm going to clear my screen now so I can just now run this program, ./int.
+01: 00: 49.590 -> 01: 00: 53.910
+Vou limpar minha tela agora para executar este programa, ./int.
 
 1317
-01:00:53,910 --> 01:00:56,150
-And suppose your age is, say, 50.
+01: 00: 53.910 -> 01: 00: 56.150
+E suponha que sua idade seja, digamos, 50.
 
 1318
-01:00:56,150 --> 01:01:00,422
-Well, you are at least 18,250 days old.
+01: 00: 56,150 -> 01: 01: 00.422
+Bem, você tem pelo menos 18.250 dias de vida.
 
 1319
-01:01:00,422 --> 01:01:03,630
-But let me use this as an opportunity to not just do something correct, which
+01: 01: 00,422 -> 01: 01: 03.630
+Mas deixe-me usar isso como uma oportunidade não apenas de fazer algo correto, que
 
 1320
-01:01:03,630 --> 01:01:06,690
-I claim this code is, but to just make it better designed.
+01: 01: 03,630 -> 01: 01: 06.690
+Eu afirmo que este código é, mas apenas para torná-lo melhor projetado.
 
 1321
-01:01:06,690 --> 01:01:11,580
-It's fine to be storing this value, age, in a variable called age.
+01: 01: 06,690 -> 01: 01: 11.580
+Não há problema em armazenar esse valor, idade, em uma variável chamada idade.
 
 1322
-01:01:11,580 --> 01:01:13,950
-And it's fine to be creating a second variable called
+01: 01: 11.580 -> 01: 01: 13.950
+E não há problema em criar uma segunda variável chamada
 
 1323
-01:01:13,950 --> 01:01:19,300
-days, in which my mathematical answer is age times 365.
+01: 01: 13,950 -> 01: 01: 19.300
+dias, em que minha resposta matemática é idade vezes 365.
 
 1324
-01:01:19,300 --> 01:01:22,530
-But strictly speaking, I don't need that additional line of code.
+01: 01: 19,300 -> 01: 01: 22.530
+Mas, estritamente falando, não preciso dessa linha de código adicional.
 
 1325
-01:01:22,530 --> 01:01:26,520
-I could also just do age times 365 here.
+01: 01: 22.530 -> 01: 01: 26.520
+Eu também poderia fazer a idade vezes 365 aqui.
 
 1326
-01:01:26,520 --> 01:01:27,660
-So C is nice like that.
+01: 01: 26.520 -> 01: 01: 27.660
+Então C é legal assim.
 
 1327
 01:01:27,660 --> 01:01:32,370
