@@ -7472,689 +7472,688 @@ Esta palavra entre parênteses é o tipo de entrada, se houver.
 E se não houver nada, basta dizer "void" em um ou nos dois lugares.
 
 1871
-01:26:24,640 --> 01:26:26,190
-Now, here's a curiosity--
+01: 26: 24.640 -> 01: 26: 26.190
+Agora, aqui está uma curiosidade -
 
 1872
-01:26:26,190 --> 01:26:30,280
-on line 17, we've not seen this before, but this is just a hint to the computer
+01: 26: 26,190 -> 01: 26: 30.280
+na linha 17, não vimos isso antes, mas é apenas uma dica para o computador
 
 1873
-01:26:30,280 --> 01:26:32,425
-saying give me a variable called n.
+01: 26: 30.280 -> 01: 26: 32.425
+dizendo dê-me uma variável chamada n.
 
 1874
-01:26:32,425 --> 01:26:34,300
-I'm not sure what I'm going to put in it yet.
+01: 26: 32.425 -> 01: 26: 34.300
+Não tenho certeza do que vou colocar nele ainda.
 
 1875
-01:26:34,300 --> 01:26:36,580
-So you literally just say int n semicolon.
+01: 26: 34,300 -> 01: 26: 36.580
+Então você literalmente apenas diz int n ponto-e-vírgula.
 
 1876
-01:26:36,580 --> 01:26:38,405
-You don't need to assign it anything yet.
+01: 26: 36,580 -> 01: 26: 38.405
+Você não precisa atribuir nada ainda.
 
 1877
-01:26:38,405 --> 01:26:40,030
-It has what we'll call a garbage value.
+01: 26: 38.405 -> 01: 26: 40.030
+Ele tem o que chamaremos de valor de lixo.
 
 1878
-01:26:40,030 --> 01:26:42,322
-You have no idea what's in it, but that doesn't matter.
+01: 26: 40,030 -> 01: 26: 42.322
+Você não tem ideia do que está nele, mas isso não importa.
 
 1879
-01:26:42,322 --> 01:26:43,730
-You'll put something in it later.
+01: 26: 42,322 -> 01: 26: 43.730
+Você colocará algo nele mais tarde.
 
 1880
-01:26:43,730 --> 01:26:45,820
-Then there's this loop, which we haven't seen yet,
+01: 26: 43.730 -> 01: 26: 45.820
+Então há este loop, que não vimos ainda,
 
 1881
-01:26:45,820 --> 01:26:47,800
-but in C, it's called a do-while loop.
+01: 26: 45,820 -> 01: 26: 47.800
+mas em C, é chamado de loop "do-while/faça-enquanto".
 
 1882
-01:26:47,800 --> 01:26:52,120
-It literally says do the following while this Boolean expression is true.
+01: 26: 47,800 -> 01: 26: 52.120
+Isso literalmente diz para fazer o que vem a seguir enquanto esta expressão booleana for verdadeira.
 
 1883
-01:26:52,120 --> 01:26:53,320
-So what do I want to do?
+01: 26: 52,120 -> 01: 26: 53.320
+Então, o que eu quero fazer?
 
 1884
-01:26:53,320 --> 01:26:55,330
-I want to get an int from the user, prompting
+01: 26: 53,320 -> 01: 26: 55.330
+Quero obter um int do usuário, solicitando
 
 1885
-01:26:55,330 --> 01:26:58,540
-the human for a positive integer, and store it in n.
+01: 26: 55,330 -> 01: 26: 58.540
+ao humano por um número inteiro positivo e armazene-o em n.
 
 1886
-01:26:58,540 --> 01:27:03,010
-However, I want to keep doing this while n is less than 1.
+01: 26: 58.540 -> 01: 27: 03.010
+No entanto, quero continuar fazendo isso enquanto n for menor que 1.
 
 1887
-01:27:03,010 --> 01:27:06,370
-Because if the human types in 0 or negative 1 or negative 50
+01: 27: 03,010 -> 01: 27: 06.370
+Porque se o humano digitar 0 ou -1 ou -50
 
 1888
-01:27:06,370 --> 01:27:12,040
-or anything non-positive, I do want to prompt them again and again and again.
+01: 27: 06,370 -> 01: 27: 12.040
+ou qualquer coisa que não seja positiva, eu quero solicitar novamente e novamente.
 
 1889
-01:27:12,040 --> 01:27:14,530
-So a do-while loop is kind of neat, because it
+01: 27: 12.040 -> 01: 27: 14.530
+Então, um loop do-while é legal, porque
 
 1890
-01:27:14,530 --> 01:27:17,090
-will do this first thing at least once.
+01: 27: 14.530 -> 01: 27: 17.090
+fará essa primeira coisa pelo menos uma vez.
 
 1891
-01:27:17,090 --> 01:27:20,200
-Then it will check the condition and potentially do it again
+01: 27: 17,090 -> 01: 27: 20.200
+Em seguida, ele verificará a condição e, potencialmente, fará novamente
 
 1892
-01:27:20,200 --> 01:27:22,450
-if the human has not cooperated.
+01: 27: 20,200 -> 01: 27: 22.450
+se o humano não cooperou.
 
 1893
-01:27:22,450 --> 01:27:25,900
-A while loop, if you think back, actually checked the condition first.
+01: 27: 22.450 -> 01: 27: 25.900
+Um loop while, se você pensar no anterior, na verdade verificou a condição primeiro.
 
 1894
-01:27:25,900 --> 01:27:29,590
-It was while some Boolean expression is true, do the following.
+01: 27: 25,900 -> 01: 27: 29.590
+Ele fazia algo Enquanto alguma expressão booleana fosse verdadeira.
 
 1895
-01:27:29,590 --> 01:27:34,210
-This one gives you one such iteration, one pass for free,
+01: 27: 29.590 -> 01: 27: 34.210
+Este aqui dá a você uma dessas iterações, uma passagem gratuita,
 
 1896
-01:27:34,210 --> 01:27:35,767
-and then it checks the condition.
+01: 27: 34,210 -> 01: 27: 35.767
+e então verifica a condição.
 
 1897
-01:27:35,767 --> 01:27:37,600
-So it's just a different way of programming,
+01: 27: 35,767 -> 01: 27: 37.600
+Portanto, é apenas uma forma diferente de programação,
 
 1898
-01:27:37,600 --> 01:27:40,090
-but we could do everything we've done thus far using
+01: 27: 37.600 -> 01: 27: 40.090
+mas poderíamos fazer tudo o que fizemos até agora usando
 
 1899
-01:27:40,090 --> 01:27:46,550
-while loops or even for loops, as well.
+01: 27: 40.090 -> 01: 27: 46.550
+while loops ou mesmo for loops também.
 
 1900
-01:27:46,550 --> 01:27:50,080
-All right, well let's go ahead now and make this a little more user friendly.
+01: 27: 46.550 -> 01: 27: 50.080
+Tudo bem, vamos prosseguir agora e tornar isso um pouco mais amigável.
 
 1901
-01:27:50,080 --> 01:27:54,790
-Let me go ahead and pull up some examples here of some screens that
+01: 27: 50,080 -> 01: 27: 54.790
+Deixe-me prosseguir e pegar alguns exemplos aqui de algumas telas que
 
 1902
-01:27:54,790 --> 01:27:56,060
-might look familiar.
+01: 27: 54,790 -> 01: 27: 56.060
+pode parecer familiar.
 
 1903
-01:27:56,060 --> 01:27:58,488
-So if I go ahead and open up, for instance,
+01: 27: 56.060 -> 01: 27: 58.488
+Então, se eu for em frente e abrir, por exemplo,
 
 1904
-01:27:58,488 --> 01:28:00,280
-this slide here, you might recall this game
+01: 27: 58,488 -> 01: 28: 00.280
+este slide aqui, você deve se lembrar deste jogo
 
 1905
-01:28:00,280 --> 01:28:04,000
-from yesteryear, Super Mario Brothers 1, from the very original Nintendo.
+01: 28: 00,280 -> 01: 28: 04.000
+do passado, Super Mario Brothers 1, da Nintendo muito original.
 
 1906
-01:28:04,000 --> 01:28:07,510
-And there's some screens in that game that look a little something like this.
+01: 28: 04.000 -> 01: 28: 07.510
+E há algumas telas nesse jogo que se parecem um pouco com isso.
 
 1907
-01:28:07,510 --> 01:28:09,100
-For instance, these are little bricks in the air
+01: 28: 07.510 -> 01: 28: 09.100
+Por exemplo, esses são pequenos tijolos no ar
 
 1908
-01:28:09,100 --> 01:28:11,200
-that if Mario or Luigi hits their head up against,
+01: 28: 09,100 -> 01: 28: 11.200
+que se Mario ou Luigi baterem com a cabeça,
 
 1909
-01:28:11,200 --> 01:28:13,450
-like a coin or something else pops out.
+01: 28: 11,200 -> 01: 28: 13.450
+tipo uma moeda ou alga outra coisa salta deles.
 
 1910
-01:28:13,450 --> 01:28:16,810
-But this is kind of a nice idea, because it lends itself to actually doing
+01: 28: 13,450 -> 01: 28: 16.810
+Mas esta é uma boa ideia, porque se presta a realmente fazer
 
 1911
-01:28:16,810 --> 01:28:18,535
-something a little programmatically.
+01: 28: 16,810 -> 01: 28: 18.535
+algo um pouco programaticamente.
 
 1912
-01:28:18,535 --> 01:28:21,160
-For instance, how might I go about writing a program that quite
+01: 28: 18.535 -> 01: 28: 21.160
+Por exemplo, como poderia escrever um programa que 
 
 1913
-01:28:21,160 --> 01:28:23,800
-simply prints out four question marks?
+01: 28: 21,160 -> 01: 28: 23.800
+simplesmente imprime quatro pontos de interrogação?
 
 1914
-01:28:23,800 --> 01:28:26,920
-Well, let me go ahead and open up, for instance, in code,
+01: 28: 23,800 -> 01: 28: 26.920
+Bem, deixe-me ir em frente e abrir, por exemplo, no código,
 
 1915
-01:28:26,920 --> 01:28:30,100
-an example called mario0.c.
+01: 28: 26,920 -> 01: 28: 30.100
+um exemplo chamado mario0.c.
 
 1916
-01:28:30,100 --> 01:28:33,087
-And I claim that this could be one way of implementing this program.
+01: 28: 30,100 -> 01: 28: 33.087
+E eu afirmo que esta pode ser uma forma de implementar este programa.
 
 1917
-01:28:33,087 --> 01:28:35,170
-It's very simple, and it really doesn't do justice
+01: 28: 33.087 -> 01: 28: 35.170
+É muito simples e realmente não faz jus
 
 1918
-01:28:35,170 --> 01:28:39,400
-to the other graphics on the screen, but it does implement that one idea.
+01: 28: 35,170 -> 01: 28: 39.400
+aos outros gráficos na tela, mas implementa essa ideia.
 
 1919
-01:28:39,400 --> 01:28:41,800
-And indeed, somewhere in the code for Mario,
+01: 28: 39,400 -> 01: 28: 41.800
+E, de fato, em algum lugar do código de Mario,
 
 1920
-01:28:41,800 --> 01:28:43,600
-there was probably some line of code that
+01: 28: 41,800 -> 01: 28: 43.600
+provavelmente havia alguma linha de código que
 
 1921
-01:28:43,600 --> 01:28:47,950
-told the console game to print question mark, question mark, question
+01: 28: 43,600 -> 01: 28: 47.950
+disse ao jogo do console para imprimir ponto de interrogação, ponto de interrogação, 
 
 1922
-01:28:47,950 --> 01:28:48,970
-mark, question mark.
+01: 28: 47,950 -> 01: 28: 48.970
+ponto de interrogação.
 
 1923
-01:28:48,970 --> 01:28:51,760
-In C, we could certainly do this with four question marks.
+01: 28: 48,970 -> 01: 28: 51.760
+Em C, certamente poderíamos fazer isso com quatro pontos de interrogação.
 
 1924
-01:28:51,760 --> 01:28:55,048
-Or how else could we do something that many times?
+01: 28: 51.760 -> 01: 28: 55.048
+Ou de que outra forma poderíamos fazer algo várias vezes?
 
 1925
-01:28:55,048 --> 01:28:55,840
-AUDIENCE: For loop.
+01: 28: 55.048 -> 01: 28: 55.840
+PÚBLICO: Com loop "for".
 
 1926
-01:28:55,840 --> 01:28:57,465
-DAVID MALAN: Something like a for loop.
+01: 28: 55,840 -> 01: 28: 57.465
+DAVID MALAN: Algo como um loop "for".
 
 1927
-01:28:57,465 --> 01:29:00,310
-So let me go ahead and jump ahead a couple of iterations
+01: 28: 57.465 -> 01: 29: 00.310
+Então, deixe-me ir em frente e pular algumas iterações
 
 1928
-01:29:00,310 --> 01:29:05,200
-to an example I'll call mario2.c, which just does all of this.
+01: 29: 00,310 -> 01: 29: 05.200
+para um exemplo, que vou chamar mario2.c, que faz tudo isso.
 
 1929
-01:29:05,200 --> 01:29:08,500
-So this is actually pretty involved, but notice what it's doing.
+01: 29: 05,200 -> 01: 29: 08.500
+Então, isso é realmente muito complicado, mas observe o que está acontecendo.
 
 1930
-01:29:08,500 --> 01:29:12,010
-In main, I'm saying, hey, give me an integer called n.
+01: 29: 08,500 -> 01: 29: 12.010
+no "main", estou dizendo, ei, me dê um número inteiro chamado n.
 
 1931
-01:29:12,010 --> 01:29:14,630
-Do the following while n is less than 1.
+01: 29: 12.010 -> 01: 29: 14.630
+Faça o seguinte enquanto n for menor que 1.
 
 1932
-01:29:14,630 --> 01:29:18,820
-So this is just a way of asking, what is the width of the blocks
+01: 29: 14.630 -> 01: 29: 18.820
+Essa é apenas uma forma de perguntar qual é a largura dos blocos
 
 1933
-01:29:18,820 --> 01:29:20,140
-that you want to print?
+01: 29: 18.820 -> 01: 29: 20.140
+que você deseja imprimir?
 
 1934
-01:29:20,140 --> 01:29:24,190
-Then, once I have that answer, I can go ahead and, just as before,
+01: 29: 20,140 -> 01: 29: 24.190
+Então, assim que tiver essa resposta, posso prosseguir e, como antes,
 
 1935
-01:29:24,190 --> 01:29:28,940
-print that many question marks n times, one at a time.
+01: 29: 24,190 -> 01: 29: 28.940
+imprimir esse número de pontos de interrogação n vezes, um de cada vez.
 
 1936
-01:29:28,940 --> 01:29:32,080
-And at the very end, I'll print just a new line.
+01: 29: 28.940 -> 01: 29: 32.080
+E no final, vou imprimir apenas uma nova linha.
 
 1937
-01:29:32,080 --> 01:29:35,470
-So in short, if you want to create a program, albeit in text,
+01: 29: 32.080 -> 01: 29: 35.470
+Resumindo, se você deseja criar um programa, embora em texto,
 
 1938
-01:29:35,470 --> 01:29:37,760
-that does something like this, and I make mario2--
+01: 29: 35.470 -> 01: 29: 37.760
+que faz algo assim, e eu "make mario2" -
 
 1939
 01:29:37,760 --> 01:29:38,410
-whoops.
+opa.
 
 1940
-01:29:38,410 --> 01:29:43,510
-And I make mario2, Enter, and type ./mario2,
+01: 29: 38.410 -> 01: 29: 43.510
+E eu "make mario2", Enter e digito ./mario2,
 
 1941
-01:29:43,510 --> 01:29:46,510
-I can do a width of four and get four question marks.
+01: 29: 43.510 -> 01: 29: 46.510
+Posso fazer a largura com quatro e obter quatro pontos de interrogação.
 
 1942
-01:29:46,510 --> 01:29:49,730
-Or I can do 50 and get many more on the screen, all
+01: 29: 46.510 -> 01: 29: 49.730
+Ou posso fazer 50 e ver muito mais na tela, tudo
 
 1943
-01:29:49,730 --> 01:29:51,480
-by just using these basic building blocks.
+01: 29: 49,730 -> 01: 29: 51.480
+usando apenas esses blocos de construção básicos.
 
 1944
-01:29:51,480 --> 01:29:54,660
-But notice, because of that do-while loop, if I don't cooperate
+01: 29: 51.480 -> 01: 29: 54.660
+Mas observe, por causa desse loop do-while, se eu não cooperar
 
 1945
-01:29:54,660 --> 01:29:58,110
-and I do something like 0 or negative 1 or negative 50,
+01: 29: 54.660 -> 01: 29: 58.110
+e faço algo como 0 ou -1 ou -50,
 
 1946
-01:29:58,110 --> 01:30:02,160
-I just keep getting prompted again and again, because n is less than 1.
+01: 29: 58,110 -> 01: 30: 02.160
+Eu só recebo a solicitação repetidas vezes, porque n é menor que 1.
 
 1947
-01:30:02,160 --> 01:30:05,130
-That's the kind of logic that you can impose there.
+01: 30: 02,160 -> 01: 30: 05.130
+Esse é o tipo de lógica que você pode impor ali.
 
 1948
-01:30:05,130 --> 01:30:10,018
-But let's go ahead and skip ahead, say, to something like this in Mario,
+01: 30: 05,130 -> 01: 30: 10.018
+Mas vamos prosseguir e pular, digamos, para algo assim em Mario,
 
 1949
-01:30:10,018 --> 01:30:12,060
-where you have a whole lot of bricks underground.
+01: 30: 10.018 -> 01: 30: 12.060
+onde você tem muitos tijolos no subsolo.
 
 1950
-01:30:12,060 --> 01:30:16,000
-And this time, it's not just a column or a row of bricks.
+01: 30: 12,060 -> 01: 30: 16.000
+E desta vez, não é apenas uma coluna ou uma fileira de tijolos.
 
 1951
-01:30:16,000 --> 01:30:17,755
-This time, it's kind of two dimensions.
+01: 30: 16.000 -> 01: 30: 17.755
+Desta vez, são duas dimensões.
 
 1952
-01:30:17,755 --> 01:30:20,130
-Well, this is kind of interesting, because now how do you
+01: 30: 17.755 -> 01: 30: 20.130
+Bem, isso é interessante, porque agora como você
 
 1953
-01:30:20,130 --> 01:30:23,200
-go about printing block, block, block, block, block, block, block, block,
+01: 30: 20,130 -> 01: 30: 23.200
+faria a impressão de bloco, bloco, bloco, bloco, bloco, bloco, bloco, bloco,
 
 1954
-01:30:23,200 --> 01:30:25,158
-block, block, block, block, and actually making
+01: 30: 23,200 -> 01: 30: 25.158
+bloco, bloco, bloco, bloco e realmente fazer
 
 1955
-01:30:25,158 --> 01:30:26,700
-a two-dimensional structure instead?
+01: 30: 25,158 -> 01: 30: 26.700
+em vez disso, uma estrutura bidimensional?
 
 1956
-01:30:26,700 --> 01:30:30,090
-Well, there's nothing stopping us in C, as in Scratch,
+01: 30: 26.700 -> 01: 30: 30.090
+Bem, nada nos impede em C, como em Scratch,
 
 1957
-01:30:30,090 --> 01:30:33,540
-from doing something, for instance, with loops.
+01: 30: 30.090 -> 01: 30: 33.540
+de fazer algo, por exemplo, com loops.
 
 1958
-01:30:33,540 --> 01:30:35,650
-So let me show this example here.
+01: 30: 33.540 -> 01: 30: 35.650
+Deixe-me mostrar este exemplo aqui.
 
 1959
-01:30:35,650 --> 01:30:38,070
-So suppose that with these first lines of code,
+01: 30: 35.650 -> 01: 30: 38.070
+Então, suponha que com essas primeiras linhas de código,
 
 1960
-01:30:38,070 --> 01:30:41,938
-I've asked the user for the size of this block.
+01: 30: 38.070 -> 01: 30: 41.938
+Eu perguntei ao usuário o tamanho deste bloco.
 
 1961
-01:30:41,938 --> 01:30:44,730
-So I want to create something that's square-like like this-- block,
+01: 30: 41.938 -> 01: 30: 44.730
+Então, eu quero criar algo que seja como este - bloco,
 
 1962
-01:30:44,730 --> 01:30:47,710
-block, block, block, block, block, block, block, block, and so forth.
+01: 30: 44.730 -> 01: 30: 47.710
+bloco, bloco, bloco, bloco, bloco, bloco, bloco, bloco e assim por diante.
 
 1963
-01:30:47,710 --> 01:30:51,270
-Well, I can go ahead and prompt them for an int again and again
+01: 30: 47.710 -> 01: 30: 51.270
+Bem, posso ir em frente e solicitar um int repetidas vezes
 
 1964
-01:30:51,270 --> 01:30:53,500
-and again until I know that size.
+01: 30: 51.270 -> 01: 30: 53.500
+e de novo até saber esse tamanho.
 
 1965
-01:30:53,500 --> 01:30:54,930
-And then notice this.
+01: 30: 53.500 -> 01: 30: 54.930
+E então observe isso.
 
 1966
-01:30:54,930 --> 01:30:58,770
-This is starting to escalate again, but consider the logic.
+01: 30: 54.930 -> 01: 30: 58.770
+Isso está começando a crescer novamente, mas considere a lógica.
 
 1967
-01:30:58,770 --> 01:31:02,520
-This now is for int i get 0, i less than n, i plus plus.
+01: 30: 58,770 -> 01: 31: 02.520
+Isso agora é "for" int eu obtenho 0, i menor que n, i mais mais.
 
 1968
-01:31:02,520 --> 01:31:04,500
-So do the following n times, right?
+01: 31: 02.520 -> 01: 31: 04.500
+Então, faça o seguinte n vezes, certo?
 
 1969
-01:31:04,500 --> 01:31:08,220
-This is a very cryptic, C-like way of saying, do the following n times.
+01: 31: 04,500 -> 01: 31: 08.220
+Esta é uma maneira muito enigmática de dizer C, faça o que vem a seguir n vezes.
 
 1970
-01:31:08,220 --> 01:31:10,170
-What about line 16?
+01: 31: 08,220 -> 01: 31: 10.170
+E a linha 16?
 
 1971
-01:31:10,170 --> 01:31:13,740
-What is line 16 saying?
+01: 31: 10,170 -> 01: 31: 13.740
+O que a linha 16 está dizendo?
 
 1972
-01:31:13,740 --> 01:31:16,710
-Even though it's using a different variable.
+01: 31: 13.740 -> 01: 31: 16.710
+Mesmo que esteja usando uma variável diferente.
 
 1973
-01:31:16,710 --> 01:31:18,869
-I'm using j just because instead of i.
+01: 31: 16,710 -> 01: 31: 18.869
+Estou usando j só porque é diferente de i.
 
 1974
-01:31:18,869 --> 01:31:19,744
-AUDIENCE: Same thing.
+01: 31: 18,869 -> 01: 31: 19.744
+PÚBLICO: Mesma coisa.
 
 1975
-01:31:19,744 --> 01:31:20,786
-Do the following n times.
+01: 31: 19,744 -> 01: 31: 20.786
+Faça o seguinte n vezes.
 
 1976
-01:31:20,786 --> 01:31:24,180
-DAVID MALAN: Yeah, it says the exact same thing-- do the following n times.
+01: 31: 20.786 -> 01: 31: 24.180
+DAVID MALAN: Sim, diz exatamente a mesma coisa - faça o quem vem a seguir n vezes.
 
 1977
-01:31:24,180 --> 01:31:26,880
-However, it's counting using j instead of i,
+01: 31: 24,180 -> 01: 31: 26.880
+No entanto, está contando usando j em vez de i,
 
 1978
-01:31:26,880 --> 01:31:30,100
-just so that my math doesn't kind of commingle incorrectly.
+01: 31: 26,880 -> 01: 31: 30.100
+só para que minha matemática não se misture incorretamente.
 
 1979
-01:31:30,100 --> 01:31:32,580
-So if you think about what this Mario block is,
+01: 31: 30,100 -> 01: 31: 32.580
+Então, se você pensar sobre o que é esse bloco de Mario,
 
 1980
-01:31:32,580 --> 01:31:35,318
-this is like printing rows and columns.
+01: 31: 32.580 -> 01: 31: 35.318
+isso é como imprimir linhas e colunas.
 
 1981
-01:31:35,318 --> 01:31:37,860
-Kind of like an old school typewriter that's got to move from
+01: 31: 35,318 -> 01: 31: 37.860
+Como uma máquina de escrever da velha escola que precisa mudar 
 
 1982
-01:31:37,860 --> 01:31:41,250
-left to right and then top to bottom, top to bottom, left to right,
+01: 31: 37,860 -> 01: 31: 41.250
+da esquerda para a direita e de cima para baixo, de cima para baixo, da esquerda para a direita,
 
 1983
-01:31:41,250 --> 01:31:44,610
-and so forth just to print different blocks on different lines.
+01: 31: 41,250 -> 01: 31: 44.610
+e assim por diante, apenas para imprimir blocos diferentes em linhas diferentes.
 
 1984
-01:31:44,610 --> 01:31:47,010
-So the effect here-- if I open up mario8--
+01: 31: 44.610 -> 01: 31: 47.010
+Então, o efeito aqui - se eu abrir mario8 -
 
 1985
-01:31:47,010 --> 01:31:48,730
-might be this, make-- oops.
+01: 31: 47,010 -> 01: 31: 48.730
+deverá ser isso, faça - ops.
 
 1986
-01:31:48,730 --> 01:31:53,193
-Let me go ahead and make mario8, ./mario8.
+01: 31: 48,730 -> 01: 31: 53.193
+Deixe-me ir em frente e "make mario8", ./mario8.
 
 1987
-01:31:53,193 --> 01:31:54,360
-What's the size going to be?
+01: 31: 53,193 -> 01: 31: 54.360
+Qual será o tamanho?
 
 1988
-01:31:54,360 --> 01:31:55,680
-Well, maybe three.
+01: 31: 54,360 -> 01: 31: 55.680
+Bem, talvez três.
 
 1989
-01:31:55,680 --> 01:32:00,030
-And now I've printed out three rows and three columns.
+01: 31: 55,680 -> 01: 32: 00.030
+E agora imprimi três linhas e três colunas.
 
 1990
-01:32:00,030 --> 01:32:03,930
-These essentially represent each of my rows.
+01: 32: 00,030 -> 01: 32: 03.930
+Estes representam essencialmente cada uma das minhas linhas.
 
 1991
-01:32:03,930 --> 01:32:05,830
-I'm counting from i up to--
+01: 32: 03,930 -> 01: 32: 05.830
+Estou contando de i até -
 
 1992
 01:32:05,830 --> 01:32:07,450
 oh.
 
 1993
-01:32:07,450 --> 01:32:10,980
-I'm teaching myself now only, OK.
+01: 32: 07,450 -> 01: 32: 10.980
+Estou ensinando para mim agora, OK.
 
 1994
-01:32:10,980 --> 01:32:11,760
-Let's rewind.
+01: 32: 10.980 -> 01: 32: 11.760
+Vamos retroceder.
 
 1995
-01:32:11,760 --> 01:32:13,950
-Here is what was amazing me a moment ago.
+01: 32: 11,760 -> 01: 32: 13.950
+Aqui está o que me maravilhando um momento atrás.
 
 1996
-01:32:13,950 --> 01:32:16,770
-When I was running what's the size of this program,
+01: 32: 13,950 -> 01: 32: 16.770
+Quando eu estava executando qual é o tamanho deste programa,
 
 1997
-01:32:16,770 --> 01:32:19,140
-I saw a three-by-three grid of blocks.
+01: 32: 16,770 -> 01: 32: 19.140
+Eu vi uma grade de blocos de três por três.
 
 1998
-01:32:19,140 --> 01:32:21,450
-And if I run it again, maybe with 10, I now
+01: 32: 19,140 -> 01: 32: 21.450
+E se eu executá-lo novamente, talvez com 10, eu agora
 
 1999
-01:32:21,450 --> 01:32:24,003
-see an even bigger grid of 10-by-10 bricks.
+01: 32: 21,450 -> 01: 32: 24.003
+veja uma grade ainda maior de blocos de 10 por 10.
 
 2000
-01:32:24,003 --> 01:32:26,670
-It's a little taller than it is wide, because the hash marks are
+01: 32: 24,003 -> 01: 32: 26.670
+Este é um pouco mais alto do que largo, porque os caracteres "hash" são
 
 2001
-01:32:26,670 --> 01:32:27,960
-taller than they are wide.
+01: 32: 26,670 -> 01: 32: 27.960
+mais altos do que largos.
 
 2002
-01:32:27,960 --> 01:32:30,390
-And you'll see that now this program is dynamic.
+01: 32: 27,960 -> 01: 32: 30.390
+E você verá que agora este programa é dinâmico.
 
 2003
-01:32:30,390 --> 01:32:31,950
-So how is that working?
+01: 32: 30,390 -> 01: 32: 31.950
+Então, como isso está funcionando?
 
 2004
-01:32:31,950 --> 01:32:33,950
-Well, if I actually look at the code here,
+01: 32: 31,950 -> 01: 32: 33.950
+Bem, se eu realmente olhar para o código aqui,
 
 2005
-01:32:33,950 --> 01:32:36,750
-notice that, effectively, what line 14 is doing
+01: 32: 33,950 -> 01: 32: 36.750
+observe que, efetivamente, o que a linha 14 está fazendo
 
 2006
-01:32:36,750 --> 01:32:39,030
-is it's doing one row at a time.
+01: 32: 36,750 -> 01: 32: 39.030
+e está fazendo uma linha de cada vez.
 
 2007
-01:32:39,030 --> 01:32:43,170
-It's giving me n rows, and each of those rows I'm thinking of this is i at 0,
+01: 32: 39,030 -> 01: 32: 43.170
+Ele está me dando n linhas, e cada uma dessas linhas estou pensando que é i para 0,
 
 2008
-01:32:43,170 --> 01:32:46,020
-i1, i2, and so forth.
+01: 32: 43,170 -> 01: 32: 46.020
+i1, i2 e assim por diante.
 
 2009
-01:32:46,020 --> 01:32:50,650
-Meanwhile, within each row, I'm using this inner loop,
+01: 32: 46,020 -> 01: 32: 50.650
+Enquanto isso, dentro de cada linha, estou usando este loop interno,
 
 2010
-01:32:50,650 --> 01:32:54,900
-which is deliberately nested inside, to kind of do each of the characters
+01: 32: 50,650 -> 01: 32: 54.900
+que é deliberadamente aninhado dentro, para fazer cada um dos caracteres
 
 2011
-01:32:54,900 --> 01:32:55,990
-from left to right.
+01: 32: 54,900 -> 01: 32: 55.990
+da esquerda para a direita.
 
 2012
-01:32:55,990 --> 01:32:58,680
-So within each row, I want hash, hash, hash, hash.
+01: 32: 55,990 -> 01: 32: 58.680
+Portanto, em cada linha, quero hash, hash, hash, hash.
 
 2013
-01:32:58,680 --> 01:33:00,750
-Within each row-- hash, hash, hash, hash.
+01: 32: 58,680 -> 01: 33: 00.750
+Dentro de cada linha - hash, hash, hash, hash.
 
 2014
-01:33:00,750 --> 01:33:03,670
-So it's like implementing this two-dimensional process.
+01: 33: 00,750 -> 01: 33: 03.670
+Portanto, é como implementar esse processo bidimensional.
 
 2015
-01:33:03,670 --> 01:33:06,900
-But again, using the same fundamental ideas.
+01: 33: 03,670 -> 01: 33: 06.900
+Mas, novamente, usando as mesmas idéias fundamentais.
 
 2016
-01:33:06,900 --> 01:33:11,370
-Just a for loop that's very carefully counting from zero on up
+01: 33: 06,900 -> 01: 33: 11.370
+Apenas um loop "for" que com muito cuidado conta do zero para cima
 
 2017
-01:33:11,370 --> 01:33:16,032
-to some value to do something again and again and again.
+01: 33: 11,370 -> 01: 33: 16.032
+até algum valor para fazer algo novamente e novamente.
 
 2018
-01:33:16,032 --> 01:33:18,240
-And so if you think about really any of today's games
+01: 33: 16,032 -> 01: 33: 18.240
+E se você realmente pensar sobre qualquer um dos jogos de hoje
 
 2019
-01:33:18,240 --> 01:33:21,150
-or graphics or programs, anytime you see redundancy,
+01: 33: 18,240 -> 01: 33: 21.150
+ou gráficos ou programas, sempre que você ver redundância,
 
 2020
-01:33:21,150 --> 01:33:24,600
-whether it's this in two dimensions-- maybe it's this vertically in one
+01: 33: 21,150 -> 01: 33: 24.600
+seja em duas dimensões - talvez seja verticalmente em uma
 
 2021
-01:33:24,600 --> 01:33:26,712
-dimension or this horizontally in another.
+01: 33: 24.600 -> 01: 33: 26.712
+dimensão ou horizontalmente em outra.
 
 2022
-01:33:26,712 --> 01:33:29,670
-Odds are, there's just some repetition that's happening again and again
+01: 33: 26,712 -> 01: 33: 29.670
+A probabilidade, de que exista  alguma repetição que estão acontecendo de novo e de novo
 
 2023
-01:33:29,670 --> 01:33:33,510
-and again that can be reduced in C or in Scratch or some other language
+01: 33: 29.670 -> 01: 33: 33.510
+e novamente, isso pode ser reduzido em C ou em Scratch ou alguma outra linguagem
 
 2024
-01:33:33,510 --> 01:33:36,780
-to ultimately just lines of code.
+01: 33: 33,510 -> 01: 33: 36.780
+em última análise, em apenas linhas de código.
 
 2025
-01:33:36,780 --> 01:33:39,270
-And indeed, this is an allusion to one of the first things
+01: 33: 36,780 -> 01: 33: 39.270
+E, de fato, esta é uma alusão a uma das primeiras coisas
 
 2026
-01:33:39,270 --> 01:33:41,760
-you'll do for the first problem set, problem set 1.
+01: 33: 39,270 -> 01: 33: 41.760
+que você fará para o primeiro conjunto de problemas, o conjunto de problemas 1.
 
 2027
-01:33:41,760 --> 01:33:45,180
-You'll use CS50 Lab, which is identical to CS50 Sandbox, which
+01: 33: 41,760 -> 01: 33: 45.180
+Você usará o CS50 Lab, que é idêntico ao CS50 Sandbox, que
 
 2028
-01:33:45,180 --> 01:33:48,090
-I've been using thus far, but which adds instructions,
+01: 33: 45,180 -> 01: 33: 48.090
+Tenho usado até agora, mas que adiciona instruções,
 
 2029
-01:33:48,090 --> 01:33:52,170
-the actual problems to solve, alongside of your sandbox.
+01: 33: 48.090 -> 01: 33: 52.170
+os problemas reais a serem resolvidos, junto de sua sandbox.
 
 2030
-01:33:52,170 --> 01:33:55,470
-But before we tease you with that, let's just
+01: 33: 52,170 -> 01: 33: 55.470
+Mas antes de provocá-lo com isso, vamos apenas
 
 2031
-01:33:55,470 --> 01:34:00,720
-consider now that there are a bunch of little assumptions I've been making.
+01: 33: 55.470 -> 01: 34: 00.720
+considerar agora que há um monte de pequenas suposições que tenho feito.
 
 2032
-01:34:00,720 --> 01:34:03,060
-Like thus far, all of the mistakes in my code
+01: 34: 00,720 -> 01: 34: 03.060
+Como até agora, todos os erros no meu código
 
 2033
-01:34:03,060 --> 01:34:06,990
-have been my own-- some intentional, but several unintentional, as well, today.
+01: 34: 03,060 -> 01: 34: 06.990
+foram meus mesmos - alguns intencionais, mas várias não intencionais também, hoje.
 
 2034
-01:34:06,990 --> 01:34:10,560
-But it turns out that computers themselves do have limitations.
+01: 34: 06,990 -> 01: 34: 10.560
+Mas acontece que os próprios computadores têm limitações.
 
 2035
-01:34:10,560 --> 01:34:12,810
-Inside of your Mac or PC is generally stuff like this.
+01: 34: 10,560 -> 01: 34: 12.810
+Geralmente, dentro do seu Mac ou PC há coisas assim.
 
 2036
-01:34:12,810 --> 01:34:14,372
-This is called memory, or RAM.
+01: 34: 12,810 -> 01: 34: 14.372
+Isso é chamado de memória ou RAM.
 
 2037
-01:34:14,372 --> 01:34:16,080
-And you don't typically see it unless you
+01: 34: 14,372 -> 01: 34: 16.080
+E você normalmente não vê isso, a menos que você
 
 2038
-01:34:16,080 --> 01:34:18,900
-remove the cover from your phone or your laptop or desktop.
+01: 34: 16,080 -> 01: 34: 18.900
+remova a tampa do celular ou laptop ou desktop.
 
 2039
-01:34:18,900 --> 01:34:22,680
-RAM is where all of your programs are stored while they're running.
+01: 34: 18,900 -> 01: 34: 22.680
+RAM é onde todos os seus programas são armazenados durante a execução.
 
 2040
-01:34:22,680 --> 01:34:26,190
-RAM is where all of your programs-- where all of your files are
+01: 34: 22,680 -> 01: 34: 26.190
+RAM é onde todos os seus programas - onde todos os seus arquivos estão
 
 2041
-01:34:26,190 --> 01:34:27,540
-stored while they're open.
-
+01: 34: 26,190 -> 01: 34: 27.540
+armazenados enquanto estão abertos.
 2042
 01:34:27,540 --> 01:34:30,930
 It's what your computer uses to do multiple things at once
