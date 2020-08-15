@@ -8610,7 +8610,7 @@ Então, isso significa apenas fazer isso para sempre.
 
 2156
 01: 39: 33.590 -> 01: 39: 36.950
-Bem, deixe-me continuar e isso vai voar além da tela aqui.
+Bem, deixe-me continuar e isso vai voar para além da tela aqui.
 
 2157
 01: 39: 36,950 -> 01: 39: 40.190
@@ -8625,160 +8625,160 @@ E, de fato, há uma função em C chamada "sleep".
 Mas para usá-la, você realmente deve incluir
 
 2160
-01:39:45,230 --> 01:39:50,092
-another file called unistandard.h.
+01: 39: 45,230 -> 01: 39: 50.092
+outro arquivo chamado unistandard.h.
 
 2161
-01:39:50,092 --> 01:39:52,550
-You would only know this from looking in the documentation,
+01: 39: 50,092 -> 01: 39: 52.550
+Você só saberia disso olhando na documentação,
 
 2162
-01:39:52,550 --> 01:39:55,820
-but it's a handy function that lets me sleep one second at a time.
+01: 39: 52.550 -> 01: 39: 55.820
+mas é uma função útil que me permite dormir um segundo de cada vez.
 
 2163
-01:39:55,820 --> 01:39:57,920
-Let me go ahead and make overflow.
+01: 39: 55,820 -> 01: 39: 57.920
+Deixe-me ir em frente "make overflow".
 
 2164
-01:39:57,920 --> 01:39:58,650
-No errors.
+01: 39: 57,920 -> 01: 39: 58.650
+Sem erros.
 
 2165
-01:39:58,650 --> 01:40:00,650
-Let me increase the size of my screen.
+01: 39: 58.650 -> 01: 40: 00.650
+Deixe-me aumentar o tamanho da minha tela.
 
 2166
-01:40:00,650 --> 01:40:02,600
-And let me go ahead and run overflow.
+01: 40: 00,650 -> 01: 40: 02.600
+E deixe-me ir em frente e executar overflow.
 
 2167
-01:40:02,600 --> 01:40:06,530
-And we'll see that every one second, it prints out a value starting at one,
+01: 40: 02.600 -> 01: 40: 06.530
+E veremos que a cada segundo, ele imprime um valor começando em um,
 
 2168
-01:40:06,530 --> 01:40:08,780
-and then it doubles it, and then it doubles it,
+01: 40: 06.530 -> 01: 40: 08.780
+e então duplica, e então duplica,
 
 2169
-01:40:08,780 --> 01:40:10,760
-and then it doubles it again.
+01: 40: 08,780 -> 01: 40: 10.760
+e então o duplica novamente.
 
 2170
-01:40:10,760 --> 01:40:13,220
-So you might recall some of these values from last week,
+01: 40: 10.760 -> 01: 40: 13.220
+Então, você deve se lembrar de alguns desses valores da semana passada,
 
 2171
-01:40:13,220 --> 01:40:16,620
-where I proposed that were 1,024 pages in a phone book,
+01: 40: 13,220 -> 01: 40: 16.620
+onde eu propus que fossem 1.024 páginas em uma lista telefônica,
 
 2172
-01:40:16,620 --> 01:40:18,893
-and then it just got smaller and smaller and smaller.
+01: 40: 16.620 -> 01: 40: 18.893
+e então ficou cada vez menor.
 
 2173
-01:40:18,893 --> 01:40:20,310
-Now we're just doing the opposite.
+01: 40: 18.893 -> 01: 40: 20.310
+Agora estamos apenas fazendo o oposto.
 
 2174
-01:40:20,310 --> 01:40:22,970
-We're doubling by two, by two, by two.
+01: 40: 20.310 -> 01: 40: 22.970
+Estamos dobrando por dois, por dois, por dois.
 
 2175
-01:40:22,970 --> 01:40:26,090
-We're just past a million now, 2 million, 4 million, 8 million,
+01: 40: 22.970 -> 01: 40: 26.090
+Passamos de um milhão agora, 2 milhões, 4 milhões, 8 milhões,
 
 2176
-01:40:26,090 --> 01:40:27,077
-16 million.
+01: 40: 26.090 -> 01: 40: 27.077
+16 milhões.
 
 2177
-01:40:27,077 --> 01:40:28,160
-So we're getting up there.
+01: 40: 27.077 -> 01: 40: 28.160
+Então, estamos chegando lá.
 
 2178
-01:40:28,160 --> 01:40:30,770
-So it looks like integers are pretty big.
+01: 40: 28,160 -> 01: 40: 30.770
+Portanto, parece que os inteiros são muito grandes.
 
 2179
-01:40:30,770 --> 01:40:35,720
-They're indeed using 32 bits in a computer that apparently--
+01: 40: 30.770 -> 01: 40: 35.720
+Eles estão realmente usando 32 bits em um computador que aparentemente -
 
 2180
-01:40:35,720 --> 01:40:38,150
-what just happened?
+01: 40: 35,720 -> 01: 40: 38.150
+o que acabou de acontecer?
 
 2181
 01:40:38,150 --> 01:40:39,170
 Another lie.
 
 2182
-01:40:39,170 --> 01:40:44,360
-If you just multiply some integer by two forever, it eventually becomes zero,
+01: 40: 39,170 -> 01: 40: 44.360
+Se você apenas multiplicar algum número inteiro por dois para sempre, ele eventualmente se torna zero,
 
 2183
-01:40:44,360 --> 01:40:46,310
-it would seem.
+01: 40: 44,360 -> 01: 40: 46.310
+ao que parece.
 
 2184
-01:40:46,310 --> 01:40:48,153
-That, too, is not right.
+01: 40: 46,310 -> 01: 40: 48.153
+Isso também não está certo.
 
 2185
-01:40:48,153 --> 01:40:49,070
-But what has happened?
+01: 40: 48,153 -> 01: 40: 49.070
+Mas o que aconteceu?
 
 2186
-01:40:49,070 --> 01:40:51,770
-And there's kind of an illusion to it, both in my program's name
+01: 40: 49,070 -> 01: 40: 51.770
+E há uma espécie de ilusão nisso, tanto no nome do meu programa
 
 2187
-01:40:51,770 --> 01:40:53,240
-and in the red error.
+01: 40: 51.770 -> 01: 40: 53.240
+e no erro vermelho.
 
 2188
-01:40:53,240 --> 01:40:56,750
-Well, at some point, you only have so many bits
+01: 40: 53.240 -> 01: 40: 56.750
+Bem, em algum ponto, você só tem alguns bits
 
 2189
-01:40:56,750 --> 01:40:59,840
-after which if you keep incrementing, incrementing, incrementing,
+01: 40: 56,750 -> 01: 40: 59.840
+depois disso, se você continuar incrementando, incrementando, incrementando,
 
 2190
-01:40:59,840 --> 01:41:02,600
-you don't have enough bits to sort of carry the one, so to speak,
+01: 40: 59,840 -> 01: 41: 02.600
+você não tem bits suficientes para carregar um, por assim dizer,
 
 2191
-01:41:02,600 --> 01:41:04,580
-and remember the even bigger value.
+01: 41: 02.600 -> 01: 41: 04.580
+e lembre-se do valor ainda maior.
 
 2192
-01:41:04,580 --> 01:41:08,000
-After all, if we go back to some of our discussion last week to discuss now
+01: 41: 04,580 -> 01: 41: 08.000
+Afinal, se voltarmos a algumas de nossas discussões na semana passada para discutir agora
 
 2193
-01:41:08,000 --> 01:41:12,240
-what's called floating point imprecision or now integer overflow,
+01: 41: 08.000 -> 01: 41: 12.240
+o que é chamado de imprecisão de ponto flutuante ou agora estouro de inteiro,
 
 2194
-01:41:12,240 --> 01:41:14,720
-which means floats can only be so precise
+01: 41: 12,240 -> 01: 41: 14.720
+o que significa que os floats só podem ser tão precisos
 
 2195
-01:41:14,720 --> 01:41:16,830
-and integers can only be so big.
+01: 41: 14,720 -> 01: 41: 16.830
+e os inteiros só podem ser tão grandes.
 
 2196
-01:41:16,830 --> 01:41:18,670
-What you have is the following scenario.
+01: 41: 16,830 -> 01: 41: 18.670
+O que você tem é o seguinte cenário.
 
 2197
-01:41:18,670 --> 01:41:21,253
-123 in decimal, in our human world--
+01: 41: 18.670 -> 01: 41: 21.253
+123 em decimal, em nosso mundo humano -
 
 2198
-01:41:21,253 --> 01:41:23,170
-of course, you can just keep adding one to it.
+01: 41: 21,253 -> 01: 41: 23.170
+claro, você pode simplesmente continuar adicionando um a ele.
 
 2199
 01:41:23,170 --> 01:41:26,630
