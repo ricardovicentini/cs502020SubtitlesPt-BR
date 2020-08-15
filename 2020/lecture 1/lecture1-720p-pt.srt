@@ -8154,477 +8154,475 @@ RAM é onde todos os seus programas - onde todos os seus arquivos estão
 2041
 01: 34: 26,190 -> 01: 34: 27.540
 armazenados enquanto estão abertos.
+
 2042
-01:34:27,540 --> 01:34:30,930
-It's what your computer uses to do multiple things at once
+01: 34: 27.540 -> 01: 34: 30.930
+É o que seu computador usa para fazer várias coisas ao mesmo tempo
 
 2043
-01:34:30,930 --> 01:34:32,440
-and keep things in memory.
+01: 34: 30.930 -> 01: 34: 32.440
+e manter as coisas na memória.
 
 2044
-01:34:32,440 --> 01:34:35,430
-However, it is, by nature of hardware, finite.
+01: 34: 32.440 -> 01: 34: 35.430
+No entanto, o hardware é por natureza, finito.
 
 2045
-01:34:35,430 --> 01:34:38,610
-You have maybe one gigabyte, one billion bytes, of memory.
+01: 34: 35.430 -> 01: 34: 38.610
+Você tem talvez um gigabyte, um bilhão de bytes de memória.
 
 2046
-01:34:38,610 --> 01:34:41,400
-Maybe you have four gigabytes, or four billion bytes, of memory.
+01: 34: 38,610 -> 01: 34: 41.400
+Talvez você tenha quatro gigabytes ou quatro bilhões de bytes de memória.
 
 2047
-01:34:41,400 --> 01:34:44,280
-You have fixed amount of memory in your computer,
+01: 34: 41,400 -> 01: 34: 44.280
+Você fixou quantidade de memória em seu computador,
 
 2048
-01:34:44,280 --> 01:34:48,040
-which means there is some fundamental limitation on what your computer can
+01: 34: 44,280 -> 01: 34: 48.040
+o que significa que há alguma limitação fundamental no que seu computador pode
 
 2049
-01:34:48,040 --> 01:34:48,540
-do.
+01: 34: 48,040 -> 01: 34: 48.540
+Fazer.
 
 2050
-01:34:48,540 --> 01:34:52,350
-It cannot necessarily count to infinity, because how could it count to infinity
+01: 34: 48,540 -> 01: 34: 52.350
+Não pode necessariamente contar até o infinito, porque como poderia contar até o infinito
 
 2051
-01:34:52,350 --> 01:34:57,020
-if it can't store all possible numbers using a finite amount of space?
+01: 34: 52,350 -> 01: 34: 57.020
+se ele não pode armazenar todos os números possíveis usando uma quantidade finita de espaço?
 
 2052
-01:34:57,020 --> 01:34:59,370
-Indeed, there are some limits of computation
+01: 34: 57,020 -> 01: 34: 59.370
+Na verdade, existem alguns limites de computação
 
 2053
-01:34:59,370 --> 01:35:01,230
-that we've only just begun to see.
+01: 34: 59,370 -> 01: 35: 01.230
+que apenas começamos a ver.
 
 2054
-01:35:01,230 --> 01:35:02,890
-In fact, let me go ahead and do this.
+01: 35: 01,230 -> 01: 35: 02.890
+Na verdade, deixe-me ir em frente e fazer isso.
 
 2055
-01:35:02,890 --> 01:35:06,445
-Let me write a program that I'm going to go ahead and call float.c.
+01: 35: 02,890 -> 01: 35: 06.445
+Deixe-me escrever um programa que irei prosseguir e chamar float.c.
 
 2056
-01:35:06,445 --> 01:35:09,570
-And this is just going to be a program that gets a couple of floating point
+01: 35: 06,445 -> 01: 35: 09.570
+E este será apenas um programa que terá alguns pontos flutuantes
 
 2057
-01:35:09,570 --> 01:35:11,980
-values from the user.
+01: 35: 09.570 -> 01: 35: 11.980
+valores do usuário.
 
 2058
-01:35:11,980 --> 01:35:15,000
-Let me go ahead and include the CS50 library.
+01: 35: 11.980 -> 01: 35: 15.000
+Deixe-me ir em frente e incluir a biblioteca CS50.
 
 2059
-01:35:15,000 --> 01:35:19,420
-Let's go ahead and include stdio.h, int main void, as before.
+01: 35: 15.000 -> 01: 35: 19.420
+Vamos incluir stdio.h, int main void, como antes.
 
 2060
-01:35:19,420 --> 01:35:22,488
-And all I want to do here with this program is get a couple of floats.
+01: 35: 19,420 -> 01: 35: 22.488
+E tudo o que quero fazer aqui com este programa é obter algumas casas decimais.
 
 2061
-01:35:22,488 --> 01:35:23,280
-So give me a float.
+01: 35: 22.488 -> 01: 35: 23.280
+Então me dê um float.
 
 2062
-01:35:23,280 --> 01:35:24,420
-We'll call it x.
+01: 35: 23,280 -> 01: 35: 24.420
+Vamos chamá-lo de x.
 
 2063
-01:35:24,420 --> 01:35:26,808
-Get_float, and I'll prompt the human for x.
+01: 35: 24,420 -> 01: 35: 26.808
+Get_float, e pedirei ao humano x.
 
 2064
-01:35:26,808 --> 01:35:28,350
-Then let me go ahead and get another.
+01: 35: 26,808 -> 01: 35: 28.350
+Então deixe-me ir em frente e pegar outro.
 
 2065
 01:35:28,350 --> 01:35:29,370
-I'll call it y.
+Vou chamá-lo de y.
 
 2066
 01:35:29,370 --> 01:35:31,380
-Get_float, quote unquote y.
+Get_float, abre e fecha aspas y.
 
 2067
-01:35:31,380 --> 01:35:34,110
-And recall that a float is just a number that
+01: 35: 31,380 -> 01: 35: 34.110
+E lembre-se de que um float é apenas um número que
 
 2068
-01:35:34,110 --> 01:35:36,475
-has a decimal point in it, a so-called real number.
+01: 35: 34,110 -> 01: 35: 36.475
+tem uma vírgula decimal, um assim chamado número real.
 
 2069
-01:35:36,475 --> 01:35:38,100
-Now let's just do some simple division.
+01: 35: 36,475 -> 01: 35: 38.100
+Agora vamos fazer uma divisão simples.
 
 2070
-01:35:38,100 --> 01:35:40,990
-I claim that computers can do addition, subtraction, and so forth.
+01: 35: 38,100 -> 01: 35: 40.990
+Eu afirmo que os computadores podem fazer adição, subtração e assim por diante.
 
 2071
-01:35:40,990 --> 01:35:41,920
-So let's do that.
+01: 35: 40,990 -> 01: 35: 41.920
+Então vamos fazer isso.
 
 2072
-01:35:41,920 --> 01:35:46,410
-Let's just tell it that x divided by y is going to equal the following--
+01: 35: 41,920 -> 01: 35: 46.410
+Vamos apenas dizer que x dividido por y vai ser igual ao seguinte -
 
 2073
-01:35:46,410 --> 01:35:52,150
-percent f backslash n x divided by y semicolon.
+01: 35: 46.410 -> 01: 35: 52.150
+%f barra invertida n receberá x dividido por y ponto e vírgula.
 
 2074
-01:35:52,150 --> 01:35:55,110
-So that's just sort of a very simplistic calculator
+01: 35: 52,150 -> 01: 35: 55.110
+Essa é uma calculadora muito simplista
 
 2075
-01:35:55,110 --> 01:35:57,510
-that I've implemented that only supports division.
-
+01: 35: 55,110 -> 01: 35: 57.510
+que implementei, que suporta apenas divisão.
 2076
-01:35:57,510 --> 01:36:04,170
-Let me go ahead and compile this by going and typing make floats.
+01: 35: 57.510 -> 01: 36: 04.170
+Deixe-me prosseguir e compilar isso digitando make floats.
 
 2077
-01:36:04,170 --> 01:36:05,820
-And you'll see that it did compile.
+01: 36: 04,170 -> 01: 36: 05.820
+E você verá que ele foi compilado.
 
 2078
-01:36:05,820 --> 01:36:07,980
-So floats with dot slash.
+01: 36: 05,820 -> 01: 36: 07.980
+Então ./float
 
 2079
-01:36:07,980 --> 01:36:09,570
-x is going to be, say, 1.
+01: 36: 07,980 -> 01: 36: 09.570
+x vai ser, digamos, 1.
 
 2080
-01:36:09,570 --> 01:36:10,960
-y is going to be 10.
+01: 36: 09.570 -> 01: 36: 10.960
+y vai ser 10.
 
 2081
-01:36:10,960 --> 01:36:12,120
+01: 36: 10.960 -> 01: 36: 12.120
 OK, viola.
 
 2082
-01:36:12,120 --> 01:36:15,501
-x divided by y equals 0.10000.
+01: 36: 12,120 -> 01: 36: 15.501
+x dividido por y é igual a 0,10000.
 
 2083
-01:36:15,501 --> 01:36:16,440
-That's pretty nice.
+01: 36: 15.501 -> 01: 36: 16.440
+Isso é muito bom.
 
 2084
-01:36:16,440 --> 01:36:19,570
-And recall, if you don't want to see all those zeros, you can just say,
+01: 36: 16.440 -> 01: 36: 19.570
+E lembre-se, se você não quiser ver todos esses zeros, você pode apenas dizer,
 
 2085
-01:36:19,570 --> 01:36:23,160
-show me one decimal point by adding 0.1.
+01: 36: 19.570 -> 01: 36: 23.160
+mostre-me um ponto decimal adicionando 0,1.
 
 2086
-01:36:23,160 --> 01:36:25,950
-Recompile and then rerun it.
+01: 36: 23,160 -> 01: 36: 25.950
+Recompile e execute-o novamente.
 
 2087
-01:36:25,950 --> 01:36:27,790
-And now do 1, 10.
+01: 36: 25,950 -> 01: 36: 27.790
+E agora faça 1, 10.
 
 2088
-01:36:27,790 --> 01:36:29,820
-OK, so now it's 1/10.
+01: 36: 27,790 -> 01: 36: 29.820
+OK, agora é 1/10.
 
 2089
-01:36:29,820 --> 01:36:30,930
-Or is it?
+01: 36: 29.820 -> 01: 36: 30.930
+Ou é?
 
 2090
-01:36:30,930 --> 01:36:33,660
-Now that I have this ability to look past the decimal point,
+01: 36: 30.930 -> 01: 36: 33.660
+Agora que tenho a capacidade de olhar além da vírgula decimal,
 
 2091
-01:36:33,660 --> 01:36:36,900
-why don't I look not a few places or one place.
+01: 36: 33.660 -> 01: 36: 36.900
+por que não procuro alguns lugares ou um lugar.
 
 2092
-01:36:36,900 --> 01:36:40,440
-Let me go ahead and look maybe 10 places after the decimal point.
+01: 36: 36.900 -> 01: 36: 40.440
+Deixe-me ir em frente e ver talvez 10 casas após a vírgula.
 
 2093
-01:36:40,440 --> 01:36:48,210
-Let me rerun this as make floats, ./floats, 1, 10.
+01: 36: 40.440 -> 01: 36: 48.210
+Deixe-me executar novamente como make floats, ./floats, 1, 10.
 
 2094
-01:36:48,210 --> 01:36:49,920
-Interesting.
+01: 36: 48,210 -> 01: 36: 49.920
+Interessante.
 
 2095
-01:36:49,920 --> 01:36:51,627
-All right, that seems a little strange.
+01: 36: 49,920 -> 01: 36: 51.627
+Tudo bem, isso parece um pouco estranho.
 
 2096
-01:36:51,627 --> 01:36:52,710
-Maybe it was just a fluke.
+01: 36: 51,627 -> 01: 36: 52.710
+Talvez tenha sido apenas um acaso.
 
 2097
-01:36:52,710 --> 01:36:54,043
-Let's look out a little further.
+01: 36: 52,710 -> 01: 36: 54.043
+Vamos olhar um pouco mais adiante.
 
 2098
-01:36:54,043 --> 01:36:56,080
-Let's look 50 decimal places out.
+01: 36: 54,043 -> 01: 36: 56.080
+Vamos ver 50 casas decimais.
 
 2099
-01:36:56,080 --> 01:36:57,887
-Let's go ahead and recompile this.
+01: 36: 56,080 -> 01: 36: 57.887
+Vamos recompilar isso.
 
 2100
-01:36:57,887 --> 01:36:59,970
-And it turns out, there's some keyboard shortcuts.
+01: 36: 57.887 -> 01: 36: 59.970
+E acontece que existem alguns atalhos de teclado.
 
 2101
-01:36:59,970 --> 01:37:02,100
-I'm now hitting up and down on my keyboard, which
+01: 36: 59,970 -> 01: 37: 02.100
+Agora estou pressionando para cima e para baixo no meu teclado, que
 
 2102
-01:37:02,100 --> 01:37:04,302
-will scroll through your entire history of commands
+01: 37: 02,100 -> 01: 37: 04.302
+irá percorrer todo o seu histórico de comandos
 
 2103
-01:37:04,302 --> 01:37:06,010
-so you don't have to remember everything.
+01: 37: 04,302 -> 01: 37: 06.010
+então você não precisa se lembrar de tudo.
 
 2104
-01:37:06,010 --> 01:37:08,130
-So to save time, I'm now just going up and down.
+01: 37: 06,010 -> 01: 37: 08.130
+Então, para economizar tempo, agora estou indo para cima e para baixo.
 
 2105
-01:37:08,130 --> 01:37:11,850
-Let me go ahead and do ./floats now, 1, 10.
+01: 37: 08,130 -> 01: 37: 11.850
+Deixe-me ir em frente e fazer ./floats agora, 1, 10.
 
 2106
-01:37:11,850 --> 01:37:14,820
-Oh my god, division is a lie.
+01: 37: 11.850 -> 01: 37: 14.820
+Oh meu Deus, divisão é uma mentira.
 
 2107
-01:37:14,820 --> 01:37:18,660
-So when your grade school teachers or whatnot taught you that 1 divided by 10
+01: 37: 14.820 -> 01: 37: 18.660
+Então, quando seus professores do ensino fundamental ou algo assim lhe ensinaram que 1 dividido por 10
 
 2108
-01:37:18,660 --> 01:37:24,690
-is 1/10, or 0.10000 infinitely, apparently that's not true.
+01: 37: 18.660 -> 01: 37: 24.690
+é 1/10 ou 0,10000 infinitamente, aparentemente isso não é verdade.
 
 2109
-01:37:24,690 --> 01:37:28,810
-According to this computer, 1/10 is actually this value.
+01: 37: 24,690 -> 01: 37: 28.810
+De acordo com este computador, 1/10 é realmente esse valor.
 
 2110
-01:37:28,810 --> 01:37:31,500
-So how do we reconcile that?
+01: 37: 28.810 -> 01: 37: 31.500
+Então, como podemos reconciliar isso?
 
 2111
-01:37:31,500 --> 01:37:36,180
-Who is right, grade school math or computers?
+01: 37: 31,500 -> 01: 37: 36.180
+Quem está certo, matemática do ensino fundamental ou computadores?
 
 2112
-01:37:36,180 --> 01:37:39,150
-And what might explain?
+01: 37: 36,180 -> 01: 37: 39.150
+E o que pode explicar?
 
 2113
-01:37:39,150 --> 01:37:40,860
-Any thoughts?
+01: 37: 39,150 -> 01: 37: 40.860
+Alguma ideia?
 
 2114
-01:37:40,860 --> 01:37:41,850
-Yeah?
+01: 37: 40,860 -> 01: 37: 41.850
+Sim?
 
 2115
-01:37:41,850 --> 01:37:45,550
-AUDIENCE: It only stores so much so then half of that,
+01: 37: 41.850 -> 01: 37: 45.550
+PÚBLICO: Ele armazena apenas até metade disso,
 
 2116
-01:37:45,550 --> 01:37:47,300
-you don't know what's going on over there.
+01: 37: 45.550 -> 01: 37: 47.300
+você não sabe o que está acontecendo lá.
 
 2117
-01:37:47,300 --> 01:37:48,800
-DAVID MALAN: Yeah, that's a good way of putting it.
+01: 37: 47,300 -> 01: 37: 48.800
+DAVID MALAN: Sim, é uma boa maneira de colocar isso.
 
 2118
-01:37:48,800 --> 01:37:51,200
-Computers can only store so much, so after a certain point,
+01: 37: 48.800 -> 01: 37: 51.200
+Os computadores só podem armazenar até certo ponto, então, a partir de um certo ponto,
 
 2119
-01:37:51,200 --> 01:37:52,908
-you don't know what's going on out there.
+01: 37: 51,200 -> 01: 37: 52.908
+você não sabe o que está acontecendo lá fora.
 
 2120
-01:37:52,908 --> 01:37:53,480
-I like that.
+01: 37: 52.908 -> 01: 37: 53.480
+Eu gosto disso.
 
 2121
-01:37:53,480 --> 01:37:54,710
-Because that's indeed true.
+01: 37: 53.480 -> 01: 37: 54.710
+Porque isso é verdade.
 
 2122
-01:37:54,710 --> 01:37:57,120
-If you only have a finite amount of hardware,
+01: 37: 54.710 -> 01: 37: 57.120
+Se você tiver apenas uma quantidade finita de hardware,
 
 2123
-01:37:57,120 --> 01:38:00,830
-like a finite amount of memory, at some point, the computer has to decide,
+01: 37: 57,120 -> 01: 38: 00.830
+como uma quantidade finita de memória, em algum momento, o computador tem que decidir,
 
 2124
-01:38:00,830 --> 01:38:02,780
-I can count no higher than this value.
+01: 38: 00,830 -> 01: 38: 02.780
+Não posso contar mais do que este valor.
 
 2125
-01:38:02,780 --> 01:38:06,890
-Or I can store no more than this many numbers after the decimal point.
+01: 38: 02,780 -> 01: 38: 06.890
+Ou não posso armazenar mais do que esse número após a vírgula decimal.
 
 2126
-01:38:06,890 --> 01:38:09,290
-You might be using 32 bits, which a float is.
+01: 38: 06,890 -> 01: 38: 09.290
+Você pode estar usando 32 bits, o que é um float.
 
 2127
-01:38:09,290 --> 01:38:12,470
-You could use more bits, like a double, as I described it earlier,
+01: 38: 09,290 -> 01: 38: 12.470
+Você poderia usar mais bits, como um duplo, como descrevi anteriormente,
 
 2128
-01:38:12,470 --> 01:38:14,720
-literally uses twice as many bits, 64 bits.
+01: 38: 12.470 -> 01: 38: 14.720
+literalmente usa o dobro de bits, 64 bits.
 
 2129
-01:38:14,720 --> 01:38:19,580
-So that means we could get farther out before we see that imprecision.
+01: 38: 14,720 -> 01: 38: 19.580
+Isso significa que poderíamos ir mais longe antes de ver essa imprecisão.
 
 2130
-01:38:19,580 --> 01:38:20,870
-But you will see it.
+01: 38: 19,580 -> 01: 38: 20.870
+Mas você vai ver.
 
 2131
-01:38:20,870 --> 01:38:24,440
-Computers are, indeed, not perfect in this sense.
+01: 38: 20.870 -> 01: 38: 24.440
+Os computadores, de fato, não são perfeitos nesse sentido.
 
 2132
-01:38:24,440 --> 01:38:26,780
-They can only store a finite amount of information.
+01: 38: 24,440 -> 01: 38: 26.780
+Eles podem armazenar apenas uma quantidade finita de informações.
 
 2133
-01:38:26,780 --> 01:38:31,190
-And so in that sense, the computer is storing the closest possible match
+01: 38: 26,780 -> 01: 38: 31.190
+E então, nesse sentido, o computador está armazenando a correspondência mais próxima possível
 
 2134
-01:38:31,190 --> 01:38:34,190
-for 1 divided by 10 that it can.
+01: 38: 31,190 -> 01: 38: 34.190
+para 1 dividido por 10 que pode.
 
 2135
-01:38:34,190 --> 01:38:38,090
-Because you can't possibly store an infinite number of numbers 100%
+01: 38: 34,190 -> 01: 38: 38.090
+Porque você não pode armazenar um número infinito de números 100%
 
 2136
-01:38:38,090 --> 01:38:42,080
-precisely using a finite amount of information.
-
+01: 38: 38,090 -> 01: 38: 42.080
+precisamente usando uma quantidade finita de informações.
 2137
-01:38:42,080 --> 01:38:44,060
-And we see this in another context, too.
+01: 38: 42,080 -> 01: 38: 44.060
+E vemos isso em outro contexto também.
 
 2138
-01:38:44,060 --> 01:38:48,530
-Let me go ahead and write one other program here called overflow.c.
+01: 38: 44,060 -> 01: 38: 48.530
+Deixe-me prosseguir e escrever um outro programa aqui chamado overflow.c.
 
 2139
-01:38:48,530 --> 01:38:50,990
-And we'll see the same issue in another context.
+01: 38: 48.530 -> 01: 38: 50.990
+E veremos o mesmo problema em outro contexto.
 
 2140
-01:38:50,990 --> 01:38:54,350
-Let me go ahead and include stdio.h.
+01: 38: 50,990 -> 01: 38: 54.350
+Deixe-me ir em frente e incluir stdio.h.
 
 2141
-01:38:54,350 --> 01:38:57,410
-Let me go ahead and do int main void.
+01: 38: 54,350 -> 01: 38: 57.410
+Deixe-me ir em frente e fazer int main void.
 
 2142
-01:38:57,410 --> 01:39:01,190
-Let me go ahead and do for int i gets one.
+01: 38: 57.410 -> 01: 39: 01.190
+Deixe-me ir em frente e fazer isso.
 
 2143
-01:39:01,190 --> 01:39:07,478
-I'm going to go ahead and just say no condition and do i times equals 2.
+01: 39: 01,190 -> 01: 39: 07.478
+Vou prosseguir e dizer sem condição e fazer i vezes igual 2.
 
 2144
-01:39:07,478 --> 01:39:09,020
-And let me go ahead and just do this.
+01: 39: 07,478 -> 01: 39: 09.020
+E deixe-me ir em frente e fazer isso.
 
 2145
-01:39:09,020 --> 01:39:11,840
-Print out the value of i.
+01: 39: 09,020 -> 01: 39: 11.840
+Imprima o valor de i.
 
 2146
-01:39:11,840 --> 01:39:15,440
-So I'm doing the super quickly, but I just have written a program here
+01: 39: 11.840 -> 01: 39: 15.440
+Estou fazendo o super rápido, mas acabei de escrever um programa aqui
 
 2147
-01:39:15,440 --> 01:39:17,510
-that's going to start counting at zero.
+01: 39: 15.440 -> 01: 39: 17.510
+isso vai começar a contar do zero.
 
 2148
-01:39:17,510 --> 01:39:19,430
-It's going to multiply i.
-
+01: 39: 17.510 -> 01: 39: 19.430
+Vai multiplicar i.
 2149
-01:39:19,430 --> 01:39:22,562
-Star equals just means times two again and again.
+01: 39: 19,430 -> 01: 39: 22.562
+asterisco igual apenas significa duas vezes repetidas vezes.
 
 2150
-01:39:22,562 --> 01:39:25,520
-And it's going to do this forever, because I literally and deliberately
+01: 39: 22,562 -> 01: 39: 25.520
+E vai fazer isso para sempre, porque eu literal e deliberadamente
 
 2151
-01:39:25,520 --> 01:39:27,380
-didn't ask a Boolean expression here.
+01: 39: 25,520 -> 01: 39: 27.380
+não fiz uma expressão booleana aqui.
 
 2152
-01:39:27,380 --> 01:39:29,352
-I could actually just say something like true,
+01: 39: 27,380 -> 01: 39: 29.352
+Eu poderia realmente dizer algo como True,
 
 2153
-01:39:29,352 --> 01:39:30,810
-but I can also just leave it blank.
+01: 39: 29,352 -> 01: 39: 30.810
+mas também posso deixar em branco.
 
 2154
-01:39:30,810 --> 01:39:32,310
-So this just means do this forever.
+01: 39: 30.810 -> 01: 39: 32.310
+Então, isso significa apenas fazer isso para sempre.
 
 2155
-01:39:32,310 --> 01:39:33,590
-It's an infinite loop.
+01: 39: 32,310 -> 01: 39: 33.590
+É um loop infinito.
 
 2156
-01:39:33,590 --> 01:39:36,950
-Well, let me go ahead and this is going to fly past the screen here.
+01: 39: 33.590 -> 01: 39: 36.950
+Bem, deixe-me continuar e isso vai voar além da tela aqui.
 
 2157
-01:39:36,950 --> 01:39:40,190
-So I'm going to also sleep for one second in between.
+01: 39: 36,950 -> 01: 39: 40.190
+Então, também vou por para dormir por um segundo no meio.
 
 2158
-01:39:40,190 --> 01:39:43,010
-And indeed, there's a function in C called sleep.
+01: 39: 40,190 -> 01: 39: 43.010
+E, de fato, há uma função em C chamada "sleep".
 
 2159
-01:39:43,010 --> 01:39:45,230
-But to use it, you actually have to include
+01: 39: 43.010 -> 01: 39: 45.230
+Mas para usá-la, você realmente deve incluir
 
 2160
 01:39:45,230 --> 01:39:50,092
