@@ -470,7 +470,7 @@ In C, when you want to use some function-- or some puzzle piece,
 00:06:38,910 --> 00:06:39,790
 if you will--
 
-118
+118   
 00:06:39,790 --> 00:06:42,240
 you have to typically tell the computer in advance
 
