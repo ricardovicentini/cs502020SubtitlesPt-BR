@@ -1,211 +1,209 @@
 0
-00:00:00,000 --> 00:01:22,668
+00: 00: 00.000 -> 00: 01: 22.668
 
 
 1
-00:01:22,668 --> 00:01:24,080
-DAVID MALAN: All right.
+00: 01: 22,668 -> 00: 01: 24.080
+DAVID MALAN: Muito bem.
 
 2
-00:01:24,080 --> 00:01:28,193
-This is CS50, and today we look all the more underneath the hood, so to speak,
+00: 01: 24,080 -> 00: 01: 28.193
+Este é o CS50, e hoje olhamos cada vez mais por baixo do capô, por assim dizer,
 
 3
-00:01:28,193 --> 00:01:30,860
-of programming, which we've been doing the past couple of weeks,
+00: 01: 28,193 -> 00: 01: 30.860
+da programação, que temos feito nas últimas semanas,
 
 4
-00:01:30,860 --> 00:01:32,015
-and of C in particular.
+00: 01: 30,860 -> 00: 01: 32.015
+e de C em particular.
 
 5
-00:01:32,015 --> 00:01:33,890
-And indeed, we're going to try to focus today
+00: 01: 32,015 -> 00: 01: 33.890
+E, de fato, vamos tentar nos concentrar hoje
 
 6
-00:01:33,890 --> 00:01:37,410
-in addition on some new programming techniques, really on first principles,
+00: 01: 33,890 -> 00: 01: 37.410
+além de algumas novas técnicas de programação, realmente nos primeiros princípios,
 
 7
-00:01:37,410 --> 00:01:40,100
-so that what you've been seeing over the past couple of weeks
+00: 01: 37,410 -> 00: 01: 40.100
+de modo que o que você tem visto nas últimas semanas
 
 8
-00:01:40,100 --> 00:01:42,720
-no longer feels quite as much like magic.
+00: 01: 40,100 -> 00: 01: 42.720
+já não se parece tanto com mágica.
 
 9
-00:01:42,720 --> 00:01:44,920
-If you're sort of typing these magical incantations
+00: 01: 42,720 -> 00: 01: 44.920
+Se você está digitando esses encantamentos mágicos
 
 10
-00:01:44,920 --> 00:01:46,670
-and you're not quite sure why things work,
+00: 01: 44,920 -> 00: 01: 46.670
+e você não tem certeza de por que as coisas funcionam,
 
 11
-00:01:46,670 --> 00:01:49,250
-know that you will understand and appreciate
+00: 01: 46,670 -> 00: 01: 49.250
+saiba que você vai entender e apreciar
 
 12
-00:01:49,250 --> 00:01:52,788
-all the more with practice and with application of these ideas, what
+00: 01: 49,250 -> 00: 01: 52.788
+ainda mais com a prática e com a aplicação dessas idéias, que
 
 13
-00:01:52,788 --> 00:01:53,580
-it is you're doing.
+00: 01: 52,788 -> 00: 01: 53.580
+é o que você está fazendo.
 
 14
-00:01:53,580 --> 00:01:56,750
-But today, we're going to go back to first principles, sort of week 0
+00: 01: 53,580 -> 00: 01: 56.750
+Mas hoje, vamos voltar aos primeiros princípios, mais ou menos na matéria
 
 15
-00:01:56,750 --> 00:01:59,300
-material, to make sure that you understand
+00: 01: 56,750 -> 00: 01: 59.300
+da semana 0, para ter certeza de que você entendeu
 
 16
-00:01:59,300 --> 00:02:02,960
-that what we're doing now in week 2 is little different from what we did back
+00: 01: 59,300 -> 00: 02: 02.960
+que o que estamos fazendo agora na semana 2 é um pouco diferente do que fizemos
 
 17
-00:02:02,960 --> 00:02:04,040
-in week 0.
+00: 02: 02,960 -> 00: 02: 04.040
+na semana 0.
 
 18
-00:02:04,040 --> 00:02:07,164
-So in fact, let's take a look at one of the first programs we saw in C,
+00: 02: 04,040 -> 00: 02: 07.164
+Então, na verdade, vamos dar uma olhada em um dos primeiros programas que vimos em C,
 
 19
-00:02:07,164 --> 00:02:08,789
-which was a little something like this.
+00: 02: 07,164 -> 00: 02: 08.789
+que era um pouco mais ou menos assim.
 
 20
-00:02:08,789 --> 00:02:10,430
-This is our source code, so to speak.
+00: 02: 08,789 -> 00: 02: 10.430
+Este é o nosso código-fonte, por assim dizer.
 
 21
-00:02:10,430 --> 00:02:13,130
-There were a few salient characteristics from last week
+00: 02: 10,430 -> 00: 02: 13.130
+Houve algumas características salientes da semana passada
 
 22
-00:02:13,130 --> 00:02:15,830
-that dovetailed with the first week, week 0.
+00: 02: 13,130 -> 00: 02: 15.830
+isso se encaixou com a primeira semana, semana 0.
 
 23
-00:02:15,830 --> 00:02:18,740
-And that was this thing called main, which is just the main function.
+00: 02: 15,830 -> 00: 02: 18.740
+E era essa coisa chamada main, que é apenas a função principal.
 
 24
-00:02:18,740 --> 00:02:20,490
-It's the main entry point to your program.
+00: 02: 18,740 -> 00: 02: 20.490
+Este é o principal ponto de entrada para seu programa.
 
 25
-00:02:20,490 --> 00:02:23,210
-It's the equivalent of scratches when green flag clicked.
+00: 02: 20,490 -> 00: 02: 23.210
+É o equivalente ao Scratch quando a bandeira verde é clicada.
 
 26
-00:02:23,210 --> 00:02:25,880
-This of course is an example of another function,
+00: 02: 23,210 -> 00: 02: 25.880
+Este é claro um exemplo de outra função,
 
 27
-00:02:25,880 --> 00:02:28,730
-one that comes with C that allows you to print on the screen.
+00: 02: 25,880 -> 00: 02: 28.730
+uma que vem com C que permite imprimir na tela.
 
 28
-00:02:28,730 --> 00:02:31,340
-It can take inputs, at least one input here,
+00: 02: 28,730 -> 00: 02: 31.340
+Esta pode receber entradas, pelo menos uma entrada aqui,
 
 29
-00:02:31,340 --> 00:02:35,720
-which is typically a string in double quotes, like the message "hello world."
+00: 02: 31,340 -> 00: 02: 35.720
+que normalmente é uma string entre aspas duplas, como a mensagem "olá, mundo".
 
 30
-00:02:35,720 --> 00:02:38,900
-But of course, in order to use printf in the first place,
+00: 02: 35,720 -> 00: 02: 38.900
+Mas é claro, para usar printf em primeiro lugar,
 
 31
-00:02:38,900 --> 00:02:40,910
-you needed this thing up here.
+00: 02: 38,900 -> 00: 02: 40.910
+você precisava dessa coisa aqui.
 
 32
-00:02:40,910 --> 00:02:45,650
-And Standard io.h represents what, as you understand it now?
+00: 02: 40,910 -> 00: 02: 45.650
+E o Standard io.h representa o que, como você o entende agora?
 
 33
-00:02:45,650 --> 00:02:50,320
-Any thoughts on what Standard io.h is?
+00: 02: 45,650 -> 00: 02: 50.320
+Alguma ideia do que é o padrão io.h?
 
 34
-00:02:50,320 --> 00:02:50,820
-Yeah?
+00: 02: 50,320 -> 00: 02: 50.820
+Sim?
 
 35
-00:02:50,820 --> 00:02:54,648
-AUDIENCE: A library on how [INAUDIBLE].
+00: 02: 50,820 -> 00: 02: 54.648
+PÚBLICO: Uma biblioteca sobre como [INAUDÍVEL].
 
 36
-00:02:54,648 --> 00:02:56,690
-DAVID MALAN: Yeah, it's a manifestation of what's
+00: 02: 54,648 -> 00: 02: 56.690
+DAVID MALAN: Sim, é uma manifestação do que é
 
 37
-00:02:56,690 --> 00:02:59,910
-called a library, code that someone else wrote years ago.
+00: 02: 56,690 -> 00: 02: 59.910
+chamado de biblioteca, código que outra pessoa escreveu anos atrás.
 
 38
-00:02:59,910 --> 00:03:02,780
-Specifically, Standard io.h is a header file.
+00: 02: 59,910 -> 00: 03: 02.780
+Especificamente, o Standard io.h é um arquivo de cabeçalho.
 
 39
-00:03:02,780 --> 00:03:05,090
-It's a file written in C but with a file extension
+00: 03: 02,780 -> 00: 03: 05.090
+É um arquivo escrito em C, mas com uma extensão de arquivo
 
 40
-00:03:05,090 --> 00:03:10,070
-ending in dot h that among other things declares that it has the prototype,
-
+00: 03: 05,090 -> 00: 03: 10.070
+terminando no ponto h que, entre outras coisas, declara que possui uma prototipação,
 41
-00:03:10,070 --> 00:03:13,290
-so to speak, for printf so that Clang, when you're compiling your code,
+00: 03: 10,070 -> 00: 03: 13.290
+por assim dizer, para printf e para Clang, quando você está compilando seu código,
 
 42
-00:03:13,290 --> 00:03:15,230
-know what printf actually is.
+00: 03: 13,290 -> 00: 03: 15.230
+saberá o que printf realmente é.
 
 43
-00:03:15,230 --> 00:03:17,100
-And of course this little thing back here,
+00: 03: 15,230 -> 00: 03: 17.100
+E, claro, essa coisinha aqui atrás,
 
 44
-00:03:17,100 --> 00:03:20,460
-you've probably now gotten in the habit of using this /n is new line.
+00: 03: 17,100 -> 00: 03: 20.460
+você provavelmente agora adquiriu o hábito de usar \n que é nova linha.
 
 45
-00:03:20,460 --> 00:03:22,460
-And it forces the cursor to go on the next line.
+00: 03: 20,460 -> 00: 03: 22.460
+E isso força o cursor a ir para a próxima linha.
 
 46
-00:03:22,460 --> 00:03:26,300
-So those were some of the uglier characteristics of code last week,
+00: 03: 22,460 -> 00: 03: 26.300
+Essas foram algumas das características mais feias do código na semana passada,
 
 47
-00:03:26,300 --> 00:03:29,000
-and we'll tease apart int and void and a few other things
+00: 03: 26,300 -> 00: 03: 29.000
+e vamos separar o int e o vazio e algumas outras coisas
 
 48
-00:03:29,000 --> 00:03:31,140
-over the course of today and beyond.
+00: 03: 29.000 -> 00: 03: 31.140
+ao longo de hoje e além.
 
 49
-00:03:31,140 --> 00:03:35,030
-So when you compile your code with Clang, hello.c,
+00: 03: 31,140 -> 00: 03: 35.030
+Então, quando você compila seu código com Clang, hello.c,
 
 50
-00:03:35,030 --> 00:03:38,780
-and then run that program, ./a.out, which you probably haven't done
+00: 03: 35,030 -> 00: 03: 38.780
+e então executa aquele programa, ./a.out, que você provavelmente não fez
 
 51
-00:03:38,780 --> 00:03:42,080
-on your own since, because we gave you a simpler way to do this,
-
+00: 03: 38,780 -> 00: 03: 42.080
+por conta própria, porque oferecemos uma maneira mais simples de fazer isso,
 52
 00:03:42,080 --> 00:03:45,650
 that process was all about creating a file containing zeros and ones that
