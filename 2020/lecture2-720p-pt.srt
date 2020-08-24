@@ -4897,244 +4897,244 @@ Não preciso saber, neste momento, quão grande é.
 O compilador descobrirá isso para mim.
 
 1226
-00:57:30,990 --> 00:57:34,720
-But I can now declare a function like this.
+00: 57: 30,990 -> 00: 57: 34.720
+Mas agora posso declarar uma função como esta.
 
 1227
-00:57:34,720 --> 00:57:38,318
-Well how do you go about averaging some number of values,
+00: 57: 34,720 -> 00: 57: 38.318
+Bem, como você faz para calcular a média de alguns valores,
 
 1228
-00:57:38,318 --> 00:57:40,860
-if you're handed them in a list, otherwise known as an array,
+00: 57: 38,318 -> 00: 57: 40.860
+se você os entregar em uma lista, também conhecida como array,
 
 1229
-00:57:40,860 --> 00:57:45,390
-but I'm telling you the length of that list, what's this sort of intuition
+00: 57: 40,860 -> 00: 57: 45.390
+mas estou dizendo a você o tamanho dessa lista, o que é esse tipo de intuição
 
 1230
-00:57:45,390 --> 00:57:48,390
-for taking an average here?
+00: 57: 45,390 -> 00: 57: 48.390
+por tirar uma média aqui?
 
 1231
-00:57:48,390 --> 00:57:49,068
-Yeah?
+00: 57: 48,390 -> 00: 57: 49.068
+Sim?
 
 1232
-00:57:49,068 --> 00:57:53,280
-AUDIENCE: You could take the sum and then divide it by [INAUDIBLE] number.
+00: 57: 49,068 -> 00: 57: 53.280
+PÚBLICO: Você pode pegar a soma e dividir por um número [INAUDÍVEL].
 
 1233
-00:57:53,280 --> 00:57:54,470
-DAVID MALAN: Yeah.
+00: 57: 53,280 -> 00: 57: 54.470
+DAVID MALAN: Sim.
 
 1234
-00:57:54,470 --> 00:57:56,220
-Yeah, the average of a bunch of numbers is
+00: 57: 54,470 -> 00: 57: 56.220
+Sim, a média de um monte de números é
 
 1235
-00:57:56,220 --> 00:57:58,262
-just add all the numbers together and then divide
+00: 57: 56,220 -> 00: 57: 58.262
+basta somar todos os números e depois dividir
 
 1236
-00:57:58,262 --> 00:57:59,640
-by the total number of numbers.
+00: 57: 58,262 -> 00: 57: 59.640
+pelo número total de números.
 
 1237
-00:57:59,640 --> 00:58:01,140
-And I have all of those ingredients.
+00: 57: 59,640 -> 00: 58: 01.140
+E eu tenho todos esses ingredientes.
 
 1238
-00:58:01,140 --> 00:58:03,030
-I have the length of the array, apparently,
+00: 58: 01,140 -> 00: 58: 03.030
+Eu tenho o comprimento da matriz, aparentemente,
 
 1239
-00:58:03,030 --> 00:58:05,505
-and I have the array of numbers itself, as follows.
+00: 58: 03,030 -> 00: 58: 05.505
+e eu tenho a própria matriz de números, como segue.
 
 1240
-00:58:05,505 --> 00:58:07,380
-So let me go ahead and say something like sum
+00: 58: 05,505 -> 00: 58: 07.380
+Então, deixe-me ir em frente e dizer algo como soma
 
 1241
-00:58:07,380 --> 00:58:09,880
-is zero, because I'm just going to start counting from zero,
+00: 58: 07,380 -> 00: 58: 09.880
+é zero, porque vou começar a contar do zero,
 
 1242
-00:58:09,880 --> 00:58:14,580
-and then I'm going to do for int i get zero, i less than length, i plus plus.
+00: 58: 09,880 -> 00: 58: 14.580
+e então farei para int eu obtenho zero, i menor que o comprimento, i mais mais.
 
 1243
-00:58:14,580 --> 00:58:17,850
-So again, I typed it fast, but it's identical to my for loop from before.
+00: 58: 14,580 -> 00: 58: 17.850
+Então, novamente, eu digitei rápido, mas é idêntico ao meu loop for de antes.
 
 1244
-00:58:17,850 --> 00:58:20,310
-I'm just using the length as the condition.
+00: 58: 17,850 -> 00: 58: 20.310
+Estou apenas usando o comprimento como condição.
 
 1245
-00:58:20,310 --> 00:58:21,840
-And now what do I want to do here?
+00: 58: 20,310 -> 00: 58: 21.840
+E agora o que eu quero fazer aqui?
 
 1246
-00:58:21,840 --> 00:58:26,800
-On each iteration, what do I want to add to the sum?
+00: 58: 21,840 -> 00: 58: 26.800
+Em cada iteração, o que desejo adicionar à soma?
 
 1247
-00:58:26,800 --> 00:58:28,460
-Sum equals sum plus what?
+00: 58: 26,800 -> 00: 58: 28.460
+Soma é igual a soma mais o quê?
 
 1248
-00:58:28,460 --> 00:58:29,883
-AUDIENCE: [INAUDIBLE]
+00: 58: 28,460 -> 00: 58: 29.883
+PÚBLICO: [INAUDÍVEL]
 
 1249
-00:58:29,883 --> 00:58:31,550
-DAVID MALAN: The next item in the array.
+00: 58: 29,883 -> 00: 58: 31.550
+DAVID MALAN: O próximo item na matriz.
 
 1250
-00:58:31,550 --> 00:58:33,380
-And I can express that, it turns out, just
+00: 58: 31,550 -> 00: 58: 33.380
+E posso expressar isso, ao que parece, apenas
 
 1251
-00:58:33,380 --> 00:58:37,070
-like before the name of the array, which happens to be literally array, just
+00: 58: 33,380 -> 00: 58: 37.070
+como antes do nome do array, que é literalmente array, apenas
 
 1252
-00:58:37,070 --> 00:58:38,160
-for convenience.
+00: 58: 37,070 -> 00: 58: 38.160
+Por conveniência.
 
 1253
-00:58:38,160 --> 00:58:41,520
-And then how do I get the appropriate value from it?
+00: 58: 38,160 -> 00: 58: 41.520
+E então, como obtenho o valor apropriado disso?
 
 1254
-00:58:41,520 --> 00:58:45,040
-Bracket i, because i is going to start in this loop at zero,
+00: 58: 41,520 -> 00: 58: 45.040
+Parêntese i, porque vou começar neste loop em zero,
 
 1255
-00:58:45,040 --> 00:58:47,630
-going to go up to, but not through its length.
+00: 58: 45,040 -> 00: 58: 47.630
+vai subir, mas não através de seu comprimento.
 
 1256
-00:58:47,630 --> 00:58:50,630
-So this is just a way of getting bracket zero, bracket one, bracket two,
+00: 58: 47,630 -> 00: 58: 50.630
+Portanto, esta é apenas uma maneira de obter colchete zero, colchete um, colchete dois,
 
 1257
-00:58:50,630 --> 00:58:53,510
-and just adding it to sum on each iteration.
+00: 58: 50,630 -> 00: 58: 53.510
+e apenas adicioná-lo à soma em cada iteração.
 
 1258
-00:58:53,510 --> 00:58:55,820
-Now this is unnecessarily wordy.
+00: 58: 53,510 -> 00: 58: 55.820
+Agora, isso é desnecessariamente prolixo.
 
 1259
-00:58:55,820 --> 00:58:59,210
-Recall, that this is shorthand notation for that.
+00: 58: 55,820 -> 00: 58: 59.210
+Lembre-se de que esta é uma notação abreviada para isso.
 
 1260
-00:58:59,210 --> 00:59:01,940
-I can't just use plus, plus here though, because I want
+00: 58: 59,210 -> 00: 59: 01.940
+Eu não posso simplesmente usar mais, mais aqui, porque eu quero
 
 1261
-00:59:01,940 --> 00:59:04,070
-to add the actual scores not just one.
+00: 59: 01,940 -> 00: 59: 04.070
+para somar as pontuações reais, não apenas uma.
 
 1262
-00:59:04,070 --> 00:59:07,280
-So I can use either this syntax or the more verbose syntax,
+00: 59: 04,070 -> 00: 59: 07.280
+Portanto, posso usar essa sintaxe ou a sintaxe mais detalhada,
 
 1263
-00:59:07,280 --> 00:59:08,540
-but I'll go with this one.
+00: 59: 07,280 -> 00: 59: 08.540
+mas eu vou com esta.
 
 1264
-00:59:08,540 --> 00:59:11,480
-And now at the end of this function, notice I have to make a decision.
+00: 59: 08,540 -> 00: 59: 11.480
+E agora no final desta função, percebo que tenho que tomar uma decisão.
 
 1265
-00:59:11,480 --> 00:59:14,120
-And we haven't seen terribly many functions of our own,
+00: 59: 11,480 -> 00: 59: 14.120
+E não vimos muitas funções próprias,
 
 1266
-00:59:14,120 --> 00:59:17,420
-but if this is what my function looks like, its name is average,
+00: 59: 14,120 -> 00: 59: 17.420
+mas se é assim que minha função se parece, seu nome é média,
 
 1267
-00:59:17,420 --> 00:59:22,100
-it takes two inputs, one of which is an int called length, the other of which
+00: 59: 17,420 -> 00: 59: 22.100
+recebe duas entradas, uma das quais é um int chamado comprimento, e a outra
 
 1268
-00:59:22,100 --> 00:59:26,150
-is an array of integers, and I know it's an array not by its name, which
+00: 59: 22,100 -> 00: 59: 26.150
+é uma matriz de inteiros, e eu sei que é uma matriz não por seu nome, que
 
 1269
-00:59:26,150 --> 00:59:30,290
-I could have called anything, but I know it because of these new square brackets
+00: 59: 26,150 -> 00: 59: 30.290
+Eu poderia ter chamado qualquer coisa, mas eu sei disso por causa desses novos colchetes
 
 1270
-00:59:30,290 --> 00:59:31,790
-today.
+00: 59: 30,290 -> 00: 59: 31.790
+hoje.
 
 1271
-00:59:31,790 --> 00:59:36,405
-However, what does this mention of float mean on the left-hand side of line 18?
+00: 59: 31,790 -> 00: 59: 36.405
+No entanto, o que essa menção de flutuação significa no lado esquerdo da linha 18?
 
 1272
-00:59:36,405 --> 00:59:37,280
-AUDIENCE: [INAUDIBLE]
+00: 59: 36,405 -> 00: 59: 37.280
+PÚBLICO: [INAUDÍVEL]
 
 1273
-00:59:37,280 --> 00:59:38,780
-DAVID MALAN: That's what it returns.
+00: 59: 37,280 -> 00: 59: 38.780
+DAVID MALAN: Isso é o que retorna.
 
 1274
-00:59:38,780 --> 00:59:42,740
-The return value of a function is what it hands back to whoever is using it.
+00: 59: 38,780 -> 00: 59: 42.740
+O valor de retorno de uma função é o que ela devolve a quem a está usando.
 
 1275
-00:59:42,740 --> 00:59:44,690
-So get string, returns a string.
+00: 59: 42,740 -> 00: 59: 44.690
+Então get_string e retorna uma string.
 
 1276
-00:59:44,690 --> 00:59:46,160
-Get int, returns an int.
+00: 59: 44,690 -> 00: 59: 46.160
+Get int, retorna um int.
 
 1277
-00:59:46,160 --> 00:59:48,860
-Average I want to return a float.
+00: 59: 46,160 -> 00: 59: 48.860
+Average, eu quero devolver um float.
 
 1278
-00:59:48,860 --> 00:59:51,000
-And so how do I return this value?
+00: 59: 48,860 -> 00: 59: 51.000
+E então, como faço para retornar esse valor?
 
 1279
-00:59:51,000 --> 00:59:55,120
-Well, let me go ahead and return the sum divided by the length,
+00: 59: 51.000 -> 00: 59: 55.120
+Bem, deixe-me ir em frente e retornar a soma dividida pelo comprimento,
 
 1280
-00:59:55,120 --> 00:59:56,990
-as I think you proposed?
+00: 59: 55,120 -> 00: 59: 56.990
+como eu acho que você propôs?
 
 1281
-00:59:56,990 --> 01:00:00,748
-Now there's actually one bug here, but we'll come back to that in a moment.
+00: 59: 56,990 -> 01: 00: 00.748
+Na verdade, há um bug aqui, mas voltaremos a ele em um momento.
 
 1282
-01:00:00,748 --> 01:00:02,790
-Now let me just go ahead and plug in the average.
+01: 00: 00,748 -> 01: 00: 02.790
+Agora, deixe-me ir em frente e inserir a média.
 
 1283
-01:00:02,790 --> 01:00:06,240
-What's the format code for a floating point value?
+01: 00: 02,790 -> 01: 00: 06.240
+Qual é o código de formato para um valor de ponto flutuante?
 
 1284
-01:00:06,240 --> 01:00:07,400
-Percent f, yeah.
+01: 00: 06,240 -> 01: 00: 07.400
+Por cento f, sim.
 
 1285
-01:00:07,400 --> 01:00:09,710
-And then if I want to plug in the average,
+01: 00: 07,400 -> 01: 00: 09.710
+E então, se eu quiser conectar a média,
 
 1286
 01:00:09,710 --> 01:00:12,600
