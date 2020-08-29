@@ -5581,7 +5581,7 @@ Isso é útil, porque agora, se eu trabalhar
 
 1397
 01: 04: 35,330 -> 01: 04: 37.070
-em outro problema que precisa ser médio,
+em outro problema que precisa de média,
 
 1398
 01: 04: 37.070 -> 01: 04: 39.620
@@ -5589,7 +5589,7 @@ Também tenho uma função que posso usar nesse código.
 
 1399
 01: 04: 39,620 -> 01: 04: 43.340
-Mas, neste caso, a média leva dois argumentos, aparentemente
+Mas, neste caso, a média aceita dois argumentos, aparentemente
 
 1400
 01: 04: 43.340 -> 01: 04: 45.970
@@ -5624,580 +5624,580 @@ e você pode juntar algo e então invocá-la.
 Então, podemos chamar a função média, passando
 
 1408
-01:05:02,120 --> 01:05:04,610
-in the length of the array and the array itself,
+01: 05: 02,120 -> 01: 05: 04.610
+no comprimento da array e própria array,
 
 1409
-01:05:04,610 --> 01:05:08,000
-that gives me back my average 99.5, and then I'm
+01: 05: 04,610 -> 01: 05: 08.000
+isso me dá de volta minha média de 99.5, e então estou
 
 1410
-01:05:08,000 --> 01:05:11,480
-plugging that in to this format code in printf.
+01: 05: 08.000 -> 01: 05: 11.480
+conectando-o neste formato em printf.
 
 1411
-01:05:11,480 --> 01:05:13,888
-So just like in math, when you have lots of parentheses,
+01: 05: 11.480 -> 01: 05: 13.888
+Assim como na matemática, quando você tem muitos parênteses,
 
 1412
-01:05:13,888 --> 01:05:14,930
-work from the inside out.
+01: 05: 13.888 -> 01: 05: 14.930
+trabalhe de dentro para fora.
 
 1413
-01:05:14,930 --> 01:05:17,388
-Look at the innermost parentheses, figure out what that is,
+01: 05: 14.930 -> 01: 05: 17.388
+Olhe para os parênteses internos, descubra o que é,
 
 1414
-01:05:17,388 --> 01:05:19,420
-then work your way outward.
+01: 05: 17.388 -> 01: 05: 19.420
+e então avance para fora.
 
 1415
-01:05:19,420 --> 01:05:22,880
-And if you've programmed in Java, or Python, or other languages,
+01: 05: 19.420 -> 01: 05: 22.880
+E se você programou em Java, ou Python, ou outras linguagens,
 
 1416
-01:05:22,880 --> 01:05:25,040
-you might be wondering why we need to tell
+01: 05: 22.880 -> 01: 05: 25.040
+você pode estar se perguntando por que precisamos dizer
 
 1417
-01:05:25,040 --> 01:05:27,110
-the function the length of an array.
+01: 05: 25.040 -> 01: 05: 27.110
+a função o comprimento de uma array.
 
 1418
-01:05:27,110 --> 01:05:30,440
-In C, the arrays do not remember their own length.
+01: 05: 27,110 -> 01: 05: 30.440
+Em C, os arrays não lembram seu próprio comprimento.
 
 1419
-01:05:30,440 --> 01:05:33,200
-So if you have programmed before, this is necessary.
+01: 05: 30.440 -> 01: 05: 33.200
+Portanto, se você já programou antes, isso é necessário.
 
 1420
-01:05:33,200 --> 01:05:36,920
-You do not get that feature for free in C. Yeah?
+01: 05: 33,200 -> 01: 05: 36.920
+Você não consegue esse recurso de graça em C. Sim?
 
 1421
-01:05:36,920 --> 01:05:41,580
-AUDIENCE: [INAUDIBLE]
+01: 05: 36.920 -> 01: 05: 41.580
+PÚBLICO: [INAUDÍVEL]
 
 1422
-01:05:41,580 --> 01:05:43,420
-DAVID MALAN: Correct, if you do percent 0.1
+01: 05: 41.580 -> 01: 05: 43.420
+DAVID MALAN: Correto, se você fizer %0.1
 
 1423
-01:05:43,420 --> 01:05:45,520
-you get one decimal point, so 99.5%.
+01: 05: 43,420 -> 01: 05: 45.520
+você obtém uma casa decimal, então 99.5%.
 
 1424
-01:05:45,520 --> 01:05:49,843
-AUDIENCE: Suppose that the answer was 99.49 [INAUDIBLE]
+01: 05: 45.520 -> 01: 05: 49.843
+PÚBLICO: Suponha que a resposta foi 99.49 [INAUDÍVEL]
 
-1425
-01:05:49,843 --> 01:05:51,260
-DAVID MALAN: Really good question.
+14: 25h
+01: 05: 49,843 -> 01: 05: 51.260
+DAVID MALAN: Boa pergunta.
 
 1426
-01:05:51,260 --> 01:05:57,170
-If the answer is mathematically 99.49, but you do 0.1 here,
+01: 05: 51.260 -> 01: 05: 57.170
+Se a resposta for matematicamente 99.49, mas você faz 0.1 aqui,
 
 1427
-01:05:57,170 --> 01:05:58,940
-it will round up for you.
+01: 05: 57,170 -> 01: 05: 58.940
+ele vai arredondar para cima para você.
 
 1428
-01:05:58,940 --> 01:06:00,950
-It will-- good question as well.
+01: 05: 58.940 -> 01: 06: 00.950
+Vai - boa pergunta. A propósito.
 
 1429
-01:06:00,950 --> 01:06:01,650
-Yeah?
+01: 06: 00,950 -> 01: 06: 01.650
+Sim?
 
 1430
-01:06:01,650 --> 01:06:05,003
-AUDIENCE: What happens [INAUDIBLE]?
+01: 06: 01,650 -> 01: 06: 05.003
+PÚBLICO: O que acontece [INAUDÍVEL]?
 
 1431
-01:06:05,003 --> 01:06:06,420
-DAVID MALAN: Really good question.
+01: 06: 05,003 -> 01: 06: 06.420
+DAVID MALAN: Boa pergunta.
 
 1432
-01:06:06,420 --> 01:06:09,830
-What happens if you divide an int by a float or something else?
+01: 06: 06,420 -> 01: 06: 09.830
+O que acontece se você dividir um int por um float ou outra coisa?
 
 1433
-01:06:09,830 --> 01:06:13,520
-You will typically up cast it to whatever the more powerful type is.
+01: 06: 09,830 -> 01: 06: 13.520
+Você normalmente irá tipá-lo para qualquer que seja o tipo mais poderoso.
 
 1434
-01:06:13,520 --> 01:06:16,760
-So if you divide an int by a float, you will actually get back a float.
+01: 06: 13,520 -> 01: 06: 16.760
+Então, se você dividir um int por um float, você receberá de volta um float.
 
 1435
-01:06:16,760 --> 01:06:20,060
-So strictly speaking, I did not need to cast both the numerator
+01: 06: 16,760 -> 01: 06: 20.060
+Estritamente falando, eu não precisei tipar o numerador
 
 1436
-01:06:20,060 --> 01:06:21,710
-and the denominator to a float.
+01: 06: 20,060 -> 01: 06: 21.710
+e o denominador para um float.
 
 1437
-01:06:21,710 --> 01:06:25,160
-I just did it for consistency and demonstration's sake.
+01: 06: 21,710 -> 01: 06: 25.160
+Eu só fiz isso por uma questão de consistência e demonstração.
 
 1438
-01:06:25,160 --> 01:06:28,700
-So it turns out, while we've been looking at numbers here alone
+01: 06: 25,160 -> 01: 06: 28.700
+Acontece que, enquanto olhamos para os números aqui sozinhos
 
 1439
-01:06:28,700 --> 01:06:31,250
-and scores, it turns out that there's actually
+01: 06: 28,700 -> 01: 06: 31.250
+e suas pontuações, descobrimos que há realmente
 
 1440
-01:06:31,250 --> 01:06:35,533
-an intricate relationship with all of the h's and the i's and the exhalation
+01: 06: 31,250 -> 01: 06: 35.533
+uma relação intrincada com todos os h's e i's que é exalada
 
 1441
-01:06:35,533 --> 01:06:37,700
-points we've been looking at, and all of the strings
+01: 06: 35,533 -> 01: 06: 37.700
+pontos que temos observado, em todas as strings
 
 1442
-01:06:37,700 --> 01:06:40,670
-we've been typing in too, however this was a mouthful,
+01: 06: 37,700 -> 01: 06: 40.670
+que estivemos digitando também, no entanto, isso foi um bocado de coisas,
 
 1443
-01:06:40,670 --> 01:06:42,450
-and frankly I feel like a brownie as well,
+01: 06: 40.670 -> 01: 06: 42.450
+e, francamente, também gosto de brownie,
 
 1444
-01:06:42,450 --> 01:06:45,283
-so why don't we take our five minute break here and we'll come back.
+01: 06: 42.450 -> 01: 06: 45.283
+então por que não fazemos nosso intervalo de cinco minutos aqui e voltamos depois.
 
 1445
-01:06:45,283 --> 01:06:47,570
+01: 06: 45,283 -> 01: 06: 47.570
 
 
 1446
-01:06:47,570 --> 01:06:51,610
-We are back.
+01: 06: 47.570 -> 01: 06: 51.610
+Estaaaaamos de voltaaaaa.
 
 1447
-01:06:51,610 --> 01:06:55,930
-So thus far, we've introduced arrays as an opportunity
+01: 06: 51.610 -> 01: 06: 55.930
+Até agora, apresentamos os arrays como uma oportunidade
 
 1448
-01:06:55,930 --> 01:06:58,048
-to improve the design of our code.
+01: 06: 55.930 -> 01: 06: 58.048
+para melhorar o design do nosso código.
 
 1449
-01:06:58,048 --> 01:07:00,340
-So we're going to hear a lot of squeaking now, I think.
+01: 06: 58,048 -> 01: 07: 00.340
+Então, vamos ouvir muitas rizadinhas agora, eu acho.
 
 1450
-01:07:00,340 --> 01:07:05,890
-So thus far, we've introduced arrays as the--
+01: 07: 00,340 -> 01: 07: 05.890
+Até agora, apresentamos matrizes como -
 
 1451
-01:07:05,890 --> 01:07:08,240
-we're going to do my best to keep a straight face.
+01: 07: 05,890 -> 01: 07: 08.240
+Ok, vou fazer o meu melhor para manter o rosto sério.
 
 1452
-01:07:08,240 --> 01:07:11,500
-Thus far, we have introduced arrays as a solution to a design problem
+01: 07: 08,240 -> 01: 07: 11.500
+Até agora, apresentamos arrays como uma solução para um problema de design
 
 1453
-01:07:11,500 --> 01:07:14,260
-so that we can actually store multiple values,
+01: 07: 11,500 -> 01: 07: 14.260
+para que possamos realmente armazenar vários valores,
 
 1454
-01:07:14,260 --> 01:07:18,970
-but in the guise of one variable so as to avoid the copy-paste tendency
+01: 07: 14,260 -> 01: 07: 18.970
+mas na forma de uma variável, de modo a evitar a tendência de copiar e colar
 
 1455
-01:07:18,970 --> 01:07:20,410
-that we might otherwise have.
+01: 07: 18,970 -> 01: 07: 20.410
+que poderíamos ter.
 
 1456
-01:07:20,410 --> 01:07:24,250
-And those arrays ultimately started from trying to clean this kind of code up.
+01: 07: 20.410 -> 01: 07: 24.250
+E essas matrizes, no final das contas, começaram tentando limpar esse tipo de código.
 
 1457
-01:07:24,250 --> 01:07:27,530
-But what is it that was ultimately going on inside of the computer's memory
+01: 07: 24,250 -> 01: 07: 27.530
+Mas o que é que estava acontecendo na memória do computador
 
 1458
-01:07:27,530 --> 01:07:30,520
-we can still consider, because it's actually not all that different.
+01: 07: 27.530 -> 01: 07: 30.520
+ainda podemos considerar, porque na verdade não é tão diferente.
 
 1459
-01:07:30,520 --> 01:07:34,960
-However, when we have three integers, score one, score two, score three,
+01: 07: 30.520 -> 01: 07: 34.960
+No entanto, quando temos três inteiros, marque um, marque dois, marque três,
 
 1460
-01:07:34,960 --> 01:07:38,530
-how many bytes is each of those-- it's going to take up?
+01: 07: 34,960 -> 01: 07: 38.530
+quantos bytes cada um deles - vai ocupar?
 
 1461
-01:07:38,530 --> 01:07:41,770
-So four, if you think back to the chat from before, char is one,
+01: 07: 38,530 -> 01: 07: 41.770
+Então, quatro, se você pensar no bate-papo anterior, char é um,
 
 1462
-01:07:41,770 --> 01:07:45,160
-an int is four, at least on most systems, and so the number
+01: 07: 41.770 -> 01: 07: 45.160
+um int é quatro, pelo menos na maioria dos sistemas e, portanto, o número
 
 1463
-01:07:45,160 --> 01:07:49,180
-72 in the variable called score one, we can draw on our computers
+01: 07: 45,160 -> 01: 07: 49.180
+72 na variável chamada score um, podemos desenhar em nossos computadores
 
 1464
-01:07:49,180 --> 01:07:50,950
-memory is taking up four of these boxes.
+01: 07: 49,180 -> 01: 07: 50.950
+a memória está ocupando quatro dessas caixas.
 
 1465
-01:07:50,950 --> 01:07:54,010
-Because again, each box represents one byte, therefore four bytes
+01: 07: 50,950 -> 01: 07: 54.010
+Porque, novamente, cada caixa representa um byte, portanto quatro bytes
 
 1466
-01:07:54,010 --> 01:07:55,300
-requires four boxes.
+01: 07: 54,010 -> 01: 07: 55.300
+requer quatro caixas.
 
 1467
-01:07:55,300 --> 01:07:57,340
-Score two and score three would similarly
+01: 07: 55,300 -> 01: 07: 57.340
+score dois e três seria da mesma forma
 
 1468
-01:07:57,340 --> 01:07:58,990
-be laid out in my computer's memory.
+01: 07: 57,340 -> 01: 07: 58.990
+será colocado na memória do meu computador.
 
 1469
-01:07:58,990 --> 01:08:02,800
-If I had three variables, score one, two, and three, as follows, like this.
+01: 07: 58,990 -> 01: 08: 02.800
+Se eu tivesse três variáveis, score um, dois e três, como aqui, assim.
 
 1470
-01:08:02,800 --> 01:08:05,890
-Of course what's underneath the hood is actually bits,
+01: 08: 02.800 -> 01: 08: 05.890
+Claro que o que está por baixo do capô são, na verdade, bits,
 
 1471
-01:08:05,890 --> 01:08:09,500
-but again, we don't need to worry about that level of abstraction anymore.
+01: 08: 05,890 -> 01: 08: 09.500
+mas, novamente, não precisamos mais nos preocupar com esse nível de abstração.
 
 1472
-01:08:09,500 --> 01:08:11,920
-But that's indeed all that's going on there.
+01: 08: 09.500 -> 01: 08: 11.920
+Mas isso é realmente tudo o que está acontecendo lá.
 
 1473
-01:08:11,920 --> 01:08:13,330
-But we can clean this up.
+01: 08: 11.920 -> 01: 08: 13.330
+Mas podemos limpar isso.
 
 1474
-01:08:13,330 --> 01:08:16,270
-We can instead get rid of this copy-paste approach to variable names
+01: 08: 13,330 -> 01: 08: 16.270
+Em vez disso, podemos nos livrar dessa abordagem de copiar e colar para nomes de variáveis
 
 1475
-01:08:16,270 --> 01:08:18,460
-and just introduce an array called scores,
+01: 08: 16.270 -> 01: 08: 18.460
+e apenas introduzir um array chamado scores,
 
 1476
-01:08:18,460 --> 01:08:22,689
-plural, and then initialize those three values, as in the program I wrote here.
+01: 08: 18.460 -> 01: 08: 22.689
+no plural, e inicializar esses três valores, como no programa que escrevi aqui.
 
 1477
-01:08:22,689 --> 01:08:27,490
-And then, this picture is similar in spirit, but the names of these boxes,
+01: 08: 22.689 -> 01: 08: 27.490
+E então, esta imagem é semelhante em espírito, mas os nomes dessas caixas,
 
 1478
-01:08:27,490 --> 01:08:31,840
-so to speak, become score zero, scores one, and scores two.
+01: 08: 27.490 -> 01: 08: 31.840
+por assim dizer, torna-se score zero, scores um e scores dois.
 
 1479
-01:08:31,840 --> 01:08:36,640
-So the array is now independent of the number of bytes being consumed.
+01: 08: 31.840 -> 01: 08: 36.640
+Portanto, o array agora é independente do número de bytes consumidos.
 
 1480
-01:08:36,640 --> 01:08:38,979
-Just because an int is four bytes, doesn't
+01: 08: 36.640 -> 01: 08: 38.979
+Só porque um int tem quatro bytes, não
 
 1481
-01:08:38,979 --> 01:08:43,359
-mean you do score zero, scores four, scores eight, and so forth.
+01: 08: 38,979 -> 01: 08: 43.359
+significa que você faz score zero, scores quatro, scores oito e assim por diante.
 
 1482
-01:08:43,359 --> 01:08:44,979
-It's still zero, one, two.
+01: 08: 43,359 -> 01: 08: 44.979
+Ainda é zero, um, dois.
 
 1483
-01:08:44,979 --> 01:08:49,990
-The computer will figure out exactly how much space to give each of those values
+01: 08: 44,979 -> 01: 08: 49.990
+O computador descobrirá exatamente quanto espaço dar a cada um desses valores
 
 1484
-01:08:49,990 --> 01:08:52,354
-based on its type, which is an int.
+01: 08: 49,990 -> 01: 08: 52.354
+com base em seu tipo, que é um int.
 
 1485
-01:08:52,354 --> 01:08:54,729
-But it turns out that there's actually a relationship now
+01: 08: 52,354 -> 01: 08: 54.729
+Mas acontece que agora há um relacionamento
 
 1486
-01:08:54,729 --> 01:08:58,330
-to where we began this story when we looked at characters.
+01: 08: 54.729 -> 01: 08: 58.330
+para onde começamos esta história quando olhamos para os personagens.
 
 1487
-01:08:58,330 --> 01:09:01,660
-H-I exclamation point was implemented with three lines of code
+01: 08: 58,330 -> 01: 09: 01.660
+H-I O ponto de exclamação foi implementado com três linhas de código
 
 1488
-01:09:01,660 --> 01:09:03,760
-using c1, c2, and c3.
+01: 09: 01,660 -> 01: 09: 03.760
+usando c1, c2 e c3.
 
 1489
-01:09:03,760 --> 01:09:06,850
-But last week, we already saw the notion of a string,
+01: 09: 03,760 -> 01: 09: 06.850
+Mas na semana passada, já vimos a noção de string,
 
 1490
-01:09:06,850 --> 01:09:11,710
-and it turns out strings and chars are fundamentally interrelated in ways
+01: 09: 06,850 -> 01: 09: 11.710
+e acontece que strings e chars  estão fundamentalmente relacionados de maneiras
 
 1491
-01:09:11,710 --> 01:09:13,630
-that we can now literally see.
+01: 09: 11,710 -> 01: 09: 13.630
+que agora podemos ver literalmente.
 
 1492
-01:09:13,630 --> 01:09:16,779
-If we had a string called s, for instance,
+01: 09: 13,630 -> 01: 09: 16.779
+Se tivéssemos uma string chamada s, por exemplo,
 
 1493
-01:09:16,779 --> 01:09:20,680
-and that string contains three characters, H-I and an exclamation
+01: 09: 16,779 -> 01: 09: 20.680
+e essa string contém três caracteres, H-I e um ponto de
 
 1494
-01:09:20,680 --> 01:09:23,109
-point, well it turns out you can actually
+01: 09: 20,680 -> 01: 09: 23.109
+exclamação, bem, acontece que você pode realmente
 
 1495
-01:09:23,109 --> 01:09:25,479
-get at the individual letters in a string
+01: 09: 23,109 -> 01: 09: 25.479
+peguar as letras individuais em uma string
 
 1496
-01:09:25,479 --> 01:09:29,950
-by doing the name of the string, bracket, zero, close bracket,
+01: 09: 25.479 -> 01: 09: 29.950
+fazendo o nome da string, colchete, zero, colchete próximo,
 
 1497
-01:09:29,950 --> 01:09:31,950
-or s bracket one, or s bracket two.
+01: 09: 29.950 -> 01: 09: 31.950
+ou s colchete um, ou s colchete dois.
 
 1498
-01:09:31,950 --> 01:09:35,260
-If the name of my variable is s, and s is a string,
+01: 09: 31,950 -> 01: 09: 35.260
+Se o nome da minha variável for s e s for uma string,
 
 1499
-01:09:35,260 --> 01:09:38,529
-I can actually access the individual characters there in just
+01: 09: 35.260 -> 01: 09: 38.529
+Posso realmente acessar os caracteres individuais nela assim
 
 1500
-01:09:38,529 --> 01:09:41,830
-like an array, which is to say then, what
+01: 09: 38,529 -> 01: 09: 41.830
+como na array, o que quer dizer então, o que
 
 1501
-01:09:41,830 --> 01:09:48,029
-is a string as of this week versus last?
+01: 09: 41.830 -> 01: 09: 48.029
+é uma string desta semana versus a da última?
 
 1502
-01:09:48,029 --> 01:09:49,850
-It's just an array of chars.
+01: 09: 48,029 -> 01: 09: 49.850
+É apenas um array de  chars.
 
 1503
-01:09:49,850 --> 01:09:51,340
-It's just an array of characters.
+01: 09: 49,850 -> 01: 09: 51.340
+É apenas um array de  chars.
 
 1504
-01:09:51,340 --> 01:09:54,848
-So even though it's a data type, thanks to CS50's library and CS50 dot h,
+01: 09: 51,340 -> 01: 09: 54.848
+Portanto, embora seja um tipo de dado, graças à biblioteca do CS50 e CS50.h,
 
 1505
-01:09:54,848 --> 01:09:57,640
-and we're going to take this training wheel off within a few weeks,
+01: 09: 54.848 -> 01: 09: 57.640
+e vamos tirar esta roda de treinamento dentro de algumas semanas,
 
 1506
-01:09:57,640 --> 01:09:59,890
-we've essentially just created a string to be
+01: 09: 57.640 -> 01: 09: 59.890
+essencialmente acabamos de criar uma string para ser
 
 1507
-01:09:59,890 --> 01:10:02,720
-for now, at this point in the story, just an array of characters.
+01: 09: 59,890 -> 01: 10: 02.720
+por enquanto, neste ponto da história, apenas um array de caracteres.
 
 1508
-01:10:02,720 --> 01:10:03,220
-Why?
+01: 10: 02,720 -> 01: 10: 03.220
+Por quê?
 
 1509
-01:10:03,220 --> 01:10:05,327
-Because being able to have multiple characters
+01: 10: 03,220 -> 01: 10: 05.327
+Porque ser capaz de ter vários carcteres
 
 1510
-01:10:05,327 --> 01:10:07,660
-is certainly way more useful than having to spell things
+01: 10: 05,327 -> 01: 10: 07.660
+é certamente muito mais útil do que ter que soletrar coisas
 
 1511
-01:10:07,660 --> 01:10:11,320
-out one variable at a time with one char at a time.
+01: 10: 07,660 -> 01: 10: 11.320
+em uma variável de cada vez com um caractere de cada vez.
 
 1512
-01:10:11,320 --> 01:10:14,470
-So string is a data type in the CS50 library
+01: 10: 11,320 -> 01: 10: 14.470
+Portanto, string é um tipo de dados na biblioteca CS50
 
 1513
-01:10:14,470 --> 01:10:17,763
-that for today's purposes indeed, just an array of characters.
+01: 10: 14,470 -> 01: 10: 17.763
+para os propósitos de hoje, de fato, apenas um array de chars.
 
 1514
-01:10:17,763 --> 01:10:19,930
-And we'll see before long that, that too is actually
+01: 10: 17.763 -> 01: 10: 19.930
+E logo veremos que isso também é
 
 1515
-01:10:19,930 --> 01:10:24,290
-kind of a bit of a white lie, but we'll see why before long as well.
+01: 10: 19.930 -> 01: 10: 24.290
+meio que uma mentira inocente, mas veremos por que em breve também.
 
 1516
-01:10:24,290 --> 01:10:27,040
-So if I declare a string in C, I can actually
+01: 10: 24,290 -> 01: 10: 27.040
+Então, se eu declarar uma string em C, posso realmente
 
 1517
-01:10:27,040 --> 01:10:28,540
-literally do something like this.
+01: 10: 27.040 -> 01: 10: 28.540
+literalmente fazer algo assim.
 
 1518
-01:10:28,540 --> 01:10:32,620
-String s equals quote unquote hi, this time using double quotes, and not
+01: 10: 28.540 -> 01: 10: 32.620
+String s é igual a abre aspas, fecha aspas, desta vez usando aspas duplas, e não
 
 1519
-01:10:32,620 --> 01:10:36,182
-single quotes, because it's three characters and not just a single char.
+01: 10: 32.620 -> 01: 10: 36.182
+aspas simples, porque são três caracteres e não apenas um único caractere.
 
 1520
-01:10:36,182 --> 01:10:38,890
-So in memory, that's actually going to look pretty much the same.
+01: 10: 36,182 -> 01: 10: 38.890
+Então, na memória, isso vai ser praticamente o mesmo.
 
 1521
-01:10:38,890 --> 01:10:42,910
-If the variable's called s, it's going to have h i and an exclamation point.
+01: 10: 38.890 -> 01: 10: 42.910
+Se a variável for chamada s, terá h i e um ponto de exclamação.
 
 1522
-01:10:42,910 --> 01:10:46,630
-And just for simplicity, I'll label the first box as s
+01: 10: 42.910 -> 01: 10: 46.630
+E apenas para simplificar, vou rotular a primeira caixa como s
 
 1523
-01:10:46,630 --> 01:10:49,210
-and just assume that we can get everywhere else.
+01: 10: 46.630 -> 01: 10: 49.210
+e apenas suponha que podemos chegar a qualquer outro lugar.
 
 1524
-01:10:49,210 --> 01:10:53,170
-But it turns out that strings are a little special, because
+01: 10: 49,210 -> 01: 10: 53.170
+Mas acontece que strings são um pouco especiais, porque
 
 1525
-01:10:53,170 --> 01:10:56,530
-unlike a char, which is one byte, unlike an int, which
+01: 10: 53,170 -> 01: 10: 56.530
+ao contrário de um char, que é um byte, ao contrário de um int, que
 
 1526
-01:10:56,530 --> 01:10:59,590
-is four bytes, unlike a long, which is eight bytes,
+01: 10: 56.530 -> 01: 10: 59.590
+tem quatro bytes, ao contrário de um long, que tem oito bytes,
 
 1527
-01:10:59,590 --> 01:11:01,672
-how long should a string be?
+01: 10: 59.590 -> 01: 11: 01.672
+que comprimento deve ser uma string?
 
 1528
-01:11:01,672 --> 01:11:03,245
-AUDIENCE: [INAUDIBLE]
+01: 11: 01,672 -> 01: 11: 03.245
+PÚBLICO: [INAUDÍVEL]
 
 1529
-01:11:03,245 --> 01:11:05,620
-DAVID MALAN: Yeah, I mean as many characters as you need,
+01: 11: 03,245 -> 01: 11: 05.620
+DAVID MALAN: Sim, quero dizer o tanto quanto você precisar,
 
 1530
-01:11:05,620 --> 01:11:08,050
-because if I want to store H-I I need--
+01: 11: 05,620 -> 01: 11: 08.050
+porque se eu quiser armazenar H-eu preciso -
 
 1531
-01:11:08,050 --> 01:11:11,170
-H-I exclamation point, I need strings to be at least three bytes,
+01: 11: 08,050 -> 01: 11: 11.170
+H-I ponto de exclamação, preciso que as strings tenham pelo menos três bytes,
 
 1532
-01:11:11,170 --> 01:11:12,020
-it would seem--
+01: 11: 11,170 -> 01: 11: 12.020
+Isto pode ser -
 
 1533
-01:11:12,020 --> 01:11:15,100
-for my name David, at least five bytes, for D-A-V-I-D--
+01: 11: 12.020 -> 01: 11: 15.100
+para o meu nome David, pelo menos cinco bytes, para D-A-V-I-D -
 
 1534
-01:11:15,100 --> 01:11:18,130
-Brian, as well, and much longer names in the room, too.
+01: 11: 15,100 -> 01: 11: 18.130
+Brian também, e nomes muito mais longos aqui na sala também.
 
 1535
-01:11:18,130 --> 01:11:21,413
-So strings can't really have a preordained length associated
+01: 11: 18,130 -> 01: 11: 21.413
+Portanto, as string não podem ter um comprimento predeterminado associado
 
 1536
-01:11:21,413 --> 01:11:23,830
-with them, which is why I put a question mark on the board
+01: 11: 21.413 -> 01: 11: 23.830
+com eles, é por isso que coloquei um ponto de interrogação no quadro
 
 1537
-01:11:23,830 --> 01:11:27,040
-before when I first summarized the sizes of these types.
+01: 11: 23.830 -> 01: 11: 27.040
+antes, quando resumi pela primeira vez os tamanhos desses tipos.
 
 1538
-01:11:27,040 --> 01:11:31,810
-But the catch is that if a variable only has a name, like s, or name, or any
+01: 11: 27,040 -> 01: 11: 31.810
+Mas o problema é que, se uma variável tem apenas um nome, como s, ou nome, ou qualquer
 
 1539
-01:11:31,810 --> 01:11:34,820
-of the variables you use for p-set one's problems,
+01: 11: 31.810 -> 01: 11: 34.820
+das variáveis ​​que você usa para os problemas de um p-set,
 
 1540
-01:11:34,820 --> 01:11:38,380
-it turns out we all need to decide as human programmers
+01: 11: 34,820 -> 01: 11: 38.380
+Acontece que todos nós precisamos decidir como programadores humanos
 
 1541
-01:11:38,380 --> 01:11:41,020
-how do we know where the string ends?
+01: 11: 38,380 -> 01: 11: 41.020
+como nós podemos saber onde termina o barbante?
 
 1542
-01:11:41,020 --> 01:11:43,330
-The name of the variable, suffice it to say,
+01: 11: 41,020 -> 01: 11: 43.330
+O nome da variável, basta dizer,
 
 1543
-01:11:43,330 --> 01:11:46,330
-lets us know where the variable begins, just as I've drawn here.
+01: 11: 43.330 -> 01: 11: 46.330
+nos permite saber onde a variável começa, assim como desenhei aqui.
 
 1544
-01:11:46,330 --> 01:11:48,960
-If you reference a variable in a program and call it s,
+01: 11: 46,330 -> 01: 11: 48.960
+Se você referenciar uma variável em um programa e chamá-la de s,
 
 1545
-01:11:48,960 --> 01:11:52,390
-the computer will just know to go to the first character in that string.
+01: 11: 48,960 -> 01: 11: 52.390
+o computador saberá apenas ir para o primeiro caractere dessa string.
 
 1546
-01:11:52,390 --> 01:11:55,210
-But there needs to be a little clue to the computer as to where
+01: 11: 52,390 -> 01: 11: 55.210
+Mas é preciso haver uma pequena pista para o computador de onde
 
 1547
-01:11:55,210 --> 01:11:59,230
-the string ends, and that clue is what's called a null character.
+01: 11: 55,210 -> 01: 11: 59.230
+a string termina, e essa pista é o que chamamos de caractere nulo.
 
 1548
-01:11:59,230 --> 01:12:01,300
-It's a little funky to look at, but it's just
+01: 11: 59,230 -> 01: 12: 01.300
+É um pouco estranho de se olhar, mas é só
 
 1549
-01:12:01,300 --> 01:12:04,347
-a backslash zero, which might remind you of backslash n, which
+01: 12: 01,300 -> 01: 12: 04.347
+uma barra invertida zero, que pode lembrá-lo da barra invertida n, que
 
 1550
-01:12:04,347 --> 01:12:06,430
-too is a little funky, and that's a special symbol
+01: 12: 04,347 -> 01: 12: 06.430
+também é meio descolado, e esse é um símbolo especial
 
 1551
-01:12:06,430 --> 01:12:09,790
-that says move the cursor to the next line, give a new line.
+01: 12: 06,430 -> 01: 12: 09.790
+que diz mova o cursor para a próxima linha, forneça uma nova linha.
 
 1552
 01:12:09,790 --> 01:12:12,550
