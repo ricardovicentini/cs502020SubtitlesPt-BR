@@ -5137,101 +5137,100 @@ Por cento f, sim.
 E então, se eu quiser conectar a média,
 
 1286
-01:00:09,710 --> 01:00:12,600
-I can call my function called average.
+01: 00: 09,710 -> 01: 00: 12.600
+Posso chamar minha função chamada média.
 
 1287
-01:00:12,600 --> 01:00:15,440
-And what two inputs do I need to give it?
+01: 00: 12.600 -> 01: 00: 15.440
+E quais são as duas informações que preciso fornecer?
 
 1288
-01:00:15,440 --> 01:00:20,760
-n, which is the length of the array, and scores, which is the name of the array.
+01: 00: 15,440 -> 01: 00: 20.760
+n, que é o comprimento da matriz, e scores, que é o nome da matriz.
 
 1289
-01:00:20,760 --> 01:00:22,970
-So again, even though arrays are new, this is not.
+01: 00: 20,760 -> 01: 00: 22.970
+Então, novamente, embora os arrays sejam novos, isso não é.
 
 1290
-01:00:22,970 --> 01:00:27,230
-We have last week called functions that take one or more arguments
+01: 00: 22.970 -> 01: 00: 27.230
+Na semana passada, chamamos funções que usam um ou mais argumentos
 
 1291
-01:00:27,230 --> 01:00:28,830
-and it's certainly fine to nest them.
+01: 00: 27,230 -> 01: 00: 28.830
+e certamente não há problema em aninhá-los.
 
 1292
-01:00:28,830 --> 01:00:30,913
-However, if you don't like that, you can certainly
+01: 00: 28,830 -> 01: 00: 30.913
+No entanto, se você não gosta disso, certamente pode
 
 1293
-01:00:30,913 --> 01:00:32,720
-do something like this-- float average gets
+01: 00: 30,913 -> 01: 00: 32.720
+faça algo assim - "float avarage" obtém
 
 1294
-01:00:32,720 --> 01:00:34,890
-that, and then you can plug in average.
+01: 00: 32,720 -> 01: 00: 34.890
+isso, e então você pode então conectar à média.
 
 1295
-01:00:34,890 --> 01:00:36,920
-But again, in the spirit of good design, you're
+01: 00: 34,890 -> 01: 00: 36.920
+Mas, novamente, no espírito do bom design, você está
 
 1296
-01:00:36,920 --> 01:00:39,260
-just doubling the number of lines unnecessarily.
+01: 00: 36,920 -> 01: 00: 39.260
+simplesmente dobrando o número de linhas desnecessariamente.
 
 1297
-01:00:39,260 --> 01:00:42,710
-So I'm going to go ahead and nest it just like this.
+01: 00: 39,260 -> 01: 00: 42.710
+Então, vou prosseguir e aninhar assim.
 
 1298
-01:00:42,710 --> 01:00:44,430
-All right, let me save that.
+01: 00: 42,710 -> 01: 00: 44.430
+Tudo bem, deixe-me salvar isso.
 
 1299
-01:00:44,430 --> 01:00:46,527
-And I feel really good about this so far.
+01: 00: 44,430 -> 01: 00: 46.527
+E me sinto muito bem com isso até agora.
 
 1300
-01:00:46,527 --> 01:00:48,110
-I feel like everything's making sense.
+01: 00: 46.527 -> 01: 00: 48.110
+Eu sinto que tudo está fazendo sentido.
 
 1301
-01:00:48,110 --> 01:00:49,220
-So make scores.
+01: 00: 48,110 -> 01: 00: 49.220
+Portanto, make scores.
 
 1302
-01:00:49,220 --> 01:00:50,690
-And oh, my god.
+01: 00: 49,220 -> 01: 00: 50.690
+E oh, meu Deus.
 
 1303
-01:00:50,690 --> 01:00:53,450
+01: 00: 50,690 -> 01: 00: 53.450
 
 
 1304
-01:00:53,450 --> 01:00:58,042
-Line 15 seems to be at fault. So we can certainly use help 50,
+01: 00: 53.450 -> 01: 00: 58.042
+A linha 15 parece estar com erro. Portanto, certamente podemos usar a help50,
 
 1305
-01:00:58,042 --> 01:00:59,750
-but let's see if we can't reason through.
+01: 00: 58,042 -> 01: 00: 59.750
+mas vamos ver se não podemos raciocinar.
 
 1306
-01:00:59,750 --> 01:01:00,792
-What mistake have I made?
+01: 00: 59,750 -> 01: 01: 00.792
+Que erro cometi?
 
 1307
-01:01:00,792 --> 01:01:04,130
+01: 01: 00,792 -> 01: 01: 04.130
 
 
 1308
-01:01:04,130 --> 01:01:06,920
-It's highlighted here, even though it's very non obvious.
+01: 01: 04,130 -> 01: 01: 06.920
+É destacado aqui, embora não seja nada óbvio.
 
 1309
-01:01:06,920 --> 01:01:07,862
-Yeah?
-
+01: 01: 06,920 -> 01: 01: 07.862
+Sim?
 1310
 01:01:07,862 --> 01:01:12,101
 AUDIENCE: [INAUDIBLE]
@@ -5241,388 +5240,388 @@ AUDIENCE: [INAUDIBLE]
 
 
 1312
-01:01:12,685 --> 01:01:13,560
-DAVID MALAN: Exactly.
+01: 01: 12.685 -> 01: 01: 13.560
+DAVID MALAN: Exatamente.
 
 1313
-01:01:13,560 --> 01:01:16,230
-My function is at the bottom of my file and C is kind of dumb.
+01: 01: 13.560 -> 01: 01: 16.230
+Minha função está na parte inferior do meu arquivo e C é meio burro.
 
 1314
-01:01:16,230 --> 01:01:18,730
-It only does what it's told, top to bottom, left to right.
+01: 01: 16,230 -> 01: 01: 18.730
+Ele só faz o que é dito, de cima para baixo, da esquerda para a direita.
 
 1315
-01:01:18,730 --> 01:01:20,670
-And if your function averages at the bottom,
+01: 01: 18,730 -> 01: 01: 20.670
+E se sua função avarage estiver na parte inferior,
 
 1316
-01:01:20,670 --> 01:01:23,400
-but you're trying to use it in main, that's too late.
+01: 01: 20.670 -> 01: 01: 23.400
+mas você está tentando usá-lo na main, é tarde demais.
 
 1317
-01:01:23,400 --> 01:01:26,380
-So we can fix this in a couple of ways, just as we did last week.
+01: 01: 23.400 -> 01: 01: 26.380
+Portanto, podemos corrigir isso de algumas maneiras, assim como fizemos na semana passada.
 
 1318
-01:01:26,380 --> 01:01:28,380
-I can kind of sloppily just say, all right, well
+01: 01: 26,380 -> 01: 01: 28.380
+Posso simplesmente dizer desleixadamente, tudo bem, bem
 
 1319
-01:01:28,380 --> 01:01:29,630
-let's just move it to the top.
+01: 01: 28,380 -> 01: 01: 29.630
+vamos apenas movê-la para o topo.
 
 1320
-01:01:29,630 --> 01:01:31,350
-That will solve that problem.
+01: 01: 29.630 -> 01: 01: 31.350
+Isso resolverá esse problema.
 
 1321
-01:01:31,350 --> 01:01:33,727
-But frankly, that moves main farther down
+01: 01: 31,350 -> 01: 01: 33.727
+Mas, francamente, isso joga a "main" lá para baixo
 
 1322
-01:01:33,727 --> 01:01:36,060
-and it's a good human convention to keep main at the top
+01: 01: 33,727 -> 01: 01: 36.060
+e é uma boa convenção humana manter a "main" no topo
 
 1323
-01:01:36,060 --> 01:01:38,200
-so you can see the main part of your program.
+01: 01: 36.060 -> 01: 01: 38.200
+para que você possa ver a parte principal do seu programa.
 
 1324
-01:01:38,200 --> 01:01:41,700
-This is why, last week, we introduced the notion of a prototype,
+01: 01: 38,200 -> 01: 01: 41.700
+É por isso que, na semana passada, introduzimos a noção de um protótipo,
 
 1325
-01:01:41,700 --> 01:01:44,940
-where you literally-- and this is the only time where the copy-paste is OK--
+01: 01: 41,700 -> 01: 01: 44.940
+onde você literalmente - e este é o único momento em que copiar e colar é certo -
 
 1326
-01:01:44,940 --> 01:01:48,810
-you copy-paste the first line of your function and end it with a semicolon
+01: 01: 44.940 -> 01: 01: 48.810
+você copia e cola a primeira linha da sua função e termina com um ponto e vírgula
 
 1327
-01:01:48,810 --> 01:01:50,430
-without any more currently braces.
+01: 01: 48.810 -> 01: 01: 50.430
+sem mais nenhuma chave.
 
 1328
-01:01:50,430 --> 01:01:52,200
-That's now a clue to solve that problem.
+01: 01: 50.430 -> 01: 01: 52.200
+Essa agora é uma pista para resolver esse problema.
 
 1329
-01:01:52,200 --> 01:01:53,770
-Hey clang, here's a function.
+01: 01: 52,200 -> 01: 01: 53.770
+Ei clang, aqui está uma função.
 
 1330
-01:01:53,770 --> 01:01:55,895
-I'm not going to get around to implementing it yet,
+01: 01: 53.770 -> 01: 01: 55.895
+Não vou implementá-la  ainda,
 
 1331
-01:01:55,895 --> 01:01:57,570
-but you at least know what it's called.
+01: 01: 55,895 -> 01: 01: 57.570
+mas você pelo menos sabe como é chamada.
 
 1332
-01:01:57,570 --> 01:02:00,090
-Now there's still a slight logical bug in here.
+01: 01: 57.570 -> 01: 02: 00.090
+Agora ainda há um pequeno bug lógico aqui.
 
 1333
-01:02:00,090 --> 01:02:04,270
-Let me try re-saving and recompiling scores.
+01: 02: 00,090 -> 01: 02: 04.270
+Deixe-me tentar salvar novamente e recompilar scores.
 
 1334
-01:02:04,270 --> 01:02:05,880
-It compiled this time-- nice.
+01: 02: 04,270 -> 01: 02: 05.880
+Compilou desta vez - bom.
 
 1335
-01:02:05,880 --> 01:02:07,410
-Let me go ahead and run scores.
+01: 02: 05,880 -> 01: 02: 07.410
+Deixe-me ir em frente e make scores.
 
 1336
-01:02:07,410 --> 01:02:13,320
-Number of scores will be three, 72, 73, 33.
+01: 02: 07.410 -> 01: 02: 13.320
+O número de pontuações serão três, 72, 73, 33.
 
 1337
-01:02:13,320 --> 01:02:14,560
-OK, that's pretty good.
+01: 02: 13,320 -> 01: 02: 14.560
+OK, isso é muito bom.
 
 1338
-01:02:14,560 --> 01:02:15,730
-Let me try another one.
+01: 02: 14.560 -> 01: 02: 15.730
+Deixe-me tentar outro.
 
 1339
-01:02:15,730 --> 01:02:17,190
-How about two scores.
+01: 02: 15,730 -> 01: 02: 17.190
+Que tal duas pontuações.
 
 1340
-01:02:17,190 --> 01:02:21,570
-100 and suppose you get a 99 on the other,
+01: 02: 17,190 -> 01: 02: 21.570
+100 e suponha que você obtenha um 99 no outro,
 
 1341
-01:02:21,570 --> 01:02:24,620
-you probably want your grade to be what?
+01: 02: 21.570 -> 01: 02: 24.620
+você provavelmente quer que sua nota seja o quê?
 
 1342
-01:02:24,620 --> 01:02:25,380
-100, right.
+01: 02: 24,620 -> 01: 02: 25.380
+100, certo.
 
 1343
-01:02:25,380 --> 01:02:28,240
-If it's 99.5, you'd prefer we round up.
+01: 02: 25,380 -> 01: 02: 28.240
+Se for 99,5, você não quer que nós arredondemos para cima.
 
 1344
-01:02:28,240 --> 01:02:30,360
-So where is that bug?
+01: 02: 28,240 -> 01: 02: 30.360
+Então, onde está esse bug?
 
 1345
-01:02:30,360 --> 01:02:32,490
-Well let me scroll down here, and this is
+01: 02: 30.360 -> 01: 02: 32.490
+Bem, deixe-me rolar para baixo aqui, e este é
 
 1346
-01:02:32,490 --> 01:02:35,370
-what you were alluding to earlier when you identified this early on.
+01: 02: 32.490 -> 01: 02: 35.370
+ao que você estava aludindo antes quando identificou isso.
 
 1347
-01:02:35,370 --> 01:02:37,650
-So I'm doing a couple of things incorrectly here.
+01: 02: 35,370 -> 01: 02: 37.650
+Portanto, estou fazendo algumas coisas incorretamente aqui.
 
 1348
-01:02:37,650 --> 01:02:40,950
-One, I'm adding the sum here.
+01: 02: 37.650 -> 01: 02: 40.950
+Um, estou adicionando a soma aqui.
 
 1349
-01:02:40,950 --> 01:02:44,280
-I'm using an int and initializing sum to zero,
+01: 02: 40,950 -> 01: 02: 44.280
+Estou usando um int e inicializando a soma para zero,
 
 1350
-01:02:44,280 --> 01:02:46,600
-and then I'm dividing an integer by an integer.
+01: 02: 44.280 -> 01: 02: 46.600
+e então estou dividindo um inteiro por um inteiro.
 
 1351
-01:02:46,600 --> 01:02:50,190
-And this is subtle, but in C, if you divide an integer by an integer,
+01: 02: 46.600 -> 01: 02: 50.190
+E isso é sutil, mas em C, se você dividir um inteiro por um inteiro,
 
 1352
-01:02:50,190 --> 01:02:52,920
-just take a guess-- what do you get as the answer?
+01: 02: 50,190 -> 01: 02: 52.920
+apenas dê um palpite - qual é a resposta?
 
 1353
-01:02:52,920 --> 01:02:53,800
-AUDIENCE: An integer.
+01: 02: 52,920 -> 01: 02: 53.800
+PÚBLICO: Um número inteiro.
 
 1354
-01:02:53,800 --> 01:02:54,420
-DAVID MALAN: An integer.
+01: 02: 53.800 -> 01: 02: 54.420
+DAVID MALAN: Um número inteiro.
 
 1355
-01:02:54,420 --> 01:02:56,170
-Integers can't store decimal points.
+01: 02: 54.420 -> 01: 02: 56.170
+Os inteiros não podem armazenar pontos decimais.
 
 1356
-01:02:56,170 --> 01:03:01,398
-So even if your score is 99.900000 ad nauseum,
+01: 02: 56,170 -> 01: 03: 01.398
+Portanto, mesmo que sua pontuação seja 99,900000 ad nauseum,
 
 1357
-01:03:01,398 --> 01:03:04,440
-what's going to get thrown away is literally everything after the decimal
+01: 03: 01,398 -> 01: 03: 04.440
+o que vai ser jogado fora é literalmente tudo depois do decimal
 
 1358
-01:03:04,440 --> 01:03:05,140
-point.
+01: 03: 04,440 -> 01: 03: 05.140
+
 
 1359
-01:03:05,140 --> 01:03:07,290
-So your grade is actually a 99.
+01: 03: 05,140 -> 01: 03: 07.290
+Portanto, sua nota é, na verdade, 99.
 
 1360
-01:03:07,290 --> 01:03:11,550
-So there's a couple of ways we can fix this, but perhaps the simplest is this.
+01: 03: 07.290 -> 01: 03: 11.550
+Portanto, há algumas maneiras de corrigir isso, mas talvez a mais simples seja esta.
 
 1361
-01:03:11,550 --> 01:03:14,220
-I can use that casting feature from before.
+01: 03: 11.550 -> 01: 03: 14.220
+Posso usar o recurso de "casting" explicado de antes.
 
 1362
-01:03:14,220 --> 01:03:16,363
-I can tell the computer, don't treat length
+01: 03: 14,220 -> 01: 03: 16.363
+Eu posso dizer ao computador, não trate o comprimento
 
 1363
-01:03:16,363 --> 01:03:19,530
-as an int, actually treated as a float, and you know, just for good measure,
+01: 03: 16,363 -> 01: 03: 19.530
+como um int, na verdade tratado como float, e você sabe, apenas para garantir,
 
 1364
-01:03:19,530 --> 01:03:20,820
-also treat sum as a float.
+01: 03: 19.530 -> 01: 03: 20.820
+também trate soma como float.
 
 1365
-01:03:20,820 --> 01:03:23,670
-And there's different ways to do this, but now, I'm
+01: 03: 20.820 -> 01: 03: 23.670
+E há diferentes maneiras de fazer isso, mas agora, estou
 
 1366
-01:03:23,670 --> 01:03:26,670
-telling the computer divide a float by a float, which
+01: 03: 23.670 -> 01: 03: 26.670
+dizendo ao computador para dividir um float por um float, que
 
 1367
-01:03:26,670 --> 01:03:30,090
-will allow me to return a float, and let's see what happens now.
+01: 03: 26.670 -> 01: 03: 30.090
+me permitirá retornar um float e vamos ver o que acontece agora.
 
 1368
-01:03:30,090 --> 01:03:31,590
-Let me save that.
+01: 03: 30.090 -> 01: 03: 31.590
+Deixe-me salvar isso.
 
 1369
-01:03:31,590 --> 01:03:33,570
-Make scores.
+01: 03: 31.590 -> 01: 03: 33.570
+make scores.
 
 1370
-01:03:33,570 --> 01:03:34,350
-It compiled.
+01: 03: 33.570 -> 01: 03: 34.350
+Ele compilou.
 
 1371
-01:03:34,350 --> 01:03:35,840
-Dot slash scores.
+01: 03: 34,350 -> 01: 03: 35.840
+./scores
 
 1372
-01:03:35,840 --> 01:03:36,850
-Number of scores is two.
+01: 03: 35.840 -> 01: 03: 36.850
+O número de pontuações é dois.
 
 1373
-01:03:36,850 --> 01:03:38,040
-100 is the first.
+01: 03: 36.850 -> 01: 03: 38.040
+100 é o primeiro.
 
 1374
-01:03:38,040 --> 01:03:39,570
-99 is the second.
+01: 03: 38,040 -> 01: 03: 39.570
+99 é o segundo.
 
 1375
-01:03:39,570 --> 01:03:41,572
-Nice, now I've gotten the grade I deserved.
+01: 03: 39.570 -> 01: 03: 41.572
+Legal, agora recebi a nota que merecia.
 
 1376
-01:03:41,572 --> 01:03:44,030
-Heck, we could even bring in the round function if we want,
+01: 03: 41.572 -> 01: 03: 44.030
+Puxa, poderíamos até trazer a função round se quisermos,
 
 1377
-01:03:44,030 --> 01:03:46,863
-which you might have used for p-set one, but we'll leave it as this.
+01: 03: 44,030 -> 01: 03: 46.863
+que você pode ter usado para o 'p-set 1", mas vamos deixar assim.
 
 1378
-01:03:46,863 --> 01:03:49,917
-But I am going to go ahead and just do a 0.1 there.
+01: 03: 46,863 -> 01: 03: 49.917
+Mas vou seguir em frente e fazer apenas 0.1 aqui.
 
 1379
-01:03:49,917 --> 01:03:51,750
-Recall that with format codes you can really
+01: 03: 49,917 -> 01: 03: 51.750
+Lembre-se de que, com códigos de formatação, você pode realmente
 
 1380
-01:03:51,750 --> 01:03:54,700
-start to get precise and say only show me one digit.
+01: 03: 51,750 -> 01: 03: 54.700
+começar a ser preciso e diger mostre-me apenas um dígito.
 
 1381
-01:03:54,700 --> 01:03:59,430
-So if I recompile this now, make scores, and do dot slash scores--
+01: 03: 54,700 -> 01: 03: 59.430
+Então, se eu recompilar isso agora, make scores e fazer ./scores -
 
 1382
-01:03:59,430 --> 01:04:02,100
-two scores-- 100, 99.
+01: 03: 59.430 -> 01: 04: 02.100
+duas pontuações - 100, 99.
 
 1383
-01:04:02,100 --> 01:04:09,730
-There's my 99.5% Any questions then on these arrays and the use there of?
+01: 04: 02,100 -> 01: 04: 09.730
+Esse é o meu 99,5%. Alguma dúvida sobre arrays e como utilizá-las?
 
 1384
-01:04:09,730 --> 01:04:10,327
-Yeah?
+01: 04: 09,730 -> 01: 04: 10.327
+Sim?
 
 1385
-01:04:10,327 --> 01:04:14,143
-AUDIENCE: [INAUDIBLE] the average [INAUDIBLE] income scores by
+01: 04: 10,327 -> 01: 04: 14.143
+PÚBLICO: [INAUDÍVEL] a pontuação média de renda [INAUDÍVEL] por
 
 1386
-01:04:14,143 --> 01:04:15,097
-[INAUDIBLE]
+01: 04: 14,143 -> 01: 04: 15.097
+[INAUDÍVEL]
 
 1387
-01:04:15,097 --> 01:04:17,180
-DAVID MALAN: Explain the average-- this part here?
+01: 04: 15.097 -> 01: 04: 17.180
+DAVID MALAN: Explicar a média-- esta parte aqui?
 
 1388
-01:04:17,180 --> 01:04:17,960
-AUDIENCE: Yeah.
+01: 04: 17,180 -> 01: 04: 17.960
+PÚBLICO: Sim.
 
 1389
-01:04:17,960 --> 01:04:19,140
-DAVID MALAN: Sure, can I explain this?
+01: 04: 17.960 -> 01: 04: 19.140
+DAVID MALAN: Claro, posso explicar isso?
 
 1390
-01:04:19,140 --> 01:04:20,480
-So, let me just show more of the code.
+01: 04: 19,140 -> 01: 04: 20.480
+Então, deixe-me mostrar mais do código.
 
 1391
-01:04:20,480 --> 01:04:22,438
-The last line of this program's purpose in life
+01: 04: 20.480 -> 01: 04: 22.438
+Na última linha o propósito de vida deste programa
 
 1392
-01:04:22,438 --> 01:04:25,610
-is just to print the average of all of my scores.
+01: 04: 22.438 -> 01: 04: 25.610
+é apenas imprimir a média de todas as minhas pontuações.
 
 1393
-01:04:25,610 --> 01:04:28,160
-And I decided, partly for design purposes,
+01: 04: 25.610 -> 01: 04: 28.160
+E eu decidi, em parte para fins de design,
 
 1394
-01:04:28,160 --> 01:04:32,780
-but also today to illustrate a point, to relegate the computation of an average
+01: 04: 28,160 -> 01: 04: 32.780
+mas também hoje para ilustrar um ponto, para relegar o cálculo de uma média
 
 1395
-01:04:32,780 --> 01:04:33,980
-to a custom function.
+01: 04: 32,780 -> 01: 04: 33.980
+para uma função personalizada.
 
 1396
-01:04:33,980 --> 01:04:35,330
-This is handy, because now if I ever work
+01: 04: 33.980 -> 01: 04: 35.330
+Isso é útil, porque agora, se eu trabalhar
 
 1397
-01:04:35,330 --> 01:04:37,070
-on another problem that needs to average,
+01: 04: 35,330 -> 01: 04: 37.070
+em outro problema que precisa ser médio,
 
 1398
-01:04:37,070 --> 01:04:39,620
-I've got a function I can use in that code too.
+01: 04: 37.070 -> 01: 04: 39.620
+Também tenho uma função que posso usar nesse código.
 
 1399
-01:04:39,620 --> 01:04:43,340
-But in this case, average takes two arguments, apparently
+01: 04: 39,620 -> 01: 04: 43.340
+Mas, neste caso, a média leva dois argumentos, aparentemente
 
 1400
-01:04:43,340 --> 01:04:45,970
-the length of the array and the array itself,
+01: 04: 43.340 -> 01: 04: 45.970
+o comprimento da array e a própria array,
 
 1401
-01:04:45,970 --> 01:04:47,720
-but I could call these two things anything
+01: 04: 45,970 -> 01: 04: 47.720
+mas eu poderia chamar essas duas coisas de qualquer coisa
 
 1402
-01:04:47,720 --> 01:04:51,350
-I want-- x and y, length and array, anything else,
+01: 04: 47,720 -> 01: 04: 51.350
+Eu quero - x e y, comprimento e array, poderia ser qualquer outra coisa,
 
 1403
-01:04:51,350 --> 01:04:53,120
-but I chose this for clarity.
+01: 04: 51.350 -> 01: 04: 53.120
+mas escolhi isso para maior clareza.
 
 1404
-01:04:53,120 --> 01:04:54,860
-But up here, I want to use that function.
+01: 04: 53,120 -> 01: 04: 54.860
+Mas aqui em cima, quero usar essa função.
 
 1405
-01:04:54,860 --> 01:04:57,200
-So just like in Scratch, recall that you can nest blocks
+01: 04: 54,860 -> 01: 04: 57.200
+Assim como no Scratch, lembre-se de que você pode aninhar blocos
 
 1406
-01:04:57,200 --> 01:04:59,430
-and you can join something and then say it.
+01: 04: 57,200 -> 01: 04: 59.430
+e você pode juntar algo e então invocá-la.
 
 1407
-01:04:59,430 --> 01:05:02,120
-So can we call the average function, passing
+01: 04: 59.430 -> 01: 05: 02.120
+Então, podemos chamar a função média, passando
 
 1408
 01:05:02,120 --> 01:05:04,610
