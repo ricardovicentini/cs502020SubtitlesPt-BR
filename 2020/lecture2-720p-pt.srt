@@ -6200,293 +6200,292 @@ também é meio descolado, e esse é um símbolo especial
 que diz mova o cursor para a próxima linha, forneça uma nova linha.
 
 1552
-01:12:09,790 --> 01:12:12,550
-Backslash zero is the so-called null character
+01: 12: 09,790 -> 01: 12: 12.550
+Barra invertida zero é o chamado caractere nulo
 
 1553
-01:12:12,550 --> 01:12:14,890
-or the null terminating character.
+01: 12: 12.550 -> 01: 12: 14.890
+ou o caractere de terminação nulo.
 
 1554
-01:12:14,890 --> 01:12:19,930
-And all that is special syntax for eight zero bits.
+01: 12: 14.890 -> 01: 12: 19.930
+E tuda issa é sintaxe especial por oito bits com zero.
 
 1555
-01:12:19,930 --> 01:12:22,310
-So each of these boxes represents h bits.
+01: 12: 19.930 -> 01: 12: 22.310
+Portanto, cada uma dessas caixas representa h bits.
 
 1556
-01:12:22,310 --> 01:12:23,530
-This is number 72.
+01: 12: 22,310 -> 01: 12: 23.530
+Este é o número 72.
 
 1557
-01:12:23,530 --> 01:12:25,030
-This is the number 73.
+01: 12: 23.530 -> 01: 12: 25.030
+Este é o número 73.
 
 1558
-01:12:25,030 --> 01:12:26,470
-This is the number 33.
+01: 12: 25.030 -> 01: 12: 26.470
+Este é o número 33.
 
 1559
-01:12:26,470 --> 01:12:32,530
-This backslash zero is just the way of drawing all eight bits as zeros.
+01: 12: 26.470 -> 01: 12: 32.530
+Essa barra invertida zero é apenas a maneira de desenhar todos os oito bits como zeros.
 
 1560
-01:12:32,530 --> 01:12:36,670
-So that's what a computer uses in C to demarcate the end of a string.
+01: 12: 32.530 -> 01: 12: 36.670
+Então é isso que um computador usa em C para demarcar o final de uma string.
 
 1561
-01:12:36,670 --> 01:12:40,025
-It just wastes one byte as all zero bits.
+01: 12: 36.670 -> 01: 12: 40.025
+Ele simplesmente desperdiça um byte como todos os bits com zero.
 
 1562
-01:12:40,025 --> 01:12:41,650
-And I say waste, because you know what?
+01: 12: 40,025 -> 01: 12: 41.650
+E eu digo desperdício, porque quer saber?
 
 1563
-01:12:41,650 --> 01:12:47,740
-How much space does H-I exclamation point actually take up accordingly?
+01: 12: 41.650 -> 01: 12: 47.740
+Quanto espaço o "H-I-!" realmente ocupa de acordo com esse fato?
 
 1564
-01:12:47,740 --> 01:12:50,620
-How many bytes do you need to store hi?
+01: 12: 47.740 -> 01: 12: 50.620
+Quantos bytes você precisa para armazenar HI?
 
 1565
-01:12:50,620 --> 01:12:52,000
-AUDIENCE: [INAUDIBLE]
+01: 12: 50.620 -> 01: 12: 52.000
+PÚBLICO: [INAUDÍVEL]
 
 1566
-01:12:52,000 --> 01:12:56,380
-DAVID MALAN: Three, well, four, because you need to know where the string ends,
+01: 12: 52.000 -> 01: 12: 56.380
+DAVID MALAN: Três, bem, quatro, porque você precisa saber onde a string termina,
 
 1567
-01:12:56,380 --> 01:12:58,780
-otherwise you won't be able to distinguish
+01: 12: 56,380 -> 01: 12: 58.780
+caso contrário, você não será capaz de distinguir
 
 1568
-01:12:58,780 --> 01:13:02,450
-the beginnings of other variables, potentially, in your computer's memory.
+01: 12: 58.780 -> 01: 13: 02.450
+o início de outras variáveis, potencialmente, na memória do seu computador.
 
 1569
-01:13:02,450 --> 01:13:04,130
-And we'll see this in just a moment.
+01: 13: 02.450 -> 01: 13: 04.130
+E veremos isso em apenas um momento.
 
 1570
-01:13:04,130 --> 01:13:06,400
-So if my string is called s, it turns out
+01: 13: 04,130 -> 01: 13: 06.400
+Então, se minha string é chamada de s, acontece
 
 1571
-01:13:06,400 --> 01:13:08,410
-that at s bracket zero is the first character.
+01: 13: 06,400 -> 01: 13: 08.410
+que em s[0] é o primeiro caractere.
 
 1572
-01:13:08,410 --> 01:13:12,010
-S bracket one is the second character. s bracket two is the third.
+01: 13: 08.410 -> 01: 13: 12.010
+O s[1] é o segundo caractere. O colchete dois é o terceiro.
 
 1573
-01:13:12,010 --> 01:13:16,210
-And that null character, so to speak, the invisible backslash zero
+01: 13: 12,010 -> 01: 13: 16.210
+E esse caractere nulo, por assim dizer, o caractere  invisível barra invertida zero
 
 1574
-01:13:16,210 --> 01:13:18,950
-or eight zero bits happens to be at the end.
+01: 13: 16,210 -> 01: 13: 18.950
+ou oito bits zero por acaso estão no final.
 
 1575
-01:13:18,950 --> 01:13:24,250
-So a string that's of length three, actually takes up four bytes.
+01: 13: 18.950 -> 01: 13: 24.250
+Portanto, uma string de comprimento três, na verdade, ocupa quatro bytes.
 
 1576
-01:13:24,250 --> 01:13:27,940
-Any string you have typed into a computer yet, whether it's hi,
+01: 13: 24,250 -> 01: 13: 27.940
+Qualquer string que você já digitou em um computador, seja hi,
 
 1577
-01:13:27,940 --> 01:13:30,970
-or David, or Brian, or Emma, or Rodrigo, takes up
+01: 13: 27.940 -> 01: 13: 30.970
+ou David, ou Brian, ou Emma, ​​ou Rodrigo, contém
 
 1578
-01:13:30,970 --> 01:13:33,940
-as many characters as are in those names,
+01: 13: 30.970 -> 01: 13: 33.940
+tantos caracteres quanto esses nomes,
 
 1579
-01:13:33,940 --> 01:13:37,370
-plus one byte for this special null terminating character.
+01: 13: 33.940 -> 01: 13: 37.370
+mais um byte para este caractere especial o caractere terminal nulo.
 
 1580
-01:13:37,370 --> 01:13:38,122
-So let's see that.
+01: 13: 37,370 -> 01: 13: 38.122
+Então vamos ver isso.
 
 1581
-01:13:38,122 --> 01:13:40,330
-If we were to write a program using these four names,
+01: 13: 38,122 -> 01: 13: 40.330
+Se fossemos escrever um programa usando esses quatro nomes,
 
 1582
-01:13:40,330 --> 01:13:42,860
-let me go ahead and with that up really quickly here.
+01: 13: 40,330 -> 01: 13: 42.860
+deixe-me ir em frente e com isso muito rapidamente aqui.
 
 1583
-01:13:42,860 --> 01:13:46,450
-I'm going to create a file called names dot c,
+01: 13: 42,860 -> 01: 13: 46.450
+Vou criar um arquivo chamado names ponto c,
 
 1584
-01:13:46,450 --> 01:13:50,050
-and I'm going to go ahead and do include standard Io dot h.
+01: 13: 46.450 -> 01: 13: 50.050
+e vou prosseguir e incluir o stdio.h.
 
 1585
-01:13:50,050 --> 01:13:53,260
-Then I'm going to go ahead and do int main void.
+01: 13: 50,050 -> 01: 13: 53.260
+Em seguida, vou prosseguir e fazer o int main void.
 
 1586
-01:13:53,260 --> 01:13:57,790
-Inside of here, I'm going to give myself four strings, using my new array
+01: 13: 53,260 -> 01: 13: 57.790
+Dentro daqui, vou me dar quatro strings, usando meu novo array
 
 1587
-01:13:57,790 --> 01:13:59,080
-syntax, as before.
+01: 13: 57.790 -> 01: 13: 59.080
+sintaxe, como antes.
 
 1588
-01:13:59,080 --> 01:14:01,870
-So I could call this name one, name two, name three, name four,
+01: 13: 59,080 -> 01: 14: 01.870
+Então, eu poderia chamar esse nome de um, nome dois, nome três, nome quatro,
 
 1589
-01:14:01,870 --> 01:14:03,760
-but I'm not going to repeat that bad habit.
+01: 14: 01,870 -> 01: 14: 03.760
+mas não vou repetir esse mau hábito.
 
 1590
-01:14:03,760 --> 01:14:05,440
-I'm going to give myself a name--
+01: 14: 03,760 -> 01: 14: 05.440
+Eu vou me dar um nome -
 
 1591
-01:14:05,440 --> 01:14:10,150
-a variable called names, plural, and store four strings in it, as follows.
+01: 14: 05,440 -> 01: 14: 10.150
+uma variável chamada names, plural, e armazena quatro strings nela, como segue.
 
 1592
-01:14:10,150 --> 01:14:12,430
-Let's give Emma the first spot there.
+01: 14: 10,150 -> 01: 14: 12.430
+Vamos dar a Emma o primeiro lugar ali.
 
 1593
-01:14:12,430 --> 01:14:16,180
-Let's give Rodrigo the second spot there.
+01: 14: 12.430 -> 01: 14: 16.180
+Vamos dar o segundo lugar ao Rodrigo.
 
 1594
-01:14:16,180 --> 01:14:19,780
-I'm using all caps just because we've seen some of those Ascii codes before,
+01: 14: 16,180 -> 01: 14: 19.780
+Estou usando maiúsculas só porque vimos alguns desses códigos ASCII antes,
 
 1595
-01:14:19,780 --> 01:14:21,610
-but I could use lowercase as well.
+01: 14: 19,780 -> 01: 14: 21.610
+mas eu poderia usar letras minúsculas também.
 
 1596
-01:14:21,610 --> 01:14:22,690
-Let's add Brian.
+01: 14: 21.610 -> 01: 14: 22.690
+Vamos adicionar Brian.
 
 1597
-01:14:22,690 --> 01:14:25,120
-And then I'll go ahead and add myself lastly.
+01: 14: 22.690 -> 01: 14: 25.120
+E então irei em frente e me adicionarei por último.
 
 1598
-01:14:25,120 --> 01:14:29,680
-So the array is of size four, but I count from zero on up through C.
+01: 14: 25,120 -> 01: 14: 29.680
+Portanto, a matriz tem tamanho quatro, mas conto de zero em diante até C.
 
 1599
-01:14:29,680 --> 01:14:32,080
-And now just for demonstration's sake, let's go ahead
+01: 14: 29.680 -> 01: 14: 32.080
+E agora, apenas para fins de demonstração, vamos em frente
 
 1600
-01:14:32,080 --> 01:14:33,790
-and print out, say, Emma's name.
+01: 14: 32,080 -> 01: 14: 33.790
+e imprimir, digamos, o nome de Emma.
 
 1601
-01:14:33,790 --> 01:14:37,360
-So if I want to print out Emma's name, the type of variable in which she
+01: 14: 33,790 -> 01: 14: 37.360
+Então, se eu quiser imprimir o nome de Emma, ​​o tipo de variável em que ela
 
 1602
-01:14:37,360 --> 01:14:39,121
-is stored, is what?
+01: 14: 37,360 -> 01: 14: 39.121
+é armazenado, é o quê?
 
 1603
-01:14:39,121 --> 01:14:41,174
-What is the type that I want to print?
+01: 14: 39,121 -> 01: 14: 41.174
+Qual é o tipo que desejo imprimir?
 
 1604
-01:14:41,174 --> 01:14:41,990
+01: 14: 41,174 -> 01: 14: 41.990
 String.
 
 1605
-01:14:41,990 --> 01:14:43,837
-So that's percent s, just like last week.
+01: 14: 41,990 -> 01: 14: 43.837
+Então isso é: %s, exatamente como na semana passada.
 
 1606
-01:14:43,837 --> 01:14:45,670
-And I'm going to head and put a backslash n.
+01: 14: 43,837 -> 01: 14: 45.670
+E vou colocar o \n.
 
 1607
-01:14:45,670 --> 01:14:49,720
-And if I want to print Emma's name, what do I type here
+01: 14: 45,670 -> 01: 14: 49.720
+E se eu quiser imprimir o nome de Emma, ​​o que devo digitar aqui
 
 1608
-01:14:49,720 --> 01:14:52,052
-to plug into that placeholder?
+01: 14: 49,720 -> 01: 14: 52.052
+para conectar a esse espaço reservado?
 
 1609
-01:14:52,052 --> 01:14:53,095
-AUDIENCE: [INAUDIBLE]
+01: 14: 52,052 -> 01: 14: 53.095
+PÚBLICO: [INAUDÍVEL]
 
 1610
-01:14:53,095 --> 01:14:54,470
-DAVID MALAN: Names brackets zero.
+01: 14: 53,095 -> 01: 14: 54.470
+DAVID MALAN: Nomes, colchetes zero.
 
 1611
-01:14:54,470 --> 01:14:56,540
-It's a little bad that I'm hard coding it here,
+01: 14: 54.470 -> 01: 14: 56.540
+É um pouco ruim que estou fixando no código isso aqui,
 
 1612
-01:14:56,540 --> 01:14:59,560
-but again, I'm just demonstrating how this all works for now.
+01: 14: 56.540 -> 01: 14: 59.560
+mas, novamente, estou apenas demonstrando como tudo isso funciona por enquanto.
 
 1613
-01:14:59,560 --> 01:15:01,090
-Let me go ahead and save that.
+01: 14: 59.560 -> 01: 15: 01.090
+Deixe-me ir em frente e salvar isso.
 
 1614
-01:15:01,090 --> 01:15:03,400
-Let me do make names.
+01: 15: 01,090 -> 01: 15: 03.400
+Deixe-me fazer nomes.
 
 1615
-01:15:03,400 --> 01:15:04,570
-Bit of an error here.
+01: 15: 03.400 -> 01: 15: 04.570
+Um pequeno erro aqui.
 
 1616
-01:15:04,570 --> 01:15:05,500
-What did I do wrong?
+01: 15: 04.570 -> 01: 15: 05.500
+O que eu fiz errado?
 
 1617
-01:15:05,500 --> 01:15:08,170
-Oh my god, all of this is wrong.
+01: 15: 05,500 -> 01: 15: 08.170
+Oh meu Deus, tudo isso está errado.
 
 1618
-01:15:08,170 --> 01:15:11,274
-Does anyone see it yet?
+01: 15: 08,170 -> 01: 15: 11.274
+Alguém já viu?
 
 1619
-01:15:11,274 --> 01:15:12,150
-AUDIENCE: [INAUDIBLE]
+01: 15: 11,274 -> 01: 15: 12.150
+PÚBLICO: [INAUDÍVEL]
 
 1620
-01:15:12,150 --> 01:15:14,025
-DAVID MALAN: Yeah, I forgot the CS50 library.
+01: 15: 12.150 -> 01: 15: 14.025
+DAVID MALAN: Sim, esqueci a biblioteca CS50.
 
 1621
-01:15:14,025 --> 01:15:16,920
-So even though I'm not using get string, I am using string,
+01: 15: 14.025 -> 01: 15: 16.920
+Mesmo que eu não esteja usando get string, estou usando string,
 
 1622
-01:15:16,920 --> 01:15:19,630
-so I do need the CS50 library up here.
+01: 15: 16.920 -> 01: 15: 19.630
+então eu preciso da biblioteca CS50 aqui.
 
 1623
-01:15:19,630 --> 01:15:21,150
-So let me go ahead and clear that.
-
+01: 15: 19.630 -> 01: 15: 21.150
+Então deixe-me ir em frente e esclarecer isso.
 1624
 01:15:21,150 --> 01:15:22,500
 Make names.
