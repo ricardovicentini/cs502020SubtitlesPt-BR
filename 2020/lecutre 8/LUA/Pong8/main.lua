@@ -45,60 +45,43 @@ function love.load()
 end
 
 function love.update(dt)
-
-  
-
-  
-
   
   if gameState == 'play' then
-  
     paddle1:update(dt)
     paddle2:update(dt)
     ball:update(dt)
-
-    -- if ball:collides(paddle1) then
-    --   ball:deflect_right()
-    -- end
-
-    -- if ball:collides(paddle2) then
-    --   ball:deflect_left()
-    -- end
-
+    
     if ball:collides(paddle1) or ball:collides(paddle2) then
       ball:deflect()
     end
 
+    if ball.x < 0 then
+      player2Score = player2Score + 1
+      ball:reset()
+      gameState  = 'start'
+    end
+
+    if ball.x  > VIRTUAL_WIDTH - 4 then
+      player1Score = player1Score + 1
+      ball:reset()
+      gameState  = 'start'
+    end
+    
     if love.keyboard.isDown('w') then
-  
       paddle1.dy = -PADDLE_SPEED
-    
     elseif love.keyboard.isDown('s') then
-    
       paddle1.dy = PADDLE_SPEED
-    
     else
-    
       paddle1.dy = 0
-    
     end
   
-  
     if love.keyboard.isDown('up') then
-    
       paddle2.dy = -PADDLE_SPEED
-    
     elseif love.keyboard.isDown('down') then
-    
       paddle2.dy = PADDLE_SPEED
-    
     else
-    
       paddle2.dy = 0
-    
     end 
-  
-  
   end
 
 end
@@ -106,22 +89,11 @@ end
 function love.keypressed(key)
   
   if key == 'escape' then
-  
     love.event.quit()
-  
   elseif key == 'enter' or key == 'return' then
-    
     if gameState == 'start' then
-  
       gameState = 'play'
-  
-    elseif gameState == 'play' then
-  
-      gameState  = 'start'
-      ball:reset()
-  
     end
-    
   end
 
 end
@@ -142,7 +114,7 @@ function love.draw()
   
   if gameState == 'start' then
     
-    love.graphics.printf("Hello Start State!",0, 20,VIRTUAL_WIDTH, 'center')
+    love.graphics.printf("Press enter to start!",0, 20,VIRTUAL_WIDTH, 'center')
   
   elseif gameState == 'play' then
     
