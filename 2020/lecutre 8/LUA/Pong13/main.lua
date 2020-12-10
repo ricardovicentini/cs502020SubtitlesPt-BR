@@ -8,6 +8,9 @@ VIRTUAL_HEIGHT = 243
 
 PADDLE_SPEED = 200
 
+BOT_SPEED_RATIO = 0.5
+BOT_LEVEL = 'Noobie'
+
 Class = require 'class'
 push = require 'push'
 
@@ -46,7 +49,7 @@ function love.load()
     ball.dx = -100
   end
 
-  gameState = 'start'
+  gameState = 'select'
 
   push:setupScreen(VIRTUAL_WIDTH, VIRTUAL_HEIGHT, WINDOW_WIDTH, WINDOW_HEIGHT,{
     fullscreen = false,
@@ -56,7 +59,12 @@ function love.load()
 end
 
 function love.update(dt)
+  if gameState == 'serve' then
+    paddle2.y = VIRTUAL_HEIGHT / 2 - 2
+  end
   
+  
+
   if gameState == 'play' then
     paddle1:update(dt)
     paddle2:update(dt)
@@ -111,6 +119,19 @@ function love.update(dt)
     end 
   end
 
+
+  --paddle bot AI
+  if ball.dx > 0 and ball.x >= VIRTUAL_WIDTH * 0.55 then
+    if paddle2.y <= ball.y then
+      paddle2.dy = PADDLE_SPEED * BOT_SPEED_RATIO
+    elseif paddle2.y >= ball.y then
+        paddle2.dy = -PADDLE_SPEED * BOT_SPEED_RATIO
+    else
+      paddle2.dy = 0
+    end
+  end
+
+
 end
 
 function love.keypressed(key)
@@ -121,7 +142,7 @@ function love.keypressed(key)
     if gameState == 'start' then
       gameState = 'serve'
     elseif gameState == 'victory' then
-      gameState = 'start'
+      gameState = 'select'
       player1Score = 0
       player2Score = 0
     elseif gameState == 'serve' then
@@ -129,6 +150,27 @@ function love.keypressed(key)
     end
   end
 
+  --bot speed ratio configuration
+  if gameState == 'select' then
+    if key == '0' then
+      BOT_SPEED_RATIO = 0.5
+      BOT_LEVEL = 'Noobie'
+      gameState = 'start'
+    elseif key == '1' then
+      BOT_SPEED_RATIO = 0.6
+      BOT_LEVEL = 'Beginer'
+      gameState = 'start'
+    elseif key == '2' then
+      BOT_SPEED_RATIO = 0.7
+      BOT_LEVEL = 'Professional'
+      gameState = 'start'
+    elseif key == '3' then
+      BOT_SPEED_RATIO = 0.8
+      BOT_LEVEL = 'Yoda'
+      gameState = 'start'
+    end
+    
+  end
 end
 
 
@@ -145,9 +187,16 @@ function love.draw()
   
   
 
-  if gameState == 'start' then
+  if gameState == 'select' then
+    love.graphics.printf("Choose the difficult level", 0, 20, VIRTUAL_WIDTH, 'center')
+    love.graphics.printf("0 - Noobie", 180, 32, VIRTUAL_WIDTH, 'left')
+    love.graphics.printf("1 - Beginer", 180, 44, VIRTUAL_WIDTH, 'left')
+    love.graphics.printf("2 - Professional", 180, 56, VIRTUAL_WIDTH, 'left')
+    love.graphics.printf("3 - Yoda", 180, 68, VIRTUAL_WIDTH, 'left')
+  elseif gameState == 'start' then
     love.graphics.printf("Welcome to Pong!",0, 20, VIRTUAL_WIDTH, 'center')  
-    love.graphics.printf("Press enter to play!",0, 32,VIRTUAL_WIDTH, 'center')
+    love.graphics.printf("You will fight a " .. BOT_LEVEL .. " Player",0, 32,VIRTUAL_WIDTH, 'center')
+    love.graphics.printf("Press enter to play!",0, 44,VIRTUAL_WIDTH, 'center')
   elseif gameState == 'serve' then
     love.graphics.printf("Player " .. tostring(servingPlayer) .. "'s turn!",0, 20,VIRTUAL_WIDTH, 'center')
     love.graphics.printf("Press enter to serve!",0, 32,VIRTUAL_WIDTH, 'center')
@@ -162,6 +211,8 @@ function love.draw()
   love.graphics.setFont(scoreFont)
   love.graphics.print(player1Score, VIRTUAL_WIDTH / 2 - 50, VIRTUAL_HEIGHT / 3)
   love.graphics.print(player2Score, VIRTUAL_WIDTH / 2 + 30 , VIRTUAL_HEIGHT / 3)
+
+    
 
   displayFPS()
 
