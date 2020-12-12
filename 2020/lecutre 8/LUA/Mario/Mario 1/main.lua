@@ -24,12 +24,14 @@ function love.load()
 end
 
 function love.update(dt)
-
+  map:update(dt)
 end
 
 function love.draw()
   push:start()
-  love.graphics.clear(108/255, 140/255, 1, 1)
+  love.graphics.translate(-map.camX, -map.camY)
+  love.graphics.clear(108/255, 140/255, 255/255, 255/255)
   map:render()
   push:finish()
+  
 end
